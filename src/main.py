@@ -102,6 +102,11 @@ def ensure_output_schema(df: pd.DataFrame) -> pd.DataFrame:
         if col not in df.columns:
             df[col] = ""
     df = df[OUTPUT_COLUMNS]
+    
+    # Convert data column to YYYY-MM-DD format if it's datetime
+    if "data" in df.columns:
+        df["data"] = df["data"].apply(lambda x: pd.to_datetime(x, errors="coerce").strftime("%Y-%m-%d") if pd.notna(x) and str(x).strip() != "" else "")
+    
     df["liczba_sztuk"] = df["liczba_sztuk"].apply(parse_polish_number)
     df["wartosc_pln"] = df["wartosc_pln"].apply(parse_polish_number)
     df = df.fillna("")
@@ -490,6 +495,110 @@ def parse_millennium_excel(file_path: str) -> pd.DataFrame:
     return ensure_output_schema(df)
 
 
+def parse_pfr_excel(file_path: str) -> pd.DataFrame:
+    """
+    Parse PFR TFI Excel/CSV files.
+    Assumes headers are in the first row.
+    Maps PFR-specific columns to the standard OUTPUT_COLUMNS.
+    """
+    try:
+        df = pd.read_excel(file_path, engine="openpyxl", header=0)
+    except Exception:
+        try:
+            df = pd.read_csv(file_path, header=0)
+        except Exception:
+            return ensure_output_schema(pd.DataFrame())
+
+    df.columns = [normalize_header(c) for c in df.columns]
+
+    mapping = {
+        "nazwa subfunduszu": "fundusz",
+        "data wyceny": "data",
+        "rodzaj instrumentu": "typ_aktywa",
+        "emitent": "emitent",
+        "kod isin": "isin",
+        "waluta notowań": "waluta",
+        "waluta nominału": "waluta",
+        "ilość": "liczba_sztuk",
+        "wartość całkowita w walucie wyceny funduszu": "wartosc_pln",
+    }
+
+    for src, dst in mapping.items():
+        col = find_column(df, src)
+        if col:
+            df[dst] = df[col]
+        else:
+            df[dst] = ""
+
+    df["instytucja"] = "PFR TFI S.A."
+
+    file_date = extract_date_from_filename(file_path)
+    if file_date:
+        df["data"] = df.get("data", "")
+        df.loc[df["data"].astype(str).str.strip() == "", "data"] = file_date
+
+    df = df.dropna(axis=0, how="all")
+
+    return ensure_output_schema(df)
+
+
+def parse_pko_excel(file_path: str, fallback_date: Optional[str] = None) -> pd.DataFrame:
+    """
+    Parse PKO TFI Excel files.
+    Assumes headers are in the first row.
+    Maps PKO-specific columns to the standard OUTPUT_COLUMNS.
+    """
+    try:
+        df = pd.read_excel(file_path, engine="openpyxl", header=0)
+    except Exception:
+        return ensure_output_schema(pd.DataFrame())
+
+    df.columns = [normalize_header(c) for c in df.columns]
+
+    mapping = {
+        "nazwa subfunduszu": "fundusz",
+        "typ instrumentu": "typ_aktywa",
+        "nazwa emitenta": "emitent",
+        "identyfikator instrumentu": "isin",
+        "waluta instrumentu": "waluta",
+        "ilosc instrumentow w portfelu": "liczba_sztuk",
+        "wartosc instrumentu w walucie wyceny funduszu": "wartosc_pln",
+    }
+
+    for src, dst in mapping.items():
+        col = find_column(df, src)
+        if col:
+            df[dst] = df[col]
+        else:
+            df[dst] = ""
+
+    df["instytucja"] = "PKO TFI S.A."
+
+    file_date = extract_date_from_filename(file_path)
+    if not file_date:
+        file_date = fallback_date or ""
+    df["data"] = file_date
+
+    # Filter out rows where fundusz or isin is empty (including "nan" string)
+    def is_not_empty(val):
+        if pd.isna(val):
+            return False
+        s = str(val).strip().lower()
+        return s != "" and s != "nan" and s != "none"
+
+    df = df[df["fundusz"].apply(is_not_empty) | df["isin"].apply(is_not_empty)]
+
+    # Remove rows that have no meaningful data in key fields
+    df = df[
+        df["fundusz"].apply(is_not_empty) &
+        (df["typ_aktywa"].apply(is_not_empty) |
+         df["isin"].apply(is_not_empty) |
+         df["emitent"].apply(is_not_empty))
+    ]
+
+    return ensure_output_schema(df)
+
+
 def parse_esaliens_pdf(file_path: str) -> pd.DataFrame:
     date_match = re.search(r"(\d{4}-\d{2}-\d{2})", os.path.basename(file_path))
     file_date = date_match.group(1) if date_match else ""
@@ -838,6 +947,10 @@ def parse_generali_pdf(file_path: str, fallback_date: str) -> pd.DataFrame:
 
 def detect_parser(file_path: str) -> Optional[str]:
     name = os.path.basename(file_path).lower()
+    if "pko" in name and ("emerytura" in name or "sklad_portfela" in name) and name.endswith((".xls", ".xlsx", ".csv")):
+        return "pko"
+    if "pfr" in name and "sklad_portfela" in name and name.endswith((".xls", ".xlsx", ".csv")):
+        return "pfr"
     if "allianz" in name and name.endswith((".xls", ".xlsx")):
         return "allianz"
     if "santander" in name and name.endswith((".xls", ".xlsx")):
@@ -849,6 +962,26 @@ def detect_parser(file_path: str) -> Optional[str]:
     if name.endswith((".xls", ".xlsx")) and "skład portfela" in name:
         if is_millennium_excel(file_path):
             return "millennium"
+
+    # Fallback: Check if it's a PKO file by examining headers
+    if "pko" in name and name.endswith((".xls", ".xlsx", ".csv")):
+        try:
+            df = pd.read_excel(file_path, engine="openpyxl", header=0, nrows=1) if name.endswith((".xls", ".xlsx")) else pd.read_csv(file_path, header=0, nrows=1)
+            headers_normalized = [normalize_header(c) for c in df.columns]
+            if any("identyfikator instrumentu" in h for h in headers_normalized) and any("wartosc instrumentu" in h for h in headers_normalized):
+                return "pko"
+        except Exception:
+            pass
+
+    # Fallback: Check if it's a PFR file by examining headers
+    if "pfr" in name and name.endswith((".xls", ".xlsx", ".csv")):
+        try:
+            df = pd.read_excel(file_path, engine="openpyxl", header=0, nrows=1) if name.endswith((".xls", ".xlsx")) else pd.read_csv(file_path, header=0, nrows=1)
+            headers_normalized = [normalize_header(c) for c in df.columns]
+            if any("kod isin" in h for h in headers_normalized) and any("wartość" in h and "wyceny" in h for h in headers_normalized):
+                return "pfr"
+        except Exception:
+            pass
 
     if name.endswith(".pdf"):
         if "esaliens" in name:
@@ -876,6 +1009,8 @@ def process_folder(folder_path: str) -> pd.DataFrame:
         "santander": parse_santander_excel,
         "goldman": parse_goldman_excel,
         "millennium": parse_millennium_excel,
+        "pfr": parse_pfr_excel,
+        "pko": lambda p: parse_pko_excel(p, quarter_end),
         "esaliens": parse_esaliens_pdf,
         "generali": lambda p: parse_generali_pdf(p, quarter_end),
         # TU DODAĆ KOLEJNE
