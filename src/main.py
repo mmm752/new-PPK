@@ -599,6 +599,93 @@ def parse_pko_excel(file_path: str, fallback_date: Optional[str] = None) -> pd.D
     return ensure_output_schema(df)
 
 
+def parse_pzu_excel(file_path: str) -> pd.DataFrame:
+    """
+    Parse TFI PZU Excel files.
+    Reads the file, extracts metadata (date), detects header row, and maps columns.
+    """
+    try:
+        df_raw = pd.read_excel(file_path, engine="openpyxl", header=None)
+    except Exception:
+        return ensure_output_schema(pd.DataFrame())
+
+    # Extract date from first few rows (e.g., "na dzień 31/10/2025")
+    extracted_date = ""
+    for row_idx in range(min(10, len(df_raw))):
+        row = df_raw.iloc[row_idx].tolist()
+        for value in row:
+            if isinstance(value, str):
+                value = value.strip()
+                # Look for "na dzień" followed by a date
+                if "na dzień" in value.lower():
+                    # Try to extract date from the same cell or nearby
+                    match = re.search(r"(\d{1,2})[./\s](\d{1,2})[./\s](\d{4})", value)
+                    if match:
+                        try:
+                            day, month, year = match.groups()
+                            extracted_date = datetime.strptime(f"{day}/{month}/{year}", "%d/%m/%Y").strftime("%Y-%m-%d")
+                            break
+                        except ValueError:
+                            continue
+            elif isinstance(value, datetime):
+                extracted_date = value.strftime("%Y-%m-%d")
+                break
+        if extracted_date:
+            break
+
+    # Detect header row using existing helper
+    header_row = detect_allianz_header_row(df_raw)
+
+    # Re-read with detected header
+    try:
+        df = pd.read_excel(file_path, engine="openpyxl", header=header_row)
+    except Exception:
+        return ensure_output_schema(pd.DataFrame())
+
+    df.columns = [normalize_header(c) for c in df.columns]
+
+    # Map PZU-specific columns to OUTPUT_COLUMNS
+    mapping = {
+        "nazwa subfunduszu": "fundusz",
+        "typ instrumentu": "typ_aktywa",
+        "emitent": "emitent",
+        "kod isin instrumentu": "isin",
+        "waluta wyceny instrumentu": "waluta",
+        "ilość instrumentów w portfelu": "liczba_sztuk",
+        "wartość instrumentu w walucie wyceny funduszu": "wartosc_pln",
+    }
+
+    for src, dst in mapping.items():
+        col = find_column(df, src)
+        df[dst] = df[col] if col else ""
+
+    df["instytucja"] = "PZU TFI S.A."
+
+    # Assign extracted date to the data column
+    if extracted_date:
+        df["data"] = extracted_date
+    else:
+        file_date = extract_date_from_filename(file_path)
+        df["data"] = file_date
+
+    # Filter out rows where fundusz or isin is empty
+    def is_not_empty(val):
+        if pd.isna(val):
+            return False
+        s = str(val).strip().lower()
+        return s != "" and s != "nan" and s != "none"
+
+    df = df[df["fundusz"].apply(is_not_empty) | df["isin"].apply(is_not_empty)]
+    
+    # Filter to keep only PPK funds
+    fundusz_col = df.get("fundusz", "").astype(str)
+    df = df[fundusz_col.str.contains("PPK", case=False, na=False)]
+    
+    df = df.dropna(axis=0, how="all")
+
+    return ensure_output_schema(df)
+
+
 def parse_esaliens_pdf(file_path: str) -> pd.DataFrame:
     date_match = re.search(r"(\d{4}-\d{2}-\d{2})", os.path.basename(file_path))
     file_date = date_match.group(1) if date_match else ""
@@ -758,6 +845,147 @@ def parse_esaliens_pdf(file_path: str) -> pd.DataFrame:
         | (wartosc_pln_num != 0)
     ]
     return df
+
+
+def parse_uniqa_pdf(file_path: str) -> pd.DataFrame:
+    file_date = extract_date_from_filename(file_path)
+    if not file_date:
+        preview_text = extract_text_from_pdf(file_path, max_pages=1)
+        file_date = parse_date_from_text(preview_text) or ""
+
+    table_settings = {
+        "vertical_strategy": "text",
+        "horizontal_strategy": "text",
+        "snap_tolerance": 3,
+    }
+    isin_pattern = re.compile(r"\b[A-Z]{2}[A-Z0-9]{9}\d\b")
+    isin_loose_pattern = re.compile(r"(?:[A-Z][^A-Z0-9]*){2}(?:[A-Z0-9][^A-Z0-9]*){9}\d")
+    number_pattern = re.compile(r"\d+(?:\s\d{3})*(?:,\d{1,2})?")
+
+    def _clean_nd(value) -> str:
+        text = safe_string(value)
+        return "" if text.upper() == "ND" else text
+
+    def _clean_fundusz(value) -> str:
+        text = _clean_nd(value).replace("\n", " ").strip()
+        text = re.sub(r"\b(Famerytura|Emerynan|Emeryvara|Eter|Emma)\b", "Emerytura", text)
+        return text
+
+    def _clean_typ_aktywa(value) -> str:
+        text = _clean_nd(value).replace("\n", " ").strip()
+        lowered = text.lower()
+        if re.search(r"\b(akepe|ale|maje|muye|aluye)\b", lowered):
+            return "Akcje"
+        if re.search(r"\b(dhutne|dhitne|papury|papiery)\b", lowered):
+            return "Obligacje"
+        if re.search(r"\b(depuyty|depoz)\b", lowered):
+            return "Depozyty"
+        return text
+
+    def _clean_isin(value) -> str:
+        text = _clean_nd(value)
+        return re.sub(r"\s+", "", text)
+
+    def _clean_emitent(value) -> str:
+        return _clean_nd(value).replace("\n", " ").strip()
+
+    def _clean_isin_loose(value: str) -> str:
+        compact = re.sub(r"[^A-Z0-9]", "", value or "")
+        return compact
+
+    def _extract_numbers(text: str) -> List[str]:
+        numbers: List[str] = []
+        for match in number_pattern.finditer(text or ""):
+            if text[match.end():].lstrip().startswith("%"):
+                continue
+            before = text[match.start() - 1:match.start()] if match.start() > 0 else ""
+            after = text[match.end():match.end() + 1]
+            if (before and before.isalpha()) or (after and after.isalpha()):
+                continue
+            numbers.append(match.group(0))
+        return numbers
+
+    rows: List[Dict[str, str]] = []
+    with pdfplumber.open(file_path) as pdf:
+        for page in pdf.pages:
+            try:
+                page_tables = page.extract_tables(table_settings)
+            except Exception:
+                page_tables = []
+            for table in page_tables or []:
+                for row in table or []:
+                    if not row:
+                        continue
+
+                    row_values = [safe_string(cell) for cell in row]
+                    joined = " ".join([v for v in row_values if v]).lower()
+                    if "nazwa funduszu" in joined or "nazwa subfunduszu" in joined:
+                        continue
+                    if "uniqa" not in joined:
+                        continue
+
+                    raw_isin = None
+                    for value in row_values:
+                        match = isin_pattern.search(value or "")
+                        if match:
+                            raw_isin = match.group(0)
+                            break
+                    if not raw_isin:
+                        joined_raw = " ".join([v for v in row_values if v])
+                        match_loose = isin_loose_pattern.search(joined_raw)
+                        if match_loose:
+                            raw_isin = match_loose.group(0)
+                    if not raw_isin:
+                        continue
+
+                    fundusz = _clean_fundusz(row_values[2]) if len(row_values) > 2 else ""
+                    waluta = _clean_nd(row_values[5]).strip() if len(row_values) > 5 else ""
+                    emitent = _clean_emitent(row_values[6]) if len(row_values) > 6 else ""
+                    isin = _clean_isin(row_values[7]) if len(row_values) > 7 else ""
+                    typ_aktywa = _clean_typ_aktywa(row_values[9]) if len(row_values) > 9 else ""
+                    liczba_sztuk = _clean_nd(row_values[12]) if len(row_values) > 12 else ""
+                    wartosc_pln = _clean_nd(row_values[13]) if len(row_values) > 13 else ""
+
+                    if not isin_pattern.fullmatch(isin):
+                        isin = _clean_isin_loose(raw_isin)
+
+                    if not isin_pattern.fullmatch(isin):
+                        continue
+
+                    joined_numbers = _extract_numbers(" ".join([v for v in row_values if v]))
+                    liczba_num = parse_polish_number(liczba_sztuk)
+                    wartosc_num = parse_polish_number(wartosc_pln)
+                    if wartosc_num == 0:
+                        if len(joined_numbers) >= 1:
+                            wartosc_pln = joined_numbers[-1]
+                            wartosc_num = parse_polish_number(wartosc_pln)
+                    if liczba_num == 0 and len(joined_numbers) >= 2:
+                        liczba_sztuk = joined_numbers[-2]
+                        liczba_num = parse_polish_number(liczba_sztuk)
+
+                    if not waluta:
+                        currencies = re.findall(r"\b[A-Z]{3}\b", " ".join(row_values))
+                        waluta = currencies[-1] if currencies else ""
+
+                    if wartosc_num == 0:
+                        continue
+
+                    rows.append(
+                        {
+                            "data": file_date,
+                            "instytucja": "UNIQA TFI S.A.",
+                            "fundusz": fundusz,
+                            "typ_aktywa": typ_aktywa,
+                            "emitent": emitent,
+                            "isin": isin,
+                            "waluta": waluta,
+                            "liczba_sztuk": parse_polish_number(liczba_sztuk),
+                            "wartosc_pln": wartosc_num,
+                        }
+                    )
+
+    df = pd.DataFrame(rows)
+    return ensure_output_schema(df)
 
 
 def parse_generali_pdf(file_path: str, fallback_date: str) -> pd.DataFrame:
@@ -962,6 +1190,10 @@ def detect_parser(file_path: str) -> Optional[str]:
     if name.endswith((".xls", ".xlsx")) and "skład portfela" in name:
         if is_millennium_excel(file_path):
             return "millennium"
+    
+    # PZU detection: filename format [instytucja]_YYYY-MM-DD.xlsx
+    if "pzu" in name and re.search(r"\d{4}-\d{2}-\d{2}", name) and name.endswith((".xls", ".xlsx")):
+        return "pzu"
 
     # Fallback: Check if it's a PKO file by examining headers
     if "pko" in name and name.endswith((".xls", ".xlsx", ".csv")):
@@ -982,6 +1214,9 @@ def detect_parser(file_path: str) -> Optional[str]:
                 return "pfr"
         except Exception:
             pass
+
+    if "uniqa" in name and name.endswith(".pdf"):
+        return "uniqa"
 
     if name.endswith(".pdf"):
         if "esaliens" in name:
@@ -1011,8 +1246,10 @@ def process_folder(folder_path: str) -> pd.DataFrame:
         "millennium": parse_millennium_excel,
         "pfr": parse_pfr_excel,
         "pko": lambda p: parse_pko_excel(p, quarter_end),
+        "pzu": parse_pzu_excel,
         "esaliens": parse_esaliens_pdf,
         "generali": lambda p: parse_generali_pdf(p, quarter_end),
+        "uniqa": parse_uniqa_pdf,
         # TU DODAĆ KOLEJNE
     }
 
@@ -1058,7 +1295,7 @@ def process_folder(folder_path: str) -> pd.DataFrame:
         if not parser:
             continue
         if file_path.lower().endswith(".pdf"):
-            if parser_key == "generali":
+            if parser_key in ("generali", "uniqa"):
                 df = parser(file_path)
             else:
                 df = run_parser_with_timeout(parser, file_path, timeout_seconds=20)
