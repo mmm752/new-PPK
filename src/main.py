@@ -4,6 +4,7 @@ import re
 import signal
 import multiprocessing as mp
 from datetime import datetime
+from decimal import Decimal, ROUND_HALF_UP
 from typing import Callable, Dict, List, Optional
 
 import pandas as pd
@@ -83,11 +84,14 @@ def format_decimal_comma(value) -> str:
     if value is None or value == "":
         return ""
     try:
-        number = float(value)
+        number = Decimal(str(value))
     except (TypeError, ValueError):
         return str(value).replace(".", ",")
 
-    text = f"{number:.2f}"
+    # Zaokrąglij do 2 miejsc i usuń trailing zeros
+    number = number.quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)
+    text = format(number, "f").rstrip("0").rstrip(".")
+    
     return text.replace(".", ",")
 
 
@@ -938,16 +942,107 @@ def parse_uniqa_pdf(file_path: str) -> pd.DataFrame:
                     if not raw_isin:
                         continue
 
-                    fundusz = _clean_fundusz(row_values[2]) if len(row_values) > 2 else ""
-                    waluta = _clean_nd(row_values[5]).strip() if len(row_values) > 5 else ""
-                    emitent = _clean_emitent(row_values[6]) if len(row_values) > 6 else ""
-                    isin = _clean_isin(row_values[7]) if len(row_values) > 7 else ""
-                    typ_aktywa = _clean_typ_aktywa(row_values[9]) if len(row_values) > 9 else ""
-                    liczba_sztuk = _clean_nd(row_values[12]) if len(row_values) > 12 else ""
-                    wartosc_pln = _clean_nd(row_values[13]) if len(row_values) > 13 else ""
-
-                    if not isin_pattern.fullmatch(isin):
-                        isin = _clean_isin_loose(raw_isin)
+                    isin = _clean_isin_loose(raw_isin)
+                    
+                    # Inteligentne mapowanie - szukaj pól po zawartości
+                    fundusz = ""
+                    emitent = ""
+                    typ_aktywa = ""
+                    waluta = ""
+                    liczba_sztuk = ""
+                    wartosc_pln = ""
+                    
+                    # Szukaj liczb - ostatnie 2 to liczba_sztuk i wartosc_pln
+                    all_numbers = []
+                    for idx, val in enumerate(row_values):
+                        if val:
+                            try:
+                                float(str(val).replace(",", ".").replace(" ", ""))
+                                all_numbers.append((idx, str(val)))
+                            except (ValueError, TypeError):
+                                pass
+                    
+                    # Ostatnie 2 liczby to liczba_sztuk i wartosc_pln
+                    if len(all_numbers) >= 2:
+                        liczba_sztuk = all_numbers[-2][1]
+                        wartosc_pln = all_numbers[-1][1]
+                    elif len(all_numbers) == 1:
+                        wartosc_pln = all_numbers[0][1]
+                    
+                    # Szukaj funduszu - szukaj "merytura" i wyciągnij rok
+                    for idx, val in enumerate(row_values):
+                        if val and "merytura" in str(val).lower():
+                            year_match = re.search(r'(\d{4})', str(val))
+                            if year_match:
+                                fundusz = f"UNIQA Emerytura {year_match.group(1)}"
+                                break
+                    
+                    if not fundusz:
+                        # Szukaj UNIQA
+                        for val in row_values:
+                            if val and "UNIQA" in str(val):
+                                fundusz = str(val).strip()
+                                break
+                    
+                    # Szukaj typu aktywa
+                    for val in row_values:
+                        if val:
+                            val_str = str(val).strip()
+                            if re.match(r"^(Akcje|Obligacje|Fundusze|Fundusze inwestycyjne|Strukturyzowane|Papiery)$", val_str):
+                                typ_aktywa = val_str
+                                break
+                    
+                    # Szukaj waluty
+                    for val in row_values:
+                        if val:
+                            val_str = str(val).strip()
+                            if re.match(r"^(PLN|EUR|USD|GBP|CHF|JPY|CNY|SEK|NOK)$", val_str):
+                                waluta = val_str
+                                break
+                    
+                    # Szukaj emienta - nazwa firmy zwykle zawiera S.A., Sp., Inc. lub ma spacje
+                    # Szukaj od przodu aby znaleźć długą nazwę (jeśli jest podzielona)
+                    skip_patterns = {"UNIQA", "Fundusz", "SFIO", "N/D", "Specjalistyczny", "Inwestycyjny", 
+                                   "Otwarty", "Akcje", "Obligacje", "Fundusze", "AXA", "E", "merytura"}
+                    numbers_set = {num[1] for num in all_numbers}
+                    
+                    # Szukaj w całej kolumnie ale przywiąż się do pierwszego znalezionego
+                    potential_emitents = []
+                    for idx, val in enumerate(row_values):
+                        if val:
+                            val_str = str(val).strip()
+                            # Sprawdzenie czy to potencjalnie emitent
+                            if (val_str not in skip_patterns and 
+                                val_str not in numbers_set and
+                                not re.match(r"^[A-Z]{4}\d{3}$", val_str) and  # Nie kod AXA020
+                                ("S.A." in val_str or "Sp." in val_str or " " in val_str or "INC" in val_str) and
+                                len(val_str) < 60 and len(val_str) > 2 and
+                                not re.match(r"^\d+$", val_str) and
+                                not re.match(r"^PL|^AT|^US|^IE|^LU|^ES|^DE", val_str)):  # Nie ISIN
+                                potential_emitents.append((idx, val_str))
+                            
+                            # Sprawdź czy to "S.A." jako oddzielny element - wtedy połącz z poprzednim
+                            if val_str == "S.A." and idx > 0:
+                                prev_val = row_values[idx - 1]
+                                if prev_val and prev_val not in skip_patterns and prev_val not in numbers_set:
+                                    combined = f"{prev_val} S.A."
+                                    potential_emitents.append((idx - 1, combined))
+                    
+                    # Wybierz najlepszego kandydata - ten z "S.A." i najdłuższy
+                    emitent = ""
+                    sa_candidates = []
+                    for idx, val_str in potential_emitents:
+                        if val_str.endswith("S.A.") or val_str.endswith("S.A") or "S.A." in val_str:
+                            sa_candidates.append(val_str)
+                    
+                    if sa_candidates:
+                        # Wybierz najdłuższą nazwę (prawdopodobnie pełna nazwa firmy)
+                        emitent = max(sa_candidates, key=len)
+                    
+                    # Jeśli nie znaleziono S.A., weź pierwszą długą nazwę
+                    if not emitent and potential_emitents:
+                        # Szukaj najdłuższej nazwy (prawdopodobnie to emitent)
+                        emitent = max(potential_emitents, key=lambda x: len(x[1]))[1]
 
                     if not isin_pattern.fullmatch(isin):
                         continue
@@ -967,8 +1062,31 @@ def parse_uniqa_pdf(file_path: str) -> pd.DataFrame:
                         currencies = re.findall(r"\b[A-Z]{3}\b", " ".join(row_values))
                         waluta = currencies[-1] if currencies else ""
 
-                    if wartosc_num == 0:
-                        continue
+                    # Allow all rows to be written, even if one value is 0
+                    # if wartosc_num == 0:
+                    #     continue
+
+                    # Oczyść liczby - usuń trailing zeros i przecinki
+                    # liczba_sztuk i wartosc_pln są stringami
+                    def format_number(num_str):
+                        if not num_str:
+                            return ""
+                        # Zamień przecinek na kropkę
+                        num_str = str(num_str).replace(",", ".")
+                        # Konwertuj na float i z powrotem na string aby znormalizować
+                        try:
+                            num_val = float(num_str)
+                            # Jeśli to liczba całkowita, nie dodawaj dziesiętnych
+                            if num_val == int(num_val):
+                                return str(int(num_val))
+                            else:
+                                # Usuń trailing zeros
+                                return f"{num_val:.10f}".rstrip("0").rstrip(".")
+                        except (ValueError, TypeError):
+                            return ""
+                    
+                    liczba_formatted = format_number(liczba_sztuk)
+                    wartosc_formatted = format_number(wartosc_pln)
 
                     rows.append(
                         {
@@ -979,11 +1097,128 @@ def parse_uniqa_pdf(file_path: str) -> pd.DataFrame:
                             "emitent": emitent,
                             "isin": isin,
                             "waluta": waluta,
-                            "liczba_sztuk": parse_polish_number(liczba_sztuk),
-                            "wartosc_pln": wartosc_num,
+                            "liczba_sztuk": liczba_formatted,
+                            "wartosc_pln": wartosc_formatted,
                         }
                     )
 
+    df = pd.DataFrame(rows)
+    return ensure_output_schema(df)
+
+
+def parse_nn_pdf(file_path: str) -> pd.DataFrame:
+    """
+    Parse Nationale-Nederlanden (NN) PDF files.
+        File formats:
+            1. NN_[ROK_PPK]_[DATA_RAPORTU].pdf (e.g., NN_25_2025-12-31.pdf)
+            2. [DATA]_struktura_aktywow_roczna_NN_ DFE_NJ_[ROK].pdf (e.g., 20251231_struktura_aktywow_roczna_NN_ DFE_NJ_30.pdf)
+    """
+    rows: List[Dict[str, str]] = []
+    
+    # Extract date and fund year from filename
+    filename = os.path.basename(file_path)
+    
+    # Try pattern 1: NN_YY_YYYY-MM-DD.pdf (with optional space after NN_)
+    match = re.search(r'NN_\s*(\d{2})_(\d{4}-\d{2}-\d{2})\.pdf', filename, re.IGNORECASE)
+    if match:
+        year_suffix = match.group(1)  # "25", "30", etc.
+        file_date = match.group(2)    # "2025-12-31"
+    else:
+        # Try pattern 2: YYYYMMDD_struktura_aktywow_roczna_NN_ DFE_NJ_YY.pdf
+        match = re.search(r'(\d{8})_struktura_aktywow.*_NJ_(\d{2})\.pdf', filename, re.IGNORECASE)
+        if match:
+            date_str = match.group(1)  # "20251231"
+            year_suffix = match.group(2)  # "30", "35", etc.
+            # Convert YYYYMMDD to YYYY-MM-DD
+            file_date = f"{date_str[0:4]}-{date_str[4:6]}-{date_str[6:8]}"
+        else:
+            return ensure_output_schema(pd.DataFrame())
+    
+    fundusz_name = f"NN DFE Nasze Jutro 20{year_suffix}"
+    
+    # Read PDF tables
+    try:
+        with pdfplumber.open(file_path) as pdf:
+            current_section = None
+            
+            for page in pdf.pages:
+                tables = page.extract_tables()
+                
+                for table in tables or []:
+                    for row in table or []:
+                        if not row or len(row) < 4:
+                            continue
+                        
+                        lp = safe_string(row[0])
+                        kategoria = safe_string(row[1])
+                        udzial = safe_string(row[2])
+                        wartosc = safe_string(row[3])
+                        
+                        # Skip header row
+                        if "Kategoria lokaty" in kategoria or "Lp." in lp:
+                            continue
+                        
+                        # Detect section headers (numbered categories)
+                        # Format: "1" or "25" in Lp column, long description in kategoria
+                        if lp and lp.isdigit() and len(kategoria) > 50:
+                            current_section = lp
+                            continue  # Skip summary rows
+                        
+                        # Process detail rows (empty Lp, specific instrument name)
+                        if not lp and kategoria and wartosc:
+                            if not current_section:
+                                continue
+                            
+                            # Determine typ_aktywa based on section number
+                            typ_aktywa = ""
+                            section_num = int(current_section) if current_section else 0
+                            
+                            if section_num in [1, 3]:
+                                typ_aktywa = "Obligacje skarbowe/gwarantowane"
+                            elif section_num in [5, 6, 36]:
+                                typ_aktywa = "Depozyt/Gotówka"
+                            elif section_num == 25:
+                                typ_aktywa = "Obligacje korporacyjne"
+                            elif 7 <= section_num <= 14:
+                                typ_aktywa = "Akcje"
+                            else:
+                                typ_aktywa = "Inne"
+                            
+                            # Extract emitent and ISIN from kategoria
+                            # Format: "MINISTERSTWO FINANSÓW - DS1033 - 25/10/2033"
+                            # or: "Alior Bank S.A. - ALR1029 - 19/10/2029"
+                            emitent = kategoria
+                            isin = ""
+                            
+                            # Try to extract code (e.g., DS1033, ALR1029, FPC0328)
+                            code_match = re.search(r'\s-\s([A-Z]{2,3}\d{4})\s-\s', kategoria)
+                            if code_match:
+                                isin = code_match.group(1)
+                                # Extract emitent (everything before first " - ")
+                                emitent = kategoria.split(' - ')[0].strip()
+                            else:
+                                # No code found, clean emitent
+                                # Remove date patterns like "25/04/2032"
+                                emitent = re.sub(r'\s-\s\d{2}/\d{2}/\d{4}$', '', kategoria).strip()
+                            
+                            # Clean value (remove spaces)
+                            wartosc_clean = wartosc.replace(' ', '').replace(',', '.')
+                            
+                            rows.append({
+                                "data": file_date,
+                                "instytucja": "Nationale-Nederlanden",
+                                "fundusz": fundusz_name,
+                                "typ_aktywa": typ_aktywa,
+                                "emitent": emitent,
+                                "isin": isin,
+                                "waluta": "PLN",
+                                "liczba_sztuk": "0",
+                                "wartosc_pln": wartosc_clean,
+                            })
+    
+    except Exception:
+        return ensure_output_schema(pd.DataFrame())
+    
     df = pd.DataFrame(rows)
     return ensure_output_schema(df)
 
@@ -1223,6 +1458,9 @@ def detect_parser(file_path: str) -> Optional[str]:
             return "esaliens"
         if "generali" in name or ("horyzont" in name and "sfio" in name):
             return "generali"
+        if (name.startswith("nn_") and re.search(r'nn_\s*\d{2}_\d{4}-\d{2}-\d{2}\.pdf', name)) or \
+           ("struktura_aktywow" in name and "dfe_nj" in name and re.search(r'_nj_\d{2}\.pdf', name)):
+            return "nn"
 
         try:
             text = extract_text_pdfminer(file_path, page_numbers=[0], timeout_seconds=8).lower()
@@ -1250,6 +1488,7 @@ def process_folder(folder_path: str) -> pd.DataFrame:
         "esaliens": parse_esaliens_pdf,
         "generali": lambda p: parse_generali_pdf(p, quarter_end),
         "uniqa": parse_uniqa_pdf,
+            "nn": parse_nn_pdf,
         # TU DODAĆ KOLEJNE
     }
 
