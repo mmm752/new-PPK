@@ -9,6 +9,7 @@ from typing import Callable, Dict, List, Optional
 
 import pandas as pd
 import pdfplumber
+import PyPDF2
 try:
     from pdfminer.high_level import extract_text as pdfminer_extract_text
 except Exception:  # pragma: no cover
@@ -851,6 +852,372 @@ def parse_esaliens_pdf(file_path: str) -> pd.DataFrame:
     return df
 
 
+def parse_pekao_pdf(file_path: str) -> pd.DataFrame:
+    """
+    Parse Pekao TFI S.A. PDF files.
+    Extracts portfolio holdings from raw text format (full line format).
+    Format: .X.Y PIO### ISIN FundName 0 FIO PLN CIC Emitent ISIN Code Country Type Category Country Country Currency Qty Value %
+    """
+    instytucja = "Pekao TFI S.A."
+    
+    # Extract date from filename (format: Pekao_YYYY-MM-DD.pdf)
+    date_match = re.search(r"(\d{4})-(\d{2})-(\d{2})", os.path.basename(file_path))
+    if date_match:
+        data = f"{date_match.group(1)}-{date_match.group(2)}-{date_match.group(3)}"
+    else:
+        data = ""
+    
+    rows: List[Dict[str, str]] = []
+    current_fund = ""
+    
+    try:
+        with pdfplumber.open(file_path) as pdf:
+            for page in pdf.pages:
+                page_text = page.extract_text()
+                if not page_text:
+                    continue
+                
+                for line in page_text.split('\n'):
+                    line = line.strip()
+                    if not line:
+                        continue
+                    
+                    # Match lines starting with .X.Y or X.Y.Z format
+                    if not re.match(r'^\.?\d+\.\d+', line):
+                        continue
+                    
+                    # Skip lines without enough data
+                    if len(line) < 50:
+                        continue
+                    
+                    # Find all 12-character ISINs (format: 2 letters + 10 alphanumeric)
+                    isins = re.findall(r'\b([A-Z]{2}[A-Z0-9]{10})\b', line)
+                    if len(isins) < 2:
+                        # Need at least fund ISIN and instrument ISIN
+                        continue
+                    
+                    # Split line into parts
+                    parts = line.split()
+                    
+                    # Extract fund ISIN (should be parts[2])
+                    fund_isin = parts[2] if len(parts) > 2 and re.match(r'^[A-Z]{2}[A-Z0-9]{10}$', parts[2]) else ""
+                    
+                    # Extract fund name - search for "Pekao" keyword
+                    fund_name_parts = []
+                    fund_start = -1
+                    for i, part in enumerate(parts):
+                        if 'Pekao' in part:
+                            fund_start = i
+                            break
+                    
+                    if fund_start >= 0:
+                        # Collect fund name until we hit "0" or "FIO" or "SFIO"
+                        for i in range(fund_start, len(parts)):
+                            if parts[i] in ['0', 'FIO', 'SFIO'] or re.match(r'^[A-Z]{3}\d+$', parts[i]):
+                                break
+                            fund_name_parts.append(parts[i])
+                        
+                        if fund_name_parts:
+                            current_fund = ' '.join(fund_name_parts)
+                    
+                    if not current_fund:
+                        continue
+                    
+                    # Skip non-PPK funds (only process funds with "PPK" in name)
+                    if 'PPK' not in current_fund:
+                        continue
+                    
+                    # Find instrument ISIN (should be the second ISIN found, not the fund ISIN)
+                    instrument_isin = ""
+                    for isin in isins:
+                        if isin != fund_isin:
+                            instrument_isin = isin
+                            break
+                    
+                    if not instrument_isin:
+                        continue
+                    
+                    # Find ISIN position in parts
+                    isin_idx = -1
+                    for i, part in enumerate(parts):
+                        if part == instrument_isin:
+                            isin_idx = i
+                            break
+                    
+                    if isin_idx < 0:
+                        continue
+                    
+                    # Emitent is between CIC code (XL##, etc.) and instrument ISIN
+                    # Find CIC pattern (XL##, PL##, DE##, etc.)
+                    cic_idx = -1
+                    for i in range(len(parts)):
+                        if re.match(r'^[A-Z]{2}\d+$', parts[i]) and i < isin_idx:
+                            cic_idx = i
+                            break
+                    
+                    emitent_parts = []
+                    if cic_idx >= 0 and cic_idx < isin_idx - 1:
+                        emitent_parts = parts[cic_idx + 1:isin_idx]
+                    
+                    emitent = ' '.join(emitent_parts) if emitent_parts else ""
+                    
+                    # Type of instrument: after ISIN + code + country code
+                    # Structure: ISIN Code Country# Type Category# Country Country Currency
+                    # Example: PL0000113783 DS0432 PL11 obligacje skarbowe 1 PL PL PLN
+                    # Example: PLALIOR00045 ALIOR PL31 akcje zwykłe 3L PL PL PLN
+                    # Example: PLBRE0005227 MBK 10.63 PERPPL25 obligacje korporacyjne 2 PL PL EUR
+                    typ_parts = []
+                    if isin_idx + 3 < len(parts):
+                        # Start after ISIN, Code, Country#
+                        start_idx = isin_idx + 3
+                        # Collect typ until we hit a short code (2-3 chars like "3L", "1", etc.) or currency
+                        for i in range(start_idx, len(parts)):
+                            part = parts[i]
+                            # Skip numbers (like "10.63")
+                            if re.match(r'^[\d,.]+$', part):
+                                continue
+                            # Skip short codes that are all uppercase/digits (like "PERPPL25", "3L")
+                            if re.match(r'^[A-Z0-9]{4,}$', part):
+                                continue
+                            # Stop at: single digit, very short code, or currency
+                            if re.match(r'^\d+$', part) or re.match(r'^[A-Z0-9]{1,2}$', part.upper()) or part in ['PLN', 'EUR', 'USD', 'GBP', 'CHF', 'CZK', 'HUF', 'RON', 'CAD']:
+                                break
+                            typ_parts.append(part)
+                    
+                    # Clean and capitalize typ_aktywa
+                    typ_aktywa = ' '.join(typ_parts).strip() if typ_parts else ""
+                    # Capitalize first letter of each word for consistency
+                    if typ_aktywa:
+                        typ_aktywa = ' '.join(word.capitalize() for word in typ_aktywa.split())
+                    
+                    # Find currency (PLN, EUR, USD, etc.) - should appear multiple times
+                    # The last occurrence before numbers is the instrument currency
+                    currencies = ['PLN', 'EUR', 'USD', 'GBP', 'CHF', 'CZK', 'HUF', 'RON']
+                    waluta = ""
+                    waluta_positions = []
+                    for i, part in enumerate(parts):
+                        if part in currencies:
+                            waluta_positions.append(i)
+                    
+                    if waluta_positions:
+                        # Use the last currency occurrence (instrument currency, not fund currency)
+                        waluta_idx = waluta_positions[-1]
+                        waluta = parts[waluta_idx]
+                    else:
+                        continue
+                    
+                    # Numbers after currency: quantity, value, percentage
+                    # Format: "72" "750." "60" "119" "145.00" "8.45%"
+                    # Quantity ends with ".", value ends with ".XX", percentage has %
+                    numbers = []
+                    for i in range(waluta_idx + 1, len(parts)):
+                        part = parts[i]
+                        # Check if it's a number-like token (with or without %)
+                        if re.match(r'^[\d,.]+%?$', part):
+                            numbers.append(part)
+                    
+                    # Parse numbers: find quantity (ends with single "."), value (ends with ".XX"), % (last)
+                    liczba_sztuk = ""
+                    wartosc_pln = ""
+                    
+                    if len(numbers) >= 2:
+                        # Remove percentage (last item with %)
+                        if '%' in numbers[-1]:
+                            numbers = numbers[:-1]
+                        
+                        # Find where quantity ends (first token ending with single ".")
+                        qty_end = -1
+                        for i, num in enumerate(numbers):
+                            if num.endswith('.') and not re.match(r'.*\.\d+', num):
+                                qty_end = i
+                                break
+                        
+                        if qty_end >= 0:
+                            # Quantity is from start to qty_end (inclusive)
+                            qty_parts = numbers[:qty_end + 1]
+                            # Value is the rest
+                            value_parts = numbers[qty_end + 1:]
+                            
+                            liczba_sztuk = ''.join(qty_parts).replace('.', '').replace(',', '.')
+                            wartosc_pln = ''.join(value_parts).replace(',', '.')
+                        else:
+                            # No quantity with single ".", assume all is value
+                            wartosc_pln = ''.join(numbers).replace(',', '.')
+                    
+                    # Clean up
+                    if emitent and instrument_isin and wartosc_pln:
+                        # Clean fund name: remove trailing " #" pattern
+                        # "Pekao PPK 2020 Spokojne Jutro 5" -> "Pekao PPK 2020 Spokojne Jutro"
+                        # "Pekao Zrównoważony 1" -> "Pekao Zrównoważony"
+                        clean_fund = current_fund
+                        if clean_fund:
+                            # Remove trailing single digit with space
+                            clean_fund = re.sub(r'\s+\d$', '', clean_fund).strip()
+                        
+                        rows.append({
+                            "data": data,
+                            "instytucja": instytucja,
+                            "fundusz": clean_fund,
+                            "typ_aktywa": typ_aktywa,
+                            "emitent": emitent.strip(),
+                            "isin": instrument_isin,
+                            "waluta": waluta,
+                            "liczba_sztuk": liczba_sztuk.replace('.', '') if liczba_sztuk else "",
+                            "wartosc_pln": wartosc_pln,
+                        })
+    except Exception:
+        pass
+    
+    df = pd.DataFrame(rows)
+    return ensure_output_schema(df)
+
+
+def parse_investors_pdf(file_path: str) -> pd.DataFrame:
+    instytucja = "Investors TFI S.A."
+
+    def clean_number(value: str) -> str:
+        if not value:
+            return ""
+        return value.replace(" ", "").replace(".", "")
+
+    rows: List[Dict[str, str]] = []
+    current_fundusz: Optional[str] = None
+
+    with open(file_path, "rb") as file:
+        reader = PyPDF2.PdfReader(file)
+
+        sample_text = "\n".join((page.extract_text() or "") for page in reader.pages[:3])
+        date_match = re.search(r"(\d{2})\.(\d{2})\.(\d{4})", sample_text)
+        if date_match:
+            data = f"{date_match.group(3)}-{date_match.group(2)}-{date_match.group(1)}"
+        else:
+            data = "2025-12-30"
+
+        for page in reader.pages:
+            page_text = page.extract_text() or ""
+            lines = page_text.split("\n")
+
+            page_fundusz = None
+            matches = list(
+                re.finditer(
+                    r"Subfundusz\s+(.+?)(?:\s+Skład portfela|\s+Strona|$)",
+                    page_text,
+                )
+            )
+            if matches:
+                potential_fund = matches[-1].group(1).strip()
+                if "Strona" not in potential_fund and len(potential_fund) > 5:
+                    page_fundusz = potential_fund
+
+            if page_fundusz:
+                current_fundusz = page_fundusz
+
+            for line in lines:
+                line = line.strip()
+
+                if any(
+                    skip in line
+                    for skip in [
+                        "Lp. Nazwa emitenta",
+                        "Ze względu na",
+                        "Investor PPK SFIO",
+                        "Strona",
+                    ]
+                ):
+                    continue
+
+                if line.startswith("Subfundusz"):
+                    continue
+
+                if not re.match(r"^\d+\s+", line):
+                    continue
+
+                parts = line.split()
+                if len(parts) < 9:
+                    continue
+
+                isin_idx = None
+                for idx, part in enumerate(parts):
+                    if re.match(r"^[A-Z]{2}[A-Z0-9]{10}$", part) and any(
+                        c.isdigit() for c in part
+                    ):
+                        isin_idx = idx
+                        break
+
+                if isin_idx is None or isin_idx < 2:
+                    continue
+
+                emitent = " ".join(parts[1:isin_idx])
+                isin = parts[isin_idx]
+
+                remaining = parts[isin_idx + 1 :]
+                if len(remaining) < 4:
+                    continue
+
+                if not remaining[-1].endswith("%"):
+                    continue
+
+                comma_idx = None
+                for j in range(len(remaining) - 2, -1, -1):
+                    if "," in remaining[j]:
+                        comma_idx = j
+                        break
+
+                if comma_idx is None:
+                    continue
+
+                value_start_idx = comma_idx
+                if comma_idx >= 1 and remaining[comma_idx - 1].isdigit():
+                    value_start_idx = comma_idx - 1
+
+                wartosc_pln = " ".join(remaining[value_start_idx : comma_idx + 1])
+
+                liczba_sztuk = " ".join(
+                    [p for p in remaining[:value_start_idx] if p.isdigit()]
+                )
+
+                if not liczba_sztuk:
+                    value_start_idx = comma_idx
+                    wartosc_pln = remaining[comma_idx]
+                    liczba_sztuk = " ".join(
+                        [p for p in remaining[:value_start_idx] if p.isdigit()]
+                    )
+
+                waluta = None
+                waluta_idx = -1
+                for j in range(value_start_idx - 1, -1, -1):
+                    if not remaining[j].isdigit():
+                        waluta = remaining[j]
+                        waluta_idx = j
+                        break
+
+                if waluta is None or waluta_idx < 0:
+                    continue
+
+                typ_aktywa = remaining[0]
+
+                liczba_sztuk = clean_number(liczba_sztuk)
+                wartosc_pln = clean_number(wartosc_pln)
+
+                if current_fundusz and emitent and isin:
+                    rows.append(
+                        {
+                            "data": data,
+                            "instytucja": instytucja,
+                            "fundusz": current_fundusz,
+                            "typ_aktywa": typ_aktywa,
+                            "emitent": emitent,
+                            "isin": isin,
+                            "waluta": waluta,
+                            "liczba_sztuk": liczba_sztuk,
+                            "wartosc_pln": wartosc_pln,
+                        }
+                    )
+
+    df = pd.DataFrame(rows)
+    return ensure_output_schema(df)
+
+
 def parse_uniqa_pdf(file_path: str) -> pd.DataFrame:
     file_date = extract_date_from_filename(file_path)
     if not file_date:
@@ -1454,6 +1821,10 @@ def detect_parser(file_path: str) -> Optional[str]:
         return "uniqa"
 
     if name.endswith(".pdf"):
+        if "investors" in name or "investor" in name:
+            return "investors"
+        if "pekao" in name:
+            return "pekao"
         if "esaliens" in name:
             return "esaliens"
         if "generali" in name or ("horyzont" in name and "sfio" in name):
@@ -1488,7 +1859,9 @@ def process_folder(folder_path: str) -> pd.DataFrame:
         "esaliens": parse_esaliens_pdf,
         "generali": lambda p: parse_generali_pdf(p, quarter_end),
         "uniqa": parse_uniqa_pdf,
-            "nn": parse_nn_pdf,
+        "nn": parse_nn_pdf,
+        "investors": parse_investors_pdf,
+        "pekao": parse_pekao_pdf,
         # TU DODAĆ KOLEJNE
     }
 
@@ -1534,7 +1907,7 @@ def process_folder(folder_path: str) -> pd.DataFrame:
         if not parser:
             continue
         if file_path.lower().endswith(".pdf"):
-            if parser_key in ("generali", "uniqa"):
+            if parser_key in ("generali", "uniqa", "investors", "pekao"):
                 df = parser(file_path)
             else:
                 df = run_parser_with_timeout(parser, file_path, timeout_seconds=20)
