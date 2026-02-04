@@ -1590,184 +1590,107 @@ def parse_nn_pdf(file_path: str) -> pd.DataFrame:
     return ensure_output_schema(df)
 
 
-def parse_generali_pdf(file_path: str, fallback_date: str) -> pd.DataFrame:
-    preview_text = extract_text_pdfminer(file_path, page_numbers=[0], timeout_seconds=10)
-    file_date = parse_date_from_text(preview_text) or fallback_date
-
+def parse_generali_excel(file_path: str) -> pd.DataFrame:
+    """
+    Parse Generali Excel file.
+    Excel format: Arkusz 'Horyzont' z 16 kolumnami
+    Mapowanie:
+    - Nazwa funduszu / subfunduszu -> fundusz
+    - Identyfikator instrumentu (kod ISIN) -> isin
+    - Nazwa emitenta -> emitent
+    - Typ instrumentu -> typ_aktywa
+    - Waluta instrumentu -> waluta
+    - Ilość instrumentów w portfelu -> liczba_sztuk
+    - Wartość instrumentu w walucie wyceny funduszu -> wartosc_pln
+    """
+    instytucja = "Generali Investments TFI S.A."
+    
+    # Extract date from filename (format: Generali_YYYY-MM-DD.xlsx)
+    date_match = re.search(r"(\d{4})-(\d{2})-(\d{2})", os.path.basename(file_path))
+    if date_match:
+        data = f"{date_match.group(1)}-{date_match.group(2)}-{date_match.group(3)}"
+    else:
+        data = ""
+    
     rows: List[Dict[str, str]] = []
-    isin_pattern = re.compile(r"\b[A-Z]{2}[A-Z0-9]{9}\d\b")
-    isin_spaced_pattern = re.compile(r"(?:[A-Z]\s*){2}(?:[A-Z0-9]\s*){9}(?:\s*\d)")
-    fx_code_pattern = re.compile(
-        r"\b(?:DFX|FX)[A-Z]{6}\d{3}\d{5}N\d{3}\b|\bDFX[A-Z]{6}\d{3}\b"
-    )
-    e00_pattern = re.compile(r"\bE00[A-Z0-9]{8}\b")
-    isin_ie_pattern = re.compile(r"I\s*E\s*0\s*0\s*(?:[A-Z0-9]\s*){8}")
-    number_pattern = re.compile(r"\d{1,3}(?:\s\d{3})*,\d{2}")
-    currency_pattern = re.compile(r"\b[A-Z]{3}\b")
-    fundusz_pattern = re.compile(r"(Generali\s+Horyzont\s+\d{4})")
-    typ_keywords = [
-        "Jednostki uczestnictwa",
-        "List zastawny",
-        "Papier komercyjny",
-        "Obligacja",
-        "Akcja",
-        "FX",
-    ]
-
-    def parse_text_lines(page_text: str) -> None:
-        for line in page_text.splitlines():
-                line = line.strip()
-                if not line or not re.match(r"^\d+", line):
-                    continue
-                fx_match = fx_code_pattern.search(line)
-                ie_match = isin_ie_pattern.search(line)
-                isin_match = isin_pattern.search(line)
-                if not isin_match:
-                    isin_match = isin_spaced_pattern.search(line)
-                e00_match = None
-                if not isin_match and not fx_match and not ie_match:
-                    e00_match = e00_pattern.search(line)
-
-                chosen_match = None
-                if fx_match and (not isin_match or fx_match.start() < isin_match.start()):
-                    chosen_match = fx_match
-                elif ie_match:
-                    chosen_match = ie_match
-                else:
-                    chosen_match = isin_match or e00_match
-
-                if not chosen_match:
-                    continue
-
-                raw_isin = chosen_match.group(0)
-                isin = re.sub(r"\s+", "", raw_isin)
-                if e00_match and chosen_match == e00_match:
-                    isin = f"I{isin}"
-                if ie_match and chosen_match == ie_match:
-                    isin = isin.replace("IE00", "IE00")
-                if isin_match and "UCITS" in line.upper() and not isin.startswith("IE"):
-                    if ie_match:
-                        isin = re.sub(r"\s+", "", ie_match.group(0))
-
-                fundusz_match = fundusz_pattern.search(line)
-                fundusz = fundusz_match.group(1) if fundusz_match else ""
-
-                prefix = line[:chosen_match.start()]
-                prefix_currencies = currency_pattern.findall(prefix)
+    
+    try:
+        # Wczytaj Excel - szukaj arkusza zawierającego dane portfela
+        xls = pd.ExcelFile(file_path)
+        sheet_name = None
+        
+        # Szukaj arkusza z danymi (może być "Horyzont", "Portfel", itp.)
+        for name in xls.sheet_names:
+            if name.strip().lower() in ["horyzont", "portfel", "portfolio"]:
+                sheet_name = name
+                break
+        
+        if not sheet_name:
+            sheet_name = xls.sheet_names[0]
+        
+        df = pd.read_excel(file_path, sheet_name=sheet_name)
+        
+        if df.empty:
+            return ensure_output_schema(df)
+        
+        # Mapowanie kolumn
+        fund_col = "Nazwa funduszu / subfunduszu"
+        isin_col = "Identyfikator instrumentu (kod ISIN)"
+        emitent_col = "Nazwa emitenta"
+        typ_col = "Typ instrumentu"
+        waluta_col = "Waluta instrumentu"
+        liczba_col = "Ilość instrumentów w portfelu"
+        wartosc_col = "Wartość instrumentu w walucie wyceny funduszu"
+        
+        for idx, row in df.iterrows():
+            # Pobierz dane z kolumn
+            fundusz = safe_string(row.get(fund_col, "")).strip()
+            isin = safe_string(row.get(isin_col, "")).strip()
+            emitent = safe_string(row.get(emitent_col, "")).strip()
+            typ_aktywa = safe_string(row.get(typ_col, "")).strip()
+            waluta = safe_string(row.get(waluta_col, "")).strip()
+            
+            # Przeskocz wiersze bez istotnych danych
+            if not isin or isin == "N/D":
+                continue
+            
+            # Czyszczenie danych
+            # Usuń "N/D" z pól tekstowych
+            if fundusz == "N/D":
+                fundusz = ""
+            if emitent == "N/D":
                 emitent = ""
-                if "FX" in raw_isin or re.search(r"\bFX\b", line):
-                    pair_match = re.search(r"\b[A-Z]{3}/[A-Z]{3}\b", line)
-                    emitent = pair_match.group(0) if pair_match else ""
-                else:
-                    if prefix_currencies:
-                        last_curr = prefix_currencies[-1]
-                        emitent = prefix.split(last_curr)[-1].strip()
-                    else:
-                        emitent = prefix.strip()
-                    emitent = re.sub(
-                        r"Specjalistyczny Fundusz Inwestycyjny Otwarty",
-                        "",
-                        emitent,
-                        flags=re.IGNORECASE,
-                    )
-                    emitent = re.sub(r"\bN/D\b", "", emitent, flags=re.IGNORECASE).strip()
-                    emitent = re.sub(r"\b[A-Z]{3}\b", "", emitent).strip()
-                    emitent = re.sub(r"^\s*\d+[A-Z0-9]*\s+", "", emitent).strip()
-                    if fundusz and fundusz in emitent:
-                        emitent = emitent.replace(fundusz, "").strip()
-                    emitent = re.sub(r"\bUCITS?\b", "", emitent, flags=re.IGNORECASE).strip()
-
-                after = line[chosen_match.end():].strip()
-                after_tokens = after.split()
+            if typ_aktywa == "N/D":
                 typ_aktywa = ""
-                for keyword in typ_keywords:
-                    if re.search(rf"\b{re.escape(keyword)}\b", line):
-                        typ_aktywa = keyword
-                        break
-                if not typ_aktywa and ("FX" in raw_isin or re.search(r"\bFX\b", line)):
-                    typ_aktywa = "FX"
-                if not typ_aktywa and after_tokens:
-                    if after_tokens[0] == "N/D" and len(after_tokens) > 1:
-                        typ_aktywa = after_tokens[1]
-                        if len(after_tokens) > 2 and after_tokens[2].islower():
-                            typ_aktywa = f"{typ_aktywa} {after_tokens[2]}"
-                    else:
-                        typ_aktywa = after_tokens[0]
-
-                all_currencies = currency_pattern.findall(line)
-                waluta = all_currencies[-1] if all_currencies else ""
-
-                numbers: List[str] = []
-                for match in number_pattern.finditer(line):
-                    tail = line[match.end():].lstrip()
-                    if tail.startswith("%"):
-                        continue
-                    numbers.append(match.group(0))
-                liczba_sztuk = numbers[-2] if len(numbers) >= 2 else ""
-                wartosc_pln = numbers[-1] if len(numbers) >= 1 else ""
-
-                rows.append(
-                    {
-                        "data": file_date,
-                        "instytucja": "Generali Investments TFI S.A.",
-                        "fundusz": fundusz,
-                        "typ_aktywa": typ_aktywa,
-                        "emitent": emitent,
-                        "isin": isin,
-                        "waluta": waluta,
-                        "liczba_sztuk": liczba_sztuk,
-                        "wartosc_pln": wartosc_pln,
-                    }
-                )
-
-    full_text = extract_text_pdfminer(file_path, timeout_seconds=120)
-    if full_text:
-        for chunk in (full_text.split("\f") if "\f" in full_text else [full_text]):
-            parse_text_lines(chunk)
-
-    if not rows:
-        def safe_page_text_simple(page) -> str:
-            extract_simple = getattr(page, "extract_text_simple", None)
-            if not callable(extract_simple):
-                return ""
-
-            def _timeout_handler(signum, frame):
-                raise TimeoutError()
-
-            old_handler = signal.signal(signal.SIGALRM, _timeout_handler)
-            try:
-                signal.alarm(5)
-                return extract_simple() or ""
-            except TimeoutError:
-                return ""
-            except Exception:
-                return ""
-            finally:
-                signal.alarm(0)
-                signal.signal(signal.SIGALRM, old_handler)
-
-        try:
-            with pdfplumber.open(file_path) as pdf:
-                for page in pdf.pages:
-                    page_text = safe_page_text_simple(page)
-                    if page_text:
-                        parse_text_lines(page_text)
-        except Exception:
-            pass
-
+            
+            # Parsuj liczby
+            liczba_sztuk_raw = row.get(liczba_col, "")
+            wartosc_pln_raw = row.get(wartosc_col, "")
+            
+            # Konwertuj do string dla parsowania
+            liczba_sztuk = safe_string(parse_polish_number(liczba_sztuk_raw)).strip()
+            wartosc_pln = format_decimal_comma(parse_polish_number(wartosc_pln_raw))
+            
+            # Przeskocz wiersze bez ISIN
+            if not isin:
+                continue
+            
+            rows.append({
+                "data": data,
+                "instytucja": instytucja,
+                "fundusz": fundusz,
+                "typ_aktywa": typ_aktywa,
+                "emitent": emitent,
+                "isin": isin,
+                "waluta": waluta,
+                "liczba_sztuk": liczba_sztuk,
+                "wartosc_pln": wartosc_pln,
+            })
+    
+    except Exception:
+        pass
+    
     df = pd.DataFrame(rows)
-    if df.empty:
-        return ensure_output_schema(df)
-
-    emitent_series = df["emitent"].astype(str) if "emitent" in df else pd.Series([""] * len(df))
-    isin_series = df["isin"].astype(str) if "isin" in df else pd.Series([""] * len(df))
-    typ_series = df["typ_aktywa"].astype(str) if "typ_aktywa" in df else pd.Series([""] * len(df))
-
-    df = df[
-        (emitent_series.str.strip() != "")
-        | (isin_series.str.strip() != "")
-        | (typ_series.str.strip() != "")
-    ]
     return ensure_output_schema(df)
 
 
@@ -1819,6 +1742,10 @@ def detect_parser(file_path: str) -> Optional[str]:
 
     if "uniqa" in name and name.endswith(".pdf"):
         return "uniqa"
+    
+    # Generali: Excel format
+    if "generali" in name and name.endswith((".xlsx", ".xls")):
+        return "generali"
 
     if name.endswith(".pdf"):
         if "investors" in name or "investor" in name:
@@ -1827,8 +1754,9 @@ def detect_parser(file_path: str) -> Optional[str]:
             return "pekao"
         if "esaliens" in name:
             return "esaliens"
-        if "generali" in name or ("horyzont" in name and "sfio" in name):
-            return "generali"
+        if "horyzont" in name and "sfio" in name:
+            # Old Generali PDF - skip, use Excel instead
+            return None
         if (name.startswith("nn_") and re.search(r'nn_\s*\d{2}_\d{4}-\d{2}-\d{2}\.pdf', name)) or \
            ("struktura_aktywow" in name and "dfe_nj" in name and re.search(r'_nj_\d{2}\.pdf', name)):
             return "nn"
@@ -1857,7 +1785,7 @@ def process_folder(folder_path: str) -> pd.DataFrame:
         "pko": lambda p: parse_pko_excel(p, quarter_end),
         "pzu": parse_pzu_excel,
         "esaliens": parse_esaliens_pdf,
-        "generali": lambda p: parse_generali_pdf(p, quarter_end),
+        "generali": parse_generali_excel,
         "uniqa": parse_uniqa_pdf,
         "nn": parse_nn_pdf,
         "investors": parse_investors_pdf,
