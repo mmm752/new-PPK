@@ -435,6 +435,52 @@ def parse_santander_excel(file_path: str) -> pd.DataFrame:
     return ensure_output_schema(df)
 
 
+def parse_bnp_excel(file_path: str) -> pd.DataFrame:
+    # Ekstrakcja daty z nazwy pliku (BNP_YYYY-MM-DD.xlsx)
+    file_date = extract_date_from_filename(file_path)
+    
+    # Wczytanie danych z nagłówkiem w rzędzie 0
+    df = pd.read_excel(file_path, engine="openpyxl", header=0)
+    
+    # Normalizacja nagłówków
+    df.columns = [normalize_header(c) for c in df.columns]
+    
+    # Mapowanie kolumn
+    mapping = {
+        "nazwa subfunduszu": "fundusz",
+        "nazwa emitenta": "typ_aktywa",
+        "identyfikator instrumentu - kod isin": "isin",
+        "waluta": "waluta",
+        "ilość instrumentu w portfelu": "liczba_sztuk",
+        "wartość instrumentu w walucie wyceny funduszu": "wartosc_pln",
+    }
+    
+    for src, dst in mapping.items():
+        col = find_column(df, src)
+        if dst in ["liczba_sztuk", "wartosc_pln"]:
+            df[dst] = df[col].apply(parse_polish_number) if col else 0.0
+        else:
+            df[dst] = df[col] if col else ""
+    
+    # Dodanie kolumny emitent - może być pusta lub z innego źródła
+    if "emitent" not in df.columns:
+        df["emitent"] = ""
+    
+    # Ustawienie instytucji i daty
+    df["instytucja"] = "BNP Paribas TFI S.A."
+    if file_date:
+        df["data"] = file_date
+    else:
+        df["data"] = ""
+    
+    # Filtrowanie tylko wierszy zawierających "PPK" w nazwie subfunduszu
+    fundusz_col = df.get("fundusz", "").astype(str)
+    df = df[fundusz_col.str.contains("PPK", case=False, na=False)]
+    
+    df = df.dropna(axis=0, how="all")
+    return ensure_output_schema(df)
+
+
 def parse_goldman_excel(file_path: str) -> pd.DataFrame:
     df_raw = pd.read_excel(file_path, engine="openpyxl", header=None)
     header_row = 0
@@ -1628,28 +1674,59 @@ def parse_generali_excel(file_path: str) -> pd.DataFrame:
         if not sheet_name:
             sheet_name = xls.sheet_names[0]
         
-        df = pd.read_excel(file_path, sheet_name=sheet_name)
+        # Spróbuj czytać z prawidłowym nagłówkiem (może być w wierszu 1)
+        # Czytaj bez nagłówka najpierw, aby sprawdzić strukturę
+        df_raw = pd.read_excel(file_path, sheet_name=sheet_name, header=None, nrows=3)
+        
+        # Sprawdź gdzie jest nagłówek (zwykle wiersz zawierający "Identyfikator")
+        header_row = 0
+        for idx, val in enumerate(df_raw[0]):
+            if str(val).lower().startswith("identyfikator"):
+                header_row = idx
+                break
+        
+        df = pd.read_excel(file_path, sheet_name=sheet_name, header=header_row)
         
         if df.empty:
             return ensure_output_schema(df)
         
         # Mapowanie kolumn
-        fund_col = "Nazwa funduszu / subfunduszu"
-        isin_col = "Identyfikator instrumentu (kod ISIN)"
-        emitent_col = "Nazwa emitenta"
-        typ_col = "Typ instrumentu"
-        waluta_col = "Waluta instrumentu"
-        liczba_col = "Ilość instrumentów w portfelu"
-        wartosc_col = "Wartość instrumentu w walucie wyceny funduszu"
+        # Znajdź kolumny - nazwy mogą się różnić między wersjami
+        def _find_col(keywords: List[str]) -> Optional[str]:
+            for col in df.columns:
+                col_norm = normalize_header(col)
+                if any(key in col_norm for key in keywords):
+                    return col
+            return None
+
+        fund_col = _find_col([
+            "nazwa subfunduszu",
+            "nazwa funduszu / subfunduszu",
+            "nazwa funduszu",
+        ])
+        isin_col = _find_col(["kod isin", "identyfikator instrumentu (kod isin)"])
+        emitent_col = _find_col(["nazwa emitenta", "emitent"])
+        typ_col = _find_col(["typ instrumentu", "rodzaj instrumentu"])
+        waluta_col = _find_col(["waluta instrumentu", "waluta notowań"])
+        liczba_col = _find_col(["ilość instrumentów", "ilość"])
+
+        wartosc_col = None
+        for col in df.columns:
+            col_norm = normalize_header(col)
+            if "wartość instrumentu" in col_norm and ("wyceny" in col_norm or "walucie" in col_norm):
+                wartosc_col = col
+                break
+        if not wartosc_col:
+            wartosc_col = _find_col(["wartość całkowita", "wartość"])
         
         for idx, row in df.iterrows():
             # Pobierz dane z kolumn
-            fundusz = safe_string(row.get(fund_col, "")).strip()
-            isin = safe_string(row.get(isin_col, "")).strip()
-            emitent = safe_string(row.get(emitent_col, "")).strip()
-            typ_aktywa = safe_string(row.get(typ_col, "")).strip()
-            waluta = safe_string(row.get(waluta_col, "")).strip()
             
+            fundusz = safe_string(row.get(fund_col, "") if fund_col else "").strip()
+            isin = safe_string(row.get(isin_col, "") if isin_col else "").strip()
+            emitent = safe_string(row.get(emitent_col, "") if emitent_col else "").strip()
+            typ_aktywa = safe_string(row.get(typ_col, "") if typ_col else "").strip()
+            waluta = safe_string(row.get(waluta_col, "") if waluta_col else "").strip()
             # Przeskocz wiersze bez istotnych danych
             if not isin or isin == "N/D":
                 continue
@@ -1708,9 +1785,12 @@ def detect_parser(file_path: str) -> Optional[str]:
         return "allianz"
     if "santander" in name and name.endswith((".xls", ".xlsx")):
         return "santander"
+    if name.startswith("bnp_") and re.search(r"\d{4}-\d{2}-\d{2}", name) and name.endswith((".xls", ".xlsx")):
+        return "bnp"
     if "goldman" in name and name.endswith((".xls", ".xlsx")):
         return "goldman"
-    if "millennium" in name and name.endswith((".xls", ".xlsx")):
+    # Millennium - handle both "Millennium" (2 l's) and "Millenium" (1 l) spellings
+    if "millen" in name and name.endswith((".xls", ".xlsx")):
         return "millennium"
     if name.endswith((".xls", ".xlsx")) and "skład portfela" in name:
         if is_millennium_excel(file_path):
@@ -1735,7 +1815,7 @@ def detect_parser(file_path: str) -> Optional[str]:
         try:
             df = pd.read_excel(file_path, engine="openpyxl", header=0, nrows=1) if name.endswith((".xls", ".xlsx")) else pd.read_csv(file_path, header=0, nrows=1)
             headers_normalized = [normalize_header(c) for c in df.columns]
-            if any("kod isin" in h for h in headers_normalized) and any("wartość" in h and "wyceny" in h for h in headers_normalized):
+            if any("kod isin" in h for h in headers_normalized) and any("wartość" in h for h in headers_normalized):
                 return "pfr"
         except Exception:
             pass
@@ -1752,7 +1832,8 @@ def detect_parser(file_path: str) -> Optional[str]:
             return "investors"
         if "pekao" in name:
             return "pekao"
-        if "esaliens" in name:
+        # Esaliens - handle both "Esaliens" and "Esalians" spellings
+        if "esalian" in name or "esalien" in name:
             return "esaliens"
         if "horyzont" in name and "sfio" in name:
             # Old Generali PDF - skip, use Excel instead
@@ -1767,7 +1848,7 @@ def detect_parser(file_path: str) -> Optional[str]:
             text = ""
         if "nazwa funduszu / subfunduszu" in text or "generali" in text:
             return "generali"
-        if "nazwa funduszu" in text or "esaliens" in text:
+        if "nazwa funduszu" in text or "esalian" in text or "esalien" in text:
             return "esaliens"
 
     return None
@@ -1779,6 +1860,7 @@ def process_folder(folder_path: str) -> pd.DataFrame:
     parser_map: Dict[str, Callable[[str], pd.DataFrame]] = {
         "allianz": parse_allianz_excel,
         "santander": parse_santander_excel,
+        "bnp": parse_bnp_excel,
         "goldman": parse_goldman_excel,
         "millennium": parse_millennium_excel,
         "pfr": parse_pfr_excel,
@@ -1835,7 +1917,7 @@ def process_folder(folder_path: str) -> pd.DataFrame:
         if not parser:
             continue
         if file_path.lower().endswith(".pdf"):
-            if parser_key in ("generali", "uniqa", "investors", "pekao"):
+            if parser_key in ("generali", "uniqa", "investors", "pekao", "esaliens", "nn"):
                 df = parser(file_path)
             else:
                 df = run_parser_with_timeout(parser, file_path, timeout_seconds=20)
