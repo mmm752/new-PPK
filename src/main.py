@@ -19,12 +19,15 @@ OUTPUT_COLUMNS = [
     "data",
     "instytucja",
     "fundusz",
+    "DATA_fundusz",
     "typ_aktywa",
     "emitent",
     "isin",
     "waluta",
     "liczba_sztuk",
     "wartosc_pln",
+    "TYP_aktywo_std",
+    "B_ticker",
 ]
 
 PDF_TABLE_SETTINGS = {
@@ -66,40 +69,66 @@ def find_column(df: pd.DataFrame, expected: str) -> Optional[str]:
     return None
 
 
-def parse_polish_number(value) -> float:
+def parse_polish_number(value) -> Optional[float]:
     if value is None:
-        return 0.0
+        return None
+    if isinstance(value, float) and pd.isna(value):
+        return None
     text = str(value).strip()
-    if text == "":
-        return 0.0
+    if text == "" or text.lower() == "nan":
+        return None
     text = text.replace(" ", "")
-    text = text.replace(".", "") if "," in text else text
+    if "," in text:
+        text = text.replace(".", "")
     text = text.replace(",", ".")
     try:
         return float(text)
     except ValueError:
-        return 0.0
+        return None
 
 
 def format_decimal_comma(value) -> str:
     if value is None or value == "":
-        return ""
+        return "nan"
+    if isinstance(value, float) and pd.isna(value):
+        return "nan"
+    text = str(value).strip()
+    if text.lower() == "nan":
+        return "nan"
     try:
-        number = Decimal(str(value))
+        number = Decimal(text)
     except (TypeError, ValueError):
-        return str(value).replace(".", ",")
+        return text.replace(",", ".")
 
     # Zaokrąglij do 2 miejsc i usuń trailing zeros
     number = number.quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)
     text = format(number, "f").rstrip("0").rstrip(".")
-    
-    return text.replace(".", ",")
+
+    return text
 
 
 def safe_string(value) -> str:
     if value is None:
         return ""
     return str(value).strip()
+
+
+def normalize_typ_aktywa(value: str) -> str:
+    text = safe_string(value).lower()
+    text = re.sub(r"\s+", " ", text).strip()
+    if text == "" or text == "nan":
+        return ""
+
+    if re.search(r"\bakcj", text):
+        return "akcje"
+    if re.search(r"\boblig", text) or "dłużn" in text or "dluzn" in text:
+        return "obligacje"
+    if "list zastawn" in text or "papier komerc" in text:
+        return "obligacje"
+    if "instrument" in text and "pochodn" in text:
+        return "inne"
+
+    return "inne"
 
 
 def ensure_output_schema(df: pd.DataFrame) -> pd.DataFrame:
@@ -110,11 +139,46 @@ def ensure_output_schema(df: pd.DataFrame) -> pd.DataFrame:
     
     # Convert data column to YYYY-MM-DD format if it's datetime
     if "data" in df.columns:
-        df["data"] = df["data"].apply(lambda x: pd.to_datetime(x, errors="coerce").strftime("%Y-%m-%d") if pd.notna(x) and str(x).strip() != "" else "")
+        def _normalize_date(value) -> Optional[str]:
+            if value is None or (isinstance(value, float) and pd.isna(value)):
+                return None
+            text = str(value).strip()
+            if text == "" or text.lower() == "nan":
+                return None
+            dt = pd.to_datetime(value, errors="coerce")
+            if pd.isna(dt):
+                return None
+            return dt.strftime("%Y-%m-%d")
+
+        df["data"] = df["data"].apply(_normalize_date)
     
     df["liczba_sztuk"] = df["liczba_sztuk"].apply(parse_polish_number)
     df["wartosc_pln"] = df["wartosc_pln"].apply(parse_polish_number)
-    df = df.fillna("")
+
+    # Drop rows not assigned to any fund
+    if "fundusz" in df.columns:
+        fundusz_series = df["fundusz"]
+        mask = (
+            fundusz_series.notna()
+            & fundusz_series.astype(str).str.strip().ne("")
+            & fundusz_series.astype(str).str.strip().str.lower().ne("nan")
+        )
+        df = df[mask]
+
+    # Extract year from fundusz into DATA_fundusz
+    if "fundusz" in df.columns:
+        df["DATA_fundusz"] = (
+            df["fundusz"]
+            .astype(str)
+            .str.extract(r"(\d{4})", expand=False)
+        )
+
+    # Normalize typ_aktywa into a standard bucket
+    if "typ_aktywa" in df.columns:
+        df["TYP_aktywo_std"] = df["typ_aktywa"].apply(normalize_typ_aktywa)
+
+    df = df.replace("", pd.NA)
+    df = df.fillna("nan")
     return df
 
 
@@ -244,7 +308,11 @@ def select_millennium_sheet(file_path: str) -> Optional[str]:
             token = ""
         if token:
             for sheet in xl.sheet_names:
-                if token in sheet:
+                sheet_norm = normalize_header(sheet)
+                if "skład portfela" not in sheet_norm and "skład porfela" not in sheet_norm:
+                    continue
+                match = re.search(r"(\d{2}\.\d{2}\.\d{4})", sheet_norm)
+                if match and match.group(1) == token:
                     return sheet
     return xl.sheet_names[-1] if xl.sheet_names else None
 
@@ -448,23 +516,28 @@ def parse_bnp_excel(file_path: str) -> pd.DataFrame:
     # Mapowanie kolumn
     mapping = {
         "nazwa subfunduszu": "fundusz",
-        "nazwa emitenta": "typ_aktywa",
         "identyfikator instrumentu - kod isin": "isin",
-        "waluta": "waluta",
         "ilość instrumentu w portfelu": "liczba_sztuk",
         "wartość instrumentu w walucie wyceny funduszu": "wartosc_pln",
     }
-    
+
     for src, dst in mapping.items():
         col = find_column(df, src)
         if dst in ["liczba_sztuk", "wartosc_pln"]:
-            df[dst] = df[col].apply(parse_polish_number) if col else 0.0
+            df[dst] = df[col].apply(parse_polish_number) if col else None
         else:
             df[dst] = df[col] if col else ""
-    
-    # Dodanie kolumny emitent - może być pusta lub z innego źródła
-    if "emitent" not in df.columns:
-        df["emitent"] = ""
+
+    typ_col = find_column(df, "typ instrumentu") or find_column(df, "rodzaj instrumentu")
+    emitent_col = find_column(df, "nazwa emitenta") or find_column(df, "emitent")
+    waluta_col = (
+        find_column(df, "waluta wykorzystywana do wyceny instrumentu")
+        or find_column(df, "waluta wyceny aktywów i zobowiązań funduszu")
+        or find_column(df, "waluta")
+    )
+    df["typ_aktywa"] = df[typ_col] if typ_col else ""
+    df["emitent"] = df[emitent_col] if emitent_col else ""
+    df["waluta"] = df[waluta_col] if waluta_col else ""
     
     # Ustawienie instytucji i daty
     df["instytucja"] = "BNP Paribas TFI S.A."
@@ -1293,6 +1366,8 @@ def parse_uniqa_pdf(file_path: str) -> pd.DataFrame:
         lowered = text.lower()
         if re.search(r"\b(akepe|ale|maje|muye|aluye)\b", lowered):
             return "Akcje"
+        if re.search(r"dłużne\s+papiery", lowered):
+            return "Dłużne papiery"
         if re.search(r"\b(dhutne|dhitne|papury|papiery)\b", lowered):
             return "Obligacje"
         if re.search(r"\b(depuyty|depoz)\b", lowered):
@@ -1322,7 +1397,28 @@ def parse_uniqa_pdf(file_path: str) -> pd.DataFrame:
             numbers.append(match.group(0))
         return numbers
 
+    def _stitch_split_words(text: str) -> str:
+        words = text.split()
+        if len(words) < 2:
+            return text
+        merges = {
+            ("GOSPODAR", "STWA"): "GOSPODARSTWA",
+            ("DEVELOPME", "NT"): "DEVELOPMENT",
+            ("KA", "SA"): "KASA",
+        }
+        stitched: List[str] = []
+        i = 0
+        while i < len(words):
+            if i + 1 < len(words) and (words[i], words[i + 1]) in merges:
+                stitched.append(merges[(words[i], words[i + 1])])
+                i += 2
+                continue
+            stitched.append(words[i])
+            i += 1
+        return " ".join(stitched)
+
     rows: List[Dict[str, str]] = []
+    current_fundusz = ""
     with pdfplumber.open(file_path) as pdf:
         for page in pdf.pages:
             try:
@@ -1338,14 +1434,41 @@ def parse_uniqa_pdf(file_path: str) -> pd.DataFrame:
                     joined = " ".join([v for v in row_values if v]).lower()
                     if "nazwa funduszu" in joined or "nazwa subfunduszu" in joined:
                         continue
-                    if "uniqa" not in joined:
+                    if "skład por" in joined or "portfela dla" in joined:
                         continue
 
+                    fundusz_candidate = ""
+                    if "emerytura" in joined or "merytura" in joined:
+                        year_match = re.search(r"(20\d{2})", joined)
+                        if year_match:
+                            fundusz_candidate = f"UNIQA Emerytura {year_match.group(1)}"
+                        elif "uniqa" in joined:
+                            fundusz_candidate = "UNIQA Emerytura"
+
+                    if not fundusz_candidate:
+                        for val in row_values:
+                            if not val:
+                                continue
+                            if re.search(r"emerytura|merytura", val, re.IGNORECASE):
+                                year_match = re.search(r"(20\d{2})", val)
+                                if year_match:
+                                    fundusz_candidate = f"UNIQA Emerytura {year_match.group(1)}"
+                                elif "UNIQA" in val.upper():
+                                    fundusz_candidate = val.strip()
+                                else:
+                                    fundusz_candidate = "UNIQA Emerytura"
+                                break
+
+                    if fundusz_candidate:
+                        current_fundusz = fundusz_candidate
+
                     raw_isin = None
-                    for value in row_values:
+                    isin_index = None
+                    for idx, value in enumerate(row_values):
                         match = isin_pattern.search(value or "")
                         if match:
                             raw_isin = match.group(0)
+                            isin_index = idx
                             break
                     if not raw_isin:
                         joined_raw = " ".join([v for v in row_values if v])
@@ -1358,7 +1481,7 @@ def parse_uniqa_pdf(file_path: str) -> pd.DataFrame:
                     isin = _clean_isin_loose(raw_isin)
                     
                     # Inteligentne mapowanie - szukaj pól po zawartości
-                    fundusz = ""
+                    fundusz = current_fundusz
                     emitent = ""
                     typ_aktywa = ""
                     waluta = ""
@@ -1396,13 +1519,31 @@ def parse_uniqa_pdf(file_path: str) -> pd.DataFrame:
                             if val and "UNIQA" in str(val):
                                 fundusz = str(val).strip()
                                 break
+
+                    if fundusz:
+                        current_fundusz = fundusz
                     
                     # Szukaj typu aktywa
                     for val in row_values:
                         if val:
-                            val_str = str(val).strip()
+                            val_str = _clean_typ_aktywa(val)
+                            if not val_str:
+                                continue
                             if re.match(r"^(Akcje|Obligacje|Fundusze|Fundusze inwestycyjne|Strukturyzowane|Papiery)$", val_str):
                                 typ_aktywa = val_str
+                                break
+                            if "dłużne papiery" in val_str.lower():
+                                typ_aktywa = "Dłużne papiery"
+                                break
+
+                    if not typ_aktywa:
+                        for idx, val in enumerate(row_values):
+                            if val and "dłużne papiery" in str(val).lower():
+                                if idx + 1 < len(row_values) and "wartościowe" in str(row_values[idx + 1]).lower():
+                                    typ_aktywa = "Dłużne papiery wartościowe"
+                                else:
+                                    typ_aktywa = "Dłużne papiery"
+                                break
                                 break
                     
                     # Szukaj waluty
@@ -1415,8 +1556,8 @@ def parse_uniqa_pdf(file_path: str) -> pd.DataFrame:
                     
                     # Szukaj emienta - nazwa firmy zwykle zawiera S.A., Sp., Inc. lub ma spacje
                     # Szukaj od przodu aby znaleźć długą nazwę (jeśli jest podzielona)
-                    skip_patterns = {"UNIQA", "Fundusz", "SFIO", "N/D", "Specjalistyczny", "Inwestycyjny", 
-                                   "Otwarty", "Akcje", "Obligacje", "Fundusze", "AXA", "E", "merytura"}
+                    skip_patterns = {"UNIQA", "Fundusz", "SFIO", "N/D", "Specjalistyczny", "Inwestycyjny",
+                                   "Otwarty", "Akcje", "Obligacje", "Fundusze", "AXA", "E", "merytura", "Emerytura"}
                     numbers_set = {num[1] for num in all_numbers}
                     
                     # Szukaj w całej kolumnie ale przywiąż się do pierwszego znalezionego
@@ -1456,6 +1597,33 @@ def parse_uniqa_pdf(file_path: str) -> pd.DataFrame:
                     if not emitent and potential_emitents:
                         # Szukaj najdłuższej nazwy (prawdopodobnie to emitent)
                         emitent = max(potential_emitents, key=lambda x: len(x[1]))[1]
+
+                    emitent_from_isin = ""
+                    if isin_index is not None:
+                        emitent_parts: List[str] = []
+                        for j in range(isin_index - 1, -1, -1):
+                            token = row_values[j].strip()
+                            if not token:
+                                if emitent_parts:
+                                    break
+                                continue
+                            if re.match(r"^(PLN|EUR|USD|GBP|CHF|JPY|CNY|SEK|NOK)$", token):
+                                break
+                            if re.match(r"^\d+(?:\s\d{3})*(?:,\d{1,2})?$", token):
+                                break
+                            if token in skip_patterns:
+                                break
+                            emitent_parts.insert(0, token)
+                            if len(" ".join(emitent_parts)) > 60:
+                                break
+                        if emitent_parts:
+                            emitent_from_isin = " ".join(emitent_parts).strip()
+
+                    if emitent_from_isin:
+                        emitent = emitent_from_isin
+
+                    if emitent:
+                        emitent = _stitch_split_words(emitent)
 
                     if not isin_pattern.fullmatch(isin):
                         continue
