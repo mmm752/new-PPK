@@ -27,8 +27,10 @@ OUTPUT_COLUMNS = [
     "liczba_sztuk",
     "wartosc_pln",
     "TYP_aktywo_std",
-    "B_ticker",
+    "equity_nazwa",
 ]
+
+EQUITY_FILE = "equity.xlsx"
 
 PDF_TABLE_SETTINGS = {
     "vertical_strategy": "text",
@@ -129,6 +131,63 @@ def normalize_typ_aktywa(value: str) -> str:
         return "inne"
 
     return "inne"
+
+
+def _normalize_equity_name(value: str) -> str:
+    text = safe_string(value).lower()
+    text = text.replace(".", "")
+    text = re.sub(r"[^a-z0-9]+", " ", text).strip()
+    return re.sub(r"\s+", " ", text)
+
+
+def load_equity_mapping(base_dir: str) -> tuple[Dict[str, str], Dict[str, str]]:
+    equity_path = os.path.join(base_dir, EQUITY_FILE)
+    if not os.path.exists(equity_path):
+        return {}, {}
+    try:
+        df_equity = pd.read_excel(equity_path, engine="openpyxl")
+    except Exception:
+        return {}, {}
+
+    if "id_isin" not in df_equity.columns or "ID" not in df_equity.columns:
+        return {}, {}
+
+    isin_map: Dict[str, str] = {}
+    name_map: Dict[str, str] = {}
+    for _, row in df_equity.iterrows():
+        isin = safe_string(row.get("id_isin", "")).upper()
+        ticker = safe_string(row.get("ID", ""))
+        name = _normalize_equity_name(row.get("name", ""))
+        if isin and ticker and isin.lower() != "nan" and ticker.lower() != "nan":
+            isin_map[isin] = ticker
+        if name and ticker and name.lower() != "nan" and ticker.lower() != "nan":
+            name_map.setdefault(name, ticker)
+    return isin_map, name_map
+
+
+def apply_equity_nazwa(
+    df: pd.DataFrame,
+    equity_map: Dict[str, str],
+    equity_name_map: Dict[str, str],
+) -> pd.DataFrame:
+    if "equity_nazwa" not in df.columns:
+        df["equity_nazwa"] = ""
+
+    typ_series = df.get("TYP_aktywo_std", "").astype(str).str.strip().str.lower()
+    is_akcje = typ_series.eq("akcje")
+
+    if is_akcje.any():
+        isin_series = df.get("isin", "").astype(str).str.strip().str.upper()
+        df.loc[is_akcje, "equity_nazwa"] = isin_series.map(equity_map)
+
+        nn_mask = is_akcje & df.get("instytucja", "").astype(str).eq("Nationale-Nederlanden")
+        if nn_mask.any():
+            emitent_norm = df.get("emitent", "").apply(_normalize_equity_name)
+            nn_missing = df.loc[nn_mask, "equity_nazwa"].isna() | df.loc[nn_mask, "equity_nazwa"].eq("")
+            df.loc[nn_mask & nn_missing, "equity_nazwa"] = emitent_norm.map(equity_name_map)
+
+        df.loc[is_akcje, "equity_nazwa"] = df.loc[is_akcje, "equity_nazwa"].fillna("NA")
+    return df
 
 
 def ensure_output_schema(df: pd.DataFrame) -> pd.DataFrame:
@@ -2103,6 +2162,7 @@ def main() -> None:
     base_dir = os.getcwd()
     output_dir = os.path.join(base_dir, "output_csv")
     os.makedirs(output_dir, exist_ok=True)
+    equity_map, equity_name_map = load_equity_mapping(base_dir)
 
     raw_folders = [
         path
@@ -2120,6 +2180,7 @@ def main() -> None:
         for col in ["liczba_sztuk", "wartosc_pln"]:
             if col in result_df.columns:
                 result_df[col] = result_df[col].apply(format_decimal_comma)
+        result_df = apply_equity_nazwa(result_df, equity_map, equity_name_map)
         result_df.to_csv(
             output_path,
             index=False,
