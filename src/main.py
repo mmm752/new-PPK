@@ -241,6 +241,264 @@ def ensure_output_schema(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+def _valid_group_mask(df: pd.DataFrame, group_cols: List[str]) -> pd.Series:
+    mask = pd.Series(True, index=df.index)
+    for col in group_cols:
+        if col not in df.columns:
+            return pd.Series(False, index=df.index)
+        series = df[col].astype(str)
+        mask &= (
+            series.str.strip().ne("")
+            & series.str.strip().str.lower().ne("nan")
+        )
+    return mask
+
+
+def build_akcje_share(df: pd.DataFrame, group_cols: List[str]) -> pd.DataFrame:
+    if "wartosc_pln" not in df.columns:
+        return pd.DataFrame(columns=group_cols + ["wartosc_pln_total", "wartosc_pln_akcje", "udzial_akcje_pct"])
+
+    mask = _valid_group_mask(df, group_cols)
+    if not mask.any():
+        return pd.DataFrame(columns=group_cols + ["wartosc_pln_total", "wartosc_pln_akcje", "udzial_akcje_pct"])
+
+    work_df = df.loc[mask, group_cols + ["wartosc_pln", "TYP_aktywo_std"]].copy()
+    work_df["wartosc_pln_num"] = work_df["wartosc_pln"].apply(parse_polish_number)
+    work_df["is_akcje"] = work_df["TYP_aktywo_std"].astype(str).str.strip().str.lower().eq("akcje")
+
+    total_df = (
+        work_df.groupby(group_cols, dropna=False)["wartosc_pln_num"]
+        .sum(min_count=1)
+        .reset_index()
+        .rename(columns={"wartosc_pln_num": "wartosc_pln_total"})
+    )
+    akcje_df = (
+        work_df[work_df["is_akcje"]]
+        .groupby(group_cols, dropna=False)["wartosc_pln_num"]
+        .sum(min_count=1)
+        .reset_index()
+        .rename(columns={"wartosc_pln_num": "wartosc_pln_akcje"})
+    )
+
+    merged = total_df.merge(akcje_df, on=group_cols, how="left")
+    merged["wartosc_pln_akcje"] = merged["wartosc_pln_akcje"].fillna(0)
+    merged["udzial_akcje_pct"] = merged.apply(
+        lambda row: (row["wartosc_pln_akcje"] / row["wartosc_pln_total"] * 100)
+        if row["wartosc_pln_total"] not in (0, None) and not pd.isna(row["wartosc_pln_total"])
+        else None,
+        axis=1,
+    )
+    merged = merged.sort_values(group_cols).reset_index(drop=True)
+    return merged
+
+
+def _format_percent(value: Optional[float]) -> str:
+    if value is None or (isinstance(value, float) and pd.isna(value)):
+        return ""
+    try:
+        number = Decimal(str(value)).quantize(Decimal("0.1"), rounding=ROUND_HALF_UP)
+    except (TypeError, ValueError):
+        return ""
+    return f"{number}%"
+
+
+def _most_common_emitent(series: pd.Series) -> str:
+    cleaned = series.dropna().astype(str).str.strip()
+    cleaned = cleaned[cleaned.str.lower().ne("nan") & cleaned.ne("")]
+    if cleaned.empty:
+        return ""
+    return cleaned.value_counts().idxmax()
+
+
+def build_equity_share_pivot(df: pd.DataFrame) -> pd.DataFrame:
+    required_cols = {"instytucja", "equity_nazwa", "TYP_aktywo_std", "wartosc_pln", "emitent"}
+    if not required_cols.issubset(df.columns):
+        return pd.DataFrame()
+
+    mask = _valid_group_mask(df, ["instytucja", "equity_nazwa"])
+    work_df = df.loc[mask, ["instytucja", "equity_nazwa", "TYP_aktywo_std", "wartosc_pln", "emitent"]].copy()
+    work_df = work_df[work_df["TYP_aktywo_std"].astype(str).str.strip().str.lower().eq("akcje")]
+    if work_df.empty:
+        return pd.DataFrame()
+
+    work_df["wartosc_pln_num"] = work_df["wartosc_pln"].apply(parse_polish_number)
+    work_df = work_df[work_df["wartosc_pln_num"].notna()]
+    if work_df.empty:
+        return pd.DataFrame()
+
+    total_inst = (
+        work_df.groupby("instytucja", dropna=False)["wartosc_pln_num"]
+        .sum(min_count=1)
+        .rename("wartosc_pln_inst")
+    )
+    equity_inst = (
+        work_df.groupby(["equity_nazwa", "instytucja"], dropna=False)["wartosc_pln_num"]
+        .sum(min_count=1)
+        .reset_index()
+    )
+    equity_inst["udzial_pct"] = equity_inst.apply(
+        lambda row: (row["wartosc_pln_num"] / total_inst.get(row["instytucja"], 0) * 100)
+        if total_inst.get(row["instytucja"], 0) not in (0, None)
+        else None,
+        axis=1,
+    )
+
+    pivot = equity_inst.pivot_table(
+        index="equity_nazwa",
+        columns="instytucja",
+        values="udzial_pct",
+        aggfunc="sum",
+    )
+    pivot = pivot.reset_index().rename(columns={"equity_nazwa": "TICKER"})
+
+    company_map = work_df.groupby("equity_nazwa")["emitent"].apply(_most_common_emitent)
+    pivot.insert(0, "COMPANY", pivot["TICKER"].map(company_map).fillna(""))
+
+    inst_cols = [c for c in pivot.columns if c not in ("COMPANY", "TICKER")]
+    if inst_cols:
+        pivot["TOTAL"] = pivot[inst_cols].sum(axis=1, skipna=True)
+        ordered_cols = ["COMPANY", "TICKER"] + inst_cols + ["TOTAL"]
+        pivot = pivot[ordered_cols]
+
+    for col in pivot.columns:
+        if col in ("COMPANY", "TICKER"):
+            continue
+        pivot[col] = pivot[col].apply(_format_percent)
+
+    return pivot
+
+
+def _format_change_number(value: Optional[float]) -> str:
+    if value is None or (isinstance(value, float) and pd.isna(value)):
+        return ""
+    try:
+        number = Decimal(str(value)).quantize(Decimal("0.1"), rounding=ROUND_HALF_UP)
+    except (TypeError, ValueError):
+        return ""
+    text = format(number, "f").rstrip("0").rstrip(".")
+    return text
+
+
+def _format_change_percent(value: Optional[float]) -> str:
+    if value is None or (isinstance(value, float) and pd.isna(value)):
+        return ""
+    return f"{_format_change_number(value)}%"
+
+
+def build_equity_holdings_numeric(df: pd.DataFrame) -> pd.DataFrame:
+    required_cols = {"instytucja", "equity_nazwa", "TYP_aktywo_std", "liczba_sztuk", "emitent"}
+    if not required_cols.issubset(df.columns):
+        return pd.DataFrame()
+
+    mask = _valid_group_mask(df, ["instytucja", "equity_nazwa"])
+    work_df = df.loc[mask, ["instytucja", "equity_nazwa", "TYP_aktywo_std", "liczba_sztuk", "emitent"]].copy()
+    work_df = work_df[work_df["TYP_aktywo_std"].astype(str).str.strip().str.lower().eq("akcje")]
+    if work_df.empty:
+        return pd.DataFrame()
+
+    work_df["liczba_sztuk_num"] = work_df["liczba_sztuk"].apply(parse_polish_number)
+    work_df = work_df[work_df["liczba_sztuk_num"].notna()]
+    if work_df.empty:
+        return pd.DataFrame()
+
+    holdings = (
+        work_df.groupby(["equity_nazwa", "instytucja"], dropna=False)["liczba_sztuk_num"]
+        .sum(min_count=1)
+        .reset_index()
+    )
+
+    pivot = holdings.pivot_table(
+        index="equity_nazwa",
+        columns="instytucja",
+        values="liczba_sztuk_num",
+        aggfunc="sum",
+    )
+    pivot = pivot.reset_index().rename(columns={"equity_nazwa": "TICKER"})
+
+    company_map = work_df.groupby("equity_nazwa")["emitent"].apply(_most_common_emitent)
+    pivot.insert(0, "COMPANY", pivot["TICKER"].map(company_map).fillna(""))
+
+    inst_cols = [c for c in pivot.columns if c not in ("COMPANY", "TICKER")]
+    if inst_cols:
+        pivot["TOTAL"] = pivot[inst_cols].sum(axis=1, skipna=True)
+        ordered_cols = ["COMPANY", "TICKER"] + inst_cols + ["TOTAL"]
+        pivot = pivot[ordered_cols]
+
+    return pivot
+
+
+def build_change_table(prev_df: pd.DataFrame, curr_df: pd.DataFrame) -> pd.DataFrame:
+    if prev_df.empty and curr_df.empty:
+        return pd.DataFrame()
+
+    prev = prev_df.copy()
+    curr = curr_df.copy()
+
+    prev_inst_cols = [c for c in prev.columns if c not in ("COMPANY", "TICKER")]
+    curr_inst_cols = [c for c in curr.columns if c not in ("COMPANY", "TICKER")]
+    ordered = []
+    for col in curr_inst_cols + prev_inst_cols:
+        if col not in ordered and col != "TOTAL":
+            ordered.append(col)
+    if "TOTAL" in curr_inst_cols or "TOTAL" in prev_inst_cols:
+        ordered.append("TOTAL")
+    inst_cols = ordered
+
+    prev_map = prev.set_index("TICKER") if "TICKER" in prev.columns else pd.DataFrame()
+    curr_map = curr.set_index("TICKER") if "TICKER" in curr.columns else pd.DataFrame()
+    tickers = sorted(set(prev_map.index.tolist()) | set(curr_map.index.tolist()))
+
+    rows: List[Dict[str, object]] = []
+    for ticker in tickers:
+        prev_row = prev_map.loc[ticker] if ticker in prev_map.index else pd.Series()
+        curr_row = curr_map.loc[ticker] if ticker in curr_map.index else pd.Series()
+        company = ""
+        if "COMPANY" in curr_row and pd.notna(curr_row.get("COMPANY")):
+            company = str(curr_row.get("COMPANY"))
+        elif "COMPANY" in prev_row and pd.notna(prev_row.get("COMPANY")):
+            company = str(prev_row.get("COMPANY"))
+
+        row: Dict[str, object] = {"COMPANY": company, "TICKER": ticker}
+        for col in inst_cols:
+            prev_val = prev_row.get(col, 0) if isinstance(prev_row, pd.Series) else 0
+            curr_val = curr_row.get(col, 0) if isinstance(curr_row, pd.Series) else 0
+            prev_val = 0 if pd.isna(prev_val) else prev_val
+            curr_val = 0 if pd.isna(curr_val) else curr_val
+            delta = curr_val - prev_val
+            row[col] = delta
+            if prev_val == 0:
+                row[f"{col}_pct"] = None
+            else:
+                row[f"{col}_pct"] = ((curr_val / prev_val) - 1) * 100
+        rows.append(row)
+
+    result = pd.DataFrame(rows)
+    if result.empty:
+        return result
+
+    base_cols = ["COMPANY", "TICKER"] + inst_cols
+    pct_cols = [f"{col}_pct" for col in inst_cols]
+    result = result[base_cols + pct_cols]
+    result = result.sort_values(["COMPANY", "TICKER"], kind="mergesort").reset_index(drop=True)
+
+    for col in inst_cols:
+        result[col] = result[col].apply(_format_change_number)
+    for col in pct_cols:
+        result[col] = result[col].apply(_format_change_percent)
+
+    return result
+
+
+def cleanup_percent_outputs(output_dir: str) -> None:
+    patterns = ["*_akcje_*.csv", "*_fund_share.csv", "*_holdings_pct.csv", "*_chg.csv"]
+    for pattern in patterns:
+        for path in glob.glob(os.path.join(output_dir, pattern)):
+            try:
+                os.remove(path)
+            except OSError:
+                continue
+
+
 def extract_tables_from_pdf(
     pdf_path: str,
     max_pages: Optional[int] = None,
@@ -447,6 +705,65 @@ def extract_text_pdfplumber_simple(pdf_path: str, max_pages: Optional[int] = Non
     except Exception:
         return ""
     return "\f".join(texts)
+
+
+def extract_date_from_title(file_path: str) -> str:
+    file_date = extract_date_from_filename(file_path)
+    if file_date:
+        return file_date
+
+    lower_path = file_path.lower()
+    if lower_path.endswith(".pdf"):
+        preview_text = extract_text_pdfminer(file_path, page_numbers=[0], timeout_seconds=6)
+        if not preview_text:
+            preview_text = extract_text_from_pdf(file_path, max_pages=1)
+        if not preview_text:
+            preview_text = extract_text_simple_from_pdf(file_path, max_pages=1)
+
+        parsed = parse_date_from_text(preview_text or "")
+        if parsed:
+            return parsed
+
+        match = re.search(r"(\d{1,2})[./\s](\d{1,2})[./\s](\d{4})", preview_text or "")
+        if match:
+            try:
+                day, month, year = match.groups()
+                return datetime.strptime(f"{day}/{month}/{year}", "%d/%m/%Y").strftime("%Y-%m-%d")
+            except ValueError:
+                return ""
+
+        return ""
+
+    df_raw = None
+    try:
+        if lower_path.endswith((".xls", ".xlsx")):
+            df_raw = pd.read_excel(file_path, engine="openpyxl", header=None, nrows=15)
+        elif lower_path.endswith(".csv"):
+            df_raw = pd.read_csv(file_path, header=None, nrows=15, sep=None, engine="python")
+    except Exception:
+        df_raw = None
+
+    if df_raw is not None:
+        return extract_date_from_excel(df_raw)
+
+    return ""
+
+
+def fill_missing_date_from_title(df: pd.DataFrame, file_path: str) -> pd.DataFrame:
+    if df.empty or "data" not in df.columns:
+        return df
+
+    data_series = df["data"].astype(str).str.strip()
+    missing_mask = data_series.eq("") | data_series.str.lower().eq("nan")
+    if not missing_mask.any():
+        return df
+
+    title_date = extract_date_from_title(file_path)
+    if not title_date:
+        return df
+
+    df.loc[missing_mask, "data"] = title_date
+    return df
 
 
 def parse_date_from_text(text: str) -> Optional[str]:
@@ -1269,7 +1586,7 @@ def parse_investors_pdf(file_path: str) -> pd.DataFrame:
         if date_match:
             data = f"{date_match.group(3)}-{date_match.group(2)}-{date_match.group(1)}"
         else:
-            data = "2025-12-30"
+            data = parse_date_from_text(sample_text) or ""
 
         for page in reader.pages:
             page_text = page.extract_text() or ""
@@ -2150,6 +2467,7 @@ def process_folder(folder_path: str) -> pd.DataFrame:
                 df = run_parser_with_timeout(parser, file_path, timeout_seconds=20)
         else:
             df = parser(file_path)
+        df = fill_missing_date_from_title(df, file_path)
         all_rows.append(df)
 
     if not all_rows:
@@ -2163,12 +2481,15 @@ def main() -> None:
     output_dir = os.path.join(base_dir, "output_csv")
     os.makedirs(output_dir, exist_ok=True)
     equity_map, equity_name_map = load_equity_mapping(base_dir)
+    cleanup_percent_outputs(output_dir)
 
     raw_folders = [
         path
         for path in glob.glob(os.path.join(base_dir, "raw_*"))
         if os.path.isdir(path)
     ]
+
+    holdings_by_quarter: Dict[str, pd.DataFrame] = {}
 
     for folder in raw_folders:
         quarter_token = quarter_token_from_folder(os.path.basename(folder)) or ""
@@ -2181,8 +2502,34 @@ def main() -> None:
             if col in result_df.columns:
                 result_df[col] = result_df[col].apply(format_decimal_comma)
         result_df = apply_equity_nazwa(result_df, equity_map, equity_name_map)
+        fund_share_df = build_equity_share_pivot(result_df)
+        holdings_by_quarter[quarter_token] = build_equity_holdings_numeric(result_df)
         result_df.to_csv(
             output_path,
+            index=False,
+            sep=";",
+            encoding="utf-8-sig",
+        )
+        fund_share_path = os.path.join(output_dir, f"PPK_{quarter_token}_holdings_pct.csv")
+        fund_share_df.to_csv(
+            fund_share_path,
+            index=False,
+            sep=";",
+            encoding="utf-8-sig",
+        )
+
+    for prev_q, curr_q, out_name in (
+        ("4Q23", "4Q24", "PPK_23-24_chg.csv"),
+        ("4Q24", "4Q25", "PPK_24-25_chg.csv"),
+    ):
+        prev_df = holdings_by_quarter.get(prev_q, pd.DataFrame())
+        curr_df = holdings_by_quarter.get(curr_q, pd.DataFrame())
+        if prev_df.empty and curr_df.empty:
+            continue
+        change_df = build_change_table(prev_df, curr_df)
+        change_path = os.path.join(output_dir, out_name)
+        change_df.to_csv(
+            change_path,
             index=False,
             sep=";",
             encoding="utf-8-sig",
