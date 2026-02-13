@@ -90,9 +90,14 @@ def parse_polish_number(value) -> Optional[float]:
 
 
 def format_decimal_comma(value) -> str:
-    if value is None or value == "":
+    if value is None:
         return "nan"
-    if isinstance(value, float) and pd.isna(value):
+    try:
+        if pd.isna(value):
+            return "nan"
+    except TypeError:
+        pass
+    if isinstance(value, str) and value.strip() == "":
         return "nan"
     text = str(value).strip()
     if text.lower() == "nan":
@@ -122,6 +127,8 @@ def normalize_typ_aktywa(value: str) -> str:
         return ""
 
     if re.search(r"\bakcj", text):
+        return "akcje"
+    if "aktywa" in text and "udzia" in text:
         return "akcje"
     if re.search(r"\boblig", text) or "dłużn" in text or "dluzn" in text:
         return "obligacje"
@@ -369,11 +376,18 @@ def build_equity_share_pivot(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def _format_change_number(value: Optional[float]) -> str:
-    if value is None or (isinstance(value, float) and pd.isna(value)):
+    if value is None:
+        return ""
+    try:
+        if pd.isna(value):
+            return ""
+    except TypeError:
+        pass
+    if str(value).strip().lower() in {"", "nan", "<na>"}:
         return ""
     try:
         number = Decimal(str(value)).quantize(Decimal("0.1"), rounding=ROUND_HALF_UP)
-    except (TypeError, ValueError):
+    except (TypeError, ValueError, ArithmeticError):
         return ""
     text = format(number, "f").rstrip("0").rstrip(".")
     return text
@@ -662,80 +676,143 @@ def build_fund_position_changes(
 
 
 def build_master_dataset(
-    fund_positions_by_quarter: Dict[str, pd.DataFrame],
+    source_rows_by_quarter: Dict[str, pd.DataFrame],
 ) -> pd.DataFrame:
-    if not fund_positions_by_quarter:
+    if not source_rows_by_quarter:
         return pd.DataFrame()
 
-    positions_frames: List[pd.DataFrame] = []
-    for quarter_token, df in fund_positions_by_quarter.items():
+    key_cols = [
+        "instytucja",
+        "fundusz",
+        "DATA_fundusz",
+        "typ_aktywa",
+        "emitent",
+        "isin",
+        "waluta",
+        "TYP_aktywo_std",
+        "equity_nazwa",
+    ]
+
+    quarter_frames: List[pd.DataFrame] = []
+    normalized_by_quarter: Dict[str, pd.DataFrame] = {}
+
+    for quarter_token, df in source_rows_by_quarter.items():
         if df.empty:
             continue
+
         work = df.copy()
-        work.insert(0, "quarter", quarter_token)
-        positions_frames.append(work)
+        for col in key_cols + ["data", "liczba_sztuk", "wartosc_pln"]:
+            if col not in work.columns:
+                work[col] = ""
 
-    positions_all = (
-        pd.concat(positions_frames, ignore_index=True)
-        if positions_frames
-        else pd.DataFrame()
-    )
-    changes_all = build_fund_position_changes(fund_positions_by_quarter)
+        work["liczba_sztuk_num"] = work["liczba_sztuk"].apply(parse_polish_number)
+        work["wartosc_pln_num"] = work["wartosc_pln"].apply(parse_polish_number)
 
-    if positions_all.empty and changes_all.empty:
-        return pd.DataFrame()
-    if positions_all.empty:
-        master = changes_all
-    elif changes_all.empty:
-        master = positions_all
-    else:
-        master = positions_all.merge(
-            changes_all,
-            on=["quarter", "instytucja", "fundusz", "TICKER"],
-            how="left",
-            suffixes=("", "_chg"),
-            copy=False,
+        fund_total = (
+            work.groupby(["instytucja", "fundusz"], dropna=False)["wartosc_pln_num"]
+            .sum(min_count=1)
+            .reset_index()
+            .rename(columns={"wartosc_pln_num": "fund_total_pln_num"})
         )
-        if "COMPANY_chg" in master.columns:
-            master["COMPANY"] = master.get("COMPANY").combine_first(
-                master.get("COMPANY_chg")
-            )
-            master = master.drop(columns=["COMPANY_chg"])
+        work = work.merge(fund_total, on=["instytucja", "fundusz"], how="left")
+        work["fund_pct_num"] = work.apply(
+            lambda row: (row["wartosc_pln_num"] / row["fund_total_pln_num"] * 100)
+            if row.get("wartosc_pln_num") not in (None,) and not pd.isna(row.get("wartosc_pln_num"))
+            and row.get("fund_total_pln_num") not in (0, None) and not pd.isna(row.get("fund_total_pln_num"))
+            else None,
+            axis=1,
+        )
 
-    format_decimal_cols = [
-        "liczba_sztuk_num",
-        "wartosc_pln_num",
-        "fund_total_pln_num",
-        "wartosc_pln_chg",
-        "liczba_sztuk_chg",
-    ]
-    for col in format_decimal_cols:
-        if col in master.columns:
-            master[col] = master[col].apply(format_decimal_comma)
+        work.insert(0, "quarter", quarter_token)
+        work["_dup_idx"] = work.groupby(key_cols, dropna=False).cumcount()
 
-    if "fund_pct" in master.columns:
-        master["fund_pct"] = master["fund_pct"].apply(_format_percent)
-    if "wartosc_pln_chg_pct" in master.columns:
-        master["wartosc_pln_chg_pct"] = master["wartosc_pln_chg_pct"].apply(_format_change_percent)
-    if "liczba_sztuk_chg_pct" in master.columns:
-        master["liczba_sztuk_chg_pct"] = master["liczba_sztuk_chg_pct"].apply(_format_change_percent)
+        normalized_by_quarter[quarter_token] = work.copy()
+        quarter_frames.append(work)
 
-    rename_map = {
-        "liczba_sztuk_num": "liczba_sztuk",
-        "wartosc_pln_num": "wartosc_pln",
-        "fund_total_pln_num": "fund_total_pln",
-    }
-    master = master.rename(columns=rename_map)
+    if not quarter_frames:
+        return pd.DataFrame()
+
+    master = pd.concat(quarter_frames, ignore_index=True)
+    master["liczba_sztuk_chg_num"] = pd.NA
+    master["liczba_sztuk_chg_pct_num"] = pd.NA
+    master["wartosc_pln_chg_num"] = pd.NA
+    master["wartosc_pln_chg_pct_num"] = pd.NA
+
+    for quarter_token in sorted(normalized_by_quarter.keys(), key=quarter_sort_key):
+        parsed = parse_quarter_token(quarter_token)
+        if not parsed:
+            continue
+        quarter, year = parsed
+        prev_token = f"{quarter}Q{(year - 1) % 100:02d}"
+        if prev_token not in normalized_by_quarter:
+            continue
+
+        curr = normalized_by_quarter[quarter_token].copy()
+        prev = normalized_by_quarter[prev_token].copy()
+
+        curr_idx = curr.index.to_series().rename("_local_idx")
+        curr = curr.reset_index(drop=True)
+        curr["_local_idx"] = curr_idx.values
+
+        merged = curr.merge(
+            prev[
+                key_cols
+                + [
+                    "_dup_idx",
+                    "liczba_sztuk_num",
+                    "wartosc_pln_num",
+                ]
+            ],
+            on=key_cols + ["_dup_idx"],
+            how="left",
+            suffixes=("_curr", "_prev"),
+        )
+
+        qty_curr = merged.get("liczba_sztuk_num_curr")
+        qty_prev = merged.get("liczba_sztuk_num_prev")
+        val_curr = merged.get("wartosc_pln_num_curr")
+        val_prev = merged.get("wartosc_pln_num_prev")
+
+        qty_chg = qty_curr.fillna(0) - qty_prev.fillna(0)
+        val_chg = val_curr.fillna(0) - val_prev.fillna(0)
+
+        qty_chg_pct = ((qty_curr / qty_prev) - 1) * 100
+        val_chg_pct = ((val_curr / val_prev) - 1) * 100
+
+        qty_chg_pct = qty_chg_pct.where(qty_prev.notna() & qty_prev.ne(0))
+        val_chg_pct = val_chg_pct.where(val_prev.notna() & val_prev.ne(0))
+
+        target_mask = master["quarter"].astype(str).eq(quarter_token)
+        target_indices = master[target_mask].index
+
+        master.loc[target_indices, "liczba_sztuk_chg_num"] = qty_chg.values
+        master.loc[target_indices, "wartosc_pln_chg_num"] = val_chg.values
+        master.loc[target_indices, "liczba_sztuk_chg_pct_num"] = qty_chg_pct.values
+        master.loc[target_indices, "wartosc_pln_chg_pct_num"] = val_chg_pct.values
+
+    master["fund_total_pln"] = master["fund_total_pln_num"].apply(format_decimal_comma)
+    master["fund_pct"] = master["fund_pct_num"].apply(_format_percent)
+    master["liczba_sztuk_chg"] = master["liczba_sztuk_chg_num"].apply(format_decimal_comma)
+    master["wartosc_pln_chg"] = master["wartosc_pln_chg_num"].apply(format_decimal_comma)
+    master["liczba_sztuk_chg_pct"] = master["liczba_sztuk_chg_pct_num"].apply(_format_change_percent)
+    master["wartosc_pln_chg_pct"] = master["wartosc_pln_chg_pct_num"].apply(_format_change_percent)
+    master["liczba_sztuk_chg"] = master["liczba_sztuk_chg"].replace("nan", "")
+    master["wartosc_pln_chg"] = master["wartosc_pln_chg"].replace("nan", "")
 
     ordered_cols = [
         "quarter",
-        "yoy_prev",
+        "data",
         "instytucja",
         "fundusz",
-        "COMPANY",
-        "TICKER",
+        "DATA_fundusz",
+        "typ_aktywa",
+        "emitent",
+        "isin",
+        "waluta",
         "liczba_sztuk",
         "wartosc_pln",
+        "TYP_aktywo_std",
+        "equity_nazwa",
         "fund_total_pln",
         "fund_pct",
         "liczba_sztuk_chg",
@@ -743,10 +820,12 @@ def build_master_dataset(
         "wartosc_pln_chg",
         "wartosc_pln_chg_pct",
     ]
-    ordered_cols = [col for col in ordered_cols if col in master.columns]
-    if ordered_cols:
-        master = master.reindex(columns=ordered_cols)
 
+    for col in ordered_cols:
+        if col not in master.columns:
+            master[col] = ""
+
+    master = master.reindex(columns=ordered_cols)
     return master
 
 
@@ -1442,6 +1521,93 @@ def parse_pzu_excel(file_path: str) -> pd.DataFrame:
     fundusz_col = df.get("fundusz", "").astype(str)
     df = df[fundusz_col.str.contains("PPK", case=False, na=False)]
     
+    df = df.dropna(axis=0, how="all")
+
+    return ensure_output_schema(df)
+
+
+def parse_pzu1_excel(file_path: str) -> pd.DataFrame:
+    """
+    Parse PZU1 Excel files for 4Q23/4Q24.
+    Date is sourced only from filename: PZU1_YYYY-MM-DD.xlsx
+    """
+    try:
+        df = pd.read_excel(file_path, engine="openpyxl", header=0)
+    except Exception:
+        return ensure_output_schema(pd.DataFrame())
+
+    df.columns = [normalize_header(c) for c in df.columns]
+
+    def _find_col(candidates: List[str]) -> Optional[str]:
+        for candidate in candidates:
+            col = find_column(df, normalize_header(candidate))
+            if col:
+                return col
+        return None
+
+    fund_col = _find_col([
+        "fundusz",
+        "nazwa subfunduszu",
+        "nazwa funduszu",
+    ])
+    typ_col = _find_col([
+        "typ_aktywa",
+        "typ instrumentu",
+        "rodzaj instrumentu",
+    ])
+    emitent_col = _find_col([
+        "emitent",
+        "nazwa emitenta",
+    ])
+    isin_col = _find_col([
+        "isin",
+        "kod isin",
+        "kod isin instrumentu",
+        "identyfikator instrumentu",
+    ])
+    waluta_col = _find_col([
+        "waluta wyceny instrumentu",
+        "waluta instrumentu",
+        "waluta",
+    ])
+    liczba_col = _find_col([
+        "liczba_sztuk",
+        "ilość instrumentów w portfelu",
+        "ilość",
+        "ilosc",
+    ])
+    wartosc_col = _find_col([
+        "wartosc_pln",
+        "wartosc_wg_wyceny",
+        "wartość wg wyceny",
+        "wartość instrumentu w walucie wyceny funduszu",
+        "wartość instrumentu",
+        "wartość",
+    ])
+
+    df["fundusz"] = df[fund_col] if fund_col else ""
+    df["typ_aktywa"] = df[typ_col] if typ_col else ""
+    df["emitent"] = df[emitent_col] if emitent_col else ""
+    df["waluta"] = df[waluta_col] if waluta_col else ""
+    df["liczba_sztuk"] = df[liczba_col] if liczba_col else ""
+    df["wartosc_pln"] = df[wartosc_col] if wartosc_col else ""
+
+    if isin_col:
+        isin_series = df[isin_col].astype(str).str.strip()
+        df["isin"] = isin_series.str.extract(r"([A-Z]{2}[A-Z0-9]{10})", expand=False).fillna("")
+    else:
+        df["isin"] = ""
+
+    file_date = extract_date_from_filename(file_path)
+    df["instytucja"] = "PZU TFI S.A."
+    df["data"] = file_date if file_date else ""
+
+    fundusz_series = df["fundusz"].astype(str)
+    ppk_mask = fundusz_series.str.contains(r"ppk|inpzu", case=False, na=False)
+    if ppk_mask.any():
+        df = df[ppk_mask]
+    else:
+        df = df[fundusz_series.str.strip().ne("") & fundusz_series.str.strip().str.lower().ne("nan")]
     df = df.dropna(axis=0, how="all")
 
     return ensure_output_schema(df)
@@ -2661,6 +2827,7 @@ def detect_parser(file_path: str) -> Optional[str]:
 
 def process_folder(folder_path: str) -> pd.DataFrame:
     quarter_end = quarter_end_date_from_folder(os.path.basename(folder_path)) or ""
+    folder_name = os.path.basename(folder_path).lower()
 
     parser_map: Dict[str, Callable[[str], pd.DataFrame]] = {
         "allianz": parse_allianz_excel,
@@ -2671,6 +2838,7 @@ def process_folder(folder_path: str) -> pd.DataFrame:
         "pfr": parse_pfr_excel,
         "pko": lambda p: parse_pko_excel(p, quarter_end),
         "pzu": parse_pzu_excel,
+        "pzu1": parse_pzu1_excel,
         "esaliens": parse_esaliens_pdf,
         "generali": parse_generali_excel,
         "uniqa": parse_uniqa_pdf,
@@ -2715,7 +2883,15 @@ def process_folder(folder_path: str) -> pd.DataFrame:
 
     all_rows: List[pd.DataFrame] = []
     for file_path in glob.glob(os.path.join(folder_path, "*")):
-        parser_key = detect_parser(file_path)
+        file_name = os.path.basename(file_path).lower()
+        if (
+            folder_name in {"raw_4q23", "raw_4q24"}
+            and file_name.startswith("pzu1_")
+            and file_name.endswith((".xlsx", ".xls"))
+        ):
+            parser_key = "pzu1"
+        else:
+            parser_key = detect_parser(file_path)
         if not parser_key:
             continue
         parser = parser_map.get(parser_key)
@@ -2752,6 +2928,7 @@ def main() -> None:
 
     holdings_by_quarter: Dict[str, pd.DataFrame] = {}
     fund_positions_by_quarter: Dict[str, pd.DataFrame] = {}
+    source_rows_by_quarter: Dict[str, pd.DataFrame] = {}
 
     for folder in raw_folders:
         quarter_token = quarter_token_from_folder(os.path.basename(folder)) or ""
@@ -2767,6 +2944,7 @@ def main() -> None:
         fund_share_df = build_equity_share_pivot(result_df)
         holdings_by_quarter[quarter_token] = build_equity_holdings_numeric(result_df)
         fund_positions_by_quarter[quarter_token] = build_fund_position_share(result_df)
+        source_rows_by_quarter[quarter_token] = result_df.copy()
         result_df.to_csv(
             output_path,
             index=False,
@@ -2798,7 +2976,7 @@ def main() -> None:
             encoding="utf-8-sig",
         )
 
-    master_df = build_master_dataset(fund_positions_by_quarter)
+    master_df = build_master_dataset(source_rows_by_quarter)
     if not master_df.empty:
         master_path = os.path.join(output_dir, "PPK_master.csv")
         master_df.to_csv(
