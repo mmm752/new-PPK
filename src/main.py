@@ -427,6 +427,83 @@ def build_equity_holdings_numeric(df: pd.DataFrame) -> pd.DataFrame:
     return pivot
 
 
+def build_fund_position_share(df: pd.DataFrame) -> pd.DataFrame:
+    required_cols = {
+        "instytucja",
+        "fundusz",
+        "equity_nazwa",
+        "TYP_aktywo_std",
+        "wartosc_pln",
+        "liczba_sztuk",
+        "emitent",
+    }
+    if not required_cols.issubset(df.columns):
+        return pd.DataFrame()
+
+    mask = _valid_group_mask(df, ["instytucja", "fundusz", "equity_nazwa"])
+    work_df = df.loc[
+        mask,
+        [
+            "instytucja",
+            "fundusz",
+            "equity_nazwa",
+            "TYP_aktywo_std",
+            "wartosc_pln",
+            "liczba_sztuk",
+            "emitent",
+        ],
+    ].copy()
+    work_df = work_df[work_df["TYP_aktywo_std"].astype(str).str.strip().str.lower().eq("akcje")]
+    if work_df.empty:
+        return pd.DataFrame()
+
+    work_df["wartosc_pln_num"] = work_df["wartosc_pln"].apply(parse_polish_number)
+    work_df["liczba_sztuk_num"] = work_df["liczba_sztuk"].apply(parse_polish_number)
+    work_df = work_df[work_df["wartosc_pln_num"].notna()]
+    if work_df.empty:
+        return pd.DataFrame()
+
+    fund_total = (
+        work_df.groupby(["instytucja", "fundusz"], dropna=False)["wartosc_pln_num"]
+        .sum(min_count=1)
+        .reset_index()
+        .rename(columns={"wartosc_pln_num": "fund_total_pln_num"})
+    )
+
+    positions = (
+        work_df.groupby(["instytucja", "fundusz", "equity_nazwa"], dropna=False)
+        .agg(
+            wartosc_pln_num=("wartosc_pln_num", "sum"),
+            liczba_sztuk_num=("liczba_sztuk_num", "sum"),
+        )
+        .reset_index()
+        .rename(columns={"equity_nazwa": "TICKER"})
+    )
+
+    positions = positions.merge(fund_total, on=["instytucja", "fundusz"], how="left")
+    positions["fund_pct"] = positions.apply(
+        lambda row: (row["wartosc_pln_num"] / row["fund_total_pln_num"] * 100)
+        if row.get("fund_total_pln_num") not in (0, None) and not pd.isna(row.get("fund_total_pln_num"))
+        else None,
+        axis=1,
+    )
+
+    company_map = work_df.groupby("equity_nazwa")["emitent"].apply(_most_common_emitent)
+    positions.insert(0, "COMPANY", positions["TICKER"].map(company_map).fillna(""))
+
+    ordered_cols = [
+        "instytucja",
+        "fundusz",
+        "COMPANY",
+        "TICKER",
+        "liczba_sztuk_num",
+        "wartosc_pln_num",
+        "fund_total_pln_num",
+        "fund_pct",
+    ]
+    return positions[ordered_cols]
+
+
 def build_change_table(prev_df: pd.DataFrame, curr_df: pd.DataFrame) -> pd.DataFrame:
     if prev_df.empty and curr_df.empty:
         return pd.DataFrame()
@@ -487,6 +564,190 @@ def build_change_table(prev_df: pd.DataFrame, curr_df: pd.DataFrame) -> pd.DataF
         result[col] = result[col].apply(_format_change_percent)
 
     return result
+
+
+def parse_quarter_token(token: str) -> Optional[tuple[int, int]]:
+    match = re.match(r"^(\d)Q(\d{2})$", token.strip().upper())
+    if not match:
+        return None
+    quarter = int(match.group(1))
+    year = 2000 + int(match.group(2))
+    return quarter, year
+
+
+def quarter_sort_key(token: str) -> tuple[int, int]:
+    parsed = parse_quarter_token(token)
+    if not parsed:
+        return (9999, 99)
+    quarter, year = parsed
+    return (year, quarter)
+
+
+def build_fund_position_changes(
+    fund_positions_by_quarter: Dict[str, pd.DataFrame],
+) -> pd.DataFrame:
+    if not fund_positions_by_quarter:
+        return pd.DataFrame()
+
+    frames: List[pd.DataFrame] = []
+    for quarter_token in sorted(fund_positions_by_quarter.keys(), key=quarter_sort_key):
+        parsed = parse_quarter_token(quarter_token)
+        if not parsed:
+            continue
+        quarter, year = parsed
+        prev_token = f"{quarter}Q{(year - 1) % 100:02d}"
+        if prev_token not in fund_positions_by_quarter:
+            continue
+
+        prev_df = fund_positions_by_quarter.get(prev_token, pd.DataFrame())
+        curr_df = fund_positions_by_quarter.get(quarter_token, pd.DataFrame())
+        if prev_df.empty and curr_df.empty:
+            continue
+
+        merged = curr_df.merge(
+            prev_df,
+            on=["instytucja", "fundusz", "TICKER"],
+            how="outer",
+            suffixes=("_curr", "_prev"),
+        )
+
+        if merged.empty:
+            continue
+
+        merged["COMPANY"] = merged.get("COMPANY_curr").combine_first(
+            merged.get("COMPANY_prev")
+        )
+        merged["wartosc_pln_chg"] = (
+            merged.get("wartosc_pln_num_curr", 0).fillna(0)
+            - merged.get("wartosc_pln_num_prev", 0).fillna(0)
+        )
+        merged["liczba_sztuk_chg"] = (
+            merged.get("liczba_sztuk_num_curr", 0).fillna(0)
+            - merged.get("liczba_sztuk_num_prev", 0).fillna(0)
+        )
+
+        prev_val = merged.get("wartosc_pln_num_prev", 0).fillna(0)
+        merged["wartosc_pln_chg_pct"] = prev_val.where(prev_val != 0)
+        merged["wartosc_pln_chg_pct"] = (
+            (merged.get("wartosc_pln_num_curr", 0).fillna(0) / merged["wartosc_pln_chg_pct"]) - 1
+        ) * 100
+
+        prev_qty = merged.get("liczba_sztuk_num_prev", 0).fillna(0)
+        merged["liczba_sztuk_chg_pct"] = prev_qty.where(prev_qty != 0)
+        merged["liczba_sztuk_chg_pct"] = (
+            (merged.get("liczba_sztuk_num_curr", 0).fillna(0) / merged["liczba_sztuk_chg_pct"]) - 1
+        ) * 100
+
+        merged.insert(0, "quarter", quarter_token)
+        merged.insert(1, "yoy_prev", prev_token)
+
+        frames.append(
+            merged[
+                [
+                    "quarter",
+                    "yoy_prev",
+                    "instytucja",
+                    "fundusz",
+                    "COMPANY",
+                    "TICKER",
+                    "wartosc_pln_chg",
+                    "wartosc_pln_chg_pct",
+                    "liczba_sztuk_chg",
+                    "liczba_sztuk_chg_pct",
+                ]
+            ]
+        )
+
+    return pd.concat(frames, ignore_index=True) if frames else pd.DataFrame()
+
+
+def build_master_dataset(
+    fund_positions_by_quarter: Dict[str, pd.DataFrame],
+) -> pd.DataFrame:
+    if not fund_positions_by_quarter:
+        return pd.DataFrame()
+
+    positions_frames: List[pd.DataFrame] = []
+    for quarter_token, df in fund_positions_by_quarter.items():
+        if df.empty:
+            continue
+        work = df.copy()
+        work.insert(0, "quarter", quarter_token)
+        positions_frames.append(work)
+
+    positions_all = (
+        pd.concat(positions_frames, ignore_index=True)
+        if positions_frames
+        else pd.DataFrame()
+    )
+    changes_all = build_fund_position_changes(fund_positions_by_quarter)
+
+    if positions_all.empty and changes_all.empty:
+        return pd.DataFrame()
+    if positions_all.empty:
+        master = changes_all
+    elif changes_all.empty:
+        master = positions_all
+    else:
+        master = positions_all.merge(
+            changes_all,
+            on=["quarter", "instytucja", "fundusz", "TICKER"],
+            how="left",
+            suffixes=("", "_chg"),
+            copy=False,
+        )
+        if "COMPANY_chg" in master.columns:
+            master["COMPANY"] = master.get("COMPANY").combine_first(
+                master.get("COMPANY_chg")
+            )
+            master = master.drop(columns=["COMPANY_chg"])
+
+    format_decimal_cols = [
+        "liczba_sztuk_num",
+        "wartosc_pln_num",
+        "fund_total_pln_num",
+        "wartosc_pln_chg",
+        "liczba_sztuk_chg",
+    ]
+    for col in format_decimal_cols:
+        if col in master.columns:
+            master[col] = master[col].apply(format_decimal_comma)
+
+    if "fund_pct" in master.columns:
+        master["fund_pct"] = master["fund_pct"].apply(_format_percent)
+    if "wartosc_pln_chg_pct" in master.columns:
+        master["wartosc_pln_chg_pct"] = master["wartosc_pln_chg_pct"].apply(_format_change_percent)
+    if "liczba_sztuk_chg_pct" in master.columns:
+        master["liczba_sztuk_chg_pct"] = master["liczba_sztuk_chg_pct"].apply(_format_change_percent)
+
+    rename_map = {
+        "liczba_sztuk_num": "liczba_sztuk",
+        "wartosc_pln_num": "wartosc_pln",
+        "fund_total_pln_num": "fund_total_pln",
+    }
+    master = master.rename(columns=rename_map)
+
+    ordered_cols = [
+        "quarter",
+        "yoy_prev",
+        "instytucja",
+        "fundusz",
+        "COMPANY",
+        "TICKER",
+        "liczba_sztuk",
+        "wartosc_pln",
+        "fund_total_pln",
+        "fund_pct",
+        "liczba_sztuk_chg",
+        "liczba_sztuk_chg_pct",
+        "wartosc_pln_chg",
+        "wartosc_pln_chg_pct",
+    ]
+    ordered_cols = [col for col in ordered_cols if col in master.columns]
+    if ordered_cols:
+        master = master.reindex(columns=ordered_cols)
+
+    return master
 
 
 def cleanup_percent_outputs(output_dir: str) -> None:
@@ -2490,6 +2751,7 @@ def main() -> None:
     ]
 
     holdings_by_quarter: Dict[str, pd.DataFrame] = {}
+    fund_positions_by_quarter: Dict[str, pd.DataFrame] = {}
 
     for folder in raw_folders:
         quarter_token = quarter_token_from_folder(os.path.basename(folder)) or ""
@@ -2504,6 +2766,7 @@ def main() -> None:
         result_df = apply_equity_nazwa(result_df, equity_map, equity_name_map)
         fund_share_df = build_equity_share_pivot(result_df)
         holdings_by_quarter[quarter_token] = build_equity_holdings_numeric(result_df)
+        fund_positions_by_quarter[quarter_token] = build_fund_position_share(result_df)
         result_df.to_csv(
             output_path,
             index=False,
@@ -2530,6 +2793,16 @@ def main() -> None:
         change_path = os.path.join(output_dir, out_name)
         change_df.to_csv(
             change_path,
+            index=False,
+            sep=";",
+            encoding="utf-8-sig",
+        )
+
+    master_df = build_master_dataset(fund_positions_by_quarter)
+    if not master_df.empty:
+        master_path = os.path.join(output_dir, "PPK_master.csv")
+        master_df.to_csv(
+            master_path,
             index=False,
             sep=";",
             encoding="utf-8-sig",
