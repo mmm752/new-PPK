@@ -1,0 +1,2101 @@
+Nazwa Funduszu
+Nazwa
+subfunduszu
+Typ
+funduszu
+Środki pieniężne
+wyceny
+aktywów i
+zobowiązań
+funduszu
+Nazwa emitenta
+Kod ISIN
+Instrumentu
+Typ
+instrumentu
+Kraj
+emitenta
+Waluta
+wykorzystywana do
+wyceny instrumentu
+Ilość
+instrumentu
+w portfelu
+Wartość
+instrumentu
+w walucie
+wyceny
+funduszu
+Procentowy
+udział w
+aktywach
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN AGNICO EAGLE MINES LTD CA0084741085 Akcje CA USD 56,00 11 473,64 0,06%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN ALIOR BANK S.A. PLALIOR00045 Akcje PL PLN 1 800,00 87 048,00 0,48%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN ALLEGRO.EU SOCIETE ANONYME LU2237380790 Akcje LU PLN 6 500,00 208 000,00 1,14%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN ALPHABET INC. US02079K3059 Akcje US USD 100,00 49 156,00 0,27%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN AMAZON.COM, INC. US0231351067 Akcje US USD 100,00 53 533,64 0,29%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN AS TALLINNA VESI EE3100026436 Akcje EE EUR 200,00 10 458,21 0,06%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN ASBISC ENTERPRISES PLC CY1000031710 Akcje CY PLN 3 500,00 95 760,00 0,53%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN BAKKAFROST P/F FO0000000179 Akcje FO NOK 30,00 7 338,06 0,04%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN BANCO SANTANDER S.A. ES0113900J37 Akcje ES EUR 1 600,00 24 102,82 0,13%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN BANK POLSKA KASA OPIEKI S.A. PLPEKAO00016 Akcje PL PLN 4 000,00 443 200,00 2,44%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN BARRICK GOLD CORP CA0679011084 Akcje CA USD 75,00 5 205,77 0,03%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN BENEFIT SYSTEMS S.A. PLBNFTS00018 Akcje PL PLN 40,00 61 200,00 0,34%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN BOOKING HOLDINGS INC US09857L1089 Akcje US USD 3,00 33 267,53 0,18%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN CAPTOR THERAPEUTICS S.A. PLCPTRT00014 Akcje PL PLN 50,00 7 600,00 0,04%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN COMARCH S.A. PLCOMAR00012 Akcje PL PLN 200,00 29 600,00 0,16%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN CREDIT AGRICOLE SA FR0000045072 Akcje FR EUR 400,00 19 353,46 0,11%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN CREEPY JAR S.A. PLCRPJR00019 Akcje PL PLN 15,00 12 675,00 0,07%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN DATAWALK S.A. PLPILAB00012 Akcje PL PLN 200,00 12 000,00 0,07%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN ENEA S.A. PLENEA000013 Akcje PL PLN 10 000,00 63 950,00 0,35%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN ERSTE GROUP BANK AG AT0000652011 Akcje AT EUR 400,00 57 124,05 0,31%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN FIELMANN AG DE0005772206 Akcje DE EUR 75,00 16 288,10 0,09%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN GLOBAL FASHION GROUP SA LU2010095458 Akcje LU EUR 300,00 813,07 0,00%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN GRENEVIA S.A. PLFAMUR00012 Akcje PL PLN 7 000,00 22 365,00 0,12%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN GRUPA AZOTY S.A. PLZATRM00012 Akcje PL PLN 500,00 13 110,00 0,07%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN HUUUGE INC. US44853H1086 Akcje US PLN 2 700,00 71 955,00 0,40%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN ING GROEP NV NL0011821202 Akcje NL EUR 1 000,00 54 907,80 0,30%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+JASTRZĘBSKA SPÓŁKA WĘGLOWA
+S.A. PLJSW0000015 Akcje PL PLN 1 400,00 56 070,00 0,31%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN JENOPTIK AG DE000A2NB601 Akcje DE EUR 100,00 13 991,74 0,08%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN JERONIMO MARTINS SGPS S.A. PTJMT0AE0001 Akcje PT EUR 1 200,00 134 790,69 0,74%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN K+S AG DE000KSAG888 Akcje DE EUR 400,00 28 401,81 0,16%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN KGHM POLSKA MIEDŹ S.A. PLKGHM000017 Akcje PL PLN 600,00 67 440,00 0,37%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN KRKA DD NOVO MESTO SI0031102120 Akcje SI EUR 20,00 10 324,70 0,06%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+LUBELSKI WĘGIEL BOGDANKA
+S.A. PLLWBGD00016 Akcje PL PLN 400,00 15 712,00 0,09%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN MAYR MELNHOF KARTON AG AT0000938204 Akcje AT EUR 10,00 5 972,30 0,03%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN META PLATFORMS, INC. US30303M1027 Akcje US USD 75,00 88 388,41 0,49%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN MINESTO AB SE0007578141 Akcje SE SEK 140,00 199,40 0,00%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN NEWMONT CORPORATION US6516391066 Akcje US USD 30,00 5 255,63 0,03%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN OMV AG AT0000743059 Akcje AT EUR 23,00 3 975,54 0,02%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN ORANGE POLSKA S.A. PLTLKPL00017 Akcje PL PLN 6 000,00 41 916,00 0,23%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN PEABODY ENERGY CORP US7045511000 Akcje US USD 400,00 35 579,58 0,20%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN PEPCO GROUP N.V. NL0015000AU7 Akcje NL PLN 1 000,00 36 820,00 0,20%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN PETROL DD LJUBLJANA SI0031102153 Akcje SI EUR 60,00 6 435,13 0,04%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+PGE POLSKA GRUPA
+ENERGETYCZNA S.A. PLPGER000010 Akcje PL PLN 20 000,00 145 200,00 0,80%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+POLSKI KONCERN NAFTOWY
+ORLEN S.A. PLPKN0000018 Akcje PL PLN 6 000,00 386 460,00 2,12%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+POWSZECHNA KASA
+OSZCZĘDNOŚCI BANK POLSKI
+S.A. PLPKO0000016 Akcje PL PLN 12 000,00 433 800,00
+2,38%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+POWSZECHNY ZAKŁAD
+UBEZPIECZEŃ S.A. PLPZU0000011 Akcje PL PLN 5 250,00 206 902,50 1,14%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN REPSOL YPF ES0173516115 Akcje ES EUR 400,00 23 729,00 0,13%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN RYVU THERAPEUTICS S.A. PLSELVT00013 Akcje PL PLN 500,00 30 200,00 0,17%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN SANTANDER BANK POLSKA S.A. PLBZ00000044 Akcje PL PLN 200,00 77 800,00 0,43%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN SELVITA S.A. PLSLVCR00029 Akcje PL PLN 70,00 4 753,00 0,03%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN TOTALENERGIES SE FR0000120271 Akcje FR EUR 200,00 46 772,65 0,26%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN VITA 34 AG DE000A0BL849 Akcje DE EUR 26,00 645,65 0,00%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN YARA INTERNATIONAL ASA NO0010208051 Akcje NO NOK 200,00 28 879,80 0,16%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL EUR 1 146,59 5 102,67 0,03%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL PLN 24 491,96 24 491,96 0,13%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL PLN 541 418,83 541 418,83 2,98%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL USD 90,74 372,63 0,00%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+BANK GOSPODARSTWA
+KRAJOWEGO PL0000500328 Dłużne papiery wartościowe PL PLN 999,00 971 247,78 5,34%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+BANK GOSPODARSTWA
+KRAJOWEGO PL0000500294 Dłużne papiery wartościowe PL PLN 800,00 592 808,00 3,26%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+BANK GOSPODARSTWA
+KRAJOWEGO PL0000500302 Dłużne papiery wartościowe PL PLN 670,00 413 517,30 2,27%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000108197 Dłużne papiery wartościowe PL PLN 260,00 255 468,20 1,40%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000108866 Dłużne papiery wartościowe PL PLN 350,00 328 086,50 1,80%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000112736 Dłużne papiery wartościowe PL PLN 425,00 320 530,75 1,76%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000115291 Dłużne papiery wartościowe PL PLN 1 740,00 1 842 781,80 10,13%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000105359 Dłużne papiery wartościowe PL PLN 200,00 343 896,43 1,89%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000114021 Dłużne papiery wartościowe PL PLN 350,00 329 035,00 1,81%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000115192 Dłużne papiery wartościowe PL PLN 800,00 920 208,00 5,06%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000113460 Dłużne papiery wartościowe PL PLN 400,00 336 600,00 1,85%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000107611 Dłużne papiery wartościowe PL PLN 300,00 266 448,00 1,46%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000107454 Dłużne papiery wartościowe PL PLN 214,00 221 494,28 1,22%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000108817 Dłużne papiery wartościowe PL PLN 300,00 307 116,00 1,69%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000110615 Dłużne papiery wartościowe PL PLN 1 533,00 1 545 877,20 8,50%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000111738 Dłużne papiery wartościowe PL PLN 274,00 274 822,00 1,51%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000115028 Dłużne papiery wartościowe PL PLN 800,00 756 504,00 4,16%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000113130 Dłużne papiery wartościowe PL PLN 896,00 887 040,00 4,88%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000114559 Dłużne papiery wartościowe PL PLN 1 300,00 1 274 780,00 7,01%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000111928 Dłużne papiery wartościowe PL PLN 300,00 288 660,00 1,59%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000113213 Dłużne papiery wartościowe PL PLN 1 775,00 1 690 865,00 9,29%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Środki pieniężne PL NOK 10 054,73 3 830,85 0,02%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2025 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Środki pieniężne PL PLN 35 623,83 35 623,83 0,20%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN ACTIVISION BLIZZARD, INC. US00507V1098 Akcje US USD 150,00 51 927,96 0,18%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN AGNICO EAGLE MINES LTD CA0084741085 Akcje CA USD 219,00 44 870,11 0,16%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN ALIOR BANK S.A. PLALIOR00045 Akcje PL PLN 7 500,00 362 700,00 1,29%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN ALLEGRO.EU SOCIETE ANONYME LU2237380790 Akcje LU PLN 25 500,00 816 000,00 2,90%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN ALPHABET INC. US02079K3059 Akcje US USD 600,00 294 936,01 1,05%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN AMAZON.COM, INC. US0231351067 Akcje US USD 600,00 321 201,83 1,14%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN AS TALLINNA VESI EE3100026436 Akcje EE EUR 500,00 26 145,51 0,09%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN ASBISC ENTERPRISES PLC CY1000031710 Akcje CY PLN 14 000,00 383 040,00 1,36%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN BAKKAFROST P/F FO0000000179 Akcje FO NOK 120,00 29 352,24 0,10%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN BANCO SANTANDER S.A. ES0113900J37 Akcje ES EUR 7 000,00 105 449,86 0,37%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN BANK POLSKA KASA OPIEKI S.A. PLPEKAO00016 Akcje PL PLN 10 000,00 1 108 000,00 3,94%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN BARRICK GOLD CORP CA0679011084 Akcje CA USD 300,00 20 823,13 0,07%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN BENEFIT SYSTEMS S.A. PLBNFTS00018 Akcje PL PLN 150,00 229 500,00 0,82%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN CAPTOR THERAPEUTICS S.A. PLCPTRT00014 Akcje PL PLN 41,00 6 232,00 0,02%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN CCC S.A. PLCCC0000016 Akcje PL PLN 1 000,00 42 150,00 0,15%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN CD PROJEKT S.A. PLOPTTC00011 Akcje PL PLN 300,00 46 455,00 0,17%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN COMARCH S.A. PLCOMAR00012 Akcje PL PLN 778,00 115 144,00 0,41%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN CREEPY JAR S.A. PLCRPJR00019 Akcje PL PLN 70,00 59 150,00 0,21%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN DATAWALK S.A. PLPILAB00012 Akcje PL PLN 500,00 30 000,00 0,11%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN ENEA S.A. PLENEA000013 Akcje PL PLN 35 000,00 223 825,00 0,80%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN ERSTE GROUP BANK AG AT0000652011 Akcje AT EUR 1 600,00 228 496,20 0,81%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN EXXON MOBIL CORP US30231G1022 Akcje US USD 300,00 132 129,86 0,47%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN FIELMANN AG DE0005772206 Akcje DE EUR 300,00 65 152,39 0,23%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN GRENEVIA S.A. PLFAMUR00012 Akcje PL PLN 12 500,00 39 937,50 0,14%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN GRUPA AZOTY S.A. PLZATRM00012 Akcje PL PLN 3 500,00 91 770,00 0,33%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN HUUUGE INC. US44853H1086 Akcje US PLN 6 800,00 181 220,00 0,64%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN ING BANK ŚLĄSKI S.A. PLBSK0000017 Akcje PL PLN 200,00 37 480,00 0,13%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN ING GROEP NV NL0011821202 Akcje NL EUR 2 500,00 137 269,50 0,49%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+JASTRZĘBSKA SPÓŁKA WĘGLOWA
+S.A. PLJSW0000015 Akcje PL PLN 4 000,00 160 200,00 0,57%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN JERONIMO MARTINS SGPS S.A. PTJMT0AE0001 Akcje PT EUR 3 500,00 393 139,50 1,40%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN K+S AG DE000KSAG888 Akcje DE EUR 2 000,00 142 009,07 0,50%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN KGHM POLSKA MIEDŹ S.A. PLKGHM000017 Akcje PL PLN 2 500,00 281 000,00 1,00%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN KRKA DD NOVO MESTO SI0031102120 Akcje SI EUR 100,00 51 623,48 0,18%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN LPP S.A. PLLPP0000011 Akcje PL PLN 3,00 42 030,00 0,15%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN MAYR MELNHOF KARTON AG AT0000938204 Akcje AT EUR 60,00 35 833,82 0,13%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN MBANK S.A. PLBRE0000012 Akcje PL PLN 75,00 30 457,50 0,11%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN META PLATFORMS, INC. US30303M1027 Akcje US USD 250,00 294 628,02 1,05%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN MINESTO AB SE0007578141 Akcje SE SEK 3 800,00 5 412,36 0,02%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN MOL HUNGARIAN OIL & GAS PLC HU0000153937 Akcje HU HUF 4 000,00 143 304,48 0,51%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN NEUCA S.A. PLTRFRM00018 Akcje PL PLN 50,00 38 150,00 0,14%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN NEWMONT CORPORATION US6516391066 Akcje US USD 100,00 17 518,76 0,06%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN OMV AG AT0000743059 Akcje AT EUR 40,00 6 913,99 0,02%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN ORANGE POLSKA S.A. PLTLKPL00017 Akcje PL PLN 15 000,00 104 790,00 0,37%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN PEABODY ENERGY CORP US7045511000 Akcje US USD 1 750,00 155 660,67 0,55%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN PEPCO GROUP N.V. NL0015000AU7 Akcje NL PLN 2 000,00 73 640,00 0,26%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+PGE POLSKA GRUPA
+ENERGETYCZNA S.A. PLPGER000010 Akcje PL PLN 55 000,00 399 300,00 1,42%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+POLSKI KONCERN NAFTOWY
+ORLEN S.A. PLPKN0000018 Akcje PL PLN 16 000,00 1 030 560,00 3,66%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+POWSZECHNA KASA
+OSZCZĘDNOŚCI BANK POLSKI
+S.A. PLPKO0000016 Akcje PL PLN 28 500,00 1 030 275,00
+3,66%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+POWSZECHNY ZAKŁAD
+UBEZPIECZEŃ S.A. PLPZU0000011 Akcje PL PLN 14 000,00 551 740,00 1,96%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN REPSOL YPF ES0173516115 Akcje ES EUR 1 750,00 103 814,37 0,37%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN RYVU THERAPEUTICS S.A. PLSELVT00013 Akcje PL PLN 700,00 42 280,00 0,15%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN SANTANDER BANK POLSKA S.A. PLBZ00000044 Akcje PL PLN 600,00 233 400,00 0,83%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN SELVITA S.A. PLSLVCR00029 Akcje PL PLN 200,00 13 580,00 0,05%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN TALLINNA SADAM AS EE3100021635 Akcje EE EUR 1 263,00 8 003,91 0,03%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN TOTALENERGIES SE FR0000120271 Akcje FR EUR 800,00 187 090,61 0,67%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN VITA 34 AG DE000A0BL849 Akcje DE EUR 39,00 968,47 0,00%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN WITTCHEN S.A. PLWTCHN00030 Akcje PL PLN 6 000,00 219 600,00 0,78%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN YARA INTERNATIONAL ASA NO0010208051 Akcje NO NOK 800,00 115 519,20 0,41%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL EUR 299,90 1 334,64 0,00%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL PLN 42 346,95 42 346,95 0,15%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL PLN 594 793,90 594 793,90 2,11%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL USD 512,76 2 105,70 0,01%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+BANK GOSPODARSTWA
+KRAJOWEGO PL0000500328 Dłużne papiery wartościowe PL PLN 1 500,00 1 458 330,00 5,18%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+BANK GOSPODARSTWA
+KRAJOWEGO PL0000500294 Dłużne papiery wartościowe PL PLN 850,00 629 858,50 2,24%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+BANK GOSPODARSTWA
+KRAJOWEGO PL0000500302 Dłużne papiery wartościowe PL PLN 900,00 555 471,00 1,97%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000113783 Dłużne papiery wartościowe PL PLN 700,00 513 352,00 1,83%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000108197 Dłużne papiery wartościowe PL PLN 360,00 353 725,20 1,26%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000108866 Dłużne papiery wartościowe PL PLN 500,00 468 695,00 1,67%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000111498 Dłużne papiery wartościowe PL PLN 125,00 109 072,50 0,39%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000112736 Dłużne papiery wartościowe PL PLN 550,00 414 804,50 1,47%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000115291 Dłużne papiery wartościowe PL PLN 2 320,00 2 457 042,40 8,74%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000105359 Dłużne papiery wartościowe PL PLN 300,00 515 844,65 1,83%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000114021 Dłużne papiery wartościowe PL PLN 700,00 658 070,00 2,34%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000115192 Dłużne papiery wartościowe PL PLN 1 100,00 1 265 286,00 4,50%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000107611 Dłużne papiery wartościowe PL PLN 500,00 444 080,00 1,58%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000107454 Dłużne papiery wartościowe PL PLN 226,00 233 914,52 0,83%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000110615 Dłużne papiery wartościowe PL PLN 321,00 323 696,40 1,15%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000111738 Dłużne papiery wartościowe PL PLN 154,00 154 462,00 0,55%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000115028 Dłużne papiery wartościowe PL PLN 800,00 756 504,00 2,69%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000113130 Dłużne papiery wartościowe PL PLN 1 000,00 990 000,00 3,52%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000114559 Dłużne papiery wartościowe PL PLN 2 000,00 1 961 200,00 6,97%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000111928 Dłużne papiery wartościowe PL PLN 200,00 192 440,00 0,68%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000113213 Dłużne papiery wartościowe PL PLN 1 850,00 1 762 310,00 6,27%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Środki pieniężne PL NOK 33 000,00 12 573,00 0,04%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2030 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Środki pieniężne PL PLN 64 267,42 64 267,42 0,23%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN ACTIVISION BLIZZARD, INC. US00507V1098 Akcje US USD 300,00 103 855,91 0,27%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN AGNICO EAGLE MINES LTD CA0084741085 Akcje CA USD 358,00 73 349,34 0,19%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN ALIOR BANK S.A. PLALIOR00045 Akcje PL PLN 12 500,00 604 500,00 1,55%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN ALLEGRO.EU SOCIETE ANONYME LU2237380790 Akcje LU PLN 49 500,00 1 584 000,00 4,06%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN ALPHABET INC. US02079K3059 Akcje US USD 1 100,00 540 716,02 1,39%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN AMAZON.COM, INC. US0231351067 Akcje US USD 1 100,00 588 870,01 1,51%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN ASBISC ENTERPRISES PLC CY1000031710 Akcje CY PLN 25 000,00 684 000,00 1,75%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN BAKKAFROST P/F FO0000000179 Akcje FO NOK 250,00 61 150,50 0,16%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN BANCO SANTANDER S.A. ES0113900J37 Akcje ES EUR 14 000,00 210 899,72 0,54%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN BANK POLSKA KASA OPIEKI S.A. PLPEKAO00016 Akcje PL PLN 16 000,00 1 772 800,00 4,55%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN BARRICK GOLD CORP CA0679011084 Akcje CA USD 600,00 41 646,30 0,11%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN BENEFIT SYSTEMS S.A. PLBNFTS00018 Akcje PL PLN 350,00 535 500,00 1,37%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN BICO GROUP AG SE0013647385 Akcje SE SEK 800,00 11 759,17 0,03%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN CAPTOR THERAPEUTICS S.A. PLCPTRT00014 Akcje PL PLN 110,00 16 720,00 0,04%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN CCC S.A. PLCCC0000016 Akcje PL PLN 4 000,00 168 600,00 0,43%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN CD PROJEKT S.A. PLOPTTC00011 Akcje PL PLN 250,00 38 712,50 0,10%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN COMARCH S.A. PLCOMAR00012 Akcje PL PLN 1 224,00 181 152,00 0,46%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN CREEPY JAR S.A. PLCRPJR00019 Akcje PL PLN 80,00 67 600,00 0,17%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN DATAWALK S.A. PLPILAB00012 Akcje PL PLN 1 400,00 84 000,00 0,22%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN ENEA S.A. PLENEA000013 Akcje PL PLN 45 000,00 287 775,00 0,74%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN ERSTE GROUP BANK AG AT0000652011 Akcje AT EUR 2 750,00 392 727,85 1,01%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN EXXON MOBIL CORP US30231G1022 Akcje US USD 600,00 264 259,71 0,68%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN FIELMANN AG DE0005772206 Akcje DE EUR 575,00 124 875,42 0,32%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN GRUPA AZOTY S.A. PLZATRM00012 Akcje PL PLN 3 000,00 78 660,00 0,20%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN HUUUGE INC. US44853H1086 Akcje US PLN 18 000,00 479 700,00 1,23%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN ING BANK ŚLĄSKI S.A. PLBSK0000017 Akcje PL PLN 500,00 93 700,00 0,24%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN ING GROEP NV NL0011821202 Akcje NL EUR 5 000,00 274 539,01 0,70%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN
+JASTRZĘBSKA SPÓŁKA WĘGLOWA
+S.A. PLJSW0000015 Akcje PL PLN 7 500,00 300 375,00 0,77%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN JERONIMO MARTINS SGPS S.A. PTJMT0AE0001 Akcje PT EUR 5 750,00 645 872,04 1,66%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN K+S AG DE000KSAG888 Akcje DE EUR 2 500,00 177 511,34 0,46%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN KGHM POLSKA MIEDŹ S.A. PLKGHM000017 Akcje PL PLN 3 000,00 337 200,00 0,86%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN LPP S.A. PLLPP0000011 Akcje PL PLN 15,00 210 150,00 0,54%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN
+LUBELSKI WĘGIEL BOGDANKA
+S.A. PLLWBGD00016 Akcje PL PLN 1 500,00 58 920,00 0,15%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN MAYR MELNHOF KARTON AG AT0000938204 Akcje AT EUR 100,00 59 723,03 0,15%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN MBANK S.A. PLBRE0000012 Akcje PL PLN 100,00 40 610,00 0,10%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN META PLATFORMS, INC. US30303M1027 Akcje US USD 700,00 824 958,45 2,12%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN MINESTO AB SE0007578141 Akcje SE SEK 8 000,00 11 394,43 0,03%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN MOL HUNGARIAN OIL & GAS PLC HU0000153937 Akcje HU HUF 7 500,00 268 695,90 0,69%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN NEWMONT CORPORATION US6516391066 Akcje US USD 150,00 26 278,13 0,07%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN OMV AG AT0000743059 Akcje AT EUR 70,00 12 099,48 0,03%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN ORANGE POLSKA S.A. PLTLKPL00017 Akcje PL PLN 20 000,00 139 720,00 0,36%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN PEABODY ENERGY CORP US7045511000 Akcje US USD 2 800,00 249 057,08 0,64%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN PEPCO GROUP N.V. NL0015000AU7 Akcje NL PLN 4 000,00 147 280,00 0,38%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN
+PGE POLSKA GRUPA
+ENERGETYCZNA S.A. PLPGER000010 Akcje PL PLN 85 000,00 617 100,00 1,58%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN
+POLSKI KONCERN NAFTOWY
+ORLEN S.A. PLPKN0000018 Akcje PL PLN 32 000,00 2 061 120,00 5,29%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN
+POWSZECHNA KASA
+OSZCZĘDNOŚCI BANK POLSKI
+S.A. PLPKO0000016 Akcje PL PLN 50 000,00 1 807 500,00
+4,64%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN
+POWSZECHNY ZAKŁAD
+UBEZPIECZEŃ S.A. PLPZU0000011 Akcje PL PLN 26 000,00 1 024 660,00 2,63%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN REPSOL YPF ES0173516115 Akcje ES EUR 3 500,00 207 628,75 0,53%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN RYVU THERAPEUTICS S.A. PLSELVT00013 Akcje PL PLN 1 800,00 108 720,00 0,28%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN SANTANDER BANK POLSKA S.A. PLBZ00000044 Akcje PL PLN 1 000,00 389 000,00 1,00%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN SCHLUMBERGER LTD AN8068571086 Akcje US USD 120,00 24 205,94 0,06%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN SELVITA S.A. PLSLVCR00029 Akcje PL PLN 400,00 27 160,00 0,07%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN SYNEKTIK S.A. PLSNKTK00019 Akcje PL PLN 1 000,00 71 200,00 0,18%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN THE MOSAIC COMPANY US61945C1036 Akcje US USD 800,00 114 984,80 0,29%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN TOTALENERGIES SE FR0000120271 Akcje FR EUR 1 500,00 350 794,90 0,90%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN VITA 34 AG DE000A0BL849 Akcje DE EUR 52,00 1 291,30 0,00%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN WARRIOR MET COAL, INC. US93627C1018 Akcje US USD 1 750,00 279 916,12 0,72%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN WITTCHEN S.A. PLWTCHN00030 Akcje PL PLN 10 000,00 366 000,00 0,94%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN YARA INTERNATIONAL ASA NO0010208051 Akcje NO NOK 1 600,00 231 038,40 0,59%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN ZALANDO SE DE000ZAL1111 Akcje DE EUR 200,00 23 461,98 0,06%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL EUR 4 044,41 17 998,84 0,05%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL PLN 59 834,96 59 834,96 0,15%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL PLN 730 608,72 730 608,72 1,87%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL USD 1 437,13 5 901,72 0,02%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN
+BANK GOSPODARSTWA
+KRAJOWEGO PL0000500328 Dłużne papiery wartościowe PL PLN 2 100,00 2 041 662,00 5,24%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN
+BANK GOSPODARSTWA
+KRAJOWEGO PL0000500294 Dłużne papiery wartościowe PL PLN 1 500,00 1 111 515,00 2,85%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN
+BANK GOSPODARSTWA
+KRAJOWEGO PL0000500302 Dłużne papiery wartościowe PL PLN 1 100,00 678 909,00 1,74%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000113783 Dłużne papiery wartościowe PL PLN 900,00 660 024,00 1,69%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000108197 Dłużne papiery wartościowe PL PLN 355,00 348 812,35 0,89%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000108866 Dłużne papiery wartościowe PL PLN 650,00 609 303,50 1,56%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000112736 Dłużne papiery wartościowe PL PLN 650,00 490 223,50 1,26%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000115291 Dłużne papiery wartościowe PL PLN 2 850,00 3 018 349,50 7,74%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000115192 Dłużne papiery wartościowe PL PLN 1 200,00 1 380 312,00 3,54%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000107611 Dłużne papiery wartościowe PL PLN 700,00 621 712,00 1,59%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000107454 Dłużne papiery wartościowe PL PLN 84,00 86 941,68 0,22%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000110615 Dłużne papiery wartościowe PL PLN 104,00 104 873,60 0,27%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000111738 Dłużne papiery wartościowe PL PLN 135,00 135 405,00 0,35%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000115028 Dłużne papiery wartościowe PL PLN 800,00 756 504,00 1,94%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000113130 Dłużne papiery wartościowe PL PLN 1 000,00 990 000,00 2,54%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000114559 Dłużne papiery wartościowe PL PLN 2 300,00 2 255 380,00 5,78%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000113213 Dłużne papiery wartościowe PL PLN 2 200,00 2 095 720,00 5,38%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Środki pieniężne PL NOK 80 539,46 30 685,53 0,08%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2035 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Środki pieniężne PL PLN 91 089,88 91 089,88 0,23%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN ACTIVISION BLIZZARD, INC. US00507V1098 Akcje US USD 550,00 190 402,51 0,43%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN AGNICO EAGLE MINES LTD CA0084741085 Akcje CA USD 567,00 116 170,58 0,27%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN ALIOR BANK S.A. PLALIOR00045 Akcje PL PLN 17 500,00 846 300,00 1,93%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN ALLEGRO.EU SOCIETE ANONYME LU2237380790 Akcje LU PLN 55 000,00 1 760 000,00 4,02%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN ALPHABET INC. US02079K3059 Akcje US USD 1 300,00 639 028,03 1,46%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN AMAZON.COM, INC. US0231351067 Akcje US USD 1 300,00 695 937,29 1,59%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN ASBISC ENTERPRISES PLC CY1000031710 Akcje CY PLN 30 000,00 820 800,00 1,88%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN BAKKAFROST P/F FO0000000179 Akcje FO NOK 300,00 73 380,60 0,17%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN BANCO SANTANDER S.A. ES0113900J37 Akcje ES EUR 12 500,00 188 303,32 0,43%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN BANK POLSKA KASA OPIEKI S.A. PLPEKAO00016 Akcje PL PLN 20 000,00 2 216 000,00 5,06%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN BARRICK GOLD CORP CA0679011084 Akcje CA USD 700,00 48 587,36 0,11%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN BENEFIT SYSTEMS S.A. PLBNFTS00018 Akcje PL PLN 450,00 688 500,00 1,57%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN BICO GROUP AG SE0013647385 Akcje SE SEK 1 000,00 14 698,97 0,03%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN CAPTOR THERAPEUTICS S.A. PLCPTRT00014 Akcje PL PLN 138,00 20 976,00 0,05%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN CCC S.A. PLCCC0000016 Akcje PL PLN 6 000,00 252 900,00 0,58%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN CD PROJEKT S.A. PLOPTTC00011 Akcje PL PLN 200,00 30 970,00 0,07%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN CF INDUSTRIES HOLDINGS INC US1252691001 Akcje US USD 300,00 85 524,05 0,20%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN COMARCH S.A. PLCOMAR00012 Akcje PL PLN 1 948,00 288 304,00 0,66%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN CREDIT AGRICOLE SA FR0000045072 Akcje FR EUR 3 000,00 145 150,98 0,33%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN CREEPY JAR S.A. PLCRPJR00019 Akcje PL PLN 120,00 101 400,00 0,23%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN DATAWALK S.A. PLPILAB00012 Akcje PL PLN 1 500,00 90 000,00 0,21%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN ENEA S.A. PLENEA000013 Akcje PL PLN 80 000,00 511 600,00 1,17%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN ERSTE GROUP BANK AG AT0000652011 Akcje AT EUR 3 800,00 542 678,48 1,24%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN EXXON MOBIL CORP US30231G1022 Akcje US USD 700,00 308 303,00 0,70%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN FIELMANN AG DE0005772206 Akcje DE EUR 800,00 173 739,71 0,40%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN GRENEVIA S.A. PLFAMUR00012 Akcje PL PLN 15 000,00 47 925,00 0,11%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN GRUPA AZOTY S.A. PLZATRM00012 Akcje PL PLN 4 000,00 104 880,00 0,24%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN HUUUGE INC. US44853H1086 Akcje US PLN 20 000,00 533 000,00 1,22%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN ING BANK ŚLĄSKI S.A. PLBSK0000017 Akcje PL PLN 1 200,00 224 880,00 0,51%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN ING GROEP NV NL0011821202 Akcje NL EUR 5 500,00 301 992,91 0,69%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN
+JASTRZĘBSKA SPÓŁKA WĘGLOWA
+S.A. PLJSW0000015 Akcje PL PLN 8 000,00 320 400,00 0,73%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN JERONIMO MARTINS SGPS S.A. PTJMT0AE0001 Akcje PT EUR 8 000,00 898 604,58 2,05%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN K+S AG DE000KSAG888 Akcje DE EUR 4 000,00 284 018,15 0,65%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN KGHM POLSKA MIEDŹ S.A. PLKGHM000017 Akcje PL PLN 5 000,00 562 000,00 1,28%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN LPP S.A. PLLPP0000011 Akcje PL PLN 18,00 252 180,00 0,58%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN
+LUBELSKI WĘGIEL BOGDANKA
+S.A. PLLWBGD00016 Akcje PL PLN 1 500,00 58 920,00 0,13%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN MAYR MELNHOF KARTON AG AT0000938204 Akcje AT EUR 100,00 59 723,03 0,14%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN MBANK S.A. PLBRE0000012 Akcje PL PLN 100,00 40 610,00 0,09%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN META PLATFORMS, INC. US30303M1027 Akcje US USD 900,00 1 060 660,86 2,42%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN MINESTO AB SE0007578141 Akcje SE SEK 12 000,00 17 091,65 0,04%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN MOL HUNGARIAN OIL & GAS PLC HU0000153937 Akcje HU HUF 9 000,00 322 435,08 0,74%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN NEUCA S.A. PLTRFRM00018 Akcje PL PLN 100,00 76 300,00 0,17%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN NEWMONT CORPORATION US6516391066 Akcje US USD 250,00 43 796,89 0,10%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN OMV AG AT0000743059 Akcje AT EUR 130,00 22 470,45 0,05%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN ORANGE POLSKA S.A. PLTLKPL00017 Akcje PL PLN 20 000,00 139 720,00 0,32%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN PEABODY ENERGY CORP US7045511000 Akcje US USD 3 500,00 311 321,35 0,71%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN PEPCO GROUP N.V. NL0015000AU7 Akcje NL PLN 6 000,00 220 920,00 0,50%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN
+PGE POLSKA GRUPA
+ENERGETYCZNA S.A. PLPGER000010 Akcje PL PLN 120 000,00 871 200,00 1,99%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN
+POLSKI KONCERN NAFTOWY
+ORLEN S.A. PLPKN0000018 Akcje PL PLN 40 000,00 2 576 400,00 5,89%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN
+POWSZECHNA KASA
+OSZCZĘDNOŚCI BANK POLSKI
+S.A. PLPKO0000016 Akcje PL PLN 63 000,00 2 277 450,00
+5,20%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN
+POWSZECHNY ZAKŁAD
+UBEZPIECZEŃ S.A. PLPZU0000011 Akcje PL PLN 32 500,00 1 280 825,00 2,93%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN REPSOL YPF ES0173516115 Akcje ES EUR 4 000,00 237 290,00 0,54%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN RYVU THERAPEUTICS S.A. PLSELVT00013 Akcje PL PLN 2 000,00 120 800,00 0,28%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN SANTANDER BANK POLSKA S.A. PLBZ00000044 Akcje PL PLN 1 200,00 466 800,00 1,07%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN SCHLUMBERGER LTD AN8068571086 Akcje US USD 150,00 30 257,43 0,07%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN SELVITA S.A. PLSLVCR00029 Akcje PL PLN 500,00 33 950,00 0,08%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN SYNEKTIK S.A. PLSNKTK00019 Akcje PL PLN 2 000,00 142 400,00 0,33%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN THE MOSAIC COMPANY US61945C1036 Akcje US USD 500,00 71 865,50 0,16%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN TOTALENERGIES SE FR0000120271 Akcje FR EUR 1 000,00 233 863,27 0,53%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN WARRIOR MET COAL, INC. US93627C1018 Akcje US USD 2 100,00 335 899,35 0,77%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN WITTCHEN S.A. PLWTCHN00030 Akcje PL PLN 13 500,00 494 100,00 1,13%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN YARA INTERNATIONAL ASA NO0010208051 Akcje NO NOK 1 200,00 173 278,80 0,40%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN ZALANDO SE DE000ZAL1111 Akcje DE EUR 300,00 35 192,97 0,08%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL EUR 8 862,34 39 440,07 0,09%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL PLN 99 583,06 99 583,06 0,23%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL PLN 767 339,30 767 339,30 1,75%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL USD 1 797,67 7 382,31 0,02%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN
+BANK GOSPODARSTWA
+KRAJOWEGO PL0000500328 Dłużne papiery wartościowe PL PLN 2 200,00 2 138 884,00 4,89%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN
+BANK GOSPODARSTWA
+KRAJOWEGO PL0000500294 Dłużne papiery wartościowe PL PLN 1 500,00 1 111 515,00 2,54%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN
+BANK GOSPODARSTWA
+KRAJOWEGO PL0000500302 Dłużne papiery wartościowe PL PLN 1 000,00 617 190,00 1,41%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000113783 Dłużne papiery wartościowe PL PLN 1 000,00 733 360,00 1,68%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000108197 Dłużne papiery wartościowe PL PLN 480,00 471 633,60 1,08%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000112736 Dłużne papiery wartościowe PL PLN 850,00 641 061,50 1,46%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000115291 Dłużne papiery wartościowe PL PLN 1 750,00 1 853 372,50 4,23%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000115192 Dłużne papiery wartościowe PL PLN 1 000,00 1 150 260,00 2,63%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000107611 Dłużne papiery wartościowe PL PLN 800,00 710 528,00 1,62%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000107454 Dłużne papiery wartościowe PL PLN 209,00 216 319,18 0,49%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000110615 Dłużne papiery wartościowe PL PLN 410,00 413 444,00 0,94%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000111738 Dłużne papiery wartościowe PL PLN 126,00 126 378,00 0,29%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000115028 Dłużne papiery wartościowe PL PLN 500,00 472 815,00 1,08%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000113130 Dłużne papiery wartościowe PL PLN 1 000,00 990 000,00 2,26%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000114559 Dłużne papiery wartościowe PL PLN 2 600,00 2 549 560,00 5,82%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000113213 Dłużne papiery wartościowe PL PLN 2 425,00 2 310 055,00 5,28%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Środki pieniężne PL NOK 52 547,35 20 020,54 0,05%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2040 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Środki pieniężne PL PLN 95 719,45 95 719,45 0,22%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN AB S.A. PLAB00000019 Akcje PL PLN 5 000,00 313 000,00 0,79%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN ACTIVISION BLIZZARD, INC. US00507V1098 Akcje US USD 500,00 173 093,19 0,43%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN AGNICO EAGLE MINES LTD CA0084741085 Akcje CA USD 467,00 95 681,93 0,24%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN ALIOR BANK S.A. PLALIOR00045 Akcje PL PLN 17 500,00 846 300,00 2,12%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN ALLEGRO.EU SOCIETE ANONYME LU2237380790 Akcje LU PLN 58 000,00 1 856 000,00 4,66%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN ALPHABET INC. US02079K3059 Akcje US USD 1 300,00 639 028,03 1,60%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN AMAZON.COM, INC. US0231351067 Akcje US USD 1 300,00 695 937,29 1,75%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN ASBISC ENTERPRISES PLC CY1000031710 Akcje CY PLN 32 000,00 875 520,00 2,20%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN BAKKAFROST P/F FO0000000179 Akcje FO NOK 300,00 73 380,60 0,18%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN BANCO SANTANDER S.A. ES0113900J37 Akcje ES EUR 15 000,00 225 963,98 0,57%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN BANK POLSKA KASA OPIEKI S.A. PLPEKAO00016 Akcje PL PLN 20 000,00 2 216 000,00 5,56%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN BARRICK GOLD CORP CA0679011084 Akcje CA USD 600,00 41 646,30 0,10%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN BENEFIT SYSTEMS S.A. PLBNFTS00018 Akcje PL PLN 400,00 612 000,00 1,54%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN BICO GROUP AG SE0013647385 Akcje SE SEK 1 200,00 17 638,76 0,04%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN CAPTOR THERAPEUTICS S.A. PLCPTRT00014 Akcje PL PLN 400,00 60 800,00 0,15%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN CCC S.A. PLCCC0000016 Akcje PL PLN 8 000,00 337 200,00 0,85%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN CD PROJEKT S.A. PLOPTTC00011 Akcje PL PLN 200,00 30 970,00 0,08%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN CF INDUSTRIES HOLDINGS INC US1252691001 Akcje US USD 450,00 128 286,08 0,32%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN COMARCH S.A. PLCOMAR00012 Akcje PL PLN 1 750,00 259 000,00 0,65%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN CREDIT AGRICOLE SA FR0000045072 Akcje FR EUR 3 500,00 169 342,82 0,43%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN CREEPY JAR S.A. PLCRPJR00019 Akcje PL PLN 50,00 42 250,00 0,11%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN DATAWALK S.A. PLPILAB00012 Akcje PL PLN 1 800,00 108 000,00 0,27%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN ENEA S.A. PLENEA000013 Akcje PL PLN 90 000,00 575 550,00 1,44%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN ERSTE GROUP BANK AG AT0000652011 Akcje AT EUR 3 750,00 535 537,98 1,34%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN EXXON MOBIL CORP US30231G1022 Akcje US USD 750,00 330 324,64 0,83%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN FIELMANN AG DE0005772206 Akcje DE EUR 800,00 173 739,71 0,44%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN GILEAD SCIENCES INC US3755581036 Akcje US USD 100,00 31 649,57 0,08%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN GRENEVIA S.A. PLFAMUR00012 Akcje PL PLN 90 000,00 287 550,00 0,72%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN GRUPA AZOTY S.A. PLZATRM00012 Akcje PL PLN 5 000,00 131 100,00 0,33%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN HUUUGE INC. US44853H1086 Akcje US PLN 24 000,00 639 600,00 1,61%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN ILLUMINA INC US4523271090 Akcje US USD 20,00 15 398,93 0,04%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN ING BANK ŚLĄSKI S.A. PLBSK0000017 Akcje PL PLN 1 100,00 206 140,00 0,52%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN ING GROEP NV NL0011821202 Akcje NL EUR 4 250,00 233 358,16 0,59%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN INTUITIVE SURGICAL INC US46120E6023 Akcje US USD 30,00 42 126,32 0,11%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN
+JASTRZĘBSKA SPÓŁKA WĘGLOWA
+S.A. PLJSW0000015 Akcje PL PLN 6 000,00 240 300,00 0,60%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN JERONIMO MARTINS SGPS S.A. PTJMT0AE0001 Akcje PT EUR 8 500,00 954 767,36 2,40%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN K+S AG DE000KSAG888 Akcje DE EUR 2 700,00 191 712,25 0,48%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN KGHM POLSKA MIEDŹ S.A. PLKGHM000017 Akcje PL PLN 2 750,00 309 100,00 0,78%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN LPP S.A. PLLPP0000011 Akcje PL PLN 30,00 420 300,00 1,06%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN MBANK S.A. PLBRE0000012 Akcje PL PLN 150,00 60 915,00 0,15%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN META PLATFORMS, INC. US30303M1027 Akcje US USD 900,00 1 060 660,86 2,66%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN MINESTO AB SE0007578141 Akcje SE SEK 14 000,00 19 940,26 0,05%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN MOL HUNGARIAN OIL & GAS PLC HU0000153937 Akcje HU HUF 9 000,00 322 435,08 0,81%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN NEUCA S.A. PLTRFRM00018 Akcje PL PLN 250,00 190 750,00 0,48%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN NEWMONT CORPORATION US6516391066 Akcje US USD 150,00 26 278,13 0,07%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN OMV AG AT0000743059 Akcje AT EUR 100,00 17 284,97 0,04%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN ORANGE POLSKA S.A. PLTLKPL00017 Akcje PL PLN 35 000,00 244 510,00 0,61%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN PEABODY ENERGY CORP US7045511000 Akcje US USD 4 200,00 373 585,62 0,94%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN PEPCO GROUP N.V. NL0015000AU7 Akcje NL PLN 10 000,00 368 200,00 0,92%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN
+PGE POLSKA GRUPA
+ENERGETYCZNA S.A. PLPGER000010 Akcje PL PLN 120 000,00 871 200,00 2,19%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN
+POLSKI KONCERN NAFTOWY
+ORLEN S.A. PLPKN0000018 Akcje PL PLN 42 500,00 2 737 425,00 6,87%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN
+POWSZECHNA KASA
+OSZCZĘDNOŚCI BANK POLSKI
+S.A. PLPKO0000016 Akcje PL PLN 67 500,00 2 440 125,00
+6,13%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN
+POWSZECHNY ZAKŁAD
+UBEZPIECZEŃ S.A. PLPZU0000011 Akcje PL PLN 36 000,00 1 418 760,00 3,56%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN QUANTAFUEL AS NO0010785967 Akcje NO NOK 3 500,00 8 507,73 0,02%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN REPSOL YPF ES0173516115 Akcje ES EUR 4 000,00 237 290,00 0,60%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN RYVU THERAPEUTICS S.A. PLSELVT00013 Akcje PL PLN 2 000,00 120 800,00 0,30%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN SANTANDER BANK POLSKA S.A. PLBZ00000044 Akcje PL PLN 1 200,00 466 800,00 1,17%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN SCHLUMBERGER LTD AN8068571086 Akcje US USD 200,00 40 343,24 0,10%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN
+SCHOELLER - BLECKMANN
+OILFIELD EQUIPMENT AG AT0000946652 Akcje AT EUR 150,00 35 446,64 0,09%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN SELVITA S.A. PLSLVCR00029 Akcje PL PLN 500,00 33 950,00 0,09%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN SYNEKTIK S.A. PLSNKTK00019 Akcje PL PLN 300,00 21 360,00 0,05%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN THE MOSAIC COMPANY US61945C1036 Akcje US USD 900,00 129 357,90 0,32%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN TOTALENERGIES SE FR0000120271 Akcje FR EUR 1 000,00 233 863,27 0,59%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN VITA 34 AG DE000A0BL849 Akcje DE EUR 260,00 6 456,50 0,02%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN WARRIOR MET COAL, INC. US93627C1018 Akcje US USD 1 500,00 239 928,11 0,60%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN WITTCHEN S.A. PLWTCHN00030 Akcje PL PLN 16 000,00 585 600,00 1,47%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN YARA INTERNATIONAL ASA NO0010208051 Akcje NO NOK 1 200,00 173 278,80 0,44%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL EUR 9 424,24 41 940,70 0,11%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL PLN 98 154,04 98 154,04 0,25%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL PLN 731 567,41 731 567,41 1,84%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL USD 4 181,44 17 171,50 0,04%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN
+BANK GOSPODARSTWA
+KRAJOWEGO PL0000500328 Dłużne papiery wartościowe PL PLN 1 500,00 1 458 330,00 3,66%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN
+BANK GOSPODARSTWA
+KRAJOWEGO PL0000500294 Dłużne papiery wartościowe PL PLN 1 100,00 815 111,00 2,05%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN
+BANK GOSPODARSTWA
+KRAJOWEGO PL0000500302 Dłużne papiery wartościowe PL PLN 600,00 370 314,00 0,93%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000113783 Dłużne papiery wartościowe PL PLN 1 000,00 733 360,00 1,84%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000108197 Dłużne papiery wartościowe PL PLN 260,00 255 468,20 0,64%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000112736 Dłużne papiery wartościowe PL PLN 800,00 603 352,00 1,51%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000115291 Dłużne papiery wartościowe PL PLN 1 190,00 1 260 293,30 3,16%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000115192 Dłużne papiery wartościowe PL PLN 900,00 1 035 234,00 2,60%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000107611 Dłużne papiery wartościowe PL PLN 700,00 621 712,00 1,56%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000107454 Dłużne papiery wartościowe PL PLN 133,00 137 657,66 0,35%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000110615 Dłużne papiery wartościowe PL PLN 250,00 252 100,00 0,63%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000111738 Dłużne papiery wartościowe PL PLN 74,00 74 222,00 0,19%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000115028 Dłużne papiery wartościowe PL PLN 200,00 189 126,00 0,47%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000113130 Dłużne papiery wartościowe PL PLN 700,00 693 000,00 1,74%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000114559 Dłużne papiery wartościowe PL PLN 700,00 686 420,00 1,72%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000113213 Dłużne papiery wartościowe PL PLN 2 000,00 1 905 200,00 4,78%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN IMPLANTICA AG SE0014855029 Kwity Depozytowe LI SEK 1 500,00 10 286,64 0,03%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Środki pieniężne PL NOK 52 547,35 20 020,54 0,05%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2045 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Środki pieniężne PL PLN 93 147,23 93 147,23 0,23%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN AB S.A. PLAB00000019 Akcje PL PLN 4 000,00 250 400,00 0,80%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN ACTIVISION BLIZZARD, INC. US00507V1098 Akcje US USD 300,00 103 855,91 0,33%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN AGNICO EAGLE MINES LTD CA0084741085 Akcje CA USD 358,00 73 349,34 0,23%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN ALIOR BANK S.A. PLALIOR00045 Akcje PL PLN 15 000,00 725 400,00 2,32%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN ALLEGRO.EU SOCIETE ANONYME LU2237380790 Akcje LU PLN 43 000,00 1 376 000,00 4,40%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN ALPHABET INC. US02079K3059 Akcje US USD 1 000,00 491 560,02 1,57%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN AMAZON.COM, INC. US0231351067 Akcje US USD 1 000,00 535 336,38 1,71%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN ASBISC ENTERPRISES PLC CY1000031710 Akcje CY PLN 25 000,00 684 000,00 2,19%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN
+B.R.A.I.N. BIOTECHNOLOGY
+RESEARCH AND INFORMATION
+NETWORK AG DE0005203947 Akcje DE EUR 3 000,00 54 471,67
+0,17%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN BAKKAFROST P/F FO0000000179 Akcje FO NOK 300,00 73 380,60 0,23%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN BANCO SANTANDER S.A. ES0113900J37 Akcje ES EUR 10 000,00 150 642,66 0,48%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN BANK POLSKA KASA OPIEKI S.A. PLPEKAO00016 Akcje PL PLN 16 000,00 1 772 800,00 5,66%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN BARRICK GOLD CORP CA0679011084 Akcje CA USD 600,00 41 646,30 0,13%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN BENEFIT SYSTEMS S.A. PLBNFTS00018 Akcje PL PLN 350,00 535 500,00 1,71%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN BICO GROUP AG SE0013647385 Akcje SE SEK 1 000,00 14 698,97 0,05%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN BNP PARIBAS S.A. FR0000131104 Akcje FR EUR 600,00 154 122,79 0,49%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN CAPTOR THERAPEUTICS S.A. PLCPTRT00014 Akcje PL PLN 138,00 20 976,00 0,07%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN CCC S.A. PLCCC0000016 Akcje PL PLN 5 000,00 210 750,00 0,67%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN CD PROJEKT S.A. PLOPTTC00011 Akcje PL PLN 300,00 46 455,00 0,15%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN CDRL S.A. PLCDRL000043 Akcje PL PLN 500,00 8 250,00 0,03%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN CF INDUSTRIES HOLDINGS INC US1252691001 Akcje US USD 250,00 71 270,04 0,23%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN COMARCH S.A. PLCOMAR00012 Akcje PL PLN 1 600,00 236 800,00 0,76%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN CREDIT AGRICOLE SA FR0000045072 Akcje FR EUR 2 400,00 116 120,79 0,37%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN CREEPY JAR S.A. PLCRPJR00019 Akcje PL PLN 80,00 67 600,00 0,22%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN DATAWALK S.A. PLPILAB00012 Akcje PL PLN 1 500,00 90 000,00 0,29%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN ENEA S.A. PLENEA000013 Akcje PL PLN 60 000,00 383 700,00 1,23%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN ERSTE GROUP BANK AG AT0000652011 Akcje AT EUR 3 200,00 456 992,41 1,46%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN EXXON MOBIL CORP US30231G1022 Akcje US USD 600,00 264 259,71 0,84%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN FIELMANN AG DE0005772206 Akcje DE EUR 700,00 152 022,25 0,49%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN GILEAD SCIENCES INC US3755581036 Akcje US USD 70,00 22 154,70 0,07%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN GRENEVIA S.A. PLFAMUR00012 Akcje PL PLN 75 000,00 239 625,00 0,77%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN GRUPA AZOTY S.A. PLZATRM00012 Akcje PL PLN 2 500,00 65 550,00 0,21%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN HUUUGE INC. US44853H1086 Akcje US PLN 16 000,00 426 400,00 1,36%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN ILLUMINA INC US4523271090 Akcje US USD 20,00 15 398,93 0,05%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN IMPACT COATINGS AB SE0001279142 Akcje SE SEK 6 000,00 13 112,64 0,04%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN ING BANK ŚLĄSKI S.A. PLBSK0000017 Akcje PL PLN 1 300,00 243 620,00 0,78%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN ING GROEP NV NL0011821202 Akcje NL EUR 2 500,00 137 269,50 0,44%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN INTUITIVE SURGICAL INC US46120E6023 Akcje US USD 60,00 84 252,65 0,27%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN
+JASTRZĘBSKA SPÓŁKA WĘGLOWA
+S.A. PLJSW0000015 Akcje PL PLN 6 000,00 240 300,00 0,77%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN JERONIMO MARTINS SGPS S.A. PTJMT0AE0001 Akcje PT EUR 6 400,00 718 883,66 2,30%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN K+S AG DE000KSAG888 Akcje DE EUR 2 000,00 142 009,07 0,45%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN KGHM POLSKA MIEDŹ S.A. PLKGHM000017 Akcje PL PLN 2 500,00 281 000,00 0,90%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN LPP S.A. PLLPP0000011 Akcje PL PLN 25,00 350 250,00 1,12%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN MBANK S.A. PLBRE0000012 Akcje PL PLN 125,00 50 762,50 0,16%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN META PLATFORMS, INC. US30303M1027 Akcje US USD 750,00 883 884,05 2,82%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN MOL HUNGARIAN OIL & GAS PLC HU0000153937 Akcje HU HUF 5 500,00 197 043,66 0,63%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN NEUCA S.A. PLTRFRM00018 Akcje PL PLN 150,00 114 450,00 0,37%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN NEWMONT CORPORATION US6516391066 Akcje US USD 200,00 35 037,51 0,11%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN OMV AG AT0000743059 Akcje AT EUR 100,00 17 284,97 0,06%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN ORANGE POLSKA S.A. PLTLKPL00017 Akcje PL PLN 30 000,00 209 580,00 0,67%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN PEABODY ENERGY CORP US7045511000 Akcje US USD 3 000,00 266 846,87 0,85%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN PEPCO GROUP N.V. NL0015000AU7 Akcje NL PLN 8 000,00 294 560,00 0,94%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN
+PGE POLSKA GRUPA
+ENERGETYCZNA S.A. PLPGER000010 Akcje PL PLN 100 000,00 726 000,00 2,32%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN
+POLSKI KONCERN NAFTOWY
+ORLEN S.A. PLPKN0000018 Akcje PL PLN 29 000,00 1 867 890,00 5,97%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN
+POWSZECHNA KASA
+OSZCZĘDNOŚCI BANK POLSKI
+S.A. PLPKO0000016 Akcje PL PLN 52 500,00 1 897 875,00
+6,06%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN
+POWSZECHNY ZAKŁAD
+UBEZPIECZEŃ S.A. PLPZU0000011 Akcje PL PLN 28 000,00 1 103 480,00 3,53%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN QUANTAFUEL AS NO0010785967 Akcje NO NOK 3 000,00 7 292,34 0,02%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN REPSOL YPF ES0173516115 Akcje ES EUR 3 180,00 188 645,55 0,60%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN RYVU THERAPEUTICS S.A. PLSELVT00013 Akcje PL PLN 1 250,00 75 500,00 0,24%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN SANTANDER BANK POLSKA S.A. PLBZ00000044 Akcje PL PLN 900,00 350 100,00 1,12%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN SCHLUMBERGER LTD AN8068571086 Akcje US USD 200,00 40 343,24 0,13%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN
+SCHOELLER - BLECKMANN
+OILFIELD EQUIPMENT AG AT0000946652 Akcje AT EUR 100,00 23 631,09 0,08%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN SELVITA S.A. PLSLVCR00029 Akcje PL PLN 300,00 20 370,00 0,07%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN SHOPER S.A. PLSHPR000021 Akcje PL PLN 2 000,00 58 000,00 0,19%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN THE MOSAIC COMPANY US61945C1036 Akcje US USD 800,00 114 984,80 0,37%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN TOTALENERGIES SE FR0000120271 Akcje FR EUR 1 200,00 280 635,92 0,90%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN WITTCHEN S.A. PLWTCHN00030 Akcje PL PLN 16 000,00 585 600,00 1,87%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN YARA INTERNATIONAL ASA NO0010208051 Akcje NO NOK 1 000,00 144 399,00 0,46%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN ZALANDO SE DE000ZAL1111 Akcje DE EUR 250,00 29 327,48 0,09%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL EUR 9 779,12 43 520,02 0,14%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL PLN 101 469,59 101 469,59 0,32%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL PLN 759 490,25 759 490,25 2,43%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL USD 2 311,49 9 492,36 0,03%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN
+BANK GOSPODARSTWA
+KRAJOWEGO PL0000500328 Dłużne papiery wartościowe PL PLN 1 100,00 1 069 442,00 3,42%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN
+BANK GOSPODARSTWA
+KRAJOWEGO PL0000500294 Dłużne papiery wartościowe PL PLN 900,00 666 909,00 2,13%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN
+BANK GOSPODARSTWA
+KRAJOWEGO PL0000500302 Dłużne papiery wartościowe PL PLN 200,00 123 438,00 0,39%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000113783 Dłużne papiery wartościowe PL PLN 700,00 513 352,00 1,64%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000108197 Dłużne papiery wartościowe PL PLN 173,00 169 984,61 0,54%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000112736 Dłużne papiery wartościowe PL PLN 550,00 414 804,50 1,33%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000115291 Dłużne papiery wartościowe PL PLN 1 100,00 1 164 977,00 3,72%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000115192 Dłużne papiery wartościowe PL PLN 700,00 805 182,00 2,57%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000107611 Dłużne papiery wartościowe PL PLN 700,00 621 712,00 1,99%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000110615 Dłużne papiery wartościowe PL PLN 164,00 165 377,60 0,53%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000111738 Dłużne papiery wartościowe PL PLN 115,00 115 345,00 0,37%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000115028 Dłużne papiery wartościowe PL PLN 300,00 283 689,00 0,91%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000113130 Dłużne papiery wartościowe PL PLN 200,00 198 000,00 0,63%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000114559 Dłużne papiery wartościowe PL PLN 500,00 490 300,00 1,57%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000113213 Dłużne papiery wartościowe PL PLN 1 750,00 1 667 050,00 5,33%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN IMPLANTICA AG SE0014855029 Kwity Depozytowe LI SEK 1 000,00 6 857,76 0,02%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Środki pieniężne PL NOK 44 297,35 16 877,29 0,05%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2050 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Środki pieniężne PL PLN 66 245,63 66 245,63 0,21%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN AB S.A. PLAB00000019 Akcje PL PLN 3 000,00 187 800,00 0,91%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN ACTIVISION BLIZZARD, INC. US00507V1098 Akcje US USD 200,00 69 237,28 0,33%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN ALIOR BANK S.A. PLALIOR00045 Akcje PL PLN 10 000,00 483 600,00 2,34%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN ALLEGRO.EU SOCIETE ANONYME LU2237380790 Akcje LU PLN 30 000,00 960 000,00 4,64%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN ALPHABET INC. US02079K3059 Akcje US USD 700,00 344 092,01 1,66%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN AMAZON.COM, INC. US0231351067 Akcje US USD 700,00 374 735,46 1,81%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN ASBISC ENTERPRISES PLC CY1000031710 Akcje CY PLN 16 000,00 437 760,00 2,11%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN
+B.R.A.I.N. BIOTECHNOLOGY
+RESEARCH AND INFORMATION
+NETWORK AG DE0005203947 Akcje DE EUR 2 000,00 36 314,45
+0,18%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN BAKKAFROST P/F FO0000000179 Akcje FO NOK 200,00 48 920,40 0,24%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN BANCO SANTANDER S.A. ES0113900J37 Akcje ES EUR 7 500,00 112 981,99 0,55%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN BANK POLSKA KASA OPIEKI S.A. PLPEKAO00016 Akcje PL PLN 10 500,00 1 163 400,00 5,62%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN BENEFIT SYSTEMS S.A. PLBNFTS00018 Akcje PL PLN 180,00 275 400,00 1,33%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN BICO GROUP AG SE0013647385 Akcje SE SEK 400,00 5 879,59 0,03%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN CAPTOR THERAPEUTICS S.A. PLCPTRT00014 Akcje PL PLN 41,00 6 232,00 0,03%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN CCC S.A. PLCCC0000016 Akcje PL PLN 4 500,00 189 675,00 0,92%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN CD PROJEKT S.A. PLOPTTC00011 Akcje PL PLN 300,00 46 455,00 0,22%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN CEZ A.S. CZ0005112300 Akcje CZ CZK 500,00 84 375,00 0,41%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN CF INDUSTRIES HOLDINGS INC US1252691001 Akcje US USD 200,00 57 016,03 0,28%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN COMARCH S.A. PLCOMAR00012 Akcje PL PLN 1 000,00 148 000,00 0,71%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN CREDIT AGRICOLE SA FR0000045072 Akcje FR EUR 1 600,00 77 413,86 0,37%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN CREEPY JAR S.A. PLCRPJR00019 Akcje PL PLN 100,00 84 500,00 0,41%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN DATAWALK S.A. PLPILAB00012 Akcje PL PLN 900,00 54 000,00 0,26%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN ENEA S.A. PLENEA000013 Akcje PL PLN 50 000,00 319 750,00 1,54%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN ERSTE GROUP BANK AG AT0000652011 Akcje AT EUR 2 250,00 321 322,79 1,55%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN EXXON MOBIL CORP US30231G1022 Akcje US USD 400,00 176 173,14 0,85%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN GILEAD SCIENCES INC US3755581036 Akcje US USD 40,00 12 659,83 0,06%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN GRENEVIA S.A. PLFAMUR00012 Akcje PL PLN 65 000,00 207 675,00 1,00%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN GRUPA AZOTY S.A. PLZATRM00012 Akcje PL PLN 2 000,00 52 440,00 0,25%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN HUUUGE INC. US44853H1086 Akcje US PLN 10 000,00 266 500,00 1,29%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN ILLUMINA INC US4523271090 Akcje US USD 10,00 7 699,46 0,04%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN ING BANK ŚLĄSKI S.A. PLBSK0000017 Akcje PL PLN 500,00 93 700,00 0,45%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN ING GROEP NV NL0011821202 Akcje NL EUR 1 600,00 87 852,48 0,42%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN INTUITIVE SURGICAL INC US46120E6023 Akcje US USD 30,00 42 126,32 0,20%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN
+JASTRZĘBSKA SPÓŁKA WĘGLOWA
+S.A. PLJSW0000015 Akcje PL PLN 3 500,00 140 175,00 0,68%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN JERONIMO MARTINS SGPS S.A. PTJMT0AE0001 Akcje PT EUR 4 800,00 539 162,75 2,60%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN K+S AG DE000KSAG888 Akcje DE EUR 1 250,00 88 755,67 0,43%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN KGHM POLSKA MIEDŹ S.A. PLKGHM000017 Akcje PL PLN 1 500,00 168 600,00 0,81%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN LPP S.A. PLLPP0000011 Akcje PL PLN 15,00 210 150,00 1,02%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN MBANK S.A. PLBRE0000012 Akcje PL PLN 75,00 30 457,50 0,15%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN META PLATFORMS, INC. US30303M1027 Akcje US USD 500,00 589 256,03 2,85%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN MOL HUNGARIAN OIL & GAS PLC HU0000153937 Akcje HU HUF 3 500,00 125 391,42 0,61%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN NEUCA S.A. PLTRFRM00018 Akcje PL PLN 100,00 76 300,00 0,37%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN OMV AG AT0000743059 Akcje AT EUR 50,00 8 642,48 0,04%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN ORANGE POLSKA S.A. PLTLKPL00017 Akcje PL PLN 25 000,00 174 650,00 0,84%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN PEABODY ENERGY CORP US7045511000 Akcje US USD 2 250,00 200 135,15 0,97%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN PEPCO GROUP N.V. NL0015000AU7 Akcje NL PLN 5 000,00 184 100,00 0,89%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN
+PGE POLSKA GRUPA
+ENERGETYCZNA S.A. PLPGER000010 Akcje PL PLN 70 000,00 508 200,00 2,45%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN
+POLSKI KONCERN NAFTOWY
+ORLEN S.A. PLPKN0000018 Akcje PL PLN 19 000,00 1 223 790,00 5,91%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN
+POWSZECHNA KASA
+OSZCZĘDNOŚCI BANK POLSKI
+S.A. PLPKO0000016 Akcje PL PLN 35 000,00 1 265 250,00
+6,11%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN
+POWSZECHNY ZAKŁAD
+UBEZPIECZEŃ S.A. PLPZU0000011 Akcje PL PLN 20 000,00 788 200,00 3,81%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN QUANTAFUEL AS NO0010785967 Akcje NO NOK 800,00 1 944,62 0,01%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN READLY INTERNATIONAL AB SE0014855292 Akcje SE SEK 500,00 2 712,96 0,01%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN REPSOL YPF ES0173516115 Akcje ES EUR 2 000,00 118 645,00 0,57%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN RYVU THERAPEUTICS S.A. PLSELVT00013 Akcje PL PLN 1 000,00 60 400,00 0,29%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN SANTANDER BANK POLSKA S.A. PLBZ00000044 Akcje PL PLN 600,00 233 400,00 1,13%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN SCHLUMBERGER LTD AN8068571086 Akcje US USD 100,00 20 171,62 0,10%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN
+SCHOELLER - BLECKMANN
+OILFIELD EQUIPMENT AG AT0000946652 Akcje AT EUR 60,00 14 178,66 0,07%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN THE MOSAIC COMPANY US61945C1036 Akcje US USD 400,00 57 492,40 0,28%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN TOTALENERGIES SE FR0000120271 Akcje FR EUR 750,00 175 397,45 0,85%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN WARRIOR MET COAL, INC. US93627C1018 Akcje US USD 1 200,00 191 942,48 0,93%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN WITTCHEN S.A. PLWTCHN00030 Akcje PL PLN 10 000,00 366 000,00 1,77%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN YARA INTERNATIONAL ASA NO0010208051 Akcje NO NOK 800,00 115 519,20 0,56%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL EUR 5 049,43 22 471,48 0,11%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL PLN 97 999,66 97 999,66 0,47%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL PLN 498 254,10 498 254,10 2,41%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL USD 966,19 3 967,76 0,02%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN
+BANK GOSPODARSTWA
+KRAJOWEGO PL0000500328 Dłużne papiery wartościowe PL PLN 400,00 388 888,00 1,88%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN
+BANK GOSPODARSTWA
+KRAJOWEGO PL0000500294 Dłużne papiery wartościowe PL PLN 500,00 370 505,00 1,79%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN
+BANK GOSPODARSTWA
+KRAJOWEGO PL0000500302 Dłużne papiery wartościowe PL PLN 200,00 123 438,00 0,60%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000113783 Dłużne papiery wartościowe PL PLN 500,00 366 680,00 1,77%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000112736 Dłużne papiery wartościowe PL PLN 325,00 245 111,75 1,18%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000115291 Dłużne papiery wartościowe PL PLN 970,00 1 027 297,90 4,96%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000115192 Dłużne papiery wartościowe PL PLN 400,00 460 104,00 2,22%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000107611 Dłużne papiery wartościowe PL PLN 200,00 177 632,00 0,86%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000110615 Dłużne papiery wartościowe PL PLN 131,00 132 100,40 0,64%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000111738 Dłużne papiery wartościowe PL PLN 14,00 14 042,00 0,07%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000115028 Dłużne papiery wartościowe PL PLN 200,00 189 126,00 0,91%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000113130 Dłużne papiery wartościowe PL PLN 400,00 396 000,00 1,91%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000114559 Dłużne papiery wartościowe PL PLN 500,00 490 300,00 2,37%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000113213 Dłużne papiery wartościowe PL PLN 1 100,00 1 047 860,00 5,06%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN IMPLANTICA AG SE0014855029 Kwity Depozytowe LI SEK 300,00 2 057,33 0,01%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Środki pieniężne PL CZK 142,48 26,72 0,00%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Środki pieniężne PL NOK 35 031,57 13 347,03 0,06%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2055 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Środki pieniężne PL PLN 43 750,78 43 750,78 0,21%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN AB S.A. PLAB00000019 Akcje PL PLN 1 600,00 100 160,00 1,04%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN AGNICO EAGLE MINES LTD CA0084741085 Akcje CA USD 51,00 10 449,20 0,11%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN ALIOR BANK S.A. PLALIOR00045 Akcje PL PLN 4 500,00 217 620,00 2,26%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN ALLEGRO.EU SOCIETE ANONYME LU2237380790 Akcje LU PLN 13 500,00 432 000,00 4,49%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN ALPHABET INC. US02079K3059 Akcje US USD 275,00 135 179,01 1,40%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN AMAZON.COM, INC. US0231351067 Akcje US USD 275,00 147 217,50 1,53%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN ASBISC ENTERPRISES PLC CY1000031710 Akcje CY PLN 7 500,00 205 200,00 2,13%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN
+B.R.A.I.N. BIOTECHNOLOGY
+RESEARCH AND INFORMATION
+NETWORK AG DE0005203947 Akcje DE EUR 600,00 10 894,33
+0,11%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN BAKKAFROST P/F FO0000000179 Akcje FO NOK 50,00 12 230,10 0,13%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN BANCO SANTANDER S.A. ES0113900J37 Akcje ES EUR 3 000,00 45 192,80 0,47%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN BANK POLSKA KASA OPIEKI S.A. PLPEKAO00016 Akcje PL PLN 4 750,00 526 300,00 5,47%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN BARRICK GOLD CORP CA0679011084 Akcje CA USD 100,00 6 941,06 0,07%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN BENEFIT SYSTEMS S.A. PLBNFTS00018 Akcje PL PLN 73,00 111 690,00 1,16%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN BICO GROUP AG SE0013647385 Akcje SE SEK 160,00 2 351,83 0,02%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN BNP PARIBAS S.A. FR0000131104 Akcje FR EUR 150,00 38 530,70 0,40%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN CAPTOR THERAPEUTICS S.A. PLCPTRT00014 Akcje PL PLN 250,00 38 000,00 0,39%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN CCC S.A. PLCCC0000016 Akcje PL PLN 2 000,00 84 300,00 0,88%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN CEZ A.S. CZ0005112300 Akcje CZ CZK 280,00 47 250,00 0,49%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN COMARCH S.A. PLCOMAR00012 Akcje PL PLN 300,00 44 400,00 0,46%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN CREDIT AGRICOLE SA FR0000045072 Akcje FR EUR 750,00 36 287,75 0,38%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN CREEPY JAR S.A. PLCRPJR00019 Akcje PL PLN 40,00 33 800,00 0,35%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN DATAWALK S.A. PLPILAB00012 Akcje PL PLN 150,00 9 000,00 0,09%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN ENEA S.A. PLENEA000013 Akcje PL PLN 24 000,00 153 480,00 1,59%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN ERSTE GROUP BANK AG AT0000652011 Akcje AT EUR 800,00 114 248,10 1,19%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN EXXON MOBIL CORP US30231G1022 Akcje US USD 200,00 88 086,57 0,92%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN GILEAD SCIENCES INC US3755581036 Akcje US USD 20,00 6 329,91 0,07%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN GRENEVIA S.A. PLFAMUR00012 Akcje PL PLN 35 000,00 111 825,00 1,16%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN HUUUGE INC. US44853H1086 Akcje US PLN 5 428,00 144 656,20 1,50%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN HYDROGENPRO AS NO0010892359 Akcje NO NOK 300,00 2 228,85 0,02%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN ILLUMINA INC US4523271090 Akcje US USD 4,00 3 079,79 0,03%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN ING BANK ŚLĄSKI S.A. PLBSK0000017 Akcje PL PLN 250,00 46 850,00 0,49%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN ING GROEP NV NL0011821202 Akcje NL EUR 1 250,00 68 634,75 0,71%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN INTUITIVE SURGICAL INC US46120E6023 Akcje US USD 6,00 8 425,26 0,09%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN
+JASTRZĘBSKA SPÓŁKA WĘGLOWA
+S.A. PLJSW0000015 Akcje PL PLN 2 500,00 100 125,00 1,04%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN JERONIMO MARTINS SGPS S.A. PTJMT0AE0001 Akcje PT EUR 2 100,00 235 883,70 2,45%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN K+S AG DE000KSAG888 Akcje DE EUR 1 000,00 71 004,54 0,74%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN KGHM POLSKA MIEDŹ S.A. PLKGHM000017 Akcje PL PLN 750,00 84 300,00 0,88%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN LPP S.A. PLLPP0000011 Akcje PL PLN 8,00 112 080,00 1,16%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN MBANK S.A. PLBRE0000012 Akcje PL PLN 30,00 12 183,00 0,13%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN META PLATFORMS, INC. US30303M1027 Akcje US USD 200,00 235 702,41 2,45%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN MOL HUNGARIAN OIL & GAS PLC HU0000153937 Akcje HU HUF 1 500,00 53 739,18 0,56%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN NEUCA S.A. PLTRFRM00018 Akcje PL PLN 50,00 38 150,00 0,40%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN NEWMONT CORPORATION US6516391066 Akcje US USD 30,00 5 255,63 0,05%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN OMV AG AT0000743059 Akcje AT EUR 20,00 3 456,99 0,04%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN ORANGE POLSKA S.A. PLTLKPL00017 Akcje PL PLN 8 250,00 57 634,50 0,60%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN PEABODY ENERGY CORP US7045511000 Akcje US USD 800,00 71 159,16 0,74%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN PEPCO GROUP N.V. NL0015000AU7 Akcje NL PLN 3 000,00 110 460,00 1,15%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN
+PGE POLSKA GRUPA
+ENERGETYCZNA S.A. PLPGER000010 Akcje PL PLN 36 000,00 261 360,00 2,72%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN
+POLSKI KONCERN NAFTOWY
+ORLEN S.A. PLPKN0000018 Akcje PL PLN 9 500,00 611 895,00 6,36%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN
+POWSZECHNA KASA
+OSZCZĘDNOŚCI BANK POLSKI
+S.A. PLPKO0000016 Akcje PL PLN 16 000,00 578 400,00
+6,01%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN
+POWSZECHNY ZAKŁAD
+UBEZPIECZEŃ S.A. PLPZU0000011 Akcje PL PLN 10 000,00 394 100,00 4,10%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN QUANTAFUEL AS NO0010785967 Akcje NO NOK 260,00 632,00 0,01%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN READLY INTERNATIONAL AB SE0014855292 Akcje SE SEK 200,00 1 085,18 0,01%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN REPSOL YPF ES0173516115 Akcje ES EUR 1 000,00 59 322,50 0,62%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN RYVU THERAPEUTICS S.A. PLSELVT00013 Akcje PL PLN 100,00 6 040,00 0,06%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN SANTANDER BANK POLSKA S.A. PLBZ00000044 Akcje PL PLN 250,00 97 250,00 1,01%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN
+SCHOELLER - BLECKMANN
+OILFIELD EQUIPMENT AG AT0000946652 Akcje AT EUR 20,00 4 726,22 0,05%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN THE MOSAIC COMPANY US61945C1036 Akcje US USD 200,00 28 746,20 0,30%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN TOTALENERGIES SE FR0000120271 Akcje FR EUR 200,00 46 772,65 0,49%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN WARRIOR MET COAL, INC. US93627C1018 Akcje US USD 400,00 63 980,83 0,66%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN WITTCHEN S.A. PLWTCHN00030 Akcje PL PLN 4 500,00 164 700,00 1,71%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN YARA INTERNATIONAL ASA NO0010208051 Akcje NO NOK 200,00 28 879,80 0,30%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL EUR 2 577,11 11 468,91 0,12%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL PLN 60 950,58 60 950,58 0,63%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL PLN 200 111,63 200 111,63 2,08%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL USD 347,27 1 426,10 0,01%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN
+BANK GOSPODARSTWA
+KRAJOWEGO PL0000500328 Dłużne papiery wartościowe PL PLN 200,00 194 444,00 2,02%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN
+BANK GOSPODARSTWA
+KRAJOWEGO PL0000500294 Dłużne papiery wartościowe PL PLN 200,00 148 202,00 1,54%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN
+BANK GOSPODARSTWA
+KRAJOWEGO PL0000500302 Dłużne papiery wartościowe PL PLN 300,00 185 157,00 1,92%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000113783 Dłużne papiery wartościowe PL PLN 196,00 143 738,56 1,49%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000112736 Dłużne papiery wartościowe PL PLN 50,00 37 709,50 0,39%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000115291 Dłużne papiery wartościowe PL PLN 730,00 773 121,10 8,03%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000115192 Dłużne papiery wartościowe PL PLN 200,00 230 052,00 2,39%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000107611 Dłużne papiery wartościowe PL PLN 100,00 88 816,00 0,92%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000107454 Dłużne papiery wartościowe PL PLN 16,00 16 560,32 0,17%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000110615 Dłużne papiery wartościowe PL PLN 25,00 25 210,00 0,26%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000111738 Dłużne papiery wartościowe PL PLN 2,00 2 006,00 0,02%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000115028 Dłużne papiery wartościowe PL PLN 400,00 378 252,00 3,93%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000114559 Dłużne papiery wartościowe PL PLN 100,00 98 060,00 1,02%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000113213 Dłużne papiery wartościowe PL PLN 400,00 381 040,00 3,96%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN IMPLANTICA AG SE0014855029 Kwity Depozytowe LI SEK 120,00 822,93 0,01%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Środki pieniężne PL CZK 12 798,97 2 399,81 0,02%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Środki pieniężne PL NOK 10 257,89 3 908,26 0,04%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2060 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Środki pieniężne PL PLN 24 845,31 24 845,31 0,26%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN AB S.A. PLAB00000019 Akcje PL PLN 230,00 14 398,00 1,77%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN ABB LTD CH0012221716 Akcje CH CHF 7,00 1 122,01 0,14%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN ADVANCED MICRO DEVICES, INC. US0079031078 Akcje US USD 2,00 935,57 0,12%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN ALIOR BANK S.A. PLALIOR00045 Akcje PL PLN 400,00 19 344,00 2,38%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN ALLEGRO.EU SOCIETE ANONYME LU2237380790 Akcje LU PLN 1 300,00 41 600,00 5,12%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN ALPHABET INC. US02079K3059 Akcje US USD 27,00 13 272,12 1,63%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN AMAZON.COM, INC. US0231351067 Akcje US USD 27,00 14 454,08 1,78%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN ASBISC ENTERPRISES PLC CY1000031710 Akcje CY PLN 700,00 19 152,00 2,36%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN
+B.R.A.I.N. BIOTECHNOLOGY
+RESEARCH AND INFORMATION
+NETWORK AG DE0005203947 Akcje DE EUR 13,00 236,04
+0,03%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN BANCO SANTANDER S.A. ES0113900J37 Akcje ES EUR 200,00 3 012,85 0,37%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN BANK POLSKA KASA OPIEKI S.A. PLPEKAO00016 Akcje PL PLN 360,00 39 888,00 4,91%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN BARRICK GOLD CORP CA0679011084 Akcje CA USD 8,00 555,29 0,07%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN BENEFIT SYSTEMS S.A. PLBNFTS00018 Akcje PL PLN 7,00 10 710,00 1,32%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN BICO GROUP AG SE0013647385 Akcje SE SEK 5,00 73,49 0,01%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN CAPTOR THERAPEUTICS S.A. PLCPTRT00014 Akcje PL PLN 20,00 3 040,00 0,37%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN CCC S.A. PLCCC0000016 Akcje PL PLN 300,00 12 645,00 1,56%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN CEZ A.S. CZ0005112300 Akcje CZ CZK 20,00 3 375,00 0,42%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN CF INDUSTRIES HOLDINGS INC US1252691001 Akcje US USD 10,00 2 850,80 0,35%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN CIRCA GROUP AS NO0010917594 Akcje NO NOK 200,00 274,32 0,03%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN COMARCH S.A. PLCOMAR00012 Akcje PL PLN 10,00 1 480,00 0,18%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN CREEPY JAR S.A. PLCRPJR00019 Akcje PL PLN 2,00 1 690,00 0,21%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN CTP N.V. NL00150006R6 Akcje NL EUR 8,00 423,67 0,05%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN ENEA S.A. PLENEA000013 Akcje PL PLN 2 400,00 15 348,00 1,89%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN ERSTE GROUP BANK AG AT0000652011 Akcje AT EUR 70,00 9 996,71 1,23%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN EXXON MOBIL CORP US30231G1022 Akcje US USD 18,00 7 927,79 0,98%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN FIELMANN AG DE0005772206 Akcje DE EUR 7,00 1 520,22 0,19%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN GLOBAL FASHION GROUP SA LU2010095458 Akcje LU EUR 10,00 27,10 0,00%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN GRENEVIA S.A. PLFAMUR00012 Akcje PL PLN 2 600,00 8 307,00 1,02%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN HUUUGE INC. US44853H1086 Akcje US PLN 500,00 13 325,00 1,64%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN ING BANK ŚLĄSKI S.A. PLBSK0000017 Akcje PL PLN 40,00 7 496,00 0,92%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN ING GROEP NV NL0011821202 Akcje NL EUR 125,00 6 863,48 0,85%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN
+JASTRZĘBSKA SPÓŁKA WĘGLOWA
+S.A. PLJSW0000015 Akcje PL PLN 200,00 8 010,00 0,99%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN JERONIMO MARTINS SGPS S.A. PTJMT0AE0001 Akcje PT EUR 200,00 22 465,11 2,77%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN K+S AG DE000KSAG888 Akcje DE EUR 100,00 7 100,45 0,87%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN KGHM POLSKA MIEDŹ S.A. PLKGHM000017 Akcje PL PLN 125,00 14 050,00 1,73%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN LPP S.A. PLLPP0000011 Akcje PL PLN 1,00 14 010,00 1,73%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN META PLATFORMS, INC. US30303M1027 Akcje US USD 20,00 23 570,24 2,90%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN MINESTO AB SE0007578141 Akcje SE SEK 60,00 85,46 0,01%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN NEUCA S.A. PLTRFRM00018 Akcje PL PLN 2,00 1 526,00 0,19%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN NEWMONT CORPORATION US6516391066 Akcje US USD 3,00 525,56 0,06%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN NOLATO AB SE0015962477 Akcje SE SEK 20,00 382,08 0,05%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN ORANGE POLSKA S.A. PLTLKPL00017 Akcje PL PLN 1 000,00 6 986,00 0,86%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN PEABODY ENERGY CORP US7045511000 Akcje US USD 90,00 8 005,41 0,99%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN PEPCO GROUP N.V. NL0015000AU7 Akcje NL PLN 300,00 11 046,00 1,36%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN
+PGE POLSKA GRUPA
+ENERGETYCZNA S.A. PLPGER000010 Akcje PL PLN 4 000,00 29 040,00 3,58%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN
+POLSKI KONCERN NAFTOWY
+ORLEN S.A. PLPKN0000018 Akcje PL PLN 750,00 48 307,50 5,95%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN
+POWSZECHNA KASA
+OSZCZĘDNOŚCI BANK POLSKI
+S.A. PLPKO0000016 Akcje PL PLN 1 250,00 45 187,50
+5,57%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN
+POWSZECHNY ZAKŁAD
+UBEZPIECZEŃ S.A. PLPZU0000011 Akcje PL PLN 750,00 29 557,50 3,64%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN PSI SOFTWARE AG DE000A0Z1JH9 Akcje DE EUR 8,00 1 169,54 0,14%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN READLY INTERNATIONAL AB SE0014855292 Akcje SE SEK 50,00 271,30 0,03%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN REPSOL YPF ES0173516115 Akcje ES EUR 20,00 1 186,45 0,15%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN RYVU THERAPEUTICS S.A. PLSELVT00013 Akcje PL PLN 100,00 6 040,00 0,74%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN SANTANDER BANK POLSKA S.A. PLBZ00000044 Akcje PL PLN 20,00 7 780,00 0,96%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN THE MOSAIC COMPANY US61945C1036 Akcje US USD 25,00 3 593,28 0,44%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN TOTALENERGIES SE FR0000120271 Akcje FR EUR 25,00 5 846,58 0,72%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN WARRIOR MET COAL, INC. US93627C1018 Akcje US USD 60,00 9 597,12 1,18%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN WITTCHEN S.A. PLWTCHN00030 Akcje PL PLN 250,00 9 150,00 1,13%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN YARA INTERNATIONAL ASA NO0010208051 Akcje NO NOK 10,00 1 443,99 0,18%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN ZALANDO SE DE000ZAL1111 Akcje DE EUR 2,00 234,62 0,03%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL EUR 100,75 448,37 0,06%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL PLN 5 524,80 5 524,80 0,68%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL PLN 29 691,98 29 691,98 3,66%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Depozyt PL USD 32,50 133,46 0,02%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN
+BANK GOSPODARSTWA
+KRAJOWEGO PL0000500310 Dłużne papiery wartościowe PL PLN 1,00 844,27 0,10%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN
+BANK GOSPODARSTWA
+KRAJOWEGO PL0000500328 Dłużne papiery wartościowe PL PLN 11,00 10 694,42 1,32%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN
+BANK GOSPODARSTWA
+KRAJOWEGO PL0000500302 Dłużne papiery wartościowe PL PLN 50,00 30 859,50 3,80%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000113783 Dłużne papiery wartościowe PL PLN 4,00 2 933,44 0,36%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000115291 Dłużne papiery wartościowe PL PLN 44,00 46 599,08 5,74%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000114021 Dłużne papiery wartościowe PL PLN 25,00 23 502,50 2,89%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000115192 Dłużne papiery wartościowe PL PLN 40,00 46 010,40 5,67%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000108817 Dłużne papiery wartościowe PL PLN 2,00 2 047,44 0,25%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000110383 Dłużne papiery wartościowe PL PLN 3,00 2 933,40 0,36%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000113130 Dłużne papiery wartościowe PL PLN 6,00 5 940,00 0,73%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000111928 Dłużne papiery wartościowe PL PLN 3,00 2 886,60 0,36%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN
+SKARB PAŃSTWA
+RZECZYPOSPOLITEJ POLSKIEJ PL0000113213 Dłużne papiery wartościowe PL PLN 5,00 4 763,00 0,59%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN BIONTECH SE US09075V1026 Kwity Depozytowe DE USD 1,00 443,23 0,05%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Środki pieniężne PL CHF 3,82 17,40 0,00%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Środki pieniężne PL NOK 487,50 185,74 0,02%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Środki pieniężne PL PLN 1 946,30 1 946,30 0,24%
+Esaliens PPK Specjalistyczny
+Fundusz Inwestycyjny Otwarty ESA 2065 SFIO PLN
+BANK HANDLOWY W WARSZAWIE
+S.A. N/D Środki pieniężne PL SEK 26,60 10,02 0,00%

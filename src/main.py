@@ -3,6 +3,9 @@ import glob
 import re
 import signal
 import multiprocessing as mp
+import shutil
+import tempfile
+import subprocess
 from datetime import datetime
 from decimal import Decimal, ROUND_HALF_UP
 from typing import Callable, Dict, List, Optional
@@ -14,6 +17,14 @@ try:
     from pdfminer.high_level import extract_text as pdfminer_extract_text
 except Exception:  # pragma: no cover
     pdfminer_extract_text = None
+try:
+    import pytesseract
+except Exception:  # pragma: no cover
+    pytesseract = None
+try:
+    from pdf2image import convert_from_path
+except Exception:  # pragma: no cover
+    convert_from_path = None
 
 OUTPUT_COLUMNS = [
     "data",
@@ -1158,7 +1169,7 @@ def parse_allianz_excel(file_path: str) -> pd.DataFrame:
     df_raw = pd.read_excel(file_path, engine="openpyxl", header=None)
     header_row = detect_allianz_header_row(df_raw)
     df = pd.read_excel(file_path, engine="openpyxl", header=header_row)
-    extracted_date = extract_date_from_excel(df_raw)
+    file_date = extract_date_from_filename(file_path)
 
     mapping = {
         "data sporządzenia": "data",
@@ -1178,9 +1189,7 @@ def parse_allianz_excel(file_path: str) -> pd.DataFrame:
 
     df["instytucja"] = "Allianz Polska TFI S.A."
     df["fundusz"] = df.get("fundusz", "")
-    if extracted_date:
-        df["data"] = df.get("data", "")
-        df.loc[df["data"].astype(str).str.strip() == "", "data"] = extracted_date
+    df["data"] = file_date if file_date else df.get("data", "")
     df = df.dropna(axis=0, how="all")
 
     return ensure_output_schema(df)
@@ -1613,22 +1622,179 @@ def parse_pzu1_excel(file_path: str) -> pd.DataFrame:
     return ensure_output_schema(df)
 
 
+def parse_esaliens_text_file(file_path: str) -> pd.DataFrame:
+    date_match = re.search(r"(\d{4}-\d{2}-\d{2})", os.path.basename(file_path))
+    file_date = date_match.group(1) if date_match else ""
+    try:
+        with open(file_path, "r", encoding="utf-8") as fh:
+            text = fh.read()
+    except Exception:
+        return ensure_output_schema(pd.DataFrame())
+    return _parse_esaliens_texts([text], file_date)
+
+
+def _parse_esaliens_texts(texts: List[str], file_date: str) -> pd.DataFrame:
+    isin_pattern = re.compile(r"\b[A-Z]{2}[A-Z0-9]{9}\d\b")
+    number_pattern = re.compile(r"-?\d[\d\s]*,\d{2}")
+    percent_pattern = re.compile(r"(?<![\d,])-?\d[\d\s]*,\d{2}%$")
+
+    rows: List[Dict[str, str]] = []
+
+    def _normalize_line(text: str) -> str:
+        text = re.sub(r"\s+", " ", text).strip()
+        return re.sub(r"-\s+(?=\d)", "-", text)
+
+    def _extract_row(line: str) -> Optional[Dict[str, str]]:
+        line = _normalize_line(line)
+        percent_match = percent_pattern.search(line)
+        if not percent_match:
+            return None
+
+        line_wo_pct = line[:percent_match.start()].strip()
+        numbers = number_pattern.findall(line_wo_pct)
+        if len(numbers) < 2:
+            return None
+        liczba_sztuk = numbers[-2]
+        wartosc_pln = numbers[-1]
+        line_tail_stripped = re.sub(
+            rf"{re.escape(liczba_sztuk)}\s+{re.escape(wartosc_pln)}\s*$",
+            "",
+            line_wo_pct,
+        ).strip()
+        tokens = line_tail_stripped.split()
+        if not tokens:
+            return None
+
+        curr_idx = None
+        for i in range(len(tokens) - 1, -1, -1):
+            if re.fullmatch(r"[A-Z]{3}", tokens[i]):
+                curr_idx = i
+                break
+        if curr_idx is None or curr_idx < 1:
+            return None
+        waluta = tokens[curr_idx]
+        kraj = tokens[curr_idx - 1] if re.fullmatch(r"[A-Z]{2}", tokens[curr_idx - 1]) else ""
+        if not kraj:
+            return None
+
+        isin_idx = None
+        for i in range(curr_idx - 2, -1, -1):
+            if isin_pattern.fullmatch(tokens[i]) or tokens[i] == "N/D":
+                isin_idx = i
+                break
+        if isin_idx is None:
+            return None
+        isin = tokens[isin_idx]
+        typ_aktywa = " ".join(tokens[isin_idx + 1: curr_idx - 1]).strip()
+
+        fundusz = ""
+        fundusz_match = re.search(
+            r"(Esaliens PPK Specjalistyczny Fundusz Inwestycyjny Otwarty\s+ESA\s+\d{4}\s+SFIO)",
+            line,
+            flags=re.IGNORECASE,
+        )
+        if fundusz_match:
+            fundusz = fundusz_match.group(1).strip()
+        else:
+            fundusz_matches = re.findall(r"(Esaliens[^\n]*?SFIO)", line, flags=re.IGNORECASE)
+            if fundusz_matches:
+                fundusz = fundusz_matches[-1].strip()
+
+        emitent = ""
+        if fundusz:
+            lower_line = line.lower()
+            pos_fundusz = lower_line.find(fundusz.lower())
+            if pos_fundusz >= 0:
+                after_fundusz = line[pos_fundusz + len(fundusz):]
+                pos_isin = after_fundusz.find(isin)
+                if pos_isin >= 0:
+                    emitent = after_fundusz[:pos_isin].strip()
+        if not emitent:
+            emitent = " ".join(tokens[:isin_idx]).strip()
+            if fundusz:
+                emitent = emitent.replace(fundusz, "").strip()
+
+        if not emitent or not typ_aktywa or not waluta:
+            return None
+
+        return {
+            "data": file_date,
+            "instytucja": "ESALIENS TFI S.A.",
+            "fundusz": fundusz,
+            "typ_aktywa": typ_aktywa,
+            "emitent": emitent,
+            "isin": isin,
+            "waluta": waluta,
+            "liczba_sztuk": liczba_sztuk,
+            "wartosc_pln": wartosc_pln,
+        }
+
+    for text in texts:
+        if not text:
+            continue
+        buffer = ""
+        for raw_line in text.splitlines():
+            line = _normalize_line(raw_line)
+            if not line:
+                continue
+            buffer = f"{buffer} {line}".strip() if buffer else line
+            if percent_pattern.search(buffer) and len(number_pattern.findall(buffer)) >= 2:
+                row = _extract_row(buffer)
+                if row:
+                    rows.append(row)
+                buffer = ""
+
+        if buffer:
+            row = _extract_row(buffer)
+            if row:
+                rows.append(row)
+
+    if not rows:
+        return pd.DataFrame()
+
+    df_text = pd.DataFrame(rows)
+    df_text = ensure_output_schema(df_text)
+    return df_text.drop_duplicates(subset=OUTPUT_COLUMNS)
+
+
 def parse_esaliens_pdf(file_path: str) -> pd.DataFrame:
     date_match = re.search(r"(\d{4}-\d{2}-\d{2})", os.path.basename(file_path))
     file_date = date_match.group(1) if date_match else ""
+    pdf_path = file_path
+    cleaned_path = None
+
+    try:
+        raw_bytes = None
+        with open(file_path, "rb") as fh:
+            raw_bytes = fh.read()
+        if raw_bytes:
+            pdf_start = raw_bytes.find(b"%PDF-")
+            pdf_end = raw_bytes.rfind(b"%%EOF")
+            if pdf_start > 0 or (pdf_end != -1 and pdf_end + 5 < len(raw_bytes)):
+                cleaned_bytes = raw_bytes[pdf_start:pdf_end + 5] if pdf_start != -1 and pdf_end != -1 else raw_bytes
+                with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as tmp:
+                    tmp.write(cleaned_bytes)
+                    cleaned_path = tmp.name
+                    pdf_path = cleaned_path
+    except Exception:
+        pdf_path = file_path
 
     def safe_page_text_simple(page) -> str:
         extract_simple = getattr(page, "extract_text_simple", None)
-        if not callable(extract_simple):
-            return ""
+        extract_fallback = getattr(page, "extract_text", None)
 
         def _timeout_handler(signum, frame):
             raise TimeoutError()
 
         old_handler = signal.signal(signal.SIGALRM, _timeout_handler)
         try:
-            signal.alarm(2)
-            return extract_simple() or ""
+            signal.alarm(8)
+            text = extract_simple() if callable(extract_simple) else ""
+            if text:
+                return text
+            if callable(extract_fallback):
+                return extract_fallback() or ""
+            return ""
         except TimeoutError:
             return ""
         except Exception:
@@ -1637,84 +1803,69 @@ def parse_esaliens_pdf(file_path: str) -> pd.DataFrame:
             signal.alarm(0)
             signal.signal(signal.SIGALRM, old_handler)
 
-    isin_pattern = re.compile(r"\b[A-Z]{2}[A-Z0-9]{9}\d\b")
-    subfundusz_pattern = re.compile(r"\bESA\s+\d{4}\b")
-    number_pattern = re.compile(r"\d{1,3}(?:\s\d{3})*,\d{2}")
-    currency_pattern = re.compile(r"\b[A-Z]{3}\b")
-
-    rows: List[Dict[str, str]] = []
-    with pdfplumber.open(file_path) as pdf:
+    page_texts: List[str] = []
+    with pdfplumber.open(pdf_path) as pdf:
         for page in pdf.pages:
             page_text = safe_page_text_simple(page)
-            for line in page_text.splitlines():
-                if not isin_pattern.search(line):
-                    continue
-                tokens = line.split()
-                idx_isin = None
-                for i, token in enumerate(tokens):
-                    if isin_pattern.fullmatch(token):
-                        idx_isin = i
-                        break
-                if idx_isin is None:
-                    continue
+            page_texts.append(page_text or "")
 
-                isin = tokens[idx_isin]
-                if not any(ch.isdigit() for ch in isin):
-                    continue
-                typ_aktywa = tokens[idx_isin + 1] if len(tokens) > idx_isin + 1 else ""
-                kraj = tokens[idx_isin + 2] if len(tokens) > idx_isin + 2 else ""
-                waluta = tokens[idx_isin + 3] if len(tokens) > idx_isin + 3 else ""
+    if not any(text.strip() for text in page_texts) and pytesseract and convert_from_path:
+        ocr_texts: List[str] = []
 
-                numbers: List[str] = []
-                for match in number_pattern.finditer(line):
-                    tail = line[match.end():].lstrip()
-                    if tail.startswith("%"):
-                        continue
-                    numbers.append(match.group(0))
-                liczba_sztuk = numbers[-2] if len(numbers) >= 2 else ""
-                wartosc_pln = numbers[-1] if len(numbers) >= 1 else ""
+        def _ocr_pdf(path: str) -> List[str]:
+            texts: List[str] = []
+            for page_number in range(1, len(page_texts) + 1):
+                images = convert_from_path(
+                    path,
+                    dpi=200,
+                    first_page=page_number,
+                    last_page=page_number,
+                )
+                for img in images:
+                    texts.append(pytesseract.image_to_string(img, lang="pol") or "")
+            return texts
 
-                prefix = line[:line.find(isin)]
-                subfundusz_match = subfundusz_pattern.search(prefix)
-                fundusz = subfundusz_match.group(0) if subfundusz_match else ""
-                emitent = ""
-                if subfundusz_match:
-                    prefix_after_subfundusz = prefix.split(fundusz, 1)[-1]
-                    emitent = re.sub(r"\bSFIO\b", "", prefix_after_subfundusz, flags=re.IGNORECASE)
-                    emitent = re.sub(r"\bPLN\b", "", emitent, flags=re.IGNORECASE)
-                    emitent = re.sub(
-                        r"Specjalistyczny Fundusz Inwestycyjny Otwarty",
-                        "",
-                        emitent,
-                        flags=re.IGNORECASE,
-                    )
-                    emitent = re.sub(r"Inwestycyjny Otwarty", "", emitent, flags=re.IGNORECASE)
-                    emitent = emitent.strip()
-                else:
-                    prefix_currencies = currency_pattern.findall(prefix)
-                    if prefix_currencies:
-                        last_curr = prefix_currencies[-1]
-                        emitent = prefix.split(last_curr, 1)[-1].strip()
+        try:
+            ocr_texts = _ocr_pdf(pdf_path)
+        except Exception:
+            ocr_texts = []
 
-                if emitent and typ_aktywa and waluta and liczba_sztuk and wartosc_pln:
-                    rows.append(
-                        {
-                            "data": file_date,
-                            "instytucja": "ESALIENS TFI S.A.",
-                            "fundusz": fundusz,
-                            "typ_aktywa": typ_aktywa,
-                            "emitent": emitent,
-                            "isin": isin,
-                            "waluta": waluta,
-                            "liczba_sztuk": liczba_sztuk,
-                            "wartosc_pln": wartosc_pln,
-                        }
-                    )
+        if not any(text.strip() for text in ocr_texts) and shutil.which("gs"):
+            repaired_path = None
+            try:
+                with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as tmp:
+                    repaired_path = tmp.name
+                subprocess.run(
+                    [
+                        "gs",
+                        "-q",
+                        "-dNOPAUSE",
+                        "-dBATCH",
+                        "-sDEVICE=pdfwrite",
+                        f"-sOutputFile={repaired_path}",
+                        pdf_path,
+                    ],
+                    check=False,
+                    stdout=subprocess.DEVNULL,
+                    stderr=subprocess.DEVNULL,
+                )
+                ocr_texts = _ocr_pdf(repaired_path)
+            finally:
+                if repaired_path:
+                    try:
+                        os.remove(repaired_path)
+                    except Exception:
+                        pass
 
-    if rows:
-        df_text = pd.DataFrame(rows)
-        df_text = ensure_output_schema(df_text)
-        df_text = df_text.drop_duplicates(subset=OUTPUT_COLUMNS)
+        page_texts = ocr_texts
+    if cleaned_path:
+        try:
+            os.remove(cleaned_path)
+        except Exception:
+            pass
+
+    df_text = _parse_esaliens_texts(page_texts, file_date)
+    if not df_text.empty:
         return df_text
 
     tables = extract_tables_from_pdf(file_path, max_pages=None)
@@ -1772,6 +1923,139 @@ def parse_esaliens_pdf(file_path: str) -> pd.DataFrame:
         | (wartosc_pln_num != 0)
     ]
     return df
+
+
+def parse_esaliens_text(file_path: str) -> pd.DataFrame:
+    date_match = re.search(r"(\d{4}-\d{2}-\d{2})", os.path.basename(file_path))
+    file_date = date_match.group(1) if date_match else ""
+    try:
+        with open(file_path, "r", encoding="utf-8", errors="replace") as fh:
+            text = fh.read()
+    except Exception:
+        return ensure_output_schema(pd.DataFrame())
+
+    if not text.strip():
+        return ensure_output_schema(pd.DataFrame())
+
+    isin_pattern = re.compile(r"\b[A-Z]{2}[A-Z0-9]{9}\d\b")
+    number_pattern = re.compile(r"-?\d[\d\s]*,\d{2}")
+    percent_pattern = re.compile(r"(?<![\d,])-?\d[\d\s]*,\d{2}%$")
+
+    rows: List[Dict[str, str]] = []
+
+    def _normalize_line(line: str) -> str:
+        line = re.sub(r"\s+", " ", line).strip()
+        return re.sub(r"-\s+(?=\d)", "-", line)
+
+    def _extract_row(line: str) -> Optional[Dict[str, str]]:
+        line = _normalize_line(line)
+        percent_match = percent_pattern.search(line)
+        if not percent_match:
+            return None
+
+        line_wo_pct = line[:percent_match.start()].strip()
+        numbers = number_pattern.findall(line_wo_pct)
+        if len(numbers) < 2:
+            return None
+
+        liczba_sztuk = numbers[-2]
+        wartosc_pln = numbers[-1]
+        line_tail_stripped = re.sub(
+            rf"{re.escape(liczba_sztuk)}\s+{re.escape(wartosc_pln)}\s*$",
+            "",
+            line_wo_pct,
+        ).strip()
+        tokens = line_tail_stripped.split()
+        if not tokens:
+            return None
+
+        curr_idx = None
+        for i in range(len(tokens) - 1, -1, -1):
+            if re.fullmatch(r"[A-Z]{3}", tokens[i]):
+                curr_idx = i
+                break
+        if curr_idx is None or curr_idx < 1:
+            return None
+        waluta = tokens[curr_idx]
+        kraj = tokens[curr_idx - 1] if re.fullmatch(r"[A-Z]{2}", tokens[curr_idx - 1]) else ""
+        if not kraj:
+            return None
+
+        isin_idx = None
+        for i in range(curr_idx - 2, -1, -1):
+            if isin_pattern.fullmatch(tokens[i]) or tokens[i] == "N/D":
+                isin_idx = i
+                break
+        if isin_idx is None:
+            return None
+
+        isin = tokens[isin_idx]
+        typ_aktywa = " ".join(tokens[isin_idx + 1: curr_idx - 1]).strip()
+
+        fundusz = ""
+        fundusz_matches = re.findall(r"(Esaliens[^\n]*?ESA\s+\d{4}\s+SFIO)", line, flags=re.IGNORECASE)
+        if not fundusz_matches:
+            fundusz_matches = re.findall(r"(Esaliens[^\n]*?SFIO)", line, flags=re.IGNORECASE)
+        if fundusz_matches:
+            fundusz = fundusz_matches[-1].strip()
+        if not fundusz:
+            return None
+
+        emitent = ""
+        lower_line = line.lower()
+        pos_fundusz = lower_line.find(fundusz.lower())
+        if pos_fundusz >= 0:
+            after_fundusz = line[pos_fundusz + len(fundusz):]
+            pos_isin = after_fundusz.find(isin)
+            if pos_isin >= 0:
+                emitent = after_fundusz[:pos_isin].strip()
+        if not emitent:
+            emitent = " ".join(tokens[:isin_idx]).strip()
+            emitent = emitent.replace(fundusz, "").strip()
+
+        if not emitent or not typ_aktywa or not waluta:
+            return None
+
+        return {
+            "data": file_date,
+            "instytucja": "ESALIENS TFI S.A.",
+            "fundusz": fundusz,
+            "typ_aktywa": typ_aktywa,
+            "emitent": emitent,
+            "isin": isin,
+            "waluta": waluta,
+            "liczba_sztuk": liczba_sztuk,
+            "wartosc_pln": wartosc_pln,
+        }
+
+    buffer = ""
+    for raw_line in text.splitlines():
+        line = _normalize_line(raw_line)
+        if not line:
+            continue
+        if percent_pattern.fullmatch(line) and buffer:
+            buffer = f"{buffer} {line}".strip()
+        else:
+            buffer = f"{buffer} {line}".strip() if buffer else line
+
+        if percent_pattern.search(buffer) and len(number_pattern.findall(buffer)) >= 2:
+            row = _extract_row(buffer)
+            if row:
+                rows.append(row)
+            buffer = ""
+
+    if buffer:
+        row = _extract_row(buffer)
+        if row:
+            rows.append(row)
+
+    if not rows:
+        return ensure_output_schema(pd.DataFrame())
+
+    df_text = pd.DataFrame(rows)
+    df_text = ensure_output_schema(df_text)
+    df_text = df_text.drop_duplicates(subset=OUTPUT_COLUMNS)
+    return df_text
 
 
 def parse_pekao_pdf(file_path: str) -> pd.DataFrame:
@@ -2798,6 +3082,14 @@ def detect_parser(file_path: str) -> Optional[str]:
     if "generali" in name and name.endswith((".xlsx", ".xls")):
         return "generali"
 
+    if name.endswith(".txt"):
+        if "esalian" in name or "esalien" in name:
+            return "esaliens_text"
+
+    if name.endswith(".txt"):
+        if "esalian" in name or "esalien" in name:
+            return "esaliens_txt"
+
     if name.endswith(".pdf"):
         if "investors" in name or "investor" in name:
             return "investors"
@@ -2840,6 +3132,8 @@ def process_folder(folder_path: str) -> pd.DataFrame:
         "pzu": parse_pzu_excel,
         "pzu1": parse_pzu1_excel,
         "esaliens": parse_esaliens_pdf,
+        "esaliens_txt": parse_esaliens_text,
+        "esaliens_text": parse_esaliens_text_file,
         "generali": parse_generali_excel,
         "uniqa": parse_uniqa_pdf,
         "nn": parse_nn_pdf,

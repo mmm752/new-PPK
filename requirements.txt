@@ -2,3 +2,5 @@ pandas
 openpyxl
 pdfplumber
 PyPDF2
+pytesseract
+pdf2image
