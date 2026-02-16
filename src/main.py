@@ -314,10 +314,11 @@ def _format_percent(value: Optional[float]) -> str:
     if value is None or (isinstance(value, float) and pd.isna(value)):
         return ""
     try:
-        number = Decimal(str(value)).quantize(Decimal("0.1"), rounding=ROUND_HALF_UP)
-    except (TypeError, ValueError):
+        number = Decimal(str(value)) / Decimal("100")
+    except (TypeError, ValueError, ArithmeticError):
         return ""
-    return f"{number}%"
+    text = format(number, "f").rstrip("0").rstrip(".")
+    return text if text else "0"
 
 
 def _most_common_emitent(series: pd.Series) -> str:
@@ -405,9 +406,20 @@ def _format_change_number(value: Optional[float]) -> str:
 
 
 def _format_change_percent(value: Optional[float]) -> str:
-    if value is None or (isinstance(value, float) and pd.isna(value)):
-        return ""
-    return f"{_format_change_number(value)}%"
+    return _format_percent(value)
+
+
+def _replace_nan_with_zero(value) -> str:
+    if value is None:
+        return "0"
+    try:
+        if pd.isna(value):
+            return "0"
+    except TypeError:
+        pass
+    if isinstance(value, str) and value.strip().lower() == "nan":
+        return "0"
+    return value
 
 
 def build_equity_holdings_numeric(df: pd.DataFrame) -> pd.DataFrame:
@@ -837,6 +849,10 @@ def build_master_dataset(
             master[col] = ""
 
     master = master.reindex(columns=ordered_cols)
+    master["typ_aktywa"] = master["typ_aktywa"].astype(str).str.strip()
+    typ_mask = master["typ_aktywa"].str.lower().ne("nan") & master["typ_aktywa"].ne("")
+    master = master[typ_mask].copy()
+    master = master.apply(lambda col: col.map(_replace_nan_with_zero))
     return master
 
 
