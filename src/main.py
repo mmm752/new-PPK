@@ -137,6 +137,10 @@ def normalize_typ_aktywa(value: str) -> str:
     if text == "" or text == "nan":
         return ""
 
+    # Check for derivatives FIRST, before checking for "akcj" keyword
+    if "instrument" in text and "pochodn" in text:
+        return "inne"
+    
     if re.search(r"\bakcj", text):
         return "akcje"
     if "aktywa" in text and "udzia" in text:
@@ -145,8 +149,6 @@ def normalize_typ_aktywa(value: str) -> str:
         return "obligacje"
     if "list zastawn" in text or "papier komerc" in text:
         return "obligacje"
-    if "instrument" in text and "pochodn" in text:
-        return "inne"
 
     return "inne"
 
@@ -1525,6 +1527,19 @@ def parse_pzu_excel(file_path: str) -> pd.DataFrame:
         df[dst] = df[col] if col else ""
 
     df["instytucja"] = "PZU TFI S.A."
+    
+    # Fix ISIN in waluta column for specific funds (inPZU Puls Życia 2030/2040)
+    fundusz_series = df["fundusz"].astype(str)
+    puls_mask = fundusz_series.str.contains(r"inpzu\s+puls", case=False, na=False, regex=True)
+    if puls_mask.any():
+        # Check if waluta contains ISIN pattern (12 chars: 2 letters + 10 alphanumeric)
+        waluta_series = df.loc[puls_mask, "waluta"].astype(str).str.strip()
+        isin_pattern = r'^[A-Z]{2}[A-Z0-9]{10}$'
+        is_isin = waluta_series.str.match(isin_pattern, na=False)
+        
+        # Move ISIN from waluta to isin column
+        df.loc[puls_mask & is_isin, "isin"] = waluta_series[is_isin]
+        df.loc[puls_mask & is_isin, "waluta"] = "PLN"
 
     # Assign extracted date to the data column
     if extracted_date:
@@ -1626,6 +1641,19 @@ def parse_pzu1_excel(file_path: str) -> pd.DataFrame:
     file_date = extract_date_from_filename(file_path)
     df["instytucja"] = "PZU TFI S.A."
     df["data"] = file_date if file_date else ""
+    
+    # Fix ISIN in waluta column for specific funds (inPZU Puls Życia 2030/2040)
+    fundusz_series = df["fundusz"].astype(str)
+    puls_mask = fundusz_series.str.contains(r"inpzu\s+puls", case=False, na=False, regex=True)
+    if puls_mask.any():
+        # Check if waluta contains ISIN pattern (12 chars: 2 letters + 10 alphanumeric)
+        waluta_series = df.loc[puls_mask, "waluta"].astype(str).str.strip()
+        isin_pattern = r'^[A-Z]{2}[A-Z0-9]{10}$'
+        is_isin = waluta_series.str.match(isin_pattern, na=False)
+        
+        # Move ISIN from waluta to isin column
+        df.loc[puls_mask & is_isin, "isin"] = waluta_series[is_isin]
+        df.loc[puls_mask & is_isin, "waluta"] = "PLN"
 
     fundusz_series = df["fundusz"].astype(str)
     ppk_mask = fundusz_series.str.contains(r"ppk|inpzu", case=False, na=False)
