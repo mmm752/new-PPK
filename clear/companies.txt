@@ -1,0 +1,94 @@
+Alior Bank SA
+Allegro.eu SA
+Asseco Poland SA
+Banco Santander SA
+Bank Millennium SA
+Bank Pekao SA
+Benefit Systems SA
+BNP Paribas SA
+Budimex SA
+CCC SA
+CD Projekt SA
+Compremum SA
+Cyber_Folks SA
+DataWalk SA
+Diagnostyka SA
+Dino Polska SA
+Grupa Kęty SA
+Grupa Pracuj SA
+ING Bank Śląski SA
+KGHM Polska Miedź SA
+Kruk SA
+LPP SA
+mBank SA
+Mirbud SA
+Orange Polska SA
+Orlen SA
+Pepco Group N.V.
+PGE Polska Grupa Energetyczna SA
+PKO Bank Polski SA
+PKP Cargo SA
+Powszechny Zakład Ubezpieczeń SA
+Rainbow Tours SA
+Render Cube SA
+Santander SA
+Selvita SA
+Shoper SA
+Synektik SA
+Torpol SA
+UniCredit S.p.A.
+Vercom SA
+XTB SA
+Zabka Group SA
+Advanced Micro Devices Inc
+Agnico Eagle Mines Ltd
+Allianz SE
+Alphabet Inc
+Amazon.com Inc
+Apple Inc
+Applied Materials Inc
+ASML Holding N.V.
+Banco Bilbao Vizcaya Argentaria SA
+Banco Comercial Portugues SA
+Bank of America Corp.
+Berkshire Hathaway Inc
+Broadcom Inc
+CaixaBank SA
+Caterpillar Inc
+Coca-Cola Company
+CrowdStrike Holdings Inc
+Deutsche Post AG
+Erste Group Bank AG
+GE Vernova Inc
+General Electric Co.
+Grenergy Renovables SA
+ING Groep N.V.
+InPost SA
+Intel Corp.
+JP Morgan Chase & Co.
+Linde Plc
+Lundin Mining Corp.
+LVMH SA
+Mercadolibre Inc
+Meta Platforms Inc
+Micron Technology Inc
+Microsoft Corp.
+Münchener Rück AG
+Nektar Therapeutics
+Nvidia Corp.
+Oracle Corp.
+PepsiCo Inc
+Procter & Gamble Co
+Rheinmetall AG
+RTX Corp.
+SAP SE
+Schneider Electric SE
+Siemens Energy AG
+Snowflake Inc
+Vertiv Holdings Co.
+Visa Inc
+Walmart Inc
+Waste Management Inc
+Wells Fargo & Co
+Western Digital Corp.
+Wheaton Precious Metals Corp.
