@@ -153,6 +153,67 @@ def normalize_typ_aktywa(value: str) -> str:
     return "inne"
 
 
+def _fix_mojibake_text(value: str) -> str:
+    text = safe_string(value)
+    if not text:
+        return text
+    if re.search(r"[ÃÄÅÂĹ]", text):
+        try:
+            return text.encode("cp1250").decode("utf-8")
+        except Exception:
+            return text
+    return text
+
+
+_PZU_TYPAKTYWA_FIXES = {
+    "DĹ\x81UŻNE PAPIERY WARTOĹšCIOWE": "DŁUŻNE PAPIERY WARTOŚCIOWE",
+    "TYTUĹ\x81Y UCZESTNICTWA": "TYTUŁY UCZESTNICTWA",
+    "AKTYWA UDZIAĹ\x81OWE": "AKTYWA UDZIAŁOWE",
+    "DĹ\x81UĹ»NE_PAPIERY": "DŁUŻNE_PAPIERY",
+}
+
+
+def normalize_pzu_fundusz(value: str) -> str:
+    text = _fix_mojibake_text(value)
+    text = re.sub(r"\s+", " ", text).strip()
+    if not text:
+        return text
+    match = re.search(r"(20\d{2})", text)
+    if not match:
+        return text
+    year = match.group(1)
+    if re.search(r"inpzu", text, re.IGNORECASE):
+        return f"PPK inPZU {year}"
+    return text
+
+
+def fix_pzu_shifted_isin_waluta(df: pd.DataFrame) -> pd.DataFrame:
+    required_cols = {"emitent", "isin", "waluta"}
+    if not required_cols.issubset(df.columns):
+        return df
+
+    isin_pattern = r"^[A-Z]{2}[A-Z0-9]{10}$"
+    waluta_series = df["waluta"].astype(str).str.strip()
+    isin_series = df["isin"].astype(str).str.strip()
+    emitent_series = df["emitent"].astype(str).str.strip()
+
+    waluta_is_isin = waluta_series.str.match(isin_pattern, na=False)
+    isin_is_isin = isin_series.str.match(isin_pattern, na=False)
+
+    move_mask = waluta_is_isin & ~isin_is_isin
+    if move_mask.any():
+        emitent_blank = emitent_series.str.lower().isin(["", "nan", "none", "0"])
+        isin_candidate = isin_series.where(~isin_series.str.lower().isin(["", "nan", "none", "0"]), "")
+
+        fill_emitent_mask = move_mask & emitent_blank & isin_candidate.ne("")
+        df.loc[fill_emitent_mask, "emitent"] = isin_candidate[fill_emitent_mask]
+        df.loc[move_mask, "isin"] = waluta_series[move_mask]
+
+    # Jeżeli w walucie nadal jest kod ISIN, wyczyść to pole (to nie jest waluta instrumentu)
+    df.loc[waluta_is_isin, "waluta"] = ""
+    return df
+
+
 def _normalize_equity_name(value: str) -> str:
     text = safe_string(value).lower()
     text = text.replace(".", "")
@@ -208,6 +269,69 @@ def apply_equity_nazwa(
 
         df.loc[is_akcje, "equity_nazwa"] = df.loc[is_akcje, "equity_nazwa"].fillna("NA")
     return df
+
+
+def load_nn_fixed_shares_map(base_dir: str) -> Dict[str, float]:
+    fixed_path = os.path.join(base_dir, "clear", "nationale_nederlanden_fixed_structure.csv")
+    if not os.path.exists(fixed_path):
+        return {}
+    try:
+        nn_fixed = pd.read_csv(fixed_path, sep=";", dtype=str, keep_default_na=False)
+    except Exception:
+        return {}
+
+    required_cols = {"quarter", "fundusz", "emitent_full", "shares_no"}
+    if not required_cols.issubset(nn_fixed.columns):
+        return {}
+
+    nn_fixed["shares_no_num"] = nn_fixed["shares_no"].apply(parse_polish_number)
+    nn_fixed = nn_fixed[nn_fixed["shares_no_num"].notna()].copy()
+    if nn_fixed.empty:
+        return {}
+
+    nn_fixed["fund_norm"] = nn_fixed["fundusz"].apply(_normalize_equity_name)
+    nn_fixed["emitent_norm"] = nn_fixed["emitent_full"].apply(_normalize_equity_name)
+    nn_fixed["map_key"] = (
+        nn_fixed["quarter"].astype(str).str.strip()
+        + "|"
+        + nn_fixed["fund_norm"]
+        + "|"
+        + nn_fixed["emitent_norm"]
+    )
+
+    aggregated = nn_fixed.groupby("map_key", dropna=False)["shares_no_num"].sum(min_count=1)
+    return aggregated.to_dict()
+
+
+def apply_nn_shares_map(df: pd.DataFrame, quarter_token: str, shares_map: Dict[str, float]) -> pd.DataFrame:
+    if not shares_map or df.empty:
+        return df
+    if "instytucja" not in df.columns:
+        return df
+
+    out = df.copy()
+    nn_mask = out["instytucja"].astype(str).eq("Nationale-Nederlanden")
+    if not nn_mask.any():
+        return out
+
+    out["fund_norm"] = out.get("fundusz", "").astype(str).apply(_normalize_equity_name)
+    out["emitent_norm"] = out.get("emitent", "").astype(str).apply(_normalize_equity_name)
+    out["map_key"] = (
+        quarter_token.strip()
+        + "|"
+        + out["fund_norm"]
+        + "|"
+        + out["emitent_norm"]
+    )
+    out["nn_shares_num"] = out["map_key"].map(shares_map)
+
+    current_qty = out.get("liczba_sztuk", "").apply(parse_polish_number)
+    fill_mask = nn_mask & out["nn_shares_num"].notna() & (current_qty.isna() | current_qty.eq(0))
+    if fill_mask.any():
+        out.loc[fill_mask, "liczba_sztuk"] = out.loc[fill_mask, "nn_shares_num"].apply(format_decimal_comma)
+
+    out = out.drop(columns=["fund_norm", "emitent_norm", "map_key", "nn_shares_num"], errors="ignore")
+    return out
 
 
 def ensure_output_schema(df: pd.DataFrame) -> pd.DataFrame:
@@ -706,11 +830,10 @@ def build_master_dataset(
     if not source_rows_by_quarter:
         return pd.DataFrame()
 
-    key_cols = [
+    match_cols = [
         "instytucja",
         "fundusz",
         "DATA_fundusz",
-        "typ_aktywa",
         "emitent",
         "isin",
         "waluta",
@@ -726,7 +849,7 @@ def build_master_dataset(
             continue
 
         work = df.copy()
-        for col in key_cols + ["data", "liczba_sztuk", "wartosc_pln"]:
+        for col in match_cols + ["typ_aktywa", "data", "liczba_sztuk", "wartosc_pln"]:
             if col not in work.columns:
                 work[col] = ""
 
@@ -749,7 +872,21 @@ def build_master_dataset(
         )
 
         work.insert(0, "quarter", quarter_token)
-        work["_dup_idx"] = work.groupby(key_cols, dropna=False).cumcount()
+        inst = work["instytucja"].astype(str).str.strip()
+        fundusz = work["fundusz"].astype(str).str.strip()
+        data_fund = work["DATA_fundusz"].astype(str).str.strip()
+        isin = work["isin"].astype(str).str.strip()
+        emitent = work["emitent"].astype(str).str.strip()
+        waluta = work["waluta"].astype(str).str.strip()
+        typ_std = work["TYP_aktywo_std"].astype(str).str.strip()
+
+        isin_mask = isin.str.lower().ne("nan") & isin.ne("")
+        key_isin = inst + "|" + fundusz + "|" + data_fund + "|" + isin
+        key_other = inst + "|" + fundusz + "|" + data_fund + "|" + emitent + "|" + waluta + "|" + typ_std
+
+        work["match_key"] = key_other
+        work.loc[isin_mask, "match_key"] = key_isin
+        work["_dup_idx"] = work.groupby(["match_key"], dropna=False).cumcount()
 
         normalized_by_quarter[quarter_token] = work.copy()
         quarter_frames.append(work)
@@ -781,14 +918,14 @@ def build_master_dataset(
 
         merged = curr.merge(
             prev[
-                key_cols
+                ["match_key"]
                 + [
                     "_dup_idx",
                     "liczba_sztuk_num",
                     "wartosc_pln_num",
                 ]
             ],
-            on=key_cols + ["_dup_idx"],
+            on=["match_key", "_dup_idx"],
             how="left",
             suffixes=("_curr", "_prev"),
         )
@@ -814,6 +951,32 @@ def build_master_dataset(
         master.loc[target_indices, "wartosc_pln_chg_num"] = val_chg.values
         master.loc[target_indices, "liczba_sztuk_chg_pct_num"] = qty_chg_pct.values
         master.loc[target_indices, "wartosc_pln_chg_pct_num"] = val_chg_pct.values
+
+    prev_qty_from_chg = master["liczba_sztuk_num"] - master["liczba_sztuk_chg_num"]
+    prev_val_from_chg = master["wartosc_pln_num"] - master["wartosc_pln_chg_num"]
+
+    missing_qty_pct = master["liczba_sztuk_chg_pct_num"].isna()
+    missing_val_pct = master["wartosc_pln_chg_pct_num"].isna()
+
+    qty_mask = missing_qty_pct & prev_qty_from_chg.notna() & prev_qty_from_chg.ne(0)
+    val_mask = missing_val_pct & prev_val_from_chg.notna() & prev_val_from_chg.ne(0)
+
+    master.loc[qty_mask, "liczba_sztuk_chg_pct_num"] = (
+        (master.loc[qty_mask, "liczba_sztuk_num"] / prev_qty_from_chg[qty_mask]) - 1
+    ) * 100
+    master.loc[val_mask, "wartosc_pln_chg_pct_num"] = (
+        (master.loc[val_mask, "wartosc_pln_num"] / prev_val_from_chg[val_mask]) - 1
+    ) * 100
+
+    proxy_qty_mask = missing_qty_pct & prev_qty_from_chg.eq(0) & master["liczba_sztuk_num"].notna() & master["liczba_sztuk_num"].ne(0)
+    proxy_val_mask = missing_val_pct & prev_val_from_chg.eq(0) & master["wartosc_pln_num"].notna() & master["wartosc_pln_num"].ne(0)
+
+    master.loc[proxy_qty_mask, "liczba_sztuk_chg_pct_num"] = (
+        master.loc[proxy_qty_mask, "liczba_sztuk_chg_num"] / master.loc[proxy_qty_mask, "liczba_sztuk_num"]
+    ) * 100
+    master.loc[proxy_val_mask, "wartosc_pln_chg_pct_num"] = (
+        master.loc[proxy_val_mask, "wartosc_pln_chg_num"] / master.loc[proxy_val_mask, "wartosc_pln_num"]
+    ) * 100
 
     master["fund_total_pln"] = master["fund_total_pln_num"].apply(format_decimal_comma)
     master["fund_pct"] = master["fund_pct_num"].apply(_format_percent)
@@ -1378,24 +1541,29 @@ def parse_pfr_excel(file_path: str) -> pd.DataFrame:
 
     df.columns = [normalize_header(c) for c in df.columns]
 
-    mapping = {
-        "nazwa subfunduszu": "fundusz",
-        "data wyceny": "data",
-        "rodzaj instrumentu": "typ_aktywa",
-        "emitent": "emitent",
-        "kod isin": "isin",
-        "waluta notowań": "waluta",
-        "waluta nominału": "waluta",
-        "ilość": "liczba_sztuk",
-        "wartość całkowita w walucie wyceny funduszu": "wartosc_pln",
+    mapping_candidates = {
+        "fundusz": ["nazwa subfunduszu"],
+        "data": ["data wyceny"],
+        "typ_aktywa": ["rodzaj instrumentu"],
+        "emitent": ["emitent"],
+        "isin": ["kod isin"],
+        "waluta": ["waluta notowań", "waluta nominału", "waluta nominalu"],
+        "liczba_sztuk": ["ilość", "ilosc"],
+        "wartosc_pln": [
+            "wartość całkowita w walucie wyceny funduszu",
+            "wartosc całkowita w walucie wyceny funduszu",
+            "wartość całkowita",
+            "wartosc całkowita",
+        ],
     }
 
-    for src, dst in mapping.items():
-        col = find_column(df, src)
-        if col:
-            df[dst] = df[col]
-        else:
-            df[dst] = ""
+    for dst, sources in mapping_candidates.items():
+        selected_col = None
+        for src in sources:
+            selected_col = find_column(df, src)
+            if selected_col:
+                break
+        df[dst] = df[selected_col] if selected_col else ""
 
     df["instytucja"] = "PFR TFI S.A."
 
@@ -1527,19 +1695,10 @@ def parse_pzu_excel(file_path: str) -> pd.DataFrame:
         df[dst] = df[col] if col else ""
 
     df["instytucja"] = "PZU TFI S.A."
-    
-    # Fix ISIN in waluta column for specific funds (inPZU Puls Życia 2030/2040)
-    fundusz_series = df["fundusz"].astype(str)
-    puls_mask = fundusz_series.str.contains(r"inpzu\s+puls", case=False, na=False, regex=True)
-    if puls_mask.any():
-        # Check if waluta contains ISIN pattern (12 chars: 2 letters + 10 alphanumeric)
-        waluta_series = df.loc[puls_mask, "waluta"].astype(str).str.strip()
-        isin_pattern = r'^[A-Z]{2}[A-Z0-9]{10}$'
-        is_isin = waluta_series.str.match(isin_pattern, na=False)
-        
-        # Move ISIN from waluta to isin column
-        df.loc[puls_mask & is_isin, "isin"] = waluta_series[is_isin]
-        df.loc[puls_mask & is_isin, "waluta"] = "PLN"
+    df["fundusz"] = df["fundusz"].apply(normalize_pzu_fundusz)
+    df["emitent"] = df["emitent"].apply(_fix_mojibake_text)
+    df["typ_aktywa"] = df["typ_aktywa"].apply(_fix_mojibake_text).replace(_PZU_TYPAKTYWA_FIXES)
+    df = fix_pzu_shifted_isin_waluta(df)
 
     # Assign extracted date to the data column
     if extracted_date:
@@ -1624,6 +1783,10 @@ def parse_pzu1_excel(file_path: str) -> pd.DataFrame:
         "wartość instrumentu",
         "wartość",
     ])
+    nominal_col = _find_col([
+        "wartosc_nominalna",
+        "wartość nominalna",
+    ])
 
     df["fundusz"] = df[fund_col] if fund_col else ""
     df["typ_aktywa"] = df[typ_col] if typ_col else ""
@@ -1634,26 +1797,66 @@ def parse_pzu1_excel(file_path: str) -> pd.DataFrame:
 
     if isin_col:
         isin_series = df[isin_col].astype(str).str.strip()
+        df["_isin_raw"] = isin_series
         df["isin"] = isin_series.str.extract(r"([A-Z]{2}[A-Z0-9]{10})", expand=False).fillna("")
     else:
+        df["_isin_raw"] = ""
         df["isin"] = ""
+
+    if nominal_col:
+        waluta_series = df["waluta"].astype(str).str.strip()
+        waluta_is_isin = waluta_series.str.match(r"^[A-Z]{2}[A-Z0-9]{10}$", na=False)
+
+        qty_series = df["liczba_sztuk"].astype(str).str.strip()
+        qty_numeric = df["liczba_sztuk"].apply(parse_polish_number)
+        qty_missing_or_invalid = qty_numeric.isna()
+
+        waluta_from_qty = qty_series.str.upper()
+        waluta_like = waluta_from_qty.str.match(r"^[A-Z]{3,6}$", na=False)
+        waluta_fill_mask = waluta_is_isin & waluta_like
+        if waluta_fill_mask.any():
+            df.loc[waluta_fill_mask, "waluta"] = waluta_from_qty[waluta_fill_mask]
+
+        nominal_series = df[nominal_col]
+        nominal_text = nominal_series.astype(str).str.strip()
+        nominal_present = ~(nominal_text.str.lower().isin(["", "nan", "none"]) | nominal_series.isna())
+
+        qty_backfill_mask = qty_missing_or_invalid & waluta_is_isin & nominal_present
+        if qty_backfill_mask.any():
+            df.loc[qty_backfill_mask, "liczba_sztuk"] = nominal_series[qty_backfill_mask]
 
     file_date = extract_date_from_filename(file_path)
     df["instytucja"] = "PZU TFI S.A."
     df["data"] = file_date if file_date else ""
-    
-    # Fix ISIN in waluta column for specific funds (inPZU Puls Życia 2030/2040)
-    fundusz_series = df["fundusz"].astype(str)
-    puls_mask = fundusz_series.str.contains(r"inpzu\s+puls", case=False, na=False, regex=True)
-    if puls_mask.any():
-        # Check if waluta contains ISIN pattern (12 chars: 2 letters + 10 alphanumeric)
-        waluta_series = df.loc[puls_mask, "waluta"].astype(str).str.strip()
-        isin_pattern = r'^[A-Z]{2}[A-Z0-9]{10}$'
-        is_isin = waluta_series.str.match(isin_pattern, na=False)
-        
-        # Move ISIN from waluta to isin column
-        df.loc[puls_mask & is_isin, "isin"] = waluta_series[is_isin]
-        df.loc[puls_mask & is_isin, "waluta"] = "PLN"
+    df["fundusz"] = df["fundusz"].apply(normalize_pzu_fundusz)
+    df["emitent"] = df["emitent"].apply(_fix_mojibake_text)
+    df["typ_aktywa"] = df["typ_aktywa"].apply(_fix_mojibake_text).replace(_PZU_TYPAKTYWA_FIXES)
+
+    emitent_series = df["emitent"].astype(str).str.strip()
+    emitent_blank = emitent_series.str.lower().isin(["", "nan", "none", "0"])
+    waluta_series = df["waluta"].astype(str).str.strip()
+    waluta_is_isin = waluta_series.str.match(r"^[A-Z]{2}[A-Z0-9]{10}$", na=False)
+    isin_raw_series = df["_isin_raw"].astype(str).str.strip()
+    isin_raw_valid_text = ~isin_raw_series.str.lower().isin(["", "nan", "none", "0"])
+    fill_emitent_from_raw_shift = emitent_blank & waluta_is_isin & isin_raw_valid_text
+    if fill_emitent_from_raw_shift.any():
+        df.loc[fill_emitent_from_raw_shift, "emitent"] = isin_raw_series[fill_emitent_from_raw_shift]
+
+    emitent_series = df["emitent"].astype(str).str.strip()
+    emitent_blank = emitent_series.str.lower().isin(["", "nan", "none", "0"])
+    isin_raw_has_isin = isin_raw_series.str.contains(r"\b[A-Z]{2}[A-Z0-9]{10}\b", na=False)
+    emitent_from_isin_raw = (
+        isin_raw_series
+        .str.replace(r"\b[A-Z]{2}[A-Z0-9]{10}\b", "", regex=True)
+        .str.replace(r"\s+", " ", regex=True)
+        .str.strip(" ,;-")
+    )
+    fill_emitent_from_isin = emitent_blank & isin_raw_has_isin & emitent_from_isin_raw.ne("")
+    if fill_emitent_from_isin.any():
+        df.loc[fill_emitent_from_isin, "emitent"] = emitent_from_isin_raw[fill_emitent_from_isin]
+
+    df = fix_pzu_shifted_isin_waluta(df)
+    df = df.drop(columns=["_isin_raw"], errors="ignore")
 
     fundusz_series = df["fundusz"].astype(str)
     ppk_mask = fundusz_series.str.contains(r"ppk|inpzu", case=False, na=False)
@@ -2492,6 +2695,23 @@ def parse_uniqa_pdf(file_path: str) -> pd.DataFrame:
         text = re.sub(r"\b(Famerytura|Emerynan|Emeryvara|Eter|Emma)\b", "Emerytura", text)
         return text
 
+    def _normalize_uniqa_fundusz(candidate: str, current: str = "") -> str:
+        text = _clean_fundusz(candidate)
+        if not text:
+            return text
+
+        year_match = re.search(r"(20\d{2})", text)
+        if year_match:
+            return f"UNIQA Emerytura {year_match.group(1)}"
+
+        if re.fullmatch(r"UNIQA\s+Emerytura", text, flags=re.IGNORECASE):
+            current_year = re.search(r"(20\d{2})", current or "")
+            if current_year:
+                return f"UNIQA Emerytura {current_year.group(1)}"
+            return "UNIQA Emerytura 2025"
+
+        return text
+
     def _clean_typ_aktywa(value) -> str:
         text = _clean_nd(value).replace("\n", " ").strip()
         lowered = text.lower()
@@ -2591,7 +2811,7 @@ def parse_uniqa_pdf(file_path: str) -> pd.DataFrame:
                                 break
 
                     if fundusz_candidate:
-                        current_fundusz = fundusz_candidate
+                        current_fundusz = _normalize_uniqa_fundusz(fundusz_candidate, current_fundusz)
 
                     raw_isin = None
                     isin_index = None
@@ -2652,6 +2872,7 @@ def parse_uniqa_pdf(file_path: str) -> pd.DataFrame:
                                 break
 
                     if fundusz:
+                        fundusz = _normalize_uniqa_fundusz(fundusz, current_fundusz)
                         current_fundusz = fundusz
                     
                     # Szukaj typu aktywa
@@ -2815,6 +3036,8 @@ def parse_uniqa_pdf(file_path: str) -> pd.DataFrame:
                     )
 
     df = pd.DataFrame(rows)
+    if not df.empty and "fundusz" in df.columns:
+        df["fundusz"] = df["fundusz"].apply(lambda x: _normalize_uniqa_fundusz(safe_string(x), ""))
     return ensure_output_schema(df)
 
 
@@ -3256,6 +3479,7 @@ def main() -> None:
     output_dir = os.path.join(base_dir, "output_csv")
     os.makedirs(output_dir, exist_ok=True)
     equity_map, equity_name_map = load_equity_mapping(base_dir)
+    nn_shares_map = load_nn_fixed_shares_map(base_dir)
     cleanup_percent_outputs(output_dir)
 
     raw_folders = [
@@ -3275,6 +3499,7 @@ def main() -> None:
         result_df = process_folder(folder)
         output_path = os.path.join(output_dir, f"PPK_{quarter_token}.csv")
         result_df = result_df.copy()
+        result_df = apply_nn_shares_map(result_df, quarter_token, nn_shares_map)
         for col in ["liczba_sztuk", "wartosc_pln"]:
             if col in result_df.columns:
                 result_df[col] = result_df[col].apply(format_decimal_comma)
