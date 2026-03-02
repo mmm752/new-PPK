@@ -1,0 +1,28 @@
+PPK_MASTER QUALITY REPORT
+=========================
+Updated file: /workspaces/new-PPK/output_csv/PPK_master.csv
+Backup file: /workspaces/new-PPK/output_csv/PPK_master.backup_before_nn_fill_20260223_083629.csv
+
+NN FILL RESULTS
+---------------
+NN rows total: 3575
+NN rows with shares filled from fixed structure: 0
+NN rows with recomputed liczba_sztuk_chg: 3575
+NN rows with recomputed liczba_sztuk_chg_pct: 2556
+NN empty liczba_sztuk after update: 0
+NN empty liczba_sztuk_chg after update: 0
+NN empty liczba_sztuk_chg_pct after update: 1019
+
+CHANGE LOGIC SANITY
+-------------------
+Qty pct comparable rows: 31603
+Qty pct exact-consistent rows (tol 1e-6): 31603
+Value pct comparable rows: 32145
+Value pct exact-consistent rows (tol 1e-6): 32145
+Rows with negative inferred previous quantity: 1
+Rows with negative inferred previous value: 34
+
+DETAIL TABLES
+-------------
+Counts by institution/quarter: /workspaces/new-PPK/clear/PPK_master_counts_by_inst_quarter.csv
+Empty-field summary by institution/quarter: /workspaces/new-PPK/clear/PPK_master_empty_fields_by_inst_quarter.csv
