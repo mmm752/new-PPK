@@ -1,5 +1,4 @@
 ﻿data;instytucja;fundusz;DATA_fundusz;typ_aktywa;emitent;isin;waluta;liczba_sztuk;wartosc_pln;TYP_aktywo_std;equity_nazwa
-2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank Polski, a;"także pożyczki i kredyty udzielane tym podmiotom;";nan;PLN;nan;32081277.92;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank Polski, a;SKARB PAŃSTWA - DS0432 - 25.04.2032;nan;PLN;nan;2441279.43;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank Polski, a;SKARB PAŃSTWA - DS0725 - 25.07.2025;nan;PLN;nan;348443.52;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank Polski, a;SKARB PAŃSTWA - DS0726 - 25.07.2026;nan;PLN;nan;550180.3;obligacje;nan
@@ -19,8 +18,6 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank Polski, a;SKARB PAŃSTWA - WZ1126 - 25.11.2026;nan;PLN;nan;1822308.12;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank Polski, a;SKARB PAŃSTWA - WZ1127 - 25.11.2027;nan;PLN;nan;2558847.94;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank Polski, a;SKARB PAŃSTWA - WZ1129 - 25.11.2029;nan;PLN;nan;2856577.6;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;6. Depozyty denominowane w walutach państw, o których mowa w art. 141 ust. 4 Ustawy, w bankach lub;"funduszu;";nan;PLN;nan;0;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz obligacjach;"zamiennych na akcje tych spółek, a także notowanych na tym rynku prawach poboru i prawach do akcji;4";nan;PLN;nan;134055.82;akcje;NA
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz obligacjach;AB S.A.;nan;PLN;nan;54170.45;akcje;ABE PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz obligacjach;Alior Bank S.A.;nan;PLN;nan;79613.78;akcje;ALR PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz obligacjach;Allegro.eu S.A.;nan;PLN;nan;191735.2;akcje;ALE PW Equity
@@ -57,20 +54,12 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz obligacjach;Text S.A.;nan;PLN;nan;67757.38;akcje;TXT PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz obligacjach;Wirtualna Polska Holding S.A.;nan;PLN;nan;64234.53;akcje;WPL PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz obligacjach;Zabka Group S.A.;nan;PLN;nan;29799.35;akcje;ZAB PW Equity
-2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;8. Akcje, prawa poboru i prawa do akcji, będące przedmiotem oferty publicznej na terytorium;"Rzeczypospolitej Polskiej;";nan;PLN;nan;0;akcje;NA
-2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;9. Akcje spółek notowane na rynku regulowanym w państwach innych niż Rzeczpospolita Polska oraz;9a. Inne zagraniczne papiery wartościowe;nan;PLN;nan;0;akcje;NA
-2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;10. Akcje, prawa poboru i prawa do akcji, będące przedmiotem oferty publicznej na terytorium państw, o;"których mowa w art. 141 ust. 4 Ustawy;";nan;PLN;nan;0;akcje;NA
-2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;13. Jednostki uczestnictwa zbywane przez fundusze inwestycyjne otwarte lub specjalistyczne fundusze;"inwestycyjne otwarte;";nan;PLN;nan;0;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;"zawarte w ustawie;";nan;PLN;nan;1610756.8;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;iShares Core EURO STOXX 50 UCITS ETF;nan;PLN;nan;10830.17;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;iShares Core MSCI Europe UCITS ETF;nan;PLN;nan;509028.26;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;Invesco S&P 500 UCITS ETF;nan;PLN;nan;1059953.34;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;iShares Core S&P 500 UCITS ETF;nan;PLN;nan;30945.03;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;15. Obligacje i inne dłużne papiery wartościowe, emitowane przez jednostki samorządu terytorialnego lub;"ich związki, będące przedmiotem oferty publicznej;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej , emitowane;"przez jednostki samorządu terytorialnego lub ich związki;";nan;PLN;nan;20163.04;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej , emitowane;Gmina Lesznowola - LESZW J19 1234 - 20.12.2034;nan;PLN;nan;13941.34;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej , emitowane;Miasto Mysłowice - MYSL B14 290123 - 31.12.2028;nan;PLN;nan;6221.7;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;19. Obligacje przychodowe, o których mowa w ustawie z dnia 29 czerwca 1995 r. o obligacjach (Dz. U. z 2001;"r. Nr 120, poz. 1300, z późn. zm.5));";nan;PLN;nan;0;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;20. Dłużne papiery wartościowe, których emitent może ograniczyć swoją odpowiedzialność za zobowiązania;Ustawy:;nan;PLN;nan;0;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Bank Polska Kasa Opieki S.A. - PEO1027 - 29.10.2027;nan;PLN;nan;507424.5;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Cyfrowy Polsat S.A. - CPS0130 - 11.01.2030;nan;PLN;nan;335766.48;obligacje;nan
@@ -82,10 +71,7 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Unibep S.A - UNI1026 - 19.10.2026;nan;PLN;nan;288586.22;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;26. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na terytorium;P4 Sp. z o.o - PLY1227 - 29.12.2027;nan;PLN;nan;499404.36;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;26. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na terytorium;Ronson Development SE - RON0827 - 15.08.2027;nan;PLN;nan;331128.7;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;30. Dłużne papiery wartościowe emitowane przez instytucję kredytową, mającą siedzibę na terytorium;"pieniężnych wynikających z tych papierów wartościowych;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;32. Kwity depozytowe dopuszczone do obrotu na rynku regulowanym w państwach innych niż;"Rzeczpospolita Polska;";nan;PLN;nan;0;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;33. Obligacje emitowane przez Bank Gospodarstwa Krajowego na zasadach określonych w ustawie z dnia 27;października 1994 r. o autostradach płatnych oraz o Krajowym Funduszu Drogowym;nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;34. Obligacje inne niż wymienione w pkt 33, bankowe papiery wartościowe lub listy zastawne, emitowane;przez Bank Gospodarstwa Krajowego;nan;PLN;nan;4372563.17;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;34. Obligacje inne niż wymienione w pkt 33, bankowe papiery wartościowe lub listy zastawne, emitowane;Bank Gospodarstwa Krajowego S.A. - FPC0328 - 12.03.2028;nan;PLN;nan;2213584.2;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;34. Obligacje inne niż wymienione w pkt 33, bankowe papiery wartościowe lub listy zastawne, emitowane;Bank Gospodarstwa Krajowego S.A. - FPC0427 - 27.04.2027;nan;PLN;nan;440011.5;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;34. Obligacje inne niż wymienione w pkt 33, bankowe papiery wartościowe lub listy zastawne, emitowane;Bank Gospodarstwa Krajowego S.A. - FPC0630 - 05.06.2030;nan;PLN;nan;1151735.97;obligacje;nan
@@ -5314,8 +5300,6 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank;SKARB PAŃSTWA - WZ0528 - 25.05.2028;nan;PLN;nan;105648.08;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank;SKARB PAŃSTWA - WZ1126 - 25.11.2026;nan;PLN;nan;61279.38;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank;SKARB PAŃSTWA - WZ1129 - 25.11.2029;nan;PLN;nan;189786.32;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;6. Depozyty denominowane w walutach państw, o których mowa w art. 141 ust. 4 Ustawy, w bankach;"funduszu;";nan;PLN;nan;0;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;"prawach do akcji;";nan;PLN;nan;6730063.92;akcje;NA
 2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;AB S.A.;nan;PLN;nan;99638.43;akcje;ABE PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;Alior Bank S.A.;nan;PLN;nan;100248.02;akcje;ALR PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;Allegro.eu S.A.;nan;PLN;nan;294839.12;akcje;ALE PW Equity
@@ -5359,24 +5343,12 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;VRG S.A.;nan;PLN;nan;53357.34;akcje;VRG PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;Wirtualna Polska Holding S.A.;nan;PLN;nan;106452.56;akcje;WPL PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;Zabka Group S.A.;nan;PLN;nan;159923.83;akcje;ZAB PW Equity
-2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;8. Akcje, prawa poboru i prawa do akcji, będące przedmiotem oferty publicznej na terytorium;"Rzeczypospolitej Polskiej;";nan;PLN;nan;0;akcje;NA
-2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;9. Akcje spółek notowane na rynku regulowanym w państwach innych niż Rzeczpospolita Polska oraz;"prawach do akcji;";nan;PLN;nan;0;akcje;NA
-2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;10. Akcje, prawa poboru i prawa do akcji, będące przedmiotem oferty publicznej na terytorium;"państw, o których mowa w art. 141 ust. 4 Ustawy;";nan;PLN;nan;0;akcje;NA
-2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;12. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu zamkniętego,;"warunki zawarte w ustawie;";nan;PLN;nan;0;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;13. Jednostki uczestnictwa zbywane przez fundusze inwestycyjne otwarte lub specjalistyczne fundusze;"inwestycyjne otwarte;";nan;PLN;nan;0;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;"zawarte w ustawie;";nan;PLN;nan;2369293.35;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;iShares Core EURO STOXX 50 UCITS ETF;nan;PLN;nan;18566.01;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;iShares Core MSCI Europe UCITS ETF;nan;PLN;nan;593933.58;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;Invesco S&P 500 UCITS ETF;nan;PLN;nan;1702639.96;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;iShares Core S&P 500 UCITS ETF;nan;PLN;nan;54153.8;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;16. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej , emitowane;"Ustawy;";nan;PLN;nan;0;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;Gmina Lesznowola - LESZW J19 1234 - 20.12.2034;nan;PLN;nan;5974.86;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;Miasto Mysłowice - MYSL B14 290123 - 31.12.2028;nan;PLN;nan;2073.9;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;18. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;"ust. 4 Ustawy;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;19. Obligacje przychodowe, o których mowa w ustawie z dnia 29 czerwca 1995 r. o obligacjach (Dz. U. z;"2001 r. Nr 120, poz. 1300, z późn. zm.5));";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;21. Obligacje będące przedmiotem oferty publicznej na terytorium Rzeczypospolitej Polskiej;"oprocentowaniu;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;23. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na terytorium;"oprocentowaniu;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;24. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej na;"oprocentowaniu;";nan;PLN;nan;0;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Bank Polska Kasa Opieki S.A. - PEO1027 - 29.10.2027;nan;PLN;nan;41004;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Cyfrowy Polsat S.A. - CPS0130 - 11.01.2030;nan;PLN;nan;24594.36;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Dekpol S.A. - DEK0628 - 06.06.2028;nan;PLN;nan;20454;obligacje;nan
@@ -5387,8 +5359,6 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;26. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na terytorium;62;nan;PLN;nan;413.54;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;26. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na terytorium;P4 Sp. z o.o - PLY1227 - 29.12.2027;nan;PLN;nan;37104.34;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;26. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na terytorium;Ronson Development SE - RON0827 - 15.08.2027;nan;PLN;nan;25309.2;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;27. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na terytorium;"pkt 16 i 23;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;32. Kwity depozytowe dopuszczone do obrotu na rynku regulowanym w państwach innych niż;"Rzeczpospolita Polska;";nan;PLN;nan;0;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;34. Obligacje inne niż wymienione w pkt 33, bankowe papiery wartościowe lub listy zastawne,;Bank Gospodarstwa Krajowego S.A. - FPC0328 - 12.03.2028;nan;PLN;nan;150149.7;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;34. Obligacje inne niż wymienione w pkt 33, bankowe papiery wartościowe lub listy zastawne,;Bank Gospodarstwa Krajowego S.A. - FPC0427 - 27.04.2027;nan;PLN;nan;21305.82;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;34. Obligacje inne niż wymienione w pkt 33, bankowe papiery wartościowe lub listy zastawne,;Bank Gospodarstwa Krajowego S.A. - FPC0630 - 05.06.2030;nan;PLN;nan;63005.25;obligacje;nan
@@ -5670,7 +5640,6 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank;SKARB PAŃSTWA - WZ1126 - 25.11.2026;nan;PLN;nan;798641.1;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank;SKARB PAŃSTWA - WZ1127 - 25.11.2027;nan;PLN;nan;2118562.36;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank;SKARB PAŃSTWA - WZ1129 - 25.11.2029;nan;PLN;nan;3819205.12;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;"prawach do akcji;";nan;PLN;nan;30416804.6;akcje;NA
 2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;AB S.A.;nan;PLN;nan;477071.55;akcje;ABE PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;Alior Bank S.A.;nan;PLN;nan;498144.94;akcje;ALR PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;Allegro.eu S.A.;nan;PLN;nan;1265294.55;akcje;ALE PW Equity
@@ -5713,21 +5682,12 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;VRG S.A.;nan;PLN;nan;264447.31;akcje;VRG PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;Wirtualna Polska Holding S.A.;nan;PLN;nan;458637.71;akcje;WPL PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;Zabka Group S.A.;nan;PLN;nan;709990.25;akcje;ZAB PW Equity
-2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;9. Akcje spółek notowane na rynku regulowanym w państwach innych niż Rzeczpospolita Polska;9a. Inne zagraniczne papiery wartościowe;nan;PLN;nan;0;akcje;NA
-2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;12. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu zamkniętego,;"łącznie warunki zawarte w ustawie;";nan;PLN;nan;0;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego,;"łącznie warunki zawarte w ustawie;";nan;PLN;nan;11245510.35;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego,;iShares Core EURO STOXX 50 UCITS ETF;nan;PLN;nan;58792.38;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego,;iShares Core MSCI Europe UCITS ETF;nan;PLN;nan;3688335.62;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego,;Invesco S&P 500 UCITS ETF;nan;PLN;nan;7333342.19;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego,;iShares Core S&P 500 UCITS ETF;nan;PLN;nan;165040.16;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;16. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej ,;"141 ust. 4 Ustawy;";nan;PLN;nan;0;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;Gmina Lesznowola - LESZW J19 1234 - 20.12.2034;nan;PLN;nan;25891.06;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;Miasto Mysłowice - MYSL B14 290123 - 31.12.2028;nan;PLN;nan;9332.55;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;18. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;"141 ust. 4 Ustawy;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;21. Obligacje będące przedmiotem oferty publicznej na terytorium Rzeczypospolitej Polskiej;"oprocentowaniu;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;22. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej na;"oprocentowaniu;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;23. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na;"ewentualnemu oprocentowaniu;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;24. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej na;"oprocentowaniu;";nan;PLN;nan;0;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do;Bank Polska Kasa Opieki S.A. - PEO1027 - 29.10.2027;nan;PLN;nan;549453.6;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do;Cyfrowy Polsat S.A. - CPS0130 - 11.01.2030;nan;PLN;nan;352875.6;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do;Dekpol S.A. - DEK0628 - 06.06.2028;nan;PLN;nan;262833.9;obligacje;nan
@@ -5738,9 +5698,6 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do;Unibep S.A - UNI1026 - 19.10.2026;nan;PLN;nan;285836.81;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;26. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na;P4 Sp. z o.o - PLY1227 - 29.12.2027;nan;PLN;nan;546536.9;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;26. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na;Ronson Development SE - RON0827 - 15.08.2027;nan;PLN;nan;368037.95;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;27. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na;"których mowa w pkt 16 i 23;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;31. Kwity depozytowe, w rozumieniu ustawy z dnia 29 lipca 2005 r. o obrocie instrumentami;"Polskiej;";nan;PLN;nan;0;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;32. Kwity depozytowe dopuszczone do obrotu na rynku regulowanym w państwach innych niż;"Rzeczpospolita Polska;";nan;PLN;nan;0;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;34. Obligacje inne niż wymienione w pkt 33, bankowe papiery wartościowe lub listy zastawne,;Bank Gospodarstwa Krajowego S.A. - FPC0328 - 12.03.2028;nan;PLN;nan;2424872.7;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;34. Obligacje inne niż wymienione w pkt 33, bankowe papiery wartościowe lub listy zastawne,;Bank Gospodarstwa Krajowego S.A. - FPC0427 - 27.04.2027;nan;PLN;nan;474286.08;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;34. Obligacje inne niż wymienione w pkt 33, bankowe papiery wartościowe lub listy zastawne,;Bank Gospodarstwa Krajowego S.A. - FPC0630 - 05.06.2030;nan;PLN;nan;1025725.47;obligacje;nan
@@ -6584,8 +6541,6 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank;SKARB PAŃSTWA - WZ0528 - 25.05.2028;nan;PLN;nan;21926.96;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank;SKARB PAŃSTWA - WZ1127 - 25.11.2027;nan;PLN;nan;16972.46;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank;SKARB PAŃSTWA - WZ1129 - 25.11.2029;nan;PLN;nan;45000.88;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;3. Obligacje i inne dłużne papiery wartościowe, opiewające na świadczenia pieniężne, gwarantowane;"gwarantowane lub poręczane przez te podmioty;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;"prawach do akcji;";nan;PLN;nan;800701.47;akcje;NA
 2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;AB S.A.;nan;PLN;nan;11929.23;akcje;ABE PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;Alior Bank S.A.;nan;PLN;nan;11520.78;akcje;ALR PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;Allegro.eu S.A.;nan;PLN;nan;32236.98;akcje;ALE PW Equity
@@ -6627,15 +6582,8 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;VRG S.A.;nan;PLN;nan;6566.57;akcje;VRG PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;Wirtualna Polska Holding S.A.;nan;PLN;nan;13020.51;akcje;WPL PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;Zabka Group S.A.;nan;PLN;nan;18391.34;akcje;ZAB PW Equity
-2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;8. Akcje, prawa poboru i prawa do akcji, będące przedmiotem oferty publicznej na terytorium;"Rzeczypospolitej Polskiej;";nan;PLN;nan;0;akcje;NA
-2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;9. Akcje spółek notowane na rynku regulowanym w państwach innych niż Rzeczpospolita Polska oraz;9a. Inne zagraniczne papiery wartościowe;nan;PLN;nan;0;akcje;NA
-2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;12. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu zamkniętego,;"warunki zawarte w ustawie;";nan;PLN;nan;0;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;"zawarte w ustawie;";nan;PLN;nan;275358.65;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;iShares Core MSCI Europe UCITS ETF;nan;PLN;nan;78715.71;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;Invesco S&P 500 UCITS ETF;nan;PLN;nan;196642.94;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;16. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej , emitowane;"Ustawy;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;21. Obligacje będące przedmiotem oferty publicznej na terytorium Rzeczypospolitej Polskiej;"oprocentowaniu;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;23. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na terytorium;"oprocentowaniu;";nan;PLN;nan;0;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;9;nan;PLN;nan;354.63;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Bank Polska Kasa Opieki S.A. - PEO1027 - 29.10.2027;nan;PLN;nan;3075.3;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Cyfrowy Polsat S.A. - CPS0130 - 11.01.2030;nan;PLN;nan;1069.32;obligacje;nan
@@ -6645,7 +6593,6 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;26. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na terytorium;3;nan;PLN;nan;60.19;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;26. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na terytorium;P4 Sp. z o.o - PLY1227 - 29.12.2027;nan;PLN;nan;2005.64;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;26. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na terytorium;Ronson Development SE - RON0827 - 15.08.2027;nan;PLN;nan;1054.55;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;32. Kwity depozytowe dopuszczone do obrotu na rynku regulowanym w państwach innych niż;"Rzeczpospolita Polska;";nan;PLN;nan;0;inne;nan
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2025;2025;Akcja;11 BIT STUDIOS SA;PL11BTS00015;PLN;47;7999.4;akcje;11B PW Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2025;2025;Akcja;Abbott Laboratories;US0028241000;USD;49;22639.41;akcje;ABT US Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2025;2025;Akcja;Accenture PLC;IE00B4BNMY34;USD;15;21656.99;akcje;ACN US Equity
@@ -9005,8 +8952,6 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank;SKARB PAŃSTWA - WZ1126 - 25.11.2026;nan;PLN;nan;155709.9;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank;SKARB PAŃSTWA - WZ1127 - 25.11.2027;nan;PLN;nan;497193.24;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank;SKARB PAŃSTWA - WZ1129 - 25.11.2029;nan;PLN;nan;875560.6;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;6. Depozyty denominowane w walutach państw, o których mowa w art. 141 ust. 4 Ustawy, w;"prowadzonej polityki inwestycyjnej funduszu;";nan;PLN;nan;0;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;"prawach do akcji;";nan;PLN;nan;25471504.15;akcje;NA
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;AB S.A.;nan;PLN;nan;365406.1;akcje;ABE PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;Alior Bank S.A.;nan;PLN;nan;382249.3;akcje;ALR PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;Allegro.eu S.A.;nan;PLN;nan;1128892.69;akcje;ALE PW Equity
@@ -9050,26 +8995,12 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;VRG S.A.;nan;PLN;nan;171126.06;akcje;VRG PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;Wirtualna Polska Holding S.A.;nan;PLN;nan;340506.14;akcje;WPL PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;Zabka Group S.A.;nan;PLN;nan;537427.18;akcje;ZAB PW Equity
-2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;8. Akcje, prawa poboru i prawa do akcji, będące przedmiotem oferty publicznej na terytorium;"Rzeczypospolitej Polskiej;";nan;PLN;nan;0;akcje;NA
-2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;9. Akcje spółek notowane na rynku regulowanym w państwach innych niż Rzeczpospolita Polska;"poboru i prawach do akcji;";nan;PLN;nan;0;akcje;NA
-2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;9. Akcje spółek notowane na rynku regulowanym w państwach innych niż Rzeczpospolita Polska;9a. Inne zagraniczne papiery wartościowe;nan;PLN;nan;0;akcje;NA
-2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;10. Akcje, prawa poboru i prawa do akcji, będące przedmiotem oferty publicznej na terytorium;"państw, o których mowa w art. 141 ust. 4 Ustawy;";nan;PLN;nan;0;akcje;NA
-2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;12. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu zamkniętego,;"łącznie warunki zawarte w ustawie;";nan;PLN;nan;0;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;13. Jednostki uczestnictwa zbywane przez fundusze inwestycyjne otwarte lub specjalistyczne;"fundusze inwestycyjne otwarte;";nan;PLN;nan;0;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego,;"łącznie warunki zawarte w ustawie;";nan;PLN;nan;8900007.04;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego,;iShares Core EURO STOXX 50 UCITS ETF;nan;PLN;nan;91282.9;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego,;iShares Core MSCI Europe UCITS ETF;nan;PLN;nan;2272663.85;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego,;Invesco S&P 500 UCITS ETF;nan;PLN;nan;6278185.04;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego,;iShares Core S&P 500 UCITS ETF;nan;PLN;nan;257875.25;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;15. Obligacje i inne dłużne papiery wartościowe, emitowane przez jednostki samorządu;"terytorialnego lub ich związki, będące przedmiotem oferty publicznej;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;16. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej ,;"art. 141 ust. 4 Ustawy;";nan;PLN;nan;0;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;Gmina Lesznowola - LESZW J19 1234 - 20.12.2034;nan;PLN;nan;34853.35;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;Miasto Mysłowice - MYSL B14 290123 - 31.12.2028;nan;PLN;nan;11406.45;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;18. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;"art. 141 ust. 4 Ustawy;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;21. Obligacje będące przedmiotem oferty publicznej na terytorium Rzeczypospolitej Polskiej;"oprocentowaniu;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;22. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej na;"oprocentowaniu;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;23. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na;"ewentualnemu oprocentowaniu;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;24. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej na;"oprocentowaniu;";nan;PLN;nan;0;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do;Bank Polska Kasa Opieki S.A. - PEO1027 - 29.10.2027;nan;PLN;nan;211170.6;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do;Cyfrowy Polsat S.A. - CPS0130 - 11.01.2030;nan;PLN;nan;125110.44;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do;Dekpol S.A. - DEK0628 - 06.06.2028;nan;PLN;nan;101247.3;obligacje;nan
@@ -9080,17 +9011,12 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do;Unibep S.A - UNI1026 - 19.10.2026;nan;PLN;nan;98978.76;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;26. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na;P4 Sp. z o.o - PLY1227 - 29.12.2027;nan;PLN;nan;201566.82;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;26. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na;Ronson Development SE - RON0827 - 15.08.2027;nan;PLN;nan;137091.5;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;27. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na;"których mowa w pkt 16 i 23;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;30. Dłużne papiery wartościowe emitowane przez instytucję kredytową, mającą siedzibę na;"z tych papierów wartościowych;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;31. Kwity depozytowe, w rozumieniu ustawy z dnia 29 lipca 2005 r. o obrocie instrumentami;"Polskiej;";nan;PLN;nan;0;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;32. Kwity depozytowe dopuszczone do obrotu na rynku regulowanym w państwach innych niż;"Rzeczpospolita Polska;";nan;PLN;nan;0;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;34. Obligacje inne niż wymienione w pkt 33, bankowe papiery wartościowe lub listy zastawne,;Bank Gospodarstwa Krajowego S.A. - FPC0328 - 12.03.2028;nan;PLN;nan;819080.1;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;34. Obligacje inne niż wymienione w pkt 33, bankowe papiery wartościowe lub listy zastawne,;Bank Gospodarstwa Krajowego S.A. - FPC0427 - 27.04.2027;nan;PLN;nan;164888.52;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;34. Obligacje inne niż wymienione w pkt 33, bankowe papiery wartościowe lub listy zastawne,;Bank Gospodarstwa Krajowego S.A. - FPC0630 - 05.06.2030;nan;PLN;nan;286463.87;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;34. Obligacje inne niż wymienione w pkt 33, bankowe papiery wartościowe lub listy zastawne,;Bank Gospodarstwa Krajowego S.A. - FPC0631 - 12.06.2031;nan;PLN;nan;58882.8;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;34. Obligacje inne niż wymienione w pkt 33, bankowe papiery wartościowe lub listy zastawne,;Bank Gospodarstwa Krajowego S.A. - FPC0725 - 03.07.2025;nan;PLN;nan;188908.8;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;42. Inne krajowe instrumenty finansowe -42 987,37 -0,08%;FWDEUPL10012501 20250110 -;nan;PLN;nan;155.04;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank Polski, a;"także pożyczki i kredyty udzielane tym podmiotom;";nan;PLN;nan;23939771.82;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank Polski, a;SKARB PAŃSTWA - DS0432 - 25.04.2032;nan;PLN;nan;2114065.6;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank Polski, a;SKARB PAŃSTWA - DS0725 - 25.07.2025;nan;PLN;nan;192798.72;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank Polski, a;SKARB PAŃSTWA - DS0726 - 25.07.2026;nan;PLN;nan;283838.6;obligacje;nan
@@ -9110,9 +9036,6 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank Polski, a;SKARB PAŃSTWA - WZ1126 - 25.11.2026;nan;PLN;nan;415896.12;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank Polski, a;SKARB PAŃSTWA - WZ1127 - 25.11.2027;nan;PLN;nan;713841.7;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank Polski, a;SKARB PAŃSTWA - WZ1129 - 25.11.2029;nan;PLN;nan;1226763.12;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;3. Obligacje i inne dłużne papiery wartościowe, opiewające na świadczenia pieniężne, gwarantowane lub;"gwarantowane lub poręczane przez te podmioty;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;3. Obligacje i inne dłużne papiery wartościowe, opiewające na świadczenia pieniężne, gwarantowane lub;"pożyczki gwarantowane lub poręczane przez te podmioty;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;5. Depozyty bankowe w walucie polskiej w bankach lub instytucjach kredytowych, mających siedzibę i;"w państwach, o których mowa w art. 141 ust. 4 Ustawy;";nan;PLN;nan;0;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz obligacjach;30;nan;PLN;nan;435994.64;akcje;NA
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz obligacjach;AB S.A.;nan;PLN;nan;425150.05;akcje;ABE PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz obligacjach;Alior Bank S.A.;nan;PLN;nan;455328.9;akcje;ALR PW Equity
@@ -9157,22 +9080,12 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz obligacjach;VRG S.A.;nan;PLN;nan;228067.74;akcje;VRG PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz obligacjach;Wirtualna Polska Holding S.A.;nan;PLN;nan;403399.17;akcje;WPL PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz obligacjach;Zabka Group S.A.;nan;PLN;nan;636174.81;akcje;ZAB PW Equity
-2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;8. Akcje, prawa poboru i prawa do akcji, będące przedmiotem oferty publicznej na terytorium;"Rzeczypospolitej Polskiej;";nan;PLN;nan;0;akcje;NA
-2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;9. Akcje spółek notowane na rynku regulowanym w państwach innych niż Rzeczpospolita Polska oraz;"prawach do akcji;";nan;PLN;nan;0;akcje;NA
-2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;9. Akcje spółek notowane na rynku regulowanym w państwach innych niż Rzeczpospolita Polska oraz;9a. Inne zagraniczne papiery wartościowe;nan;PLN;nan;0;akcje;NA
-2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;10. Akcje, prawa poboru i prawa do akcji, będące przedmiotem oferty publicznej na terytorium państw, o;"których mowa w art. 141 ust. 4 Ustawy;";nan;PLN;nan;0;akcje;NA
-2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;12. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu zamkniętego, mające;"zawarte w ustawie;";nan;PLN;nan;0;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;13. Jednostki uczestnictwa zbywane przez fundusze inwestycyjne otwarte lub specjalistyczne fundusze;"inwestycyjne otwarte;";nan;PLN;nan;0;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;"zawarte w ustawie;";nan;PLN;nan;10788069.49;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;iShares Core EURO STOXX 50 UCITS ETF;nan;PLN;nan;72716.89;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;iShares Core MSCI Europe UCITS ETF;nan;PLN;nan;2734462.68;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;Invesco S&P 500 UCITS ETF;nan;PLN;nan;7774589.72;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;iShares Core S&P 500 UCITS ETF;nan;PLN;nan;206300.2;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;15. Obligacje i inne dłużne papiery wartościowe, emitowane przez jednostki samorządu terytorialnego lub;"ich związki, będące przedmiotem oferty publicznej;";nan;PLN;nan;0;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;Gmina Lesznowola - LESZW J19 1234 - 20.12.2034;nan;PLN;nan;34853.35;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;Miasto Mysłowice - MYSL B14 290123 - 31.12.2028;nan;PLN;nan;11406.45;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;18. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;"4 Ustawy;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;19. Obligacje przychodowe, o których mowa w ustawie z dnia 29 czerwca 1995 r. o obligacjach (Dz. U. z;"2001 r. Nr 120, poz. 1300, z późn. zm.5));";nan;PLN;nan;0;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;20. Dłużne papiery wartościowe, których emitent może ograniczyć swoją odpowiedzialność za;141 ust. 4 Ustawy:;nan;PLN;nan;0;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Bank Polska Kasa Opieki S.A. Seria A - PEO1027 - 29.10.2027;nan;PLN;nan;375186.6;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Cyfrowy Polsat S.A. Seria D - CPS0130 - 11.01.2030;nan;PLN;nan;232042.44;obligacje;nan
@@ -9184,10 +9097,7 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;UNIBEP S.A. Seria I - UNI1026 - 19.10.2026;nan;PLN;nan;185839.75;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;26. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na terytorium;P4 Sp. z o.o - PLY1227 - 29.12.2027;nan;PLN;nan;365026.48;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;26. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na terytorium;Ronson Development SE - RON0827 - 15.08.2027;nan;PLN;nan;245710.15;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;27. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na terytorium;"i 23;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;32. Kwity depozytowe dopuszczone do obrotu na rynku regulowanym w państwach innych niż;"Rzeczpospolita Polska;";nan;PLN;nan;0;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;33. Obligacje emitowane przez Bank Gospodarstwa Krajowego na zasadach określonych w ustawie z dnia;27 października 1994 r. o autostradach płatnych oraz o Krajowym Funduszu Drogowym;nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;34. Obligacje inne niż wymienione w pkt 33, bankowe papiery wartościowe lub listy zastawne, emitowane;przez Bank Gospodarstwa Krajowego;nan;PLN;nan;3135056.95;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;34. Obligacje inne niż wymienione w pkt 33, bankowe papiery wartościowe lub listy zastawne, emitowane;Bank Gospodarstwa Krajowego S.A. - FPC0328 - 12.03.2028;nan;PLN;nan;1588709.7;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;34. Obligacje inne niż wymienione w pkt 33, bankowe papiery wartościowe lub listy zastawne, emitowane;Bank Gospodarstwa Krajowego S.A. - FPC0427 - 27.04.2027;nan;PLN;nan;331629.72;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;34. Obligacje inne niż wymienione w pkt 33, bankowe papiery wartościowe lub listy zastawne, emitowane;Bank Gospodarstwa Krajowego S.A. - FPC0630 - 05.06.2030;nan;PLN;nan;672896.07;obligacje;nan
@@ -9605,7 +9515,6 @@
 2024-12-31;Nationale-Nederlanden;NN DFE Nasze Jutro 2030;2030;Inne;InPost S.A.;IPT0627;PLN;22138.2;1037761.64;inne;nan
 2024-12-31;Nationale-Nederlanden;NN DFE Nasze Jutro 2030;2030;Inne;Rachunek podstawowy;nan;PLN;0;0;inne;nan
 2024-12-31;Nationale-Nederlanden;NN DFE Nasze Jutro 2030;2030;Inne;Rachunek przeliczeniowy;nan;PLN;0;1218864.54;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank Polski, a;"także pożyczki i kredyty udzielane tym podmiotom;";nan;PLN;nan;47107957.62;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank Polski, a;SKARB PAŃSTWA - DS0432 - 25.04.2032;nan;PLN;nan;3261257.08;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank Polski, a;SKARB PAŃSTWA - DS0725 - 25.07.2025;nan;PLN;nan;379572.48;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank Polski, a;SKARB PAŃSTWA - DS0726 - 25.07.2026;nan;PLN;nan;624056.1;obligacje;nan
@@ -9625,9 +9534,6 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank Polski, a;SKARB PAŃSTWA - WZ1126 - 25.11.2026;nan;PLN;nan;1672625.7;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank Polski, a;SKARB PAŃSTWA - WZ1127 - 25.11.2027;nan;PLN;nan;2081622.3;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank Polski, a;SKARB PAŃSTWA - WZ1129 - 25.11.2029;nan;PLN;nan;5502825;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;3. Obligacje i inne dłużne papiery wartościowe, opiewające na świadczenia pieniężne, gwarantowane lub;"gwarantowane lub poręczane przez te podmioty;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;5. Depozyty bankowe w walucie polskiej w bankach lub instytucjach kredytowych, mających siedzibę i;"w państwach, o których mowa w art. 141 ust. 4 Ustawy;";nan;PLN;nan;0;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;6. Depozyty denominowane w walutach państw, o których mowa w art. 141 ust. 4 Ustawy, w bankach lub;"funduszu;";nan;PLN;nan;0;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz obligacjach;16;nan;PLN;nan;979169.18;akcje;NA
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz obligacjach;AB S.A.;nan;PLN;nan;301848.71;akcje;ABE PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz obligacjach;Alior Bank S.A.;nan;PLN;nan;310029.46;akcje;ALR PW Equity
@@ -9671,20 +9577,12 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz obligacjach;VRG S.A.;nan;PLN;nan;150723.9;akcje;VRG PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz obligacjach;Wirtualna Polska Holding S.A.;nan;PLN;nan;280375.05;akcje;WPL PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz obligacjach;Zabka Group S.A.;nan;PLN;nan;388872.89;akcje;ZAB PW Equity
-2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;8. Akcje, prawa poboru i prawa do akcji, będące przedmiotem oferty publicznej na terytorium;"Rzeczypospolitej Polskiej;";nan;PLN;nan;0;akcje;NA
-2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;9. Akcje spółek notowane na rynku regulowanym w państwach innych niż Rzeczpospolita Polska oraz;"prawach do akcji;";nan;PLN;nan;0;akcje;NA
-2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;10. Akcje, prawa poboru i prawa do akcji, będące przedmiotem oferty publicznej na terytorium państw, o;"których mowa w art. 141 ust. 4 Ustawy;";nan;PLN;nan;0;akcje;NA
-2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;12. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu zamkniętego, mające;"zawarte w ustawie;";nan;PLN;nan;0;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;"zawarte w ustawie;";nan;PLN;nan;5933404.49;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;iShares Core EURO STOXX 50 UCITS ETF;nan;PLN;nan;27075.44;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;iShares Core MSCI Europe UCITS ETF;nan;PLN;nan;1862534.81;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;Invesco S&P 500 UCITS ETF;nan;PLN;nan;3966431.66;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;iShares Core S&P 500 UCITS ETF;nan;PLN;nan;77362.58;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;15. Obligacje i inne dłużne papiery wartościowe, emitowane przez jednostki samorządu terytorialnego lub;"ich związki, będące przedmiotem oferty publicznej;";nan;PLN;nan;0;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;Gmina Lesznowola - LESZW J19 1234 - 20.12.2034;nan;PLN;nan;19916.2;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;Miasto Mysłowice - MYSL B14 290123 - 31.12.2028;nan;PLN;nan;8295.6;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;18. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;"ust. 4 Ustawy;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;19. Obligacje przychodowe, o których mowa w ustawie z dnia 29 czerwca 1995 r. o obligacjach (Dz. U. z;"2001 r. Nr 120, poz. 1300, z późn. zm.5));";nan;PLN;nan;0;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;20. Dłużne papiery wartościowe, których emitent może ograniczyć swoją odpowiedzialność za;141 ust. 4 Ustawy:;nan;PLN;nan;0;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Bank Polska Kasa Opieki S.A. - PEO1027 - 29.10.2027;nan;PLN;nan;688867.2;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Cyfrowy Polsat S.A. - CPS0130 - 11.01.2030;nan;PLN;nan;438421.2;obligacje;nan
@@ -9696,8 +9594,6 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Unibep S.A - UNI1026 - 19.10.2026;nan;PLN;nan;346934.81;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;26. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na terytorium;P4 Sp. z o.o - PLY1227 - 29.12.2027;nan;PLN;nan;665872.48;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;26. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na terytorium;Ronson Development SE - RON0827 - 15.08.2027;nan;PLN;nan;445020.1;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;27. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na terytorium;"16 i 23;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;34. Obligacje inne niż wymienione w pkt 33, bankowe papiery wartościowe lub listy zastawne, emitowane;przez Bank Gospodarstwa Krajowego;nan;PLN;nan;5824244.75;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;34. Obligacje inne niż wymienione w pkt 33, bankowe papiery wartościowe lub listy zastawne, emitowane;Bank Gospodarstwa Krajowego S.A. - FPC0328 - 12.03.2028;nan;PLN;nan;2906790.3;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;34. Obligacje inne niż wymienione w pkt 33, bankowe papiery wartościowe lub listy zastawne, emitowane;Bank Gospodarstwa Krajowego S.A. - FPC0427 - 27.04.2027;nan;PLN;nan;571551.78;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;34. Obligacje inne niż wymienione w pkt 33, bankowe papiery wartościowe lub listy zastawne, emitowane;Bank Gospodarstwa Krajowego S.A. - FPC0630 - 05.06.2030;nan;PLN;nan;1397036.41;obligacje;nan
@@ -13910,7 +13806,6 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank;SKARB PAŃSTWA - WZ0126 - 25.01.2026;nan;PLN;nan;132001.28;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank;SKARB PAŃSTWA - WZ0528 - 25.05.2028;nan;PLN;nan;229236.4;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank;SKARB PAŃSTWA - WZ1126 - 25.11.2026;nan;PLN;nan;44201.52;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;"prawach do akcji;";nan;PLN;nan;12068058.83;akcje;NA
 2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;AB S.A.;nan;PLN;nan;175027.27;akcje;ABE PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;Alior Bank S.A.;nan;PLN;nan;179775.82;akcje;ALR PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;Allegro.eu S.A.;nan;PLN;nan;531298.03;akcje;ALE PW Equity
@@ -13954,21 +13849,12 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;VRG S.A.;nan;PLN;nan;98787.12;akcje;VRG PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;Wirtualna Polska Holding S.A.;nan;PLN;nan;162638.04;akcje;WPL PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;Zabka Group S.A.;nan;PLN;nan;286700.93;akcje;ZAB PW Equity
-2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;8. Akcje, prawa poboru i prawa do akcji, będące przedmiotem oferty publicznej na terytorium;"Rzeczypospolitej Polskiej;";nan;PLN;nan;0;akcje;NA
-2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;9. Akcje spółek notowane na rynku regulowanym w państwach innych niż Rzeczpospolita Polska oraz;"prawach do akcji;";nan;PLN;nan;0;akcje;NA
-2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;10. Akcje, prawa poboru i prawa do akcji, będące przedmiotem oferty publicznej na terytorium państw,;"o których mowa w art. 141 ust. 4 Ustawy;";nan;PLN;nan;0;akcje;NA
-2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;13. Jednostki uczestnictwa zbywane przez fundusze inwestycyjne otwarte lub specjalistyczne fundusze;"inwestycyjne otwarte;";nan;PLN;nan;0;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;"zawarte w ustawie;";nan;PLN;nan;4312418.71;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;iShares Core EURO STOXX 50 UCITS ETF;nan;PLN;nan;46415.04;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;iShares Core MSCI Europe UCITS ETF;nan;PLN;nan;1084123.9;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;Invesco S&P 500 UCITS ETF;nan;PLN;nan;3050363.39;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;iShares Core S&P 500 UCITS ETF;nan;PLN;nan;131516.38;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;15. Obligacje i inne dłużne papiery wartościowe, emitowane przez jednostki samorządu terytorialnego;"lub ich związki, będące przedmiotem oferty publicznej;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;16. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej , emitowane;"Ustawy;";nan;PLN;nan;0;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;Gmina Lesznowola - LESZW J19 1234 - 20.12.2034;nan;PLN;nan;15932.96;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;Miasto Mysłowice - MYSL B14 290123 - 31.12.2028;nan;PLN;nan;6221.7;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;18. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;"ust. 4 Ustawy;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;19. Obligacje przychodowe, o których mowa w ustawie z dnia 29 czerwca 1995 r. o obligacjach (Dz. U. z;"2001 r. Nr 120, poz. 1300, z późn. zm.5));";nan;PLN;nan;0;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;300;nan;PLN;nan;843.51;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Bank Polska Kasa Opieki S.A. - PEO1027 - 29.10.2027;nan;PLN;nan;77907.6;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Cyfrowy Polsat S.A. - CPS0130 - 11.01.2030;nan;PLN;nan;47050.08;obligacje;nan
@@ -13980,8 +13866,6 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;26. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na terytorium;118;nan;PLN;nan;654.97;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;26. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na terytorium;P4 Sp. z o.o - PLY1227 - 29.12.2027;nan;PLN;nan;71200.22;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;26. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na terytorium;Ronson Development SE - RON0827 - 15.08.2027;nan;PLN;nan;47454.75;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;27. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na terytorium;"pkt 16 i 23;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;32. Kwity depozytowe dopuszczone do obrotu na rynku regulowanym w państwach innych niż;"Rzeczpospolita Polska;";nan;PLN;nan;0;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;34. Obligacje inne niż wymienione w pkt 33, bankowe papiery wartościowe lub listy zastawne,;Bank Gospodarstwa Krajowego S.A. - FPC0328 - 12.03.2028;nan;PLN;nan;338960.7;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;34. Obligacje inne niż wymienione w pkt 33, bankowe papiery wartościowe lub listy zastawne,;Bank Gospodarstwa Krajowego S.A. - FPC0427 - 27.04.2027;nan;PLN;nan;62064.78;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;34. Obligacje inne niż wymienione w pkt 33, bankowe papiery wartościowe lub listy zastawne,;Bank Gospodarstwa Krajowego S.A. - FPC0630 - 05.06.2030;nan;PLN;nan;124330.36;obligacje;nan
@@ -13999,9 +13883,13 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Dłużne papiery;BANK POLSKA KASA OPIEKI S.A;PLPEKAO00354;PLN;1;518419.15;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Dłużne papiery;BANK POLSKA KASA OPIEKI S.A;PLPEKAO00362;PLN;1;508767.07;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Dłużne papiery;BANK GOSPODARSTWA KRAJOWEGO;XS2778272471;PLN;107;484519.47;obligacje;nan
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;DR UFCRIT00S1 E0T26F1198;ASFIOUNIQAE2;PLN;713;559652.32;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;S PLC SUB-FUND VAN;ASFIOUNIQAE2;PLN;2586;1190990.15;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;ISHARES CORE S& P 500 UCITS ETF;IE00B5BMR087;PLN;166;426223.86;akcje;CSPX LN Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;merytura 2025;ASFIOUNIQAE2;PLN;nan;161259.32;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Dłużne papiery;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000113460;PLN;2900;2663795;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;ŻABKA GROUP SA;LU2910446546;PLN;8252;158851;akcje;ZAB PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;merytura 2025;ASFIOUNIQAE2;PLN;nan;0.04;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Dłużne papiery;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000113130;PLN;500;502210;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;ISHARES EURO ST OXX BANKS 30-15 UC ITS ETF;DE0006289309;PLN;54;3282.24;akcje;SX7EEX GR Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Dłużne papiery;ROBYG S.A;PLROBYG00271;PLN;60;60793.8;obligacje;nan
@@ -14034,6 +13922,7 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Dłużne papiery;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000108817;PLN;1050;1082655;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;ASSECO SOUTH E ASTERN EUROPE S.A;PLASSEE00014;PLN;1247;61103;akcje;ASE PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;WIRTUALNA POL SKA HOLDING S.A;PLWRTPL00027;PLN;970;75951;akcje;WPL PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;SA OPIEKI S.A;ASFIOUNIQAE2;PLN;-352000;13704.13;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;TORPOL S.A;PLTORPL00016;PLN;289;9363.6;akcje;TOR PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;CYFROWY POLSA T S.A;PLCFRPT00013;PLN;1783;25211.62;akcje;CPS PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;TAURON POLSKA ENERGIA S.A;PLTAURN00011;PLN;10851;40788.91;akcje;TPE PW Equity
@@ -14043,14 +13932,24 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Dłużne papiery;merytura 2025 SFIO N/D PLN SKARB PAŃSTWA RZ ECZYPOSPOLITEJ POLSKIEJ;PL0000110383;PLN;2200;2192344;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;merytura 2025 SFIO N/D PLN POWSZECHNY ZAKŁ AD UBEZPIECZEŃ S.A;PLPZU0000011;PLN;11175;512262;akcje;PZU PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;merytura 2025 SFIO N/D PLN POWSZECHNA KASA OSZCZĘDNOŚCI BANK POLSKI S.A;PLPKO0000016;PLN;8541;510410.16;akcje;PKO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;OPIEKI S.A;ASFIOUNIQAE2;EUR;-250000;81.16;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;merytura 2025 SFIO N/D PLN PGE POLSKA GRUPA ENERGETYCZNA S.A;PLPGER000010;PLN;6005;36450.35;akcje;PGE PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Dłużne papiery;merytura 2025 SFIO N/D PLN SKARB PAŃSTWA RZ ECZYPOSPOLITEJ POLSKIEJ;PL0000105391;PLN;4300;4507819;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;merytura 2025 SFIO N/D PLN GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A;PL0GF0030072;PLN;15;665400;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Dłużne papiery;merytura 2025 SFIO N/D PLN SKARB PAŃSTWA RZ ECZYPOSPOLITEJ POLSKIEJ;PL0000115697;PLN;1600;1581952;obligacje;nan
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;merytura 2025;ASFIOUNIQAE2;PLN;nan;359689.28;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;OPIEKI S.A;ASFIOUNIQAE2;USD;-15000;-57.24;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Dłużne papiery;merytura 2025 SFIO N/D PLN SKARB PAŃSTWA RZ ECZYPOSPOLITEJ POLSKIEJ;PL0000111738;PLN;272;274698.24;obligacje;nan
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Akcje;OPIEKI S.A;ASFIOUNIQAE2;EUR;-727000;236.02;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Akcje;merytura 2030;ASFIOUNIQAE2;PLN;nan;323.03;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Akcje;merytura 2030 SFIO N/D PLN PGE POLSKA GRUPA EN ERGETYCZNA S.A;PLPGER000010;PLN;25158;152709.06;akcje;PGE PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Akcje;merytura 2030 SFIO N/D PLN POWSZECHNA KASA OS ZCZĘDNOŚCI BAN K POLSKI S.A;PLPKO0000016;PLN;40926;2445737.76;akcje;PKO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Akcje;merytura 2030 SFIO N/D PLN POWSZECHNY ZAKŁAD UBEZPIECZEŃ S.A;PLPZU0000011;PLN;48464;2221589.76;akcje;PZU PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Akcje;merytura 2030;ASFIOUNIQAE2;PLN;nan;1378698.46;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Akcje;BANK POLSKA KASA OP;ASFIOUNIQAE2;USD;-55000;-209.88;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Akcje;BANK POLSKA KASA OP;ASFIOUNIQAE2;USD;-1304000;-50767.58;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Akcje;MULTI UNITS FRANCE S;ASFIOUNIQAE2;EUR;3014;2365767.29;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Akcje;merytura 2030;ASFIOUNIQAE2;PLN;nan;238904.1;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Akcje;SFIO N/D PLN VANGUARD FUNDS PLC SUB-FUND VANG UARD S&P 500 UCITS ETF;IE00B3XXRP09;USD;9164;4220508.08;akcje;VUSA LN Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Akcje;merytura 2030 SFIO N/D PLN ISHARES EURO STOXX B ANKS 30-15 UCITS ETF;DE0006289309;EUR;180;10940.76;akcje;SX7EEX GR Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Dłużne papiery;merytura 2030 SFIO N/D PLN POWSZECHNA KASA OS ZCZĘDNOŚCI BAN K POLSKI S.A;PLO046700020;PLN;1;512994.5;obligacje;nan
@@ -14079,6 +13978,7 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Dłużne papiery;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000116851;PLN;1500;1416360;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Dłużne papiery;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000115192;PLN;4080;4482981.6;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Akcje;ISHARES CORE S& P 500 UCITS ETF;IE00B5BMR087;PLN;689;1769085.75;akcje;CSPX LN Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Akcje;merytura 2030;ASFIOUNIQAE2;PLN;nan;0.17;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Dłużne papiery;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000113783;PLN;12200;9482328;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Dłużne papiery;ALIOR BANK S.A;PLALIOR00276;PLN;1;504604.7;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Dłużne papiery;KGHM POLSKA MI EDŹ S.A;PLO023600011;PLN;670;677825.6;obligacje;nan
@@ -14099,13 +13999,16 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Dłużne papiery;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000108866;PLN;2413;2345484.26;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Dłużne papiery;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000110383;PLN;2900;2889908;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Akcje;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAW IE S.A;PL0GF0030072;PLN;55;2439800;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;merytura 2035;ASFIOUNIQAE2;PLN;nan;540183.03;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery;ORLEN S.A;PLPKN0000208;PLN;1;100246.63;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery;VOXEL S.A;PLVOXEL00147;PLN;42;25482.24;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;VANGUARD FUND S PLC SUB-FUND VAN GUARD S&P 500 UCITS ETF;IE00B3XXRP09;PLN;23796;10959320.15;akcje;VUSA LN Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery;ROBYG S.A;PLROBYG00271;PLN;80;81058.4;obligacje;nan
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;merytura 2035;ASFIOUNIQAE2;PLN;nan;23.33;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery;UNIBEP S.A;PLUNBEP00106;PLN;2300;234140;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;ISHARES CORE S& P 500 UCITS ETF;IE00B5BMR087;PLN;1808;4642245.3;akcje;CSPX LN Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;ISHARES EURO ST OXX BANKS 30-15 UC ITS ETF;DE0006289309;PLN;24648;1498154.35;akcje;SX7EEX GR Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;FCRIT00S1 E0T26F1198;ASFIOUNIQAE2;PLN;7923;6218969.55;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery;POZNAŃSKA KOR PORACJA BUDOWLA NA PEKABEX S.A;PLPKBEX00106;PLN;80;80376.8;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery;BANK POLSKA KASA OPIEKI S.A;PLPEKAO00354;PLN;2;1036838.3;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery;P4 SP. Z O.O;PLO266100034;PLN;50;49775.5;obligacje;nan
@@ -14129,10 +14032,14 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery;merytura 2035 SFIO N/D PLN SKARB PAŃSTWA RZEC ZYPOSPOLITEJ POLSKIEJ;PL0000108817;PLN;1200;1237320;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery;merytura 2035 SFIO N/D PLN SKARB PAŃSTWA RZEC ZYPOSPOLITEJ POLSKIEJ;PL0000111928;PLN;2000;1956240;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery;merytura 2035 SFIO N/D PLN SKARB PAŃSTWA RZEC ZYPOSPOLITEJ POLSKIEJ;PL0000111498;PLN;3350;2985084.5;obligacje;nan
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;BANK POLSKA KASA OP;ASFIOUNIQAE2;USD;-3397000;-132252.66;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;BANK POLSKA KASA OP;ASFIOUNIQAE2;USD;-138000;-526.61;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery;merytura 2035 SFIO N/D PLN SKARB PAŃSTWA RZEC ZYPOSPOLITEJ POLSKIEJ;PL0000108197;PLN;50;50203.5;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery;merytura 2035 SFIO N/D PLN SKARB PAŃSTWA RZEC ZYPOSPOLITEJ POLSKIEJ;PL0000110383;PLN;3600;3587472;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery;merytura 2035 SFIO N/D PLN SKARB PAŃSTWA RZEC ZYPOSPOLITEJ POLSKIEJ;PL0000107611;PLN;5550;5226768;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;merytura 2035 SFIO N/D PLN GIEŁDA PAPIERÓW WAR TOŚCIOWYCH W WARSZAWIE S.A;PL0GF0030072;PLN;160;7097600;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;BANK POLSKA KASA OP;ASFIOUNIQAE2;EUR;-110000;-1094.59;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;BANK POLSKA KASA OP;ASFIOUNIQAE2;EUR;-1759000;571.07;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery;merytura 2035 SFIO N/D PLN SKARB PAŃSTWA RZEC ZYPOSPOLITEJ POLSKIEJ;PL0000105391;PLN;8000;8386640;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery;merytura 2035 SFIO N/D PLN SKARB PAŃSTWA RZEC ZYPOSPOLITEJ POLSKIEJ;PL0000108866;PLN;3260;3168785.2;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery;merytura 2035 SFIO N/D PLN SKARB PAŃSTWA RZEC ZYPOSPOLITEJ POLSKIEJ;PL0000109427;PLN;2545;2406602.9;obligacje;nan
@@ -14157,10 +14064,12 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;WIRTUALNA POLS KA HOLDING S.A;PLWRTPL00027;PLN;10761;842586.3;akcje;WPL PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;BANK MILLENNIU M S.A;PLBIG0000016;PLN;50977;453695.3;akcje;MIL PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery;ERBUD S.A;PLERBUD00079;PLN;80;81805.6;obligacje;nan
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;merytura 2035;ASFIOUNIQAE2;PLN;nan;3511710.66;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;ATAL S.A;PLATAL000046;PLN;7593;390280.2;akcje;1AT PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;ASSECO SOUTH E ASTERN EUROPE S.A;PLASSEE00014;PLN;9278;454622;akcje;ASE PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;STALEXPORT AUT OSTRADY S.A;PLSTLEX00019;PLN;66499;202821.95;akcje;STX PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000112736;PLN;3900;3084744;obligacje;nan
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;merytura 2035;ASFIOUNIQAE2;PLN;nan;12698.8;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;ARCHICOM S.A;PLARHCM00016;PLN;15324;628284;akcje;ARH PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;PEPCO GROUP N.V;NL0015000AU7;PLN;25521;419054.82;akcje;PCO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;ALLEGRO.EU SOC IETE ANONYME;LU2237380790;PLN;58744;1590787.52;akcje;ALE PW Equity
@@ -14169,6 +14078,9 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;ALIOR BANK S.A;PLALIOR00045;PLN;26143;2247775.14;akcje;ALR PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;SHOPER S.A;PLSHPR000021;PLN;4013;159316.1;akcje;SHO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;ŻABKA GROUP SA;LU2910446546;PLN;93404;1798027;akcje;ZAB PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Akcje;merytura 2040;ASFIOUNIQAE2;PLN;nan;30;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Akcje;merytura 2040;ASFIOUNIQAE2;PLN;nan;719573.99;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Akcje;D LYXOR MSCI EUROPE DR U;ASFIOUNIQAE2;PLN;11589;9096508.67;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery;ORLEN S.A;PLPKN0000208;PLN;1;100246.63;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery;UNIBEP S.A;PLUNBEP00106;PLN;2400;244320;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery;ROBYG S.A;PLROBYG00271;PLN;90;91190.7;obligacje;nan
@@ -14200,9 +14112,14 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery;merytura 2040 SFIO N/D PLN SKARB PAŃSTWA RZ ECZYPOSPOLITEJ POLSKIEJ;PL0000108197;PLN;1500;1506105;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery;merytura 2040 SFIO N/D PLN SKARB PAŃSTWA RZ ECZYPOSPOLITEJ POLSKIEJ;PL0000107611;PLN;5450;5132592;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Akcje;merytura 2040 SFIO N/D PLN GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A;PL0GF0030072;PLN;250;11090000;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Akcje;OPIEKI S.A;ASFIOUNIQAE2;EUR;-138000;-1373.21;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Akcje;OPIEKI S.A;ASFIOUNIQAE2;EUR;-2500000;811.63;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Akcje;merytura 2040;ASFIOUNIQAE2;PLN;nan;3778788.08;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Akcje;OPIEKI S.A;ASFIOUNIQAE2;USD;-234000;-892.95;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery;merytura 2040 SFIO N/D PLN SKARB PAŃSTWA RZ ECZYPOSPOLITEJ POLSKIEJ;PL0000105391;PLN;9000;9434970;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery;merytura 2040 SFIO N/D PLN SKARB PAŃSTWA RZ ECZYPOSPOLITEJ POLSKIEJ;PL0000108817;PLN;1000;1031100;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery;merytura 2040 SFIO N/D PLN SKARB PAŃSTWA RZ ECZYPOSPOLITEJ POLSKIEJ;PL0000110383;PLN;4800;4783296;obligacje;nan
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Akcje;OPIEKI S.A;ASFIOUNIQAE2;USD;-5764000;-224405.17;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery;merytura 2040 SFIO N/D PLN SKARB PAŃSTWA RZ ECZYPOSPOLITEJ POLSKIEJ;PL0000113783;PLN;13750;10687050;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery;merytura 2040 SFIO N/D PLN SKARB PAŃSTWA RZ ECZYPOSPOLITEJ POLSKIEJ;PL0000115192;PLN;4600;5054342;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery;merytura 2040 SFIO N/D PLN SKARB PAŃSTWA RZ ECZYPOSPOLITEJ POLSKIEJ;PL0000115291;PLN;6400;6525120;obligacje;nan
@@ -14212,12 +14129,15 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery;merytura 2040 SFIO N/D PLN POWSZECHNA KASA OSZCZĘDNOŚCI BANK POLSKI S.A;PLO046700012;PLN;2;1033775.62;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Akcje;merytura 2040 SFIO N/D PLN POWSZECHNA KASA OSZCZĘDNOŚCI BANK POLSKI S.A;PLPKO0000016;PLN;146314;8743724.64;akcje;PKO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery;merytura 2040 SFIO N/D PLN SKARB PAŃSTWA RZ ECZYPOSPOLITEJ POLSKIEJ;PL0000111738;PLN;25;25248;obligacje;nan
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Akcje;VANGUARD FUNDS PLC;ASFIOUNIQAE2;USD;43420;19997213;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Akcje;merytura 2040 SFIO N/D PLN ISHARES EURO STOXX B ANKS 30-15 UC ITS ETF;DE0006289309;EUR;31910;1939553.1;akcje;SX7EEX GR Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery;merytura 2040 SFIO N/D PLN POZNAŃSKA KORPORAC JA BUDOWLA NA PEKABEX S.A;PLPKBEX00106;PLN;90;90423.9;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Akcje;merytura 2045 SFIO N/D PLN POWSZECHNA KASA OS ZCZĘDNOŚCI B ANK POLSKI S.A;PLPKO0000016;PLN;149308;8922646.08;akcje;PKO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Dłużne papiery;merytura 2045 SFIO N/D PLN SKARB PAŃSTWA RZECZ YPOSPOLITEJ POLSKIEJ;PL0000107611;PLN;3250;3060720;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Dłużne papiery;merytura 2045 SFIO N/D PLN SKARB PAŃSTWA RZECZ YPOSPOLITEJ POLSKIEJ;PL0000111928;PLN;2000;1956240;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Dłużne papiery;merytura 2045 SFIO N/D PLN SKARB PAŃSTWA RZECZ YPOSPOLITEJ POLSKIEJ;PL0000115697;PLN;2500;2471800;obligacje;nan
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Akcje;merytura 2045;ASFIOUNIQAE2;EUR;nan;30.69;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Akcje;DR UFCRIT00S1 E0T26F1198;ASFIOUNIQAE2;EUR;11299;8868880.09;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Dłużne papiery;merytura 2045 SFIO N/D PLN POWSZECHNA KASA OS ZCZĘDNOŚCI B ANK POLSKI S.A;PLO046700012;PLN;1;516887.81;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Dłużne papiery;merytura 2045 SFIO N/D PLN SKARB PAŃSTWA RZECZ YPOSPOLITEJ POLSKIEJ;PL0000116851;PLN;900;849816;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Dłużne papiery;merytura 2045 SFIO N/D PLN SKARB PAŃSTWA RZECZ YPOSPOLITEJ POLSKIEJ;PL0000116760;PLN;12600;12445776;obligacje;nan
@@ -14236,7 +14156,13 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Dłużne papiery;SKARB PAŃST WA RZECZYPOSPOLIT EJ POLSKIEJ;PL0000108197;PLN;200;200814;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Dłużne papiery;SKARB PAŃST WA RZECZYPOSPOLIT EJ POLSKIEJ;PL0000105391;PLN;6550;6866561.5;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Akcje;GIEŁDA PAPIER Ó W WARTOŚCIOWY CH W WARSZAWIE S.A;PL0GF0030072;PLN;150;6654000;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Akcje;SA OPIEKI S.A;ASFIOUNIQAE2;PLN;-252000;-961.64;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Akcje;SA OPIEKI S.A;ASFIOUNIQAE2;PLN;-143000;-1422.97;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Akcje;SA OPIEKI S.A;ASFIOUNIQAE2;PLN;-6206000;-241613.2;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Akcje;SA OPIEKI S.A;ASFIOUNIQAE2;PLN;-2592000;841.5;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Akcje;merytura 2045;ASFIOUNIQAE2;PLN;nan;305.71;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Dłużne papiery;SKARB PAŃST WA RZECZYPOSPOLIT EJ POLSKIEJ;PL0000109427;PLN;2667;2521968.54;obligacje;nan
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Akcje;merytura 2045;ASFIOUNIQAE2;PLN;nan;4863103.36;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Akcje;XTB S.A;PLXTRDM00011;PLN;38728;2726451.2;akcje;XTB PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Akcje;WIRTUALNA P OL SKA HOLDING S.A;PLWRTPL00027;PLN;15261;1194936.3;akcje;WPL PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Akcje;NEUCA S.A;PLTRFRM00018;PLN;538;469674;akcje;NEU PW Equity
@@ -14285,6 +14211,7 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Akcje;PEPCO GROUP N.V;NL0015000AU7;PLN;34878;572696.76;akcje;PCO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Akcje;ALIOR BANK S.A;PLALIOR00045;PLN;37051;3185644.98;akcje;ALR PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Akcje;ARCHICOM S.A;PLARHCM00016;PLN;27135;1112535;akcje;ARH PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Akcje;merytura 2045;ASFIOUNIQAE2;PLN;nan;474938.34;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Akcje;BANK MILLENNIUM S.A;PLBIG0000016;PLN;80394;715506.6;akcje;MIL PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Akcje;BNP PARIBAS BANK POLSKA S.A;PLBGZ0000010;PLN;4535;386382;akcje;BNPPPL PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Akcje;MBANK S.A;PLBRE0000012;PLN;2195;1201104;akcje;MBK PW Equity
@@ -14305,6 +14232,7 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery;SKARB PAŃSTWA RZ ECZYPOSPOLITEJ POLSKIEJ;PL0000111498;PLN;1950;1737586.5;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery;SKARB PAŃSTWA RZ ECZYPOSPOLITEJ POLSKIEJ;PL0000110383;PLN;2450;2441474;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery;SKARB PAŃSTWA RZ ECZYPOSPOLITEJ POLSKIEJ;PL0000107611;PLN;2450;2307312;obligacje;nan
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Akcje;OPIEKI S.A;ASFIOUNIQAE2;PLN;-114000;-1134.39;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Akcje;XTB S.A;PLXTRDM00011;PLN;32446;2284198.4;akcje;XTB PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Akcje;NEUCA S.A;PLTRFRM00018;PLN;401;350073;akcje;NEU PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Akcje;TORPOL S.A;PLTORPL00016;PLN;3522;114112.8;akcje;TOR PW Equity
@@ -14358,6 +14286,8 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Akcje;ORANGE POLSKA S.A;PLTLKPL00017;PLN;82409;607024.69;akcje;OPL PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Akcje;WIRTUALNA POLS KA HOLDIN G S.A;PLWRTPL00027;PLN;12848;1005998.4;akcje;WPL PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Akcje;WITTCHEN S.A;PLWTCHN00030;PLN;11309;235227.2;akcje;WTN PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Akcje;Instrumenty poc;ASFIOUNIQAE2;PLN;-206000;-786.1;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Akcje;Instrumenty poc;ASFIOUNIQAE2;PLN;-5067000;-197269.43;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Akcje;GIEŁDA PAPIERÓ W W ARTOŚC IOWYCH W WARSZAWIE S.A;PL0GF0030072;PLN;150;6654000;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery;SKARB PAŃSTWA RZE CZYPOS POLITEJ POLSKIEJ;PL0000105391;PLN;3000;3144990;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery;SKARB PAŃSTWA RZE CZYPOS POLITEJ POLSKIEJ;PL0000108817;PLN;600;618660;obligacje;nan
@@ -14366,6 +14296,7 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery;SKARB PAŃSTWA RZE CZYPOS POLITEJ POLSKIEJ;PL0000111738;PLN;65;65644.8;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery;SKARB PAŃSTWA RZE CZYPOS POLITEJ POLSKIEJ;PL0000112728;PLN;17;16869.44;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery;SKARB PAŃSTWA RZE CZYPOS POLITEJ POLSKIEJ;PL0000113130;PLN;400;401768;obligacje;nan
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Akcje;Instrumenty poc;ASFIOUNIQAE2;PLN;-2089000;678.2;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery;SKARB PAŃSTWA RZE CZYPOS POLITEJ POLSKIEJ;PL0000113783;PLN;6370;4951018.8;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery;SKARB PAŃSTWA RZE CZYPOS POLITEJ POLSKIEJ;PL0000113460;PLN;1740;1598277;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery;SKARB PAŃSTWA RZE CZYPOS POLITEJ POLSKIEJ;PL0000115192;PLN;2400;2637048;obligacje;nan
@@ -14378,6 +14309,7 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery;ATAL S.A;PLATAL000210;PLN;11;11140.69;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery;DOM DEVELOPMENT S.A;PLDMDVL00103;PLN;15;15399.75;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Akcje;BUDIMEX S.A;PLBUDMX00013;PLN;4;1866.4;akcje;BDX PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Akcje;merytura 2050;ASFIOUNIQAE2;PLN;nan;3749669.92;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery;CYFROWY POLSA T S. A;PLCFRPT00070;PLN;12;12801.12;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery;DOM DEVELOPMENT S.A;PLDMDVL00145;PLN;43;43637.26;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery;EUROCASH S.A;PLEURCH00037;PLN;40;40201.6;obligacje;nan
@@ -14386,7 +14318,10 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery;KRUK S.A;PLO163600029;PLN;31;27145.77;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery;DOM DEVELOPMENT S.A;PLO106800017;PLN;130;133760.9;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery;KRUK S.A;PLO163600011;PLN;75;77664;obligacje;nan
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Akcje;merytura 2050;ASFIOUNIQAE2;PLN;nan;473530.36;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Akcje;merytura 2050;ASFIOUNIQAE2;PLN;nan;24.87;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Akcje;VANGUARD FUND S P LC SUB-F UND VA NGUARD S&P 500 UCITS ETF;IE00B3XXRP09;PLN;39110;18012229.39;akcje;VUSA LN Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Akcje;D LYXOR MSCI EUROPE DR U;ASFIOUNIQAE2;PLN;9772;7670297.93;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Akcje;ISHARES EURO ST OX X BANKS 30-15 UC ITS ETF;DE0006289309;PLN;26166;1590421.37;akcje;SX7EEX GR Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery;VOXEL S.A;PLVOXEL00147;PLN;23;13954.56;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Akcje;ISHARES CORE S& P 50 0 UCITS ETF;IE00B5BMR087;PLN;2050;5263607.81;akcje;CSPX LN Equity
@@ -14399,6 +14334,7 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery;P4 SP. Z O.O;PLO266100034;PLN;27;26878.77;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery;DINO POLSKA S.A;PLO226400011;PLN;48;48888;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery;KRUK S.A;PLO163600045;PLN;50;55766.5;obligacje;nan
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Akcje;merytura 2055;ASFIOUNIQAE2;PLN;nan;16.28;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Akcje;ISHARES EURO ST OXX BANKS 30-15 UC ITS ETF;DE0006289309;PLN;17194;1045085.43;akcje;SX7EEX GR Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Dłużne papiery;VOXEL S.A;PLVOXEL00147;PLN;13;7887.36;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Dłużne papiery;ROBYG S.A;PLROBYG00271;PLN;30;30396.9;obligacje;nan
@@ -14430,15 +14366,22 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Dłużne papiery;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000108817;PLN;420;433062;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Dłużne papiery;KRUK S.A;PLO163600045;PLN;40;44613.2;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Dłużne papiery;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000105391;PLN;2000;2096660;obligacje;nan
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Akcje;SA OPIEKI S.A;ASFIOUNIQAE2;PLN;-136000;-518.98;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Dłużne papiery;POZNAŃSKA KOR PORACJA BUDOWLA NA PEKABEX S.A;PLPKBEX00106;PLN;20;20094.2;obligacje;nan
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Akcje;SA OPIEKI S.A;ASFIOUNIQAE2;PLN;-75000;-746.31;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Akcje;SA OPIEKI S.A;ASFIOUNIQAE2;PLN;-3358000;-130734.31;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Akcje;merytura 2055;ASFIOUNIQAE2;PLN;nan;5764382.98;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Akcje;XTB S.A;PLXTRDM00011;PLN;21650;1524160;akcje;XTB PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Akcje;WITTCHEN S.A;PLWTCHN00030;PLN;7414;154211.2;akcje;WTN PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Akcje;ISHARES CORE S& P 500 UCITS ETF;IE00B5BMR087;PLN;1364;3502224.92;akcje;CSPX LN Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Akcje;WIRTUALNA POL SKA HOLDING S.A;PLWRTPL00027;PLN;8571;671109.3;akcje;WPL PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Akcje;GUARD S&P 500 UCITS;ASFIOUNIQAE2;PLN;25888;11922797.12;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Akcje;NEUCA S.A;PLTRFRM00018;PLN;257;224361;akcje;NEU PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Akcje;TORPOL S.A;PLTORPL00016;PLN;2331;75524.4;akcje;TOR PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Akcje;ORANGE POLSKA S.A;PLTLKPL00017;PLN;54177;399067.78;akcje;OPL PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Akcje;DR UFCRIT00S1 E0T26F1198;ASFIOUNIQAE2;PLN;6488;5092600.59;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Dłużne papiery;BANK GOSPODARSTWA KRAJOWEGO;XS2778272471;PLN;107;484519.47;obligacje;nan
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Akcje;SA OPIEKI S.A;ASFIOUNIQAE2;PLN;-1485000;482.11;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Dłużne papiery;KGHM POLSKA M IEDŹ S.A;PLO023600011;PLN;420;424905.6;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Dłużne papiery;BANK POLSKA KASA OPIEKI S.A;PLPEKAO00362;PLN;1;508767.07;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Akcje;GIEŁDA PAPIERÓ W WARTOŚCIOWYCH W WARSZAWIE S.A;PL0GF0030072;PLN;110;4879600;akcje;NA
@@ -14459,8 +14402,10 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Dłużne papiery;merytura 2055 SFIO N/D PLN SKARB PAŃSTWA RZEC ZYPOSPOLITEJ PO LSKIEJ;PL0000115697;PLN;300;296616;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Akcje;merytura 2055 SFIO N/D PLN POWSZECHNY ZAKŁAD UBEZPIECZEŃ S.A;PLPZU0000011;PLN;126157;5783036.88;akcje;PZU PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Akcje;merytura 2055 SFIO N/D PLN PGE POLSKA GRUPA EN ERGETYCZNA S.A;PLPGER000010;PLN;49027;297593.89;akcje;PGE PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Akcje;merytura 2055;ASFIOUNIQAE2;PLN;nan;391410.97;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Akcje;SFIO N/D PLN POWSZECHNA KASA OS ZCZĘDNOŚCI B AN K POLSKI S.A;PLPKO0000016;PLN;84496;5049480.96;akcje;PKO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Akcje;merytura 2055 SFIO N/D PLN ASSECO SOUTH EASTER N EUROPE S.A;PLASSEE00014;PLN;5886;288414;akcje;ASE PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;merytura 2060;ASFIOUNIQAE2;EUR;nan;7.39;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;SFIO N/D PLN VANGUARD FUNDS PLC SUB-FUND VA NG UARD S&P 500 UCITS ETF;IE00B3XXRP09;USD;11741;5407353.24;akcje;VUSA LN Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;merytura 2060 SFIO N/D PLN ISHARES EURO STOXX B ANKS 30-15 U CITS ETF;DE0006289309;EUR;7779;472823.06;akcje;SX7EEX GR Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Dłużne papiery;merytura 2060 SFIO N/D PLN POZNAŃSKA KORPORAC JA BUDOWLA NA PEKABEX S.A;PLPKBEX00106;PLN;10;10047.1;obligacje;nan
@@ -14479,6 +14424,9 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Dłużne papiery;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000109427;PLN;440;416072.8;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Dłużne papiery;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000107611;PLN;560;527385.6;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Dłużne papiery;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000108197;PLN;147;147598.29;obligacje;nan
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;SA OPIEKI S.A;ASFIOUNIQAE2;PLN;-62000;-236.59;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;SA OPIEKI S.A;ASFIOUNIQAE2;PLN;-34000;-338.33;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;merytura 2060;ASFIOUNIQAE2;PLN;nan;4058440.59;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;WITTCHEN S.A;PLWTCHN00030;PLN;3256;67724.8;akcje;WTN PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;WIRTUALNA POLS KA HOLDING S.A;PLWRTPL00027;PLN;3922;307092.6;akcje;WPL PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;NEUCA S.A;PLTRFRM00018;PLN;103;89919;akcje;NEU PW Equity
@@ -14500,11 +14448,13 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;CD PROJEKT S.A;PLOPTTC00011;PLN;3651;698983.95;akcje;CDR PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;XTB S.A;PLXTRDM00011;PLN;10185;717024;akcje;XTB PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;ONDE S.A;PLONDE000018;PLN;33;353.1;akcje;OND PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;SA OPIEKI S.A;ASFIOUNIQAE2;PLN;-627000;203.56;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;MIRBUD S.A;PLMRBUD00015;PLN;20891;248185.08;akcje;MRB PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;MO-BRUK S.A;PLMOBRK00013;PLN;932;305230;akcje;MBR PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;MLP GROUP S.A;PLMLPGR00017;PLN;162;11016;akcje;MLG PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;LPP S.A;PLLPP0000011;PLN;112;1741600;akcje;LPP PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;KRUK S.A;PLKRK0000010;PLN;1026;426610.8;akcje;KRU PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;SA OPIEKI S.A;ASFIOUNIQAE2;PLN;-1536000;-59799.85;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A;PL0GF0030072;PLN;85;3770600;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;KGHM POLSKA MI EDŹ S.A;PLKGHM000017;PLN;4360;501400;akcje;KGH PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;GRUPA KĘTY S.A;PLKETY000011;PLN;178;121485;akcje;KTY PW Equity
@@ -14526,7 +14476,12 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Dłużne papiery;merytura 2060 SFIO N/D PLN SKARB PAŃSTWA RZ ECZYPOSPOLITEJ POLSKIEJ;PL0000113783;PLN;2390;1857603.6;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Dłużne papiery;merytura 2060 SFIO N/D PLN SKARB PAŃSTWA RZ ECZYPOSPOLITEJ POLSKIEJ;PL0000115192;PLN;880;966917.6;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Dłużne papiery;merytura 2060 SFIO N/D PLN SKARB PAŃSTWA RZ ECZYPOSPOLITEJ POLSKIEJ;PL0000115291;PLN;800;815640;obligacje;nan
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;E SICAV SUB-FUND LYXOR MSCI EUROPE DR U;ASFIOUNIQAE2;EUR;2943;2310037.54;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;merytura 2060;ASFIOUNIQAE2;PLN;nan;289710.85;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Dłużne papiery;merytura 2060 SFIO N/D PLN SKARB PAŃSTWA RZ ECZYPOSPOLITEJ POLSKIEJ;PL0000112728;PLN;75;74424;obligacje;nan
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;merytura 2065;ASFIOUNIQAE2;PLN;nan;153464.55;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;merytura 2065;ASFIOUNIQAE2;USD;nan;2198.24;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;merytura 2065;ASFIOUNIQAE2;EUR;nan;0.98;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;merytura 2065 SFIO N/D PLN ISHARES EURO STOX X BANKS 30-15 UCITS ETF;DE0006289309;EUR;1029;62544.67;akcje;SX7EEX GR Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Dłużne papiery;merytura 2065 SFIO N/D PLN SKARB PAŃSTWA RZ ECZYPOSPOLITEJ POLSKIEJ;PL0000116851;PLN;50;47212;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Dłużne papiery;merytura 2065 SFIO N/D PLN SKARB PAŃSTWA RZ ECZYPOSPOLITEJ POLSKIEJ;PL0000116760;PLN;200;197552;obligacje;nan
@@ -14542,9 +14497,15 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Dłużne papiery;merytura 2065 SFIO N/D PLN SKARB PAŃSTWA RZ ECZYPOSPOLITEJ POLSKIEJ;PL0000108866;PLN;38;36936.76;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Dłużne papiery;merytura 2065 SFIO N/D PLN SKARB PAŃSTWA RZ ECZYPOSPOLITEJ POLSKIEJ;PL0000109427;PLN;33;31205.46;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Dłużne papiery;merytura 2065 SFIO N/D PLN SKARB PAŃSTWA RZ ECZYPOSPOLITEJ POLSKIEJ;PL0000105391;PLN;200;209666;obligacje;nan
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;OPIEKI S.A;ASFIOUNIQAE2;USD;-30000;-183.32;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;OPIEKI S.A;ASFIOUNIQAE2;EUR;-4000;-39.8;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;OPIEKI S.A;ASFIOUNIQAE2;USD;-232000;-9032.27;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;merytura 2065;ASFIOUNIQAE2;PLN;nan;1165081.38;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;SELVITA S.A;PLSLVCR00029;PLN;446;22077;akcje;SLV PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;SA OPIEKI S.A;ASFIOUNIQAE2;PLN;-86000;27.92;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;SHOPER S.A;PLSHPR000021;PLN;515;20445.5;akcje;SHO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;NEUCA S.A;PLTRFRM00018;PLN;14;12222;akcje;NEU PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;SA OPIEKI S.A;ASFIOUNIQAE2;PLN;-4000;-15.26;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;RYVU THERAPEUT ICS S.A;PLSELVT00013;PLN;840;32340;akcje;RVU PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;RAINBOW TOURS S.A;PLRNBWT00031;PLN;290;38686;akcje;RBW PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;CYBER_FOLKS S.A;PLR220000018;PLN;252;37926;akcje;CBF PW Equity
@@ -14569,7 +14530,8 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;ECHO INVESTMEN T S.A;PLECHPS00019;PLN;2986;13974.48;akcje;ECH PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Dłużne papiery;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000111498;PLN;20;17821.4;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Dłużne papiery;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000113460;PLN;35;32149.25;obligacje;nan
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;UNIBEP S.A;PLUNBEP00106;PLN;30;3054;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;D LYXOR MSCI EUROPE DR U;ASFIOUNIQAE2;PLN;414;324959.41;akcje;NA
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;UNIBEP S.A;PLUNBEP00106;PLN;30;3054;akcje;UNI PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Dłużne papiery;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000115291;PLN;120;122346;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;BANK GOSPODARSTWA KRAJOWEGO;PL0000500286;PLN;5;4910.8;akcje;NA
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;DINO POLSKA S.A;PLDINPL00011;PLN;151;58859.8;akcje;DNP PW Equity
@@ -16073,8 +16035,6 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank;SKARB PAŃSTWA - WZ0528 - 25.05.2028;nan;PLN;nan;293023.92;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank;SKARB PAŃSTWA - WZ1126 - 25.11.2026;nan;PLN;nan;49224.42;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank;SKARB PAŃSTWA - WZ1129 - 25.11.2029;nan;PLN;nan;158481.36;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;3. Obligacje i inne dłużne papiery wartościowe, opiewające na świadczenia pieniężne, gwarantowane;"gwarantowane lub poręczane przez te podmioty;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;"prawach do akcji;";nan;PLN;nan;16883542.4;akcje;NA
 2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;AB S.A.;nan;PLN;nan;245038.18;akcje;ABE PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;Alior Bank S.A.;nan;PLN;nan;251651.75;akcje;ALR PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;Allegro.eu S.A.;nan;PLN;nan;740498.32;akcje;ALE PW Equity
@@ -16118,25 +16078,12 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;VRG S.A.;nan;PLN;nan;138942.32;akcje;VRG PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;Wirtualna Polska Holding S.A.;nan;PLN;nan;227661.7;akcje;WPL PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;Zabka Group S.A.;nan;PLN;nan;401281.27;akcje;ZAB PW Equity
-2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;8. Akcje, prawa poboru i prawa do akcji, będące przedmiotem oferty publicznej na terytorium;"Rzeczypospolitej Polskiej;";nan;PLN;nan;0;akcje;NA
-2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;9. Akcje spółek notowane na rynku regulowanym w państwach innych niż Rzeczpospolita Polska oraz;"prawach do akcji;";nan;PLN;nan;0;akcje;NA
-2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;9. Akcje spółek notowane na rynku regulowanym w państwach innych niż Rzeczpospolita Polska oraz;9a. Inne zagraniczne papiery wartościowe;nan;PLN;nan;0;akcje;NA
-2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;10. Akcje, prawa poboru i prawa do akcji, będące przedmiotem oferty publicznej na terytorium;"państw, o których mowa w art. 141 ust. 4 Ustawy;";nan;PLN;nan;0;akcje;NA
-2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;12. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu zamkniętego,;"warunki zawarte w ustawie;";nan;PLN;nan;0;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;13. Jednostki uczestnictwa zbywane przez fundusze inwestycyjne otwarte lub specjalistyczne fundusze;"inwestycyjne otwarte;";nan;PLN;nan;0;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;"zawarte w ustawie;";nan;PLN;nan;6028694.75;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;iShares Core EURO STOXX 50 UCITS ETF;nan;PLN;nan;58792.38;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;iShares Core MSCI Europe UCITS ETF;nan;PLN;nan;1511207.08;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;Invesco S&P 500 UCITS ETF;nan;PLN;nan;4278182.61;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;iShares Core S&P 500 UCITS ETF;nan;PLN;nan;180512.68;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;16. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej , emitowane;"Ustawy;";nan;PLN;nan;0;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;Gmina Lesznowola - LESZW J19 1234 - 20.12.2034;nan;PLN;nan;20912.01;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;Miasto Mysłowice - MYSL B14 290123 - 31.12.2028;nan;PLN;nan;8295.6;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;18. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;"141 ust. 4 Ustawy;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;19. Obligacje przychodowe, o których mowa w ustawie z dnia 29 czerwca 1995 r. o obligacjach (Dz. U.;"z 2001 r. Nr 120, poz. 1300, z późn. zm.5));";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;21. Obligacje będące przedmiotem oferty publicznej na terytorium Rzeczypospolitej Polskiej;"oprocentowaniu;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;23. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na terytorium;"oprocentowaniu;";nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;24. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej na;"oprocentowaniu;";nan;PLN;nan;0;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do;421;nan;PLN;nan;808.45;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do;Bank Polska Kasa Opieki S.A. - PEO1027 - 29.10.2027;nan;PLN;nan;108660.6;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do;Cyfrowy Polsat S.A. - CPS0130 - 11.01.2030;nan;PLN;nan;66297.84;obligacje;nan
@@ -16149,7 +16096,6 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;26. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na terytorium;164;nan;PLN;nan;713.01;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;26. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na terytorium;P4 Sp. z o.o - PLY1227 - 29.12.2027;nan;PLN;nan;98276.36;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;26. Obligacje i inne dłużne papiery wartościowe będące przedmiotem oferty publicznej na terytorium;Ronson Development SE - RON0827 - 15.08.2027;nan;PLN;nan;66436.65;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;32. Kwity depozytowe dopuszczone do obrotu na rynku regulowanym w państwach innych niż;"Rzeczpospolita Polska;";nan;PLN;nan;0;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;34. Obligacje inne niż wymienione w pkt 33, bankowe papiery wartościowe lub listy zastawne,;Bank Gospodarstwa Krajowego S.A. - FPC0328 - 12.03.2028;nan;PLN;nan;457641.9;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;34. Obligacje inne niż wymienione w pkt 33, bankowe papiery wartościowe lub listy zastawne,;Bank Gospodarstwa Krajowego S.A. - FPC0427 - 27.04.2027;nan;PLN;nan;93560.34;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;34. Obligacje inne niż wymienione w pkt 33, bankowe papiery wartościowe lub listy zastawne,;Bank Gospodarstwa Krajowego S.A. - FPC0630 - 05.06.2030;nan;PLN;nan;175574.63;obligacje;nan

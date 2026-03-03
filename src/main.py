@@ -100,6 +100,37 @@ def parse_polish_number(value) -> Optional[float]:
         return None
 
 
+def is_timestamp_like_amount(value) -> bool:
+    text = safe_string(value).replace(" ", "")
+    if not text:
+        return False
+    normalized = text.replace(",", ".")
+    return bool(re.match(r"^20\d{10,}(?:\.\d+)?$", normalized))
+
+
+def sanitize_wartosc_pln_anomalies(df: pd.DataFrame) -> tuple[pd.DataFrame, int]:
+    if df is None or df.empty or "wartosc_pln" not in df.columns:
+        return df, 0
+
+    work = df.copy()
+    raw = work["wartosc_pln"].astype(str).str.strip()
+    numeric = raw.apply(parse_polish_number)
+
+    timestamp_like = raw.apply(is_timestamp_like_amount)
+    pocztylion_fwd = (
+        work.get("instytucja", "").astype(str).str.strip().eq("Pocztylion")
+        & work.get("emitent", "").astype(str).str.strip().str.match(r"^FWD[A-Z]{2}PL\d{8}$", na=False)
+    )
+    extreme_value = numeric.gt(1e11).fillna(False)
+
+    anomaly_mask = timestamp_like | (pocztylion_fwd & extreme_value)
+    removed = int(anomaly_mask.sum())
+    if removed:
+        work = work.loc[~anomaly_mask].copy()
+
+    return work, removed
+
+
 def format_decimal_comma(value) -> str:
     if value is None:
         return "nan"
@@ -278,19 +309,22 @@ def apply_equity_nazwa(
     if is_akcje.any():
         isin_series = df.get("isin", "").astype(str).str.strip().str.upper()
         emitent_series = df.get("emitent", "").astype(str).str.strip()
+        emitent_norm = df.get("emitent", "").apply(_normalize_equity_name)
         df.loc[is_akcje, "equity_nazwa"] = isin_series.map(equity_map)
 
         nn_mask = is_akcje & df.get("instytucja", "").astype(str).eq("Nationale-Nederlanden")
         if nn_mask.any():
-            emitent_norm = df.get("emitent", "").apply(_normalize_equity_name)
             nn_missing = df.loc[nn_mask, "equity_nazwa"].isna() | df.loc[nn_mask, "equity_nazwa"].eq("")
             df.loc[nn_mask & nn_missing, "equity_nazwa"] = emitent_norm.map(equity_name_map)
 
         pocztylion_mask = is_akcje & df.get("instytucja", "").astype(str).eq("Pocztylion")
         if pocztylion_mask.any():
-            emitent_norm = df.get("emitent", "").apply(_normalize_equity_name)
             pocz_missing = df.loc[pocztylion_mask, "equity_nazwa"].isna() | df.loc[pocztylion_mask, "equity_nazwa"].eq("")
             df.loc[pocztylion_mask & pocz_missing, "equity_nazwa"] = emitent_norm.map(equity_name_map)
+
+        global_missing = is_akcje & (df["equity_nazwa"].isna() | df["equity_nazwa"].eq(""))
+        if global_missing.any():
+            df.loc[global_missing, "equity_nazwa"] = emitent_norm.map(equity_name_map)
 
         bnp_mask = is_akcje & emitent_series.eq("BNP Paribas Bank Polska S.A.")
         df.loc[bnp_mask, "equity_nazwa"] = "BNPPPL PW Equity"
@@ -1942,6 +1976,63 @@ def parse_pzu1_excel(file_path: str) -> pd.DataFrame:
     return ensure_output_schema(df)
 
 
+def parse_pzu2_excel(file_path: str) -> pd.DataFrame:
+    """
+    Parse PZU2 Excel files for 4Q22.
+    Required mapping:
+    - data: 2022-12-31
+    - instytucja: PZU TFI S.A.
+    - wartosc_pln: source value in thousands of PLN, multiplied by 1000
+    - isin: extract only value inside parentheses; if no parentheses -> empty
+    """
+    try:
+        df = pd.read_excel(file_path, engine="openpyxl", header=0)
+    except Exception:
+        return ensure_output_schema(pd.DataFrame())
+
+    df.columns = [normalize_header(c) for c in df.columns]
+
+    def _find_col(candidates: List[str]) -> Optional[str]:
+        for candidate in candidates:
+            col = find_column(df, normalize_header(candidate))
+            if col:
+                return col
+        return None
+
+    fund_col = _find_col(["fundusz", "nazwa subfunduszu", "nazwa funduszu"])
+    typ_col = _find_col(["typ_aktywa", "typ instrumentu", "rodzaj instrumentu"])
+    emitent_col = _find_col(["emitent", "nazwa emitenta"])
+    isin_col = _find_col(["isin", "kod isin", "kod isin instrumentu", "identyfikator instrumentu"])
+    waluta_col = _find_col(["waluta", "waluta instrumentu", "waluta wyceny instrumentu"])
+    liczba_col = _find_col(["liczba_sztuk", "liczba sztuk", "ilość", "ilosc"])
+    wartosc_col = _find_col([
+        "wartosc_pln (tys. zł)",
+        "wartosc_pln (tys. zl)",
+        "wartosc_pln",
+        "wartość instrumentu w walucie wyceny funduszu",
+    ])
+
+    out = pd.DataFrame(index=df.index)
+    out["fundusz"] = df[fund_col] if fund_col else ""
+    out["typ_aktywa"] = df[typ_col] if typ_col else ""
+    out["emitent"] = df[emitent_col] if emitent_col else ""
+    out["waluta"] = df[waluta_col] if waluta_col else ""
+    out["liczba_sztuk"] = df[liczba_col] if liczba_col else ""
+
+    raw_isin = df[isin_col].astype(str).str.strip() if isin_col else pd.Series([""] * len(df), index=df.index)
+    out["isin"] = raw_isin
+
+    wartosc_num = (df[wartosc_col].apply(parse_polish_number) if wartosc_col else pd.Series([None] * len(df), index=df.index))
+    out["wartosc_pln"] = wartosc_num * 1000
+
+    out["data"] = "2022-12-31"
+    out["instytucja"] = "PZU TFI S.A."
+
+    out = ensure_output_schema(out)
+    out["isin"] = out["isin"].replace("nan", "")
+    return out
+
+
 def parse_esaliens_text_file(file_path: str) -> pd.DataFrame:
     date_match = re.search(r"(\d{4}-\d{2}-\d{2})", os.path.basename(file_path))
     file_date = date_match.group(1) if date_match else ""
@@ -2987,6 +3078,41 @@ def parse_uniqa_pdf(file_path: str) -> pd.DataFrame:
                         if match_loose:
                             raw_isin = match_loose.group(0)
                     if not raw_isin:
+                        joined_raw = " ".join([v for v in row_values if v])
+                        joined_lower = joined_raw.lower()
+                        is_deposit_row = any(
+                            token in joined_lower
+                            for token in ["depozyty", "depozyt", "środki pieniężne", "srodki pieniezne"]
+                        )
+                        if is_deposit_row:
+                            fundusz = current_fundusz
+                            if not fundusz:
+                                year_match = re.search(r"(20\d{2})", joined_raw)
+                                if year_match:
+                                    fundusz = f"UNIQA Emerytura {year_match.group(1)}"
+                                    current_fundusz = fundusz
+
+                            joined_numbers = _extract_numbers(joined_raw)
+                            wartosc_num = parse_polish_number(joined_numbers[-1]) if joined_numbers else None
+                            if wartosc_num is None:
+                                continue
+
+                            currencies = re.findall(r"\b(?:PLN|EUR|USD|GBP|CHF|JPY|CNY|SEK|NOK)\b", joined_raw)
+                            waluta = currencies[-1] if currencies else "PLN"
+
+                            rows.append(
+                                {
+                                    "data": file_date,
+                                    "instytucja": "UNIQA TFI S.A.",
+                                    "fundusz": _normalize_uniqa_fundusz(fundusz, current_fundusz),
+                                    "typ_aktywa": "Depozyty",
+                                    "emitent": "Depozyty",
+                                    "isin": "",
+                                    "waluta": waluta,
+                                    "liczba_sztuk": "",
+                                    "wartosc_pln": format_decimal_comma(wartosc_num),
+                                }
+                            )
                         continue
 
                     isin = _clean_isin_loose(raw_isin)
@@ -3138,8 +3264,6 @@ def parse_uniqa_pdf(file_path: str) -> pd.DataFrame:
                         emitent = _stitch_split_words(emitent)
 
                     if not isin_pattern.fullmatch(isin):
-                        continue
-                    if not _is_valid_isin(isin):
                         continue
 
                     joined_numbers = _extract_numbers(" ".join([v for v in row_values if v]))
@@ -3359,6 +3483,27 @@ def parse_pocztylion_pdf(file_path: str) -> pd.DataFrame:
     category_pattern = re.compile(r"^\s*\d+\.\s+[A-ZĄĆĘŁŃÓŚŹŻ].*$")
     trailing_totals_pattern = re.compile(r"\s+\d{1,3}(?:\s\d{3})*,\d{2}\s+\d{1,3}(?:\s\d{3})*,\d{2}%\s*$")
     asset_pattern = re.compile(r"^\s*(.+?)\s+([\d\s]+,\d{2})\s+([\d\s]+,\d{2})%\s*$")
+    continuation_prefixes = (
+        "przez ",
+        "także ",
+        "takze ",
+        "a także ",
+        "a takze ",
+        "oraz ",
+        "w tym ",
+        "łącznie ",
+        "lacznie ",
+        "zawarte ",
+        "których ",
+        "ktorych ",
+        "prawach do akcji",
+        "inwestycyjne ",
+        "gwarantowane ",
+        "oprocentowaniu",
+        "pkt ",
+        "ust.",
+        "9a.",
+    )
 
     current_category = ""
 
@@ -3395,6 +3540,10 @@ def parse_pocztylion_pdf(file_path: str) -> pd.DataFrame:
                 continue
             if re.match(r"^\d+\.\s+", aktywo):
                 continue
+            if ";" in aktywo:
+                continue
+            if aktywo_lower.startswith(continuation_prefixes):
+                continue
             if current_category and aktywo_lower == current_category.lower():
                 continue
             if current_category:
@@ -3424,11 +3573,13 @@ def parse_pocztylion_pdf(file_path: str) -> pd.DataFrame:
             ):
                 continue
 
-            if aktywo_lower.startswith(("emitowane przez", "a także", "oraz ")):
+            if aktywo_lower.startswith(("emitowane przez", "a także", "a takze", "oraz ", "przez ")):
                 continue
 
             wartosc_num = parse_polish_number(wartosc_raw)
             if wartosc_num is None:
+                continue
+            if is_timestamp_like_amount(wartosc_raw):
                 continue
 
             row = {
@@ -3770,6 +3921,8 @@ def parse_vienna_pdf(file_path: str) -> pd.DataFrame:
 
 def detect_parser(file_path: str) -> Optional[str]:
     name = os.path.basename(file_path).lower()
+    if name.startswith("pzu2_") and re.search(r"\d{4}-\d{2}-\d{2}", name) and name.endswith((".xls", ".xlsx")):
+        return "pzu2"
     if "pko" in name and ("emerytura" in name or "sklad_portfela" in name) and name.endswith((".xls", ".xlsx", ".csv")):
         return "pko"
     if "pfr" in name and "sklad_portfela" in name and name.endswith((".xls", ".xlsx", ".csv")):
@@ -3873,6 +4026,7 @@ def process_folder(folder_path: str) -> pd.DataFrame:
         "pko": lambda p: parse_pko_excel(p, quarter_end),
         "pzu": parse_pzu_excel,
         "pzu1": parse_pzu1_excel,
+        "pzu2": parse_pzu2_excel,
         "esaliens": parse_esaliens_pdf,
         "esaliens_txt": parse_esaliens_text,
         "esaliens_text": parse_esaliens_text_file,
@@ -3923,6 +4077,12 @@ def process_folder(folder_path: str) -> pd.DataFrame:
     for file_path in glob.glob(os.path.join(folder_path, "*")):
         file_name = os.path.basename(file_path).lower()
         if (
+            folder_name == "raw_4q22"
+            and file_name.startswith("pzu2_")
+            and file_name.endswith((".xlsx", ".xls"))
+        ):
+            parser_key = "pzu2"
+        elif (
             folder_name in {"raw_4q23", "raw_4q24"}
             and file_name.startswith("pzu1_")
             and file_name.endswith((".xlsx", ".xls"))
@@ -4056,6 +4216,9 @@ def main() -> None:
             if col in result_df.columns:
                 result_df[col] = result_df[col].apply(format_decimal_comma)
         result_df = apply_equity_nazwa(result_df, equity_map, equity_name_map)
+        result_df, removed_anomalies = sanitize_wartosc_pln_anomalies(result_df)
+        if removed_anomalies:
+            print(f"Usunięto anomalie wartosc_pln ({quarter_token}): {removed_anomalies}")
         fund_share_df = build_equity_share_pivot(result_df)
         holdings_by_quarter[quarter_token] = build_equity_holdings_numeric(result_df)
         fund_positions_by_quarter[quarter_token] = build_fund_position_share(result_df)

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import re
 from pathlib import Path
 
 import pandas as pd
@@ -39,10 +40,12 @@ def load_master_totals(master_path: Path) -> pd.DataFrame:
 
 def load_knf_long(knf_path: Path) -> pd.DataFrame:
     knf = pd.read_csv(knf_path, sep=";", dtype=str)
-    quarter_cols = ["4Q23_knf", "4Q24_knf", "4Q25_knf"]
-    missing = [c for c in quarter_cols + ["instytucja"] if c not in knf.columns]
-    if missing:
-        raise ValueError(f"Brakuje kolumn KNF: {missing}")
+    quarter_cols = [c for c in knf.columns if re.fullmatch(r"4Q\d{2}_knf", c)]
+    quarter_cols = sorted(quarter_cols, key=lambda c: int(c[2:4]))
+    if "instytucja" not in knf.columns:
+        raise ValueError("Brakuje kolumny KNF: instytucja")
+    if not quarter_cols:
+        raise ValueError("Brakuje kolumn KNF w formacie 4QYY_knf")
 
     long = knf.melt(id_vars=["instytucja"], value_vars=quarter_cols, var_name="q", value_name="wartosc_knf")
     long["quarter"] = long["q"].str.replace("_knf", "", regex=False)
