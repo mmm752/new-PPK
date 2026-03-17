@@ -2324,6 +2324,18 @@ def parse_pzu1_excel(file_path: str) -> pd.DataFrame:
             hard_rows.append(row)
         df = pd.concat([df, pd.DataFrame(hard_rows)], ignore_index=True)
 
+    # Prevent textual NaN values from leaking to CSV output.
+    for col in ("wartosc_pln", "liczba_sztuk", "isin", "waluta", "emitent"):
+        if col in df.columns:
+            series = df[col]
+            df[col] = series.where(~series.isna(), "")
+            df[col] = (
+                df[col]
+                .astype(str)
+                .str.strip()
+                .replace({"nan": "", "NaN": "", "None": "", "NONE": ""})
+            )
+
     df = df.dropna(axis=0, how="all")
 
     return ensure_output_schema(df)
