@@ -2,6 +2,7 @@ import os
 import glob
 import re
 import signal
+import unicodedata
 import multiprocessing as mp
 import shutil
 import tempfile
@@ -42,6 +43,7 @@ OUTPUT_COLUMNS = [
 ]
 
 EQUITY_FILE = "equity.xlsx"
+ISIN_FILE = "isin.xlsx"
 
 PDF_TABLE_SETTINGS = {
     "vertical_strategy": "text",
@@ -105,7 +107,7 @@ def is_timestamp_like_amount(value) -> bool:
     if not text:
         return False
     normalized = text.replace(",", ".")
-    return bool(re.match(r"^20\d{10,}(?:\.\d+)?$", normalized))
+    return bool(re.match(r"^20\d{9,}(?:\.\d+)?$", normalized))
 
 
 def sanitize_wartosc_pln_anomalies(df: pd.DataFrame) -> tuple[pd.DataFrame, int]:
@@ -121,7 +123,7 @@ def sanitize_wartosc_pln_anomalies(df: pd.DataFrame) -> tuple[pd.DataFrame, int]
         work.get("instytucja", "").astype(str).str.strip().eq("Pocztylion")
         & work.get("emitent", "").astype(str).str.strip().str.match(r"^FWD[A-Z]{2}PL\d{8}$", na=False)
     )
-    extreme_value = numeric.gt(1e11).fillna(False)
+    extreme_value = numeric.gt(1e9).fillna(False)
 
     anomaly_mask = timestamp_like | (pocztylion_fwd & extreme_value)
     removed = int(anomaly_mask.sum())
@@ -206,6 +208,19 @@ _PZU_TYPAKTYWA_FIXES = {
 }
 
 
+_PZU_EOP_2023_VALUES = {
+    "2025": 524_672,
+    "2030": 751_855,
+    "2035": 926_151,
+    "2040": 877_252,
+    "2045": 691_647,
+    "2050": 440_813,
+    "2055": 260_705,
+    "2060": 86_936,
+    "2065": 6_141,
+}
+
+
 def normalize_pzu_fundusz(value: str) -> str:
     text = _fix_mojibake_text(value)
     text = re.sub(r"\s+", " ", text).strip()
@@ -263,11 +278,198 @@ def fix_pzu_shifted_isin_waluta(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+def apply_pzu_eop_2023_correction(df: pd.DataFrame, file_path: str) -> pd.DataFrame:
+    """
+    Apply manual correction for PZU EOP 2023 values (ISIN PLPZU0000011)
+    for PZU1_2023-12-31 source file.
+    """
+    file_name = os.path.basename(file_path).lower()
+    if file_name != "pzu1_2023-12-31.xlsx":
+        return df
+
+    if df.empty:
+        return df
+
+    work = df.copy()
+    if "DATA_fundusz" not in work.columns:
+        work["DATA_fundusz"] = ""
+
+    fund_prefix = "PPK inPZU"
+    fundusz_series = work.get("fundusz", pd.Series("", index=work.index)).astype(str)
+    if not fundusz_series.str.contains(r"^\s*PPK\s*inPZU\b", case=False, regex=True, na=False).any():
+        fund_prefix = "inPZU Puls Życia"
+
+    template = {col: "" for col in work.columns}
+    if not work.empty:
+        sample = work.iloc[0].to_dict()
+        template.update({k: ("" if pd.isna(v) else v) for k, v in sample.items()})
+
+    new_rows: List[Dict[str, Any]] = []
+
+    target_years = set(_PZU_EOP_2023_VALUES.keys())
+    year_series_norm = (
+        work["DATA_fundusz"]
+        .astype(str)
+        .str.extract(r"(20\d{2})", expand=False)
+        .fillna("")
+    )
+    year_mask_all = year_series_norm.isin(target_years)
+    id_mask_all = (
+        work.get("isin", pd.Series("", index=work.index)).astype(str).str.upper().str.strip().eq("PLPZU0000011")
+        | work.get("emitent", pd.Series("", index=work.index)).astype(str).str.contains(r"\bPZU\b", case=False, regex=True, na=False)
+        | work.get("nazwa_instrumentu", pd.Series("", index=work.index)).astype(str).str.contains(r"\bPZU\b", case=False, regex=True, na=False)
+    )
+
+    # Drop all existing PZU EOP rows for 2025-2065 and replace with one authoritative row per year.
+    work = work.loc[~(year_mask_all & id_mask_all)].copy()
+
+    for year, corrected_value in _PZU_EOP_2023_VALUES.items():
+        row = dict(template)
+        row["fundusz"] = f"{fund_prefix} {year}"
+        row["DATA_fundusz"] = year
+        row["typ_aktywa"] = "Akcje"
+        row["emitent"] = "PZU"
+        row["isin"] = "PLPZU0000011"
+        row["waluta"] = "PLN"
+        row["liczba_sztuk"] = ""
+        row["wartosc_pln"] = corrected_value
+        row["TYP_aktywo_std"] = "akcje"
+        new_rows.append(row)
+
+    if new_rows:
+        work = pd.concat([work, pd.DataFrame(new_rows)], ignore_index=True)
+
+    return work
+
+
 def _normalize_equity_name(value: str) -> str:
     text = safe_string(value).lower()
+    text = text.replace("ł", "l")
+    text = unicodedata.normalize("NFKD", text)
+    text = text.encode("ascii", "ignore").decode("ascii")
     text = text.replace(".", "")
     text = re.sub(r"[^a-z0-9]+", " ", text).strip()
     return re.sub(r"\s+", " ", text)
+
+
+def _equity_name_variants(value: str) -> List[str]:
+    normalized = _normalize_equity_name(value)
+    if not normalized:
+        return []
+
+    variants = {normalized}
+    tokens = normalized.split()
+
+    legal_tail_tokens = {
+        "sa",
+        "spa",
+        "se",
+        "ag",
+        "nv",
+        "plc",
+        "inc",
+        "corp",
+        "corporation",
+        "holding",
+        "holdings",
+        "group",
+        "co",
+        "company",
+        "ltd",
+        "limited",
+    }
+    trimmed = tokens[:]
+    while trimmed and trimmed[-1] in legal_tail_tokens:
+        trimmed.pop()
+    if trimmed:
+        variants.add(" ".join(trimmed))
+
+    removable_tokens = {"sa", "asi", "spa", "se", "ag", "nv", "plc"}
+    compact = [token for token in tokens if token not in removable_tokens]
+    if compact:
+        variants.add(" ".join(compact))
+
+    return sorted(variants, key=len, reverse=True)
+
+
+def _best_ticker_from_name(emitent_value: str, equity_name_map: Dict[str, str]) -> str:
+    if not equity_name_map:
+        return ""
+
+    for variant in _equity_name_variants(emitent_value):
+        ticker = equity_name_map.get(variant)
+        if ticker:
+            return ticker
+    return ""
+
+
+def _best_ticker_from_alias_patterns(emitent_value: str) -> str:
+    normalized = _normalize_equity_name(emitent_value)
+    if not normalized:
+        return ""
+    compact = normalized.replace(" ", "")
+
+    contains_aliases = [
+        ("gielda papierow wartosciowych w warszawie", "GPW PW Equity"),
+        ("famur", "GEA PW Equity"),
+        ("cytokinet", "CYTK US Equity"),
+        ("greenvolt", "GVOLT PL Equity"),
+        ("hafnia", "HAFNI NO Equity"),
+        ("karuna therapeutics", "KRTX US Equity"),
+        ("tjx companies", "TJX US Equity"),
+        ("cspx ishares vii", "CSPX LN Equity"),
+        ("ishrs core s p 500 ucits etf usd acc", "CSPX LN Equity"),
+        ("jastrzebska spolka weglowa", "JSW PW Equity"),
+        ("livechat software", "TXT PW Equity"),
+        ("polski koncern naftowy orlen", "PKN PW Equity"),
+        ("alumetal", "AML PW Equity"),
+        ("ciech", "CIE PW Equity"),
+        ("m d c holdings", "MDC US Equity"),
+        ("kernel holding", "KER PW Equity"),
+        ("bank polska kasa opieki", "PEO PW Equity"),
+        ("kghm polska miedz", "KGH PW Equity"),
+    ]
+
+    for marker, ticker in contains_aliases:
+        marker_compact = marker.replace(" ", "")
+        if marker in normalized or marker_compact in compact:
+            return ticker
+
+    return ""
+
+
+def load_isin_mapping(base_dir: str) -> Dict[str, str]:
+    """Wczytuje isin.xlsx i zwraca mapowanie equity_nazwa -> ISIN."""
+    isin_path = os.path.join(base_dir, ISIN_FILE)
+    if not os.path.exists(isin_path):
+        return {}
+    try:
+        df_isin = pd.read_excel(isin_path, header=None, engine="openpyxl")
+    except Exception:
+        return {}
+    isin_map: Dict[str, str] = {}
+    for _, row in df_isin.iterrows():
+        ticker = safe_string(row.iloc[0]).strip()
+        isin = safe_string(row.iloc[1]).strip().upper()
+        if ticker and isin and isin not in ("0", "", "NAN", "NONE"):
+            isin_map[ticker] = isin
+    return isin_map
+
+
+def fill_missing_isin(df: pd.DataFrame, isin_map: Dict[str, str]) -> pd.DataFrame:
+    """Uzupełnia brakujące kody ISIN (wartość 0) dla akcji na bazie equity_nazwa."""
+    if not isin_map or "isin" not in df.columns or "equity_nazwa" not in df.columns or "TYP_aktywo_std" not in df.columns:
+        return df
+    mask = (
+        df["TYP_aktywo_std"].eq("akcje")
+        & df["isin"].astype(str).isin(["0", "", "nan"])
+        & df["equity_nazwa"].notna()
+        & ~df["equity_nazwa"].isin(["", "0"])
+    )
+    if mask.any():
+        df = df.copy()
+        df.loc[mask, "isin"] = df.loc[mask, "equity_nazwa"].map(isin_map).fillna(df.loc[mask, "isin"])
+    return df
 
 
 def load_equity_mapping(base_dir: str) -> tuple[Dict[str, str], Dict[str, str]]:
@@ -284,14 +486,16 @@ def load_equity_mapping(base_dir: str) -> tuple[Dict[str, str], Dict[str, str]]:
 
     isin_map: Dict[str, str] = {}
     name_map: Dict[str, str] = {}
+    invalid_tickers = {"", "0", "nan", "none"}
     for _, row in df_equity.iterrows():
         isin = safe_string(row.get("id_isin", "")).upper()
         ticker = safe_string(row.get("ID", ""))
-        name = _normalize_equity_name(row.get("name", ""))
-        if isin and ticker and isin.lower() != "nan" and ticker.lower() != "nan":
+        if isin and ticker and isin.lower() != "nan" and ticker.lower() not in invalid_tickers:
             isin_map[isin] = ticker
-        if name and ticker and name.lower() != "nan" and ticker.lower() != "nan":
-            name_map.setdefault(name, ticker)
+        if ticker and ticker.lower() not in invalid_tickers:
+            for name_variant in _equity_name_variants(row.get("name", "")):
+                if name_variant and name_variant.lower() != "nan":
+                    name_map.setdefault(name_variant, ticker)
     return isin_map, name_map
 
 
@@ -303,28 +507,55 @@ def apply_equity_nazwa(
     if "equity_nazwa" not in df.columns:
         df["equity_nazwa"] = ""
 
+    emitent_series_all = df.get("emitent", "").astype(str).str.strip()
+    pattern_ticker_all = emitent_series_all.apply(_best_ticker_from_alias_patterns)
+
     typ_series = df.get("TYP_aktywo_std", "").astype(str).str.strip().str.lower()
     is_akcje = typ_series.eq("akcje")
 
     if is_akcje.any():
         isin_series = df.get("isin", "").astype(str).str.strip().str.upper()
         emitent_series = df.get("emitent", "").astype(str).str.strip()
-        emitent_norm = df.get("emitent", "").apply(_normalize_equity_name)
+
+        alias_map = {
+            "gielda papierow wartosciowych w warszawie sa": "GPW PW Equity",
+            "mci capital asi sa": "MCI PW Equity",
+            "powszechna kasa oszczednosci bank polski sa": "PKO PW Equity",
+            "poznanska korporacja budowlana pekabex sa": "PBX PW Equity",
+            "poznanska korporacja budowlana pekabex": "PBX PW Equity",
+        }
+
+        emitent_ticker = emitent_series.apply(lambda name: _best_ticker_from_name(name, equity_name_map))
+        alias_ticker = emitent_series.apply(lambda name: alias_map.get(_normalize_equity_name(name), ""))
+        pattern_ticker = emitent_series.apply(_best_ticker_from_alias_patterns)
+
         df.loc[is_akcje, "equity_nazwa"] = isin_series.map(equity_map)
 
         nn_mask = is_akcje & df.get("instytucja", "").astype(str).eq("Nationale-Nederlanden")
         if nn_mask.any():
             nn_missing = df.loc[nn_mask, "equity_nazwa"].isna() | df.loc[nn_mask, "equity_nazwa"].eq("")
-            df.loc[nn_mask & nn_missing, "equity_nazwa"] = emitent_norm.map(equity_name_map)
+            df.loc[nn_mask & nn_missing, "equity_nazwa"] = emitent_ticker
 
         pocztylion_mask = is_akcje & df.get("instytucja", "").astype(str).eq("Pocztylion")
         if pocztylion_mask.any():
             pocz_missing = df.loc[pocztylion_mask, "equity_nazwa"].isna() | df.loc[pocztylion_mask, "equity_nazwa"].eq("")
-            df.loc[pocztylion_mask & pocz_missing, "equity_nazwa"] = emitent_norm.map(equity_name_map)
+            df.loc[pocztylion_mask & pocz_missing, "equity_nazwa"] = emitent_ticker
 
-        global_missing = is_akcje & (df["equity_nazwa"].isna() | df["equity_nazwa"].eq(""))
+        global_missing = is_akcje & (df["equity_nazwa"].isna() | df["equity_nazwa"].isin(["", "0"]))
         if global_missing.any():
-            df.loc[global_missing, "equity_nazwa"] = emitent_norm.map(equity_name_map)
+            df.loc[global_missing, "equity_nazwa"] = emitent_ticker
+
+        alias_missing = is_akcje & (df["equity_nazwa"].isna() | df["equity_nazwa"].isin(["", "0"]))
+        if alias_missing.any():
+            df.loc[alias_missing, "equity_nazwa"] = alias_ticker
+
+        pattern_missing = is_akcje & (df["equity_nazwa"].isna() | df["equity_nazwa"].isin(["", "0"]))
+        if pattern_missing.any():
+            df.loc[pattern_missing, "equity_nazwa"] = pattern_ticker
+
+        forced_name_override = is_akcje & pattern_ticker.ne("")
+        if forced_name_override.any():
+            df.loc[forced_name_override, "equity_nazwa"] = pattern_ticker
 
         bnp_mask = is_akcje & emitent_series.eq("BNP Paribas Bank Polska S.A.")
         df.loc[bnp_mask, "equity_nazwa"] = "BNPPPL PW Equity"
@@ -359,6 +590,20 @@ def apply_equity_nazwa(
         df.loc[infinera_mask, "equity_nazwa"] = "INFN US Equity"
 
         df.loc[is_akcje, "equity_nazwa"] = df.loc[is_akcje, "equity_nazwa"].fillna("NA")
+
+        na_equity_mask = df["equity_nazwa"].astype(str).str.strip().eq("NA")
+        if na_equity_mask.any() and "TYP_aktywo_std" in df.columns:
+            df.loc[na_equity_mask, "TYP_aktywo_std"] = "inne"
+
+    recovery_mask = pattern_ticker_all.ne("") & df["equity_nazwa"].astype(str).str.strip().isin(["", "0", "NA", "nan"])
+    if recovery_mask.any():
+        df.loc[recovery_mask, "equity_nazwa"] = pattern_ticker_all
+
+    if "TYP_aktywo_std" in df.columns:
+        mapped_from_alias = pattern_ticker_all.ne("") & df["equity_nazwa"].astype(str).str.strip().ne("")
+        if mapped_from_alias.any():
+            df.loc[mapped_from_alias, "TYP_aktywo_std"] = "akcje"
+
     return df
 
 
@@ -1438,6 +1683,7 @@ def parse_allianz_excel(file_path: str) -> pd.DataFrame:
     df_raw = pd.read_excel(file_path, engine="openpyxl", header=None)
     header_row = detect_allianz_header_row(df_raw)
     df = pd.read_excel(file_path, engine="openpyxl", header=header_row)
+    file_name = os.path.basename(file_path)
     file_date = extract_date_from_filename(file_path)
 
     mapping = {
@@ -1461,7 +1707,68 @@ def parse_allianz_excel(file_path: str) -> pd.DataFrame:
     df["data"] = file_date if file_date else df.get("data", "")
     df = df.dropna(axis=0, how="all")
 
-    return ensure_output_schema(df)
+    out = ensure_output_schema(df)
+
+    if file_name == "pzu1_2023-12-31.xlsx" and not out.empty:
+        target_years = set(_PZU_EOP_2023_VALUES.keys())
+        year_norm = (
+            out["DATA_fundusz"]
+            .astype(str)
+            .str.extract(r"(20\d{2})", expand=False)
+            .fillna("")
+        )
+        pzu_mask = (
+            year_norm.isin(target_years)
+            & (
+                out.get("isin", "").astype(str).str.upper().str.strip().eq("PLPZU0000011")
+                | out.get("emitent", "").astype(str).str.contains(r"\bPZU\b", case=False, regex=True, na=False)
+            )
+        )
+
+        template = {col: "" for col in out.columns}
+        sample = out.iloc[0].to_dict()
+        template.update({k: ("" if pd.isna(v) else v) for k, v in sample.items()})
+
+        out = out.loc[~pzu_mask].copy()
+        rows: List[Dict[str, Any]] = []
+        for year, corrected_value in _PZU_EOP_2023_VALUES.items():
+            row = dict(template)
+            row["fundusz"] = f"inPZU Puls Życia {year}"
+            row["DATA_fundusz"] = year
+            row["typ_aktywa"] = "Akcje"
+            row["emitent"] = "PZU"
+            row["isin"] = "PLPZU0000011"
+            row["waluta"] = "PLN"
+            row["liczba_sztuk"] = ""
+            row["wartosc_pln"] = corrected_value
+            row["TYP_aktywo_std"] = "akcje"
+            rows.append(row)
+        out = pd.concat([out, pd.DataFrame(rows)], ignore_index=True)
+
+        # Remove known legacy duplicates coming from raw source rows.
+        value_num = out["wartosc_pln"].apply(parse_polish_number)
+        year_norm_final = (
+            out["DATA_fundusz"]
+            .astype(str)
+            .str.extract(r"(20\d{2})", expand=False)
+            .fillna("")
+        )
+        legacy_wrong = {
+            "2030": 4_184_000,
+            "2040": 7_970_000,
+            "2060": 339_000,
+        }
+        legacy_mask = pd.Series(False, index=out.index)
+        for year, wrong_value in legacy_wrong.items():
+            legacy_mask = legacy_mask | (
+                year_norm_final.eq(year)
+                & out.get("isin", "").astype(str).str.upper().str.strip().eq("PLPZU0000011")
+                & value_num.eq(float(wrong_value))
+            )
+        if legacy_mask.any():
+            out = out.loc[~legacy_mask].copy()
+
+    return ensure_output_schema(out)
 
 
 def parse_santander_excel(file_path: str) -> pd.DataFrame:
@@ -1892,15 +2199,20 @@ def parse_pzu1_excel(file_path: str) -> pd.DataFrame:
     df["wartosc_pln"] = df[wartosc_col] if wartosc_col else ""
 
     if wartosc_col:
-        wartosc_col_norm = normalize_header(wartosc_col)
-        if wartosc_col_norm in {"wartosc_wg_wyceny", "wartość wg wyceny"}:
-            wartosc_num = df["wartosc_pln"].apply(parse_polish_number)
-            finite = wartosc_num.dropna()
-            if not finite.empty:
-                max_abs = finite.abs().max()
-                sum_abs = finite.abs().sum()
-                if max_abs < 1_000_000 and sum_abs < 20_000_000:
-                    df["wartosc_pln"] = (wartosc_num * 1000).apply(format_decimal_comma)
+        wartosc_num = df["wartosc_pln"].apply(parse_polish_number)
+        finite = wartosc_num.dropna()
+        if not finite.empty:
+            max_abs = finite.abs().max()
+            sum_abs = finite.abs().sum()
+            wartosc_col_norm = normalize_header(wartosc_col)
+            file_name = os.path.basename(file_path).lower()
+            # Scale only when source header explicitly declares thousand-units.
+            # PZU1 files (4Q23/4Q24 in this project) are reported in thousands,
+            # so force thousand-scaling for those files.
+            declared_thousands = bool(re.search(r"\b(tys|tys\.|tysiac|tysiace)\b", wartosc_col_norm))
+            pzu1_force_thousands = file_name.startswith("pzu1_")
+            if (declared_thousands or pzu1_force_thousands) and max_abs < 1_000_000 and sum_abs < 20_000_000:
+                df["wartosc_pln"] = (wartosc_num * 1000).apply(format_decimal_comma)
 
     if isin_col:
         isin_series = df[isin_col].astype(str).str.strip()
@@ -1971,6 +2283,47 @@ def parse_pzu1_excel(file_path: str) -> pd.DataFrame:
         df = df[ppk_mask]
     else:
         df = df[fundusz_series.str.strip().ne("") & fundusz_series.str.strip().str.lower().ne("nan")]
+
+    df = apply_pzu_eop_2023_correction(df, file_path)
+
+    file_name = os.path.basename(file_path).lower()
+    if file_name == "pzu1_2023-12-31.xlsx" and not df.empty:
+        target_years = set(_PZU_EOP_2023_VALUES.keys())
+        year_norm = (
+            df["DATA_fundusz"]
+            .astype(str)
+            .str.extract(r"(20\d{2})", expand=False)
+            .fillna("")
+        )
+        pzu_mask = (
+            year_norm.isin(target_years)
+            & (
+                df.get("isin", "").astype(str).str.upper().str.strip().eq("PLPZU0000011")
+                | df.get("emitent", "").astype(str).str.contains(r"\bPZU\b", case=False, regex=True, na=False)
+            )
+        )
+
+        template = {col: "" for col in df.columns}
+        if not df.empty:
+            sample = df.iloc[0].to_dict()
+            template.update({k: ("" if pd.isna(v) else v) for k, v in sample.items()})
+
+        df = df.loc[~pzu_mask].copy()
+        hard_rows: List[Dict[str, Any]] = []
+        for year, corrected_value in _PZU_EOP_2023_VALUES.items():
+            row = dict(template)
+            row["fundusz"] = f"inPZU Puls Życia {year}"
+            row["DATA_fundusz"] = year
+            row["typ_aktywa"] = "Akcje"
+            row["emitent"] = "PZU"
+            row["isin"] = "PLPZU0000011"
+            row["waluta"] = "PLN"
+            row["liczba_sztuk"] = ""
+            row["wartosc_pln"] = corrected_value
+            row["TYP_aktywo_std"] = "akcje"
+            hard_rows.append(row)
+        df = pd.concat([df, pd.DataFrame(hard_rows)], ignore_index=True)
+
     df = df.dropna(axis=0, how="all")
 
     return ensure_output_schema(df)
@@ -3064,6 +3417,37 @@ def parse_uniqa_pdf(file_path: str) -> pd.DataFrame:
                     if fundusz_candidate:
                         current_fundusz = _normalize_uniqa_fundusz(fundusz_candidate, current_fundusz)
 
+                    if "depozyt" in joined:
+                        fundusz = current_fundusz
+                        if not fundusz:
+                            year_match = re.search(r"(20\d{2})", joined)
+                            if year_match:
+                                fundusz = f"UNIQA Emerytura {year_match.group(1)}"
+                                current_fundusz = fundusz
+
+                        joined_numbers = _extract_numbers(" ".join([v for v in row_values if v]))
+                        wartosc_num = parse_polish_number(joined_numbers[-1]) if joined_numbers else None
+                        if wartosc_num is None:
+                            continue
+
+                        currencies = re.findall(r"\b(?:PLN|EUR|USD|GBP|CHF|JPY|CNY|SEK|NOK)\b", " ".join(row_values))
+                        waluta_dep = currencies[-1] if currencies else "PLN"
+
+                        rows.append(
+                            {
+                                "data": file_date,
+                                "instytucja": "UNIQA TFI S.A.",
+                                "fundusz": _normalize_uniqa_fundusz(fundusz, current_fundusz),
+                                "typ_aktywa": "Depozyty",
+                                "emitent": "Depozyty",
+                                "isin": "",
+                                "waluta": waluta_dep,
+                                "liczba_sztuk": "",
+                                "wartosc_pln": format_decimal_comma(wartosc_num),
+                            }
+                        )
+                        continue
+
                     raw_isin = None
                     isin_index = None
                     for idx, value in enumerate(row_values):
@@ -3538,6 +3922,8 @@ def parse_pocztylion_pdf(file_path: str) -> pd.DataFrame:
             aktywo_lower = aktywo.lower()
             if aktywo_lower.startswith("razem") or aktywo_lower.startswith("suma"):
                 continue
+            if re.fullmatch(r"\d+(?:[.,]\d+)?", aktywo):
+                continue
             if re.match(r"^\d+\.\s+", aktywo):
                 continue
             if ";" in aktywo:
@@ -3830,8 +4216,12 @@ def parse_vienna_pdf(file_path: str) -> pd.DataFrame:
                     except StopIteration:
                         pass
 
-                while emitent_tokens and emitent_tokens[0].upper() in {"Y_PPK25_A", "Y_PPK30_A", "Y_PPK35_A", "Y_PPK40_A", "Y_PPK45_A", "Y_PPK50_A", "PPK", "N/D"}:
-                    emitent_tokens = emitent_tokens[1:]
+                while emitent_tokens:
+                    token_upper = emitent_tokens[0].upper()
+                    if re.fullmatch(r"Y_PPK\d{2}_A", token_upper) or token_upper in {"PPK", "N/D"}:
+                        emitent_tokens = emitent_tokens[1:]
+                        continue
+                    break
                 while emitent_tokens and currency_pattern.match(emitent_tokens[0].upper()):
                     emitent_tokens = emitent_tokens[1:]
                 emitent = " ".join(emitent_tokens).strip()
@@ -3889,6 +4279,24 @@ def parse_vienna_pdf(file_path: str) -> pd.DataFrame:
         return ensure_output_schema(pd.DataFrame())
 
     df = pd.DataFrame(rows)
+
+    if not df.empty:
+        qty_num = df["liczba_sztuk"].apply(parse_polish_number)
+        value_num = df["wartosc_pln"].apply(parse_polish_number)
+        akcje_mask = df["typ_aktywa"].astype(str).str.contains(r"akcje", case=False, na=False)
+
+        group_keys = ["data", "fundusz", "isin", "waluta"]
+        has_positive_qty = (
+            (qty_num.fillna(0) > 0)
+            .groupby([df[key] for key in group_keys], dropna=False)
+            .transform("max")
+            .astype(bool)
+        )
+
+        dust_duplicate_mask = akcje_mask & qty_num.fillna(0).eq(0) & value_num.fillna(0).gt(0) & has_positive_qty
+        if dust_duplicate_mask.any():
+            df = df.loc[~dust_duplicate_mask].copy()
+
     schema_df = ensure_output_schema(df)
 
     schema_df["fundusz"] = schema_df["fundusz"].astype(str).str.replace(r"\s+", " ", regex=True).str.strip()
@@ -4083,6 +4491,12 @@ def process_folder(folder_path: str) -> pd.DataFrame:
         ):
             parser_key = "pzu2"
         elif (
+            folder_name == "raw_4q22"
+            and file_name.startswith("pzu1_")
+            and file_name.endswith((".xlsx", ".xls"))
+        ):
+            parser_key = "pzu1"
+        elif (
             folder_name in {"raw_4q23", "raw_4q24"}
             and file_name.startswith("pzu1_")
             and file_name.endswith((".xlsx", ".xls"))
@@ -4191,6 +4605,7 @@ def main() -> None:
     output_dir = os.path.join(base_dir, "output_csv")
     os.makedirs(output_dir, exist_ok=True)
     equity_map, equity_name_map = load_equity_mapping(base_dir)
+    isin_map = load_isin_mapping(base_dir)
     nn_shares_map = load_nn_fixed_shares_map(base_dir)
     cleanup_percent_outputs(output_dir)
 
@@ -4216,6 +4631,7 @@ def main() -> None:
             if col in result_df.columns:
                 result_df[col] = result_df[col].apply(format_decimal_comma)
         result_df = apply_equity_nazwa(result_df, equity_map, equity_name_map)
+        result_df = fill_missing_isin(result_df, isin_map)
         result_df, removed_anomalies = sanitize_wartosc_pln_anomalies(result_df)
         if removed_anomalies:
             print(f"Usunięto anomalie wartosc_pln ({quarter_token}): {removed_anomalies}")
