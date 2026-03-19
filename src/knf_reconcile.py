@@ -68,9 +68,9 @@ def build_report(master_path: Path, knf_path: Path, threshold_pct: float) -> pd.
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Porównanie KNF vs PPK_master z progiem odchylenia")
-    parser.add_argument("--master", default="clear/PPK_master.csv")
+    parser.add_argument("--master", default="output_csv/PPK_master.csv")
     parser.add_argument("--knf", default="clear/knf_reference.csv")
-    parser.add_argument("--out", default="clear/knf_reconciliation_report.csv")
+    parser.add_argument("--out", default="output_csv/knf_reconciliation_report.csv")
     parser.add_argument("--threshold", type=float, default=5.0)
     args = parser.parse_args()
 

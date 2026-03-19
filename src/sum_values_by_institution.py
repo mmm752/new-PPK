@@ -64,7 +64,7 @@ print(f"{sums_by_institution_year['RAZEM'].sum():>20,.0f}")
 print("=" * 100)
 
 # Zapisz wyniki do pliku CSV - całość
-output_file = '/workspaces/new-PPK/clear/PPK_instytucja_sumy_wartosc_pln.csv'
+output_file = '/workspaces/new-PPK/output_csv/PPK_instytucja_sumy_wartosc_pln.csv'
 output_df = pd.DataFrame({
     'instytucja': sums_by_institution.index,
     'suma_wartosc_pln': sums_by_institution.values
@@ -74,7 +74,7 @@ output_df.to_csv(output_file, sep=';', index=False, decimal=',')
 print(f"\nWyniki (całość) zapisane do: {output_file}")
 
 # Zapisz wyniki do pliku CSV - podział na lata
-output_file_years = '/workspaces/new-PPK/clear/PPK_instytucja_sumy_wartosc_pln_by_year.csv'
+output_file_years = '/workspaces/new-PPK/output_csv/PPK_instytucja_sumy_wartosc_pln_by_year.csv'
 sums_by_institution_year.to_csv(output_file_years, sep=';', decimal=',')
 print(f"Wyniki (podział na lata) zapisane do: {output_file_years}")
 

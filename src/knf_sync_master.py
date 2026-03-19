@@ -126,9 +126,9 @@ def sync_master_to_knf(master_path: Path, knf_path: Path, out_path: Path) -> tup
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Synchronizacja wartosc_pln PPK_master do agregatów KNF")
-    parser.add_argument("--master", default="clear/PPK_master.csv")
+    parser.add_argument("--master", default="output_csv/PPK_master.csv")
     parser.add_argument("--knf", default="clear/knf_reference.csv")
-    parser.add_argument("--out", default="clear/PPK_master.csv")
+    parser.add_argument("--out", default="output_csv/PPK_master.csv")
     args = parser.parse_args()
 
     master_path = Path(args.master)

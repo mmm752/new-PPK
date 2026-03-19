@@ -9,7 +9,7 @@ import tempfile
 import subprocess
 from datetime import datetime
 from decimal import Decimal, ROUND_HALF_UP
-from typing import Callable, Dict, List, Optional
+from typing import Any, Callable, Dict, List, Optional
 
 import pandas as pd
 import pdfplumber
@@ -521,6 +521,10 @@ def apply_equity_nazwa(
             "gielda papierow wartosciowych w warszawie sa": "GPW PW Equity",
             "mci capital asi sa": "MCI PW Equity",
             "powszechna kasa oszczednosci bank polski sa": "PKO PW Equity",
+            "pekao": "PEO PW Equity",
+            "bank pekao sa": "PEO PW Equity",
+            "bank pekao s a": "PEO PW Equity",
+            "bank polska kasa opieki sa": "PEO PW Equity",
             "poznanska korporacja budowlana pekabex sa": "PBX PW Equity",
             "poznanska korporacja budowlana pekabex": "PBX PW Equity",
         }
@@ -604,71 +608,100 @@ def apply_equity_nazwa(
         if mapped_from_alias.any():
             df.loc[mapped_from_alias, "TYP_aktywo_std"] = "akcje"
 
+        # UNIQA fallback: if typ_aktywa says "Akcje" but ticker cannot be identified,
+        # classify as "inne" to avoid keeping unresolved equities in akcje bucket.
+        uniqa_unresolved = (
+            df.get("instytucja", "").astype(str).str.strip().eq("UNIQA TFI S.A.")
+            & df.get("typ_aktywa", "").astype(str).str.strip().str.lower().eq("akcje")
+            & df["equity_nazwa"].astype(str).str.strip().isin(["", "0", "NA", "nan"])
+        )
+        if uniqa_unresolved.any():
+            df.loc[uniqa_unresolved, "TYP_aktywo_std"] = "inne"
+
     return df
 
 
-def load_nn_fixed_shares_map(base_dir: str) -> Dict[str, float]:
-    fixed_path = os.path.join(base_dir, "clear", "nationale_nederlanden_fixed_structure.csv")
+def load_fixed_shares_map(base_dir: str, relative_path: str) -> Dict[str, float]:
+    fixed_path = os.path.join(base_dir, relative_path)
     if not os.path.exists(fixed_path):
         return {}
     try:
-        nn_fixed = pd.read_csv(fixed_path, sep=";", dtype=str, keep_default_na=False)
+        if fixed_path.lower().endswith((".xlsx", ".xls")):
+            fixed_df = pd.read_excel(fixed_path, dtype=str)
+        else:
+            fixed_df = pd.read_csv(fixed_path, sep=";", dtype=str, keep_default_na=False)
     except Exception:
         return {}
 
-    required_cols = {"quarter", "fundusz", "emitent_full", "shares_no"}
-    if not required_cols.issubset(nn_fixed.columns):
+    required_cols = {"quarter", "instytucja", "fundusz", "shares_no"}
+    if not required_cols.issubset(fixed_df.columns):
         return {}
 
-    nn_fixed["shares_no_num"] = nn_fixed["shares_no"].apply(parse_polish_number)
-    nn_fixed = nn_fixed[nn_fixed["shares_no_num"].notna()].copy()
-    if nn_fixed.empty:
+    emitent_col = None
+    for candidate in ("emitent_full", "emitent"):
+        if candidate in fixed_df.columns:
+            emitent_col = candidate
+            break
+    if emitent_col is None:
         return {}
 
-    nn_fixed["fund_norm"] = nn_fixed["fundusz"].apply(_normalize_equity_name)
-    nn_fixed["emitent_norm"] = nn_fixed["emitent_full"].apply(_normalize_equity_name)
-    nn_fixed["map_key"] = (
-        nn_fixed["quarter"].astype(str).str.strip()
+    fixed_df["shares_no_num"] = fixed_df["shares_no"].apply(parse_polish_number)
+    fixed_df = fixed_df[fixed_df["shares_no_num"].notna()].copy()
+    if fixed_df.empty:
+        return {}
+
+    fixed_df["fund_norm"] = fixed_df["fundusz"].apply(_normalize_equity_name)
+    fixed_df["emitent_norm"] = fixed_df[emitent_col].apply(_normalize_equity_name)
+    fixed_df["map_key"] = (
+        fixed_df["quarter"].astype(str).str.strip()
         + "|"
-        + nn_fixed["fund_norm"]
+        + fixed_df["instytucja"].astype(str).str.strip()
         + "|"
-        + nn_fixed["emitent_norm"]
+        + fixed_df["fund_norm"]
+        + "|"
+        + fixed_df["emitent_norm"]
     )
 
-    aggregated = nn_fixed.groupby("map_key", dropna=False)["shares_no_num"].sum(min_count=1)
+    aggregated = fixed_df.groupby("map_key", dropna=False)["shares_no_num"].sum(min_count=1)
     return aggregated.to_dict()
 
 
-def apply_nn_shares_map(df: pd.DataFrame, quarter_token: str, shares_map: Dict[str, float]) -> pd.DataFrame:
+def load_manual_shares_map(base_dir: str) -> Dict[str, float]:
+    return load_fixed_shares_map(base_dir, os.path.join("clear", "manual_shares_overrides.csv"))
+
+
+def apply_manual_shares_map(
+    df: pd.DataFrame,
+    quarter_token: str,
+    shares_map: Dict[str, float],
+) -> pd.DataFrame:
     if not shares_map or df.empty:
         return df
     if "instytucja" not in df.columns:
         return df
 
     out = df.copy()
-    nn_mask = out["instytucja"].astype(str).eq("Nationale-Nederlanden")
-    if not nn_mask.any():
-        return out
-
+    instytucja_series = out.get("instytucja", "").astype(str).str.strip()
     out["fund_norm"] = out.get("fundusz", "").astype(str).apply(_normalize_equity_name)
     out["emitent_norm"] = out.get("emitent", "").astype(str).apply(_normalize_equity_name)
     out["map_key"] = (
         quarter_token.strip()
         + "|"
+        + instytucja_series
+        + "|"
         + out["fund_norm"]
         + "|"
         + out["emitent_norm"]
     )
-    out["nn_shares_num"] = out["map_key"].map(shares_map)
+    out["manual_shares_num"] = out["map_key"].map(shares_map)
 
     current_qty = out.get("liczba_sztuk", "").apply(parse_polish_number)
-    fill_mask = nn_mask & out["nn_shares_num"].notna() & (current_qty.isna() | current_qty.eq(0))
+    fill_mask = out["manual_shares_num"].notna() & (current_qty.isna() | current_qty.eq(0))
     if fill_mask.any():
-        out.loc[fill_mask, "liczba_sztuk"] = out.loc[fill_mask, "nn_shares_num"].apply(format_decimal_comma)
+        out.loc[fill_mask, "liczba_sztuk"] = out.loc[fill_mask, "manual_shares_num"].apply(format_decimal_comma)
 
-    out = out.drop(columns=["fund_norm", "emitent_norm", "map_key", "nn_shares_num"], errors="ignore")
+    out = out.drop(columns=["fund_norm", "emitent_norm", "map_key", "manual_shares_num"], errors="ignore")
     return out
-
 
 def ensure_output_schema(df: pd.DataFrame) -> pd.DataFrame:
     for col in OUTPUT_COLUMNS:
@@ -3904,12 +3937,7 @@ def parse_pocztylion_pdf(file_path: str) -> pd.DataFrame:
     current_category = ""
 
     def _category_to_std(category: str) -> str:
-        text = safe_string(category).lower()
-        if "akcje" in text:
-            return "akcje"
-        if "obligacje" in text or "skarb państwa" in text or "skarb panstwa" in text or "dłużne" in text or "dluzne" in text:
-            return "obligacje"
-        return "inne"
+        return normalize_typ_aktywa(category)
 
     for page_text in page_texts:
         for raw_line in page_text.splitlines():
@@ -4012,12 +4040,7 @@ def parse_pocztylion_pdf(file_path: str) -> pd.DataFrame:
     )
 
     if "typ_aktywa" in df.columns:
-        typ_series = df["typ_aktywa"].astype(str)
-        df["TYP_aktywo_std"] = "inne"
-        akcje_mask = typ_series.str.contains(r"akcje", case=False, na=False)
-        obligacje_mask = typ_series.str.contains(r"obligacje|skarb państwa|skarb panstwa|dłużne|dluzne", case=False, na=False)
-        df.loc[akcje_mask, "TYP_aktywo_std"] = "akcje"
-        df.loc[obligacje_mask, "TYP_aktywo_std"] = "obligacje"
+        df["TYP_aktywo_std"] = df["typ_aktywa"].apply(normalize_typ_aktywa)
 
     return df
 
@@ -4320,9 +4343,7 @@ def parse_vienna_pdf(file_path: str) -> pd.DataFrame:
     )
 
     typ_series = schema_df["typ_aktywa"].astype(str)
-    schema_df["TYP_aktywo_std"] = "inne"
-    schema_df.loc[typ_series.str.contains(r"akcje", case=False, na=False), "TYP_aktywo_std"] = "akcje"
-    schema_df.loc[typ_series.str.contains(r"obligacje", case=False, na=False), "TYP_aktywo_std"] = "obligacje"
+    schema_df["TYP_aktywo_std"] = typ_series.apply(normalize_typ_aktywa)
 
     meaningful_mask = (
         schema_df["fundusz"].astype(str).str.strip().str.lower().ne("nan")
@@ -4595,7 +4616,8 @@ def validate_knf_reconciliation(master_df: pd.DataFrame, base_dir: str, threshol
         lambda x: "OK" if pd.notna(x) and x <= threshold_pct else "ALERT"
     )
 
-    report_out = os.path.join(base_dir, "clear", "knf_reconciliation_report.csv")
+    report_out = os.path.join(base_dir, "output_csv", "knf_reconciliation_report.csv")
+    os.makedirs(os.path.dirname(report_out), exist_ok=True)
     report.to_csv(report_out, sep=";", index=False, encoding="utf-8-sig")
 
     alerts = report[(report["status"] == "ALERT") & report["wartosc_knf"].notna()]
@@ -4618,7 +4640,7 @@ def main() -> None:
     os.makedirs(output_dir, exist_ok=True)
     equity_map, equity_name_map = load_equity_mapping(base_dir)
     isin_map = load_isin_mapping(base_dir)
-    nn_shares_map = load_nn_fixed_shares_map(base_dir)
+    manual_shares_map = load_manual_shares_map(base_dir)
     cleanup_percent_outputs(output_dir)
 
     raw_folders = [
@@ -4638,7 +4660,7 @@ def main() -> None:
         result_df = process_folder(folder)
         output_path = os.path.join(output_dir, f"PPK_{quarter_token}.csv")
         result_df = result_df.copy()
-        result_df = apply_nn_shares_map(result_df, quarter_token, nn_shares_map)
+        result_df = apply_manual_shares_map(result_df, quarter_token, manual_shares_map)
         for col in ["liczba_sztuk", "wartosc_pln"]:
             if col in result_df.columns:
                 result_df[col] = result_df[col].apply(format_decimal_comma)
@@ -4691,7 +4713,6 @@ def main() -> None:
             sep=";",
             encoding="utf-8-sig",
         )
-        validate_knf_reconciliation(master_df, base_dir, threshold_pct=5.0)
 
 
 if __name__ == "__main__":
