@@ -564,6 +564,9 @@ def apply_equity_nazwa(
         bnp_mask = is_akcje & emitent_series.eq("BNP Paribas Bank Polska S.A.")
         df.loc[bnp_mask, "equity_nazwa"] = "BNPPPL PW Equity"
 
+        atal_mask = is_akcje & emitent_series.apply(_normalize_equity_name).eq("atal sa")
+        df.loc[atal_mask, "equity_nazwa"] = "1AT PW Equity"
+
         alphabet_mask = (
             is_akcje
             & emitent_series.eq("ALPHABET INC.")
@@ -3770,6 +3773,91 @@ def parse_uniqa_pdf(file_path: str) -> pd.DataFrame:
     return ensure_output_schema(df)
 
 
+def parse_uniqa_excel(file_path: str) -> pd.DataFrame:
+    """
+    Parse UNIQA TFI Excel (xlsx) files.
+    Column layout (0-based):
+      0  Identyfikator funduszu lub subfunduszu
+      1  Nazwa funduszu
+      2  Nazwa subfunduszu          -> fundusz
+      3  Typ funduszu
+      4  Standardowe identyfikatory subfunduszu
+      5  Waluta wyceny aktywów...
+      6  Nazwa emitenta             -> emitent
+      7  Identyfikator instrumentu (kod ISIN) -> isin (may contain full name + ISIN)
+      8  Alternatywny identyfikator
+      9  Typ instrumentu            -> typ_aktywa
+      10 Kategoria instrumentu
+      11 Kraj emitenta
+      12 Waluta instrumentu         -> waluta
+      13 Ilość instrumentów         -> liczba_sztuk
+      14 Wartość instrumentu        -> wartosc_pln
+      15 Procentowy udział
+    """
+    file_date = extract_date_from_filename(file_path)
+    isin_pattern = re.compile(r"\b[A-Z]{2}[A-Z0-9]{9}\d\b")
+
+    def _nd(value) -> str:
+        text = safe_string(value)
+        return "" if text.upper() in ("N/D", "ND", "NAN", "NONE") else text
+
+    rows: List[Dict[str, str]] = []
+    try:
+        df_raw = pd.read_excel(file_path, engine="openpyxl", header=0)
+    except Exception:
+        return ensure_output_schema(pd.DataFrame())
+
+    for _, row in df_raw.iterrows():
+        vals = list(row)
+        if len(vals) < 15:
+            continue
+
+        fundusz_raw = _nd(vals[2]) if len(vals) > 2 else ""
+        emitent_raw = _nd(vals[6]) if len(vals) > 6 else ""
+        isin_raw = safe_string(vals[7]) if len(vals) > 7 else ""
+        typ_aktywa_raw = _nd(vals[9]) if len(vals) > 9 else ""
+        waluta_raw = _nd(vals[12]) if len(vals) > 12 else ""
+        liczba_raw = _nd(vals[13]) if len(vals) > 13 else ""
+        wartosc_raw = vals[14] if len(vals) > 14 else None
+
+        # Skip rows without a value
+        if wartosc_raw is None:
+            continue
+
+        # Normalize isin - sometimes the col contains full fund name + ISIN at end
+        isin = ""
+        if isin_raw.upper() not in ("N/D", "ND", ""):
+            match = isin_pattern.search(isin_raw)
+            if match:
+                isin = match.group(0)
+                # If emitent is empty and there's text before the ISIN, use it
+                prefix = isin_raw[: match.start()].strip(" .-")
+                if not emitent_raw and prefix:
+                    emitent_raw = prefix
+            else:
+                # Non-standard identifier, keep as-is
+                isin = isin_raw.strip()
+
+        # Normalize N/D liczba_sztuk
+        liczba = liczba_raw if liczba_raw.upper() not in ("N/D", "ND") else ""
+
+        rows.append(
+            {
+                "data": file_date,
+                "instytucja": "UNIQA TFI S.A.",
+                "fundusz": fundusz_raw,
+                "typ_aktywa": typ_aktywa_raw,
+                "emitent": emitent_raw,
+                "isin": isin,
+                "waluta": waluta_raw,
+                "liczba_sztuk": liczba,
+                "wartosc_pln": format_decimal_comma(wartosc_raw),
+            }
+        )
+
+    return ensure_output_schema(pd.DataFrame(rows))
+
+
 def parse_nn_pdf(file_path: str) -> pd.DataFrame:
     """
     Parse Nationale-Nederlanden (NN) PDF files.
@@ -4407,6 +4495,8 @@ def detect_parser(file_path: str) -> Optional[str]:
         except Exception:
             pass
 
+    if "uniqa" in name and name.endswith((".xlsx", ".xls")):
+        return "uniqa_excel"
     if "uniqa" in name and name.endswith(".pdf"):
         return "uniqa"
     if re.match(r"^vienna_\d{4}-\d{2}-\d{2}\.pdf$", name):
@@ -4473,6 +4563,7 @@ def process_folder(folder_path: str) -> pd.DataFrame:
         "esaliens_text": parse_esaliens_text_file,
         "generali": parse_generali_excel,
         "uniqa": parse_uniqa_pdf,
+        "uniqa_excel": parse_uniqa_excel,
         "vienna": parse_vienna_pdf,
         "pocztylion": parse_pocztylion_pdf,
         "nn": parse_nn_pdf,
