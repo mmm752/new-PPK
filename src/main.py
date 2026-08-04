@@ -607,7 +607,13 @@ def apply_equity_nazwa(
         df.loc[recovery_mask, "equity_nazwa"] = pattern_ticker_all
 
     if "TYP_aktywo_std" in df.columns:
-        mapped_from_alias = pattern_ticker_all.ne("") & df["equity_nazwa"].astype(str).str.strip().ne("")
+        # Only upgrade rows already classified as equities.
+        # Avoid turning debt/derivative holdings into akcje just because a ticker pattern matched.
+        mapped_from_alias = (
+            pattern_ticker_all.ne("")
+            & df["equity_nazwa"].astype(str).str.strip().ne("")
+            & typ_series.eq("akcje")
+        )
         if mapped_from_alias.any():
             df.loc[mapped_from_alias, "TYP_aktywo_std"] = "akcje"
 
@@ -1836,6 +1842,129 @@ def parse_santander_excel(file_path: str) -> pd.DataFrame:
 
     fundusz_col = df.get("fundusz", "").astype(str)
     df = df[fundusz_col.str.contains("PPK", case=False, na=False)]
+    df = df.dropna(axis=0, how="all")
+    return ensure_output_schema(df)
+
+
+def parse_erste_excel(file_path: str) -> pd.DataFrame:
+    df_raw = pd.read_excel(file_path, engine="openpyxl", header=None)
+    header_row = detect_allianz_header_row(df_raw)
+    df = pd.read_excel(file_path, engine="openpyxl", header=header_row)
+    df.columns = [normalize_header(c) for c in df.columns]
+
+    mapping = {
+        "nazwa subfunduszu": "fundusz",
+        "typ instrumentu": "typ_aktywa",
+        "nazwa emitenta": "emitent",
+        "identyfikator instrumentu - kod isin": "isin",
+        "waluta wyceny aktywów i zobowiązań funduszu": "waluta",
+        "ilość instrumentu w portfelu": "liczba_sztuk",
+        "wartość instrumentu w walucie wyceny funduszu": "wartosc_pln",
+    }
+
+    for src, dst in mapping.items():
+        col = find_column(df, src)
+        df[dst] = df[col] if col else ""
+
+    df["instytucja"] = "Erste"
+    file_date = extract_date_from_filename(file_path)
+    df["data"] = file_date if file_date else ""
+
+    fundusz_series = df.get("fundusz", "").astype(str)
+    ppk_mask = fundusz_series.str.contains("PPK", case=False, na=False)
+    df = df[ppk_mask].copy()
+
+    if df.empty:
+        print(f"Erste parser: brak rekordów PPK w pliku {os.path.basename(file_path)}")
+        return ensure_output_schema(df)
+
+    def _extract_data_fundusz(value: str) -> str:
+        match = re.search(r"(20\d{2})", str(value))
+        return match.group(1) if match else ""
+
+    df["DATA_fundusz"] = df["fundusz"].astype(str).apply(_extract_data_fundusz)
+    missing_year_mask = df["DATA_fundusz"].astype(str).str.strip() == ""
+    if missing_year_mask.any():
+        count_missing = int(missing_year_mask.sum())
+        print(
+            f"Erste parser: nie udało się wyodrębnić DATA_fundusz dla {count_missing} rekordów w pliku {os.path.basename(file_path)}"
+        )
+
+    missing_isin_mask = df.get("isin", "").astype(str).str.strip().eq("")
+    if missing_isin_mask.any():
+        count_missing_isin = int(missing_isin_mask.sum())
+        print(
+            f"Erste parser: {count_missing_isin} rekordów bez ISIN pozostało w pliku {os.path.basename(file_path)}"
+        )
+
+    total_rows = len(df)
+    print(f"Erste parser: zaimportowano {total_rows} rekordów z pliku {os.path.basename(file_path)}")
+
+    df = df.dropna(axis=0, how="all")
+    return ensure_output_schema(df)
+
+
+def parse_ing_excel(file_path: str) -> pd.DataFrame:
+    file_date = extract_date_from_filename(file_path)
+
+    try:
+        df = pd.read_excel(file_path, engine="openpyxl", header=0)
+    except Exception:
+        return ensure_output_schema(pd.DataFrame())
+
+    df.columns = [normalize_header(c) for c in df.columns]
+
+    mapping = {
+        "nazwa funduszu / nazwa subfunduszu": "fundusz",
+        "kategoria / typ instrumentu": "typ_aktywa",
+        "isin": "isin",
+        "nazwa pełna instrumentu": "emitent",
+        "nazwa emitenta / nazwa wystawcy instrumentu pochodnego otc": "emitent",
+        "waluta": "waluta",
+        "ilość": "liczba_sztuk",
+        "wartość całkowita": "wartosc_pln",
+    }
+
+    for src, dst in mapping.items():
+        col = find_column(df, src)
+        df[dst] = df[col] if col else ""
+
+    df["instytucja"] = "ING"
+    df["data"] = file_date
+
+    fundusz_series = df.get("fundusz", "").astype(str)
+    df["fundusz"] = fundusz_series
+
+    def _extract_data_fundusz(value: str) -> str:
+        match = re.search(r"(20\d{2})", str(value))
+        return match.group(1) if match else ""
+
+    df["DATA_fundusz"] = df["fundusz"].astype(str).apply(_extract_data_fundusz)
+    missing_year_mask = df["DATA_fundusz"].astype(str).str.strip() == ""
+    if missing_year_mask.any() and file_date:
+        df.loc[missing_year_mask, "DATA_fundusz"] = file_date[:4]
+
+    keep_mask = df["fundusz"].astype(str).str.strip().str.match(r"^ing emerytura 20\d{2}$", case=False, na=False)
+    dropped = int((~keep_mask).sum())
+    if dropped:
+        print(
+            f"ING parser: odrzucono {dropped} wierszy, ponieważ nie należą do funduszy ING Emerytura 20xx"
+        )
+    df = df.loc[keep_mask].copy()
+
+    if not file_date:
+        print(f"ING parser: nie udało się wyodrębnić daty z nazwy pliku {os.path.basename(file_path)}")
+
+    missing_isin_mask = df.get("isin", "").astype(str).str.strip().eq("")
+    if missing_isin_mask.any():
+        count_missing_isin = int(missing_isin_mask.sum())
+        print(
+            f"ING parser: {count_missing_isin} rekordów bez ISIN pozostało w pliku {os.path.basename(file_path)}"
+        )
+
+    total_rows = len(df)
+    print(f"ING parser: zaimportowano {total_rows} rekordów z pliku {os.path.basename(file_path)}")
+
     df = df.dropna(axis=0, how="all")
     return ensure_output_schema(df)
 
@@ -4462,6 +4591,10 @@ def detect_parser(file_path: str) -> Optional[str]:
         return "santander"
     if name.startswith("bnp_") and re.search(r"\d{4}-\d{2}-\d{2}", name) and name.endswith((".xls", ".xlsx")):
         return "bnp"
+    if name.startswith("erste_") and re.search(r"\d{4}-\d{2}-\d{2}", name) and name.endswith((".xls", ".xlsx")):
+        return "erste"
+    if name.startswith("ing_") and re.search(r"\d{4}-\d{2}-\d{2}", name) and name.endswith((".xls", ".xlsx")):
+        return "ing"
     if "goldman" in name and name.endswith((".xls", ".xlsx")):
         return "goldman"
     # Millennium - handle both "Millennium" (2 l's) and "Millenium" (1 l) spellings
@@ -4558,6 +4691,8 @@ def process_folder(folder_path: str) -> pd.DataFrame:
         "pzu": parse_pzu_excel,
         "pzu1": parse_pzu1_excel,
         "pzu2": parse_pzu2_excel,
+        "erste": parse_erste_excel,
+        "ing": parse_ing_excel,
         "esaliens": parse_esaliens_pdf,
         "esaliens_txt": parse_esaliens_text,
         "esaliens_text": parse_esaliens_text_file,
