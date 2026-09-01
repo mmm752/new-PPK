@@ -5,6 +5,7 @@ import re
 from pathlib import Path
 
 import pandas as pd
+from quarters import quarter_token_from_date
 
 
 NAME_MAP = {
@@ -26,8 +27,9 @@ def parse_value_series(series: pd.Series) -> pd.Series:
 def load_master_totals(master_path: Path) -> pd.DataFrame:
     master = pd.read_csv(master_path, sep=";", dtype=str)
     values = parse_value_series(master["wartosc_pln"])
-    quarter = "4Q" + master["data"].astype(str).str.slice(2, 4)
     inst = master["instytucja"].astype(str).str.strip().replace(NAME_MAP)
+
+    quarter = master.get("data", "").apply(quarter_token_from_date)
 
     agg = (
         pd.DataFrame({"instytucja": inst, "quarter": quarter, "wartosc_master": values})
@@ -40,8 +42,8 @@ def load_master_totals(master_path: Path) -> pd.DataFrame:
 
 def load_knf_long(knf_path: Path) -> pd.DataFrame:
     knf = pd.read_csv(knf_path, sep=";", dtype=str)
-    quarter_cols = [c for c in knf.columns if re.fullmatch(r"4Q\d{2}_knf", c)]
-    quarter_cols = sorted(quarter_cols, key=lambda c: int(c[2:4]))
+    quarter_cols = [c for c in knf.columns if re.fullmatch(r"[1-4]Q\d{2}_knf", c)]
+    quarter_cols = sorted(quarter_cols, key=lambda c: int(c[1:3]))
     if "instytucja" not in knf.columns:
         raise ValueError("Brakuje kolumny KNF: instytucja")
     if not quarter_cols:

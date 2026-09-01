@@ -8,6 +8,7 @@ from pathlib import Path
 import shutil
 
 import pandas as pd
+from quarters import quarter_token_from_date
 
 
 NAME_MAP = {
@@ -33,8 +34,8 @@ def format_number(value: float) -> str:
 
 def load_knf_long(knf_path: Path) -> pd.DataFrame:
     knf = pd.read_csv(knf_path, sep=";", dtype=str)
-    quarter_cols = [c for c in knf.columns if re.fullmatch(r"4Q\d{2}_knf", c)]
-    quarter_cols = sorted(quarter_cols, key=lambda c: int(c[2:4]))
+    quarter_cols = [c for c in knf.columns if re.fullmatch(r"[1-4]Q\d{2}_knf", c)]
+    quarter_cols = sorted(quarter_cols, key=lambda c: int(c[1:3]))
     if "instytucja" not in knf.columns:
         raise ValueError("Brakuje kolumny KNF: instytucja")
     if not quarter_cols:
@@ -52,7 +53,7 @@ def sync_master_to_knf(master_path: Path, knf_path: Path, out_path: Path) -> tup
     work = master.copy()
     work["_inst_raw"] = work.get("instytucja", "").fillna("").astype(str).str.strip()
     work["_inst"] = work["_inst_raw"].replace(NAME_MAP)
-    work["_quarter"] = "4Q" + work.get("data", "").astype(str).str.slice(2, 4)
+    work["_quarter"] = work.get("data", "").apply(quarter_token_from_date)
     work["_wartosc_num"] = parse_value_series(work.get("wartosc_pln", ""))
 
     scaled_pairs = 0

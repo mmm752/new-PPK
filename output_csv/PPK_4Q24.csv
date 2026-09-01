@@ -1164,7 +1164,7 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej , emitowane;Gmina Lesznowola - LESZW J19 1234 - 20.12.2034;nan;PLN;nan;13941.34;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej , emitowane;Miasto Mysłowice - MYSL B14 290123 - 31.12.2028;nan;PLN;nan;6221.7;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;20. Dłużne papiery wartościowe, których emitent może ograniczyć swoją odpowiedzialność za zobowiązania;Ustawy:;nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Bank Polska Kasa Opieki S.A. - PEO1027 - 29.10.2027;PLPEKAO00016;PLN;3679.66;507424.5;akcje;PEO PW Equity
+2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Bank Polska Kasa Opieki S.A. - PEO1027 - 29.10.2027;nan;PLN;3679.66;507424.5;obligacje;PEO PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Cyfrowy Polsat S.A. - CPS0130 - 11.01.2030;nan;PLN;nan;335766.48;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Dekpol S.A. - DEK0628 - 06.06.2028;nan;PLN;nan;178972.5;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2025 DFE;2025;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Develia S.A. - DVL0528 - 19.05.2028;nan;PLN;nan;132891.2;obligacje;nan
@@ -1277,7 +1277,7 @@
 2024-12-30;Santander TFI S.A.;Santander PPK 2025;2025;Akcje;ALFEN N.V.;NL0012817175;EUR;293;14613.45;akcje;ALFEN NA Equity
 2024-12-30;Santander TFI S.A.;Santander PPK 2025;2025;Akcje;SAIPEM SPA;IT0005495657;EUR;3656;39203.14;akcje;SPM IM Equity
 2024-12-30;Santander TFI S.A.;Santander PPK 2025;2025;Akcje;NOVO NORDISK A/S;DK0062498333;DKK;73;26109.66;akcje;NOVOB DC Equity
-2024-12-30;Santander TFI S.A.;Santander PPK 2025;2025;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;XS2724428193;EUR;100;445355.73;akcje;PEO PW Equity
+2024-12-30;Santander TFI S.A.;Santander PPK 2025;2025;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;XS2724428193;EUR;100;445355.73;obligacje;PEO PW Equity
 2024-12-30;Santander TFI S.A.;Santander PPK 2025;2025;Akcje;MURAPOL S.A.;PLMURPL00190;PLN;802;27685.04;akcje;MUR PW Equity
 2024-12-30;Santander TFI S.A.;Santander PPK 2025;2025;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000116760;PLN;2450;2422952;obligacje;nan
 2024-12-30;Santander TFI S.A.;Santander PPK 2025;2025;Akcje;VERTIV HOLDINGS CO;US92537N1081;USD;55;26168.52;akcje;VRT US Equity
@@ -1334,7 +1334,7 @@
 2024-12-30;Santander TFI S.A.;Santander PPK 2030;2030;Akcje;SAIPEM SPA;IT0005495657;EUR;10747;115239.68;akcje;SPM IM Equity
 2024-12-30;Santander TFI S.A.;Santander PPK 2030;2030;Dłużne papiery wartościowe;BANK MILLENNIUM S.A.;XS2684974046;EUR;100;479982.53;obligacje;nan
 2024-12-30;Santander TFI S.A.;Santander PPK 2030;2030;Akcje;NOVO NORDISK A/S;DK0062498333;DKK;344;123037.31;akcje;NOVOB DC Equity
-2024-12-30;Santander TFI S.A.;Santander PPK 2030;2030;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;XS2724428193;EUR;100;445355.73;akcje;PEO PW Equity
+2024-12-30;Santander TFI S.A.;Santander PPK 2030;2030;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;XS2724428193;EUR;100;445355.73;obligacje;PEO PW Equity
 2024-12-30;Santander TFI S.A.;Santander PPK 2030;2030;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;XS2726911931;EUR;150;673497.76;obligacje;nan
 2024-12-30;Santander TFI S.A.;Santander PPK 2030;2030;Akcje;MURAPOL S.A.;PLMURPL00190;PLN;3770;130140.4;akcje;MUR PW Equity
 2024-12-30;Santander TFI S.A.;Santander PPK 2030;2030;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;US731011AY80;USD;250;1007028.06;obligacje;nan
@@ -1504,7 +1504,7 @@
 2024-12-30;Santander TFI S.A.;Santander PPK 2035;2035;Akcje;SAIPEM SPA;IT0005495657;EUR;34575;370746.51;akcje;SPM IM Equity
 2024-12-30;Santander TFI S.A.;Santander PPK 2035;2035;Dłużne papiery wartościowe;BANK MILLENNIUM S.A.;XS2684974046;EUR;100;479982.53;obligacje;nan
 2024-12-30;Santander TFI S.A.;Santander PPK 2035;2035;Akcje;NOVO NORDISK A/S;DK0062498333;DKK;693;247862.95;akcje;NOVOB DC Equity
-2024-12-30;Santander TFI S.A.;Santander PPK 2035;2035;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;XS2724428193;EUR;100;445355.73;akcje;PEO PW Equity
+2024-12-30;Santander TFI S.A.;Santander PPK 2035;2035;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;XS2724428193;EUR;100;445355.73;obligacje;PEO PW Equity
 2024-12-30;Santander TFI S.A.;Santander PPK 2035;2035;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;XS2726911931;EUR;200;897996.96;obligacje;nan
 2024-12-30;Santander TFI S.A.;Santander PPK 2035;2035;Akcje;MURAPOL S.A.;PLMURPL00190;PLN;7587;261903.24;akcje;MUR PW Equity
 2024-12-30;Santander TFI S.A.;Santander PPK 2035;2035;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000112728;PLN;30;29769.6;obligacje;nan
@@ -1613,7 +1613,7 @@
 2024-12-30;Santander TFI S.A.;Santander PPK 2040;2040;Akcje;SAIPEM SPA;IT0005495657;EUR;39807;426849.02;akcje;SPM IM Equity
 2024-12-30;Santander TFI S.A.;Santander PPK 2040;2040;Dłużne papiery wartościowe;BANK MILLENNIUM S.A.;XS2684974046;EUR;100;479982.53;obligacje;nan
 2024-12-30;Santander TFI S.A.;Santander PPK 2040;2040;Akcje;NOVO NORDISK A/S;DK0062498333;DKK;935;334418.27;akcje;NOVOB DC Equity
-2024-12-30;Santander TFI S.A.;Santander PPK 2040;2040;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;XS2724428193;EUR;100;445355.73;akcje;PEO PW Equity
+2024-12-30;Santander TFI S.A.;Santander PPK 2040;2040;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;XS2724428193;EUR;100;445355.73;obligacje;PEO PW Equity
 2024-12-30;Santander TFI S.A.;Santander PPK 2040;2040;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;XS2726911931;EUR;200;897996.96;obligacje;nan
 2024-12-30;Santander TFI S.A.;Santander PPK 2040;2040;Akcje;MURAPOL S.A.;PLMURPL00190;PLN;8716;300876.32;akcje;MUR PW Equity
 2024-12-30;Santander TFI S.A.;Santander PPK 2040;2040;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;US731011AY80;USD;300;1208433.66;obligacje;nan
@@ -1696,7 +1696,7 @@
 2024-12-30;Santander TFI S.A.;Santander PPK 2045;2045;Akcje;SAIPEM SPA;IT0005495657;EUR;38811;416168.97;akcje;SPM IM Equity
 2024-12-30;Santander TFI S.A.;Santander PPK 2045;2045;Dłużne papiery wartościowe;BANK MILLENNIUM S.A.;XS2684974046;EUR;100;479982.53;obligacje;nan
 2024-12-30;Santander TFI S.A.;Santander PPK 2045;2045;Akcje;NOVO NORDISK A/S;DK0062498333;DKK;891;318680.94;akcje;NOVOB DC Equity
-2024-12-30;Santander TFI S.A.;Santander PPK 2045;2045;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;XS2724428193;EUR;100;445355.73;akcje;PEO PW Equity
+2024-12-30;Santander TFI S.A.;Santander PPK 2045;2045;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;XS2724428193;EUR;100;445355.73;obligacje;PEO PW Equity
 2024-12-30;Santander TFI S.A.;Santander PPK 2045;2045;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;XS2726911931;EUR;150;673497.76;obligacje;nan
 2024-12-30;Santander TFI S.A.;Santander PPK 2045;2045;Akcje;MURAPOL S.A.;PLMURPL00190;PLN;8516;293972.32;akcje;MUR PW Equity
 2024-12-30;Santander TFI S.A.;Santander PPK 2045;2045;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;US731011AY80;USD;300;1208433.66;obligacje;nan
@@ -1754,7 +1754,7 @@
 2024-12-30;Santander TFI S.A.;Santander PPK 2050;2050;Akcje;ALFEN N.V.;NL0012817175;EUR;1982;98852.74;akcje;ALFEN NA Equity
 2024-12-30;Santander TFI S.A.;Santander PPK 2050;2050;Akcje;SAIPEM SPA;IT0005495657;EUR;26588;285102.16;akcje;SPM IM Equity
 2024-12-30;Santander TFI S.A.;Santander PPK 2050;2050;Akcje;NOVO NORDISK A/S;DK0062498333;DKK;625;223541.63;akcje;NOVOB DC Equity
-2024-12-30;Santander TFI S.A.;Santander PPK 2050;2050;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;XS2724428193;EUR;100;445355.73;akcje;PEO PW Equity
+2024-12-30;Santander TFI S.A.;Santander PPK 2050;2050;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;XS2724428193;EUR;100;445355.73;obligacje;PEO PW Equity
 2024-12-30;Santander TFI S.A.;Santander PPK 2050;2050;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;XS2726911931;EUR;150;673497.76;obligacje;nan
 2024-12-30;Santander TFI S.A.;Santander PPK 2050;2050;Akcje;MURAPOL S.A.;PLMURPL00190;PLN;5822;200975.44;akcje;MUR PW Equity
 2024-12-30;Santander TFI S.A.;Santander PPK 2050;2050;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;US731011AY80;USD;200;805622.46;obligacje;nan
@@ -1901,7 +1901,7 @@
 2024-12-30;Santander TFI S.A.;Santander PPK 2055;2055;Dłużne papiery wartościowe;SKARB PAŃSTWA REPUBLIKI FRANCUSKIEJ;FR0013407236;EUR;100000;391531.37;obligacje;nan
 2024-12-30;Santander TFI S.A.;Santander PPK 2055;2055;Akcje;ALFEN N.V.;NL0012817175;EUR;1197;59700.67;akcje;ALFEN NA Equity
 2024-12-30;Santander TFI S.A.;Santander PPK 2055;2055;Akcje;SAIPEM SPA;IT0005495657;EUR;16349;175309.74;akcje;SPM IM Equity
-2024-12-30;Santander TFI S.A.;Santander PPK 2055;2055;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;XS2724428193;EUR;100;445355.73;akcje;PEO PW Equity
+2024-12-30;Santander TFI S.A.;Santander PPK 2055;2055;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;XS2724428193;EUR;100;445355.73;obligacje;PEO PW Equity
 2024-12-30;Santander TFI S.A.;Santander PPK 2055;2055;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;XS2726911931;EUR;100;448998.51;obligacje;nan
 2024-12-30;Santander TFI S.A.;Santander PPK 2055;2055;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;US731011AY80;USD;100;402811.21;obligacje;nan
 2024-12-30;Santander TFI S.A.;Santander PPK 2055;2055;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000116760;PLN;1200;1186752;obligacje;nan
@@ -2236,8 +2236,8 @@
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2025 - Efos;2025;Dłużne papiery wartościowe;Santander Bank Polska S.A.;PLBZ00000333;PLN;4;2030111.76;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2025 - Efos;2025;Dłużne papiery wartościowe;Santander Bank Polska S.A.;PLBZ00000341;PLN;3;1544273.82;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2025 - Efos;2025;Dłużne papiery wartościowe;Santander Bank Polska S.A.;PLBZ00000358;PLN;5;2551694.85;obligacje;nan
-2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2025 - Efos;2025;Dłużne papiery wartościowe;Kghm Polska Miedź SA;PLO023600011;PLN;1900;1922192;akcje;KGH PW Equity
-2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2025 - Efos;2025;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;PLO037100016;PLN;1;83084.34;akcje;PKN PW Equity
+2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2025 - Efos;2025;Dłużne papiery wartościowe;Kghm Polska Miedź SA;PLO023600011;PLN;1900;1922192;obligacje;KGH PW Equity
+2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2025 - Efos;2025;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;PLO037100016;PLN;1;83084.34;obligacje;PKN PW Equity
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2025 - Efos;2025;Dłużne papiery wartościowe;Powszechna Kasa Oszczednosci Bank Polski SA;PLO046700012;PLN;1;516887.81;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2025 - Efos;2025;Dłużne papiery wartościowe;Bank Pekao SA;PLPEKAO00289;PLN;30;30687;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2025 - Efos;2025;Dłużne papiery wartościowe;Bank Pekao SA;PLPEKAO00313;PLN;3;1514003.01;obligacje;nan
@@ -2246,11 +2246,11 @@
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2025 - Efos;2025;Dłużne papiery wartościowe;Polski Fundusz Rozwoju S.A.;PLPFR0000035;PLN;1;980998.08;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2025 - Efos;2025;Dłużne papiery wartościowe;Polski Fundusz Rozwoju S.A.;PLPFR0000043;PLN;2;1844553.14;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2025 - Efos;2025;Dłużne papiery wartościowe;Polski Fundusz Rozwoju S.A.;PLPFR0000092;PLN;4;3632858.96;obligacje;nan
-2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2025 - Efos;2025;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;PLPKN0000208;PLN;1;100436.1;akcje;PKN PW Equity
+2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2025 - Efos;2025;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;PLPKN0000208;PLN;1;100436.1;obligacje;PKN PW Equity
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2025 - Efos;2025;Dłużne papiery wartościowe;Powszechna Kasa Oszczednosci Bank Polski SA;PLPKO0000099;PLN;7;725251.59;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2025 - Efos;2025;Dłużne papiery wartościowe;Skarb Państwa USA;US91282CHV63;USD;10700;4477367.12;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2025 - Efos;2025;Dłużne papiery wartościowe;Bank Gospodarstwa Krajowego;XS2625207571;USD;700;2814625.91;obligacje;nan
-2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2025 - Efos;2025;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;XS2647371843;EUR;166;767862.23;akcje;PKN PW Equity
+2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2025 - Efos;2025;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;XS2647371843;EUR;166;767862.23;obligacje;PKN PW Equity
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2025 - Efos;2025;Dłużne papiery wartościowe;Ceska Sporitelna AS;XS2676413235;EUR;3;1409189.69;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2025 - Efos;2025;Dłużne papiery wartościowe;m Bank SA;XS2680046021;EUR;3;1409674.12;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2025 - Efos;2025;Dłużne papiery wartościowe;Raiffeisen Bank International AG;XS2682093526;EUR;3;1394371.69;obligacje;nan
@@ -2379,8 +2379,8 @@
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2030 - Efos;2030;Dłużne papiery wartościowe;Santander Bank Polska S.A.;PLBZ00000333;PLN;4;2030111.76;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2030 - Efos;2030;Dłużne papiery wartościowe;Santander Bank Polska S.A.;PLBZ00000341;PLN;4;2059031.76;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2030 - Efos;2030;Dłużne papiery wartościowe;Santander Bank Polska S.A.;PLBZ00000358;PLN;8;4082711.76;obligacje;nan
-2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2030 - Efos;2030;Dłużne papiery wartościowe;Kghm Polska Miedź SA;PLO023600011;PLN;3300;3338544;akcje;KGH PW Equity
-2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2030 - Efos;2030;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;PLO037100016;PLN;3;249253.02;akcje;PKN PW Equity
+2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2030 - Efos;2030;Dłużne papiery wartościowe;Kghm Polska Miedź SA;PLO023600011;PLN;3300;3338544;obligacje;KGH PW Equity
+2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2030 - Efos;2030;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;PLO037100016;PLN;3;249253.02;obligacje;PKN PW Equity
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2030 - Efos;2030;Dłużne papiery wartościowe;Powszechna Kasa Oszczednosci Bank Polski SA;PLO046700012;PLN;2;1033775.62;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2030 - Efos;2030;Dłużne papiery wartościowe;Powszechna Kasa Oszczednosci Bank Polski SA;PLO046700020;PLN;2;1020820.32;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2030 - Efos;2030;Dłużne papiery wartościowe;Bank Pekao SA;PLPEKAO00289;PLN;35;35801.5;obligacje;nan
@@ -2390,13 +2390,13 @@
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2030 - Efos;2030;Dłużne papiery wartościowe;Polski Fundusz Rozwoju S.A.;PLPFR0000035;PLN;1;980998.08;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2030 - Efos;2030;Dłużne papiery wartościowe;Polski Fundusz Rozwoju S.A.;PLPFR0000043;PLN;1;922276.57;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2030 - Efos;2030;Dłużne papiery wartościowe;Polski Fundusz Rozwoju S.A.;PLPFR0000092;PLN;6;5449288.44;obligacje;nan
-2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2030 - Efos;2030;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;PLPKN0000208;PLN;1;100436.1;akcje;PKN PW Equity
+2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2030 - Efos;2030;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;PLPKN0000208;PLN;1;100436.1;obligacje;PKN PW Equity
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2030 - Efos;2030;Dłużne papiery wartościowe;Powszechna Kasa Oszczednosci Bank Polski SA;PLPKO0000099;PLN;13;1346895.81;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2030 - Efos;2030;Dłużne papiery wartościowe;Skarb Państwa USA;US91282CHC82;USD;800;303480.38;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2030 - Efos;2030;Dłużne papiery wartościowe;Skarb Państwa USA;US91282CHX20;USD;9000;3745924.51;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2030 - Efos;2030;Dłużne papiery wartościowe;Skarb Państwa;XS2586944659;EUR;400;1836007.04;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2030 - Efos;2030;Dłużne papiery wartościowe;Bank Gospodarstwa Krajowego;XS2625207571;USD;1100;4422983.56;obligacje;nan
-2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2030 - Efos;2030;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;XS2647371843;EUR;199;920509.5;akcje;PKN PW Equity
+2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2030 - Efos;2030;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;XS2647371843;EUR;199;920509.5;obligacje;PKN PW Equity
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2030 - Efos;2030;Dłużne papiery wartościowe;Ceska Sporitelna AS;XS2676413235;EUR;3;1409189.69;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2030 - Efos;2030;Dłużne papiery wartościowe;m Bank SA;XS2680046021;EUR;3;1409674.12;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2030 - Efos;2030;Dłużne papiery wartościowe;Raiffeisen Bank International AG;XS2682093526;EUR;3;1394371.69;obligacje;nan
@@ -2528,7 +2528,7 @@
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2035 - Efos;2035;Dłużne papiery wartościowe;Santander Bank Polska S.A.;PLBZ00000333;PLN;3;1522583.82;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2035 - Efos;2035;Dłużne papiery wartościowe;Santander Bank Polska S.A.;PLBZ00000341;PLN;4;2059031.76;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2035 - Efos;2035;Dłużne papiery wartościowe;Santander Bank Polska S.A.;PLBZ00000358;PLN;8;4082711.76;obligacje;nan
-2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2035 - Efos;2035;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;PLO037100016;PLN;2;166168.68;akcje;PKN PW Equity
+2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2035 - Efos;2035;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;PLO037100016;PLN;2;166168.68;obligacje;PKN PW Equity
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2035 - Efos;2035;Dłużne papiery wartościowe;Powszechna Kasa Oszczednosci Bank Polski SA;PLO046700012;PLN;2;1033775.62;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2035 - Efos;2035;Dłużne papiery wartościowe;Powszechna Kasa Oszczednosci Bank Polski SA;PLO046700020;PLN;5;2552050.78;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2035 - Efos;2035;Dłużne papiery wartościowe;Bank Pekao SA;PLPEKAO00289;PLN;35;35801.5;obligacje;nan
@@ -2536,12 +2536,12 @@
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2035 - Efos;2035;Dłużne papiery wartościowe;Polski Fundusz Rozwoju S.A.;PLPFR0000027;PLN;1;1000825.53;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2035 - Efos;2035;Dłużne papiery wartościowe;Polski Fundusz Rozwoju S.A.;PLPFR0000043;PLN;1;922276.57;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2035 - Efos;2035;Dłużne papiery wartościowe;Polski Fundusz Rozwoju S.A.;PLPFR0000092;PLN;8;7265717.92;obligacje;nan
-2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2035 - Efos;2035;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;PLPKN0000208;PLN;1;100436.1;akcje;PKN PW Equity
+2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2035 - Efos;2035;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;PLPKN0000208;PLN;1;100436.1;obligacje;PKN PW Equity
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2035 - Efos;2035;Dłużne papiery wartościowe;Powszechna Kasa Oszczednosci Bank Polski SA;PLPKO0000099;PLN;10;1036073.7;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2035 - Efos;2035;Dłużne papiery wartościowe;Skarb Państwa USA;US91282CHX20;USD;3000;1248641.47;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2035 - Efos;2035;Dłużne papiery wartościowe;Skarb Państwa;XS2586944659;EUR;500;2295008.81;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2035 - Efos;2035;Dłużne papiery wartościowe;Bank Gospodarstwa Krajowego;XS2625207571;USD;900;3618804.7;obligacje;nan
-2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2035 - Efos;2035;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;XS2647371843;EUR;199;920509.5;akcje;PKN PW Equity
+2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2035 - Efos;2035;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;XS2647371843;EUR;199;920509.5;obligacje;PKN PW Equity
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2035 - Efos;2035;Dłużne papiery wartościowe;Ceska Sporitelna AS;XS2676413235;EUR;3;1409189.69;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2035 - Efos;2035;Dłużne papiery wartościowe;m Bank SA;XS2680046021;EUR;3;1409674.12;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2035 - Efos;2035;Dłużne papiery wartościowe;Raiffeisen Bank International AG;XS2682093526;EUR;3;1394371.69;obligacje;nan
@@ -2677,7 +2677,7 @@
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2040 - Efos;2040;Dłużne papiery wartościowe;m Bank SA;PLBRE0005227;PLN;9;4469325.17;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2040 - Efos;2040;Dłużne papiery wartościowe;Santander Bank Polska S.A.;PLBZ00000341;PLN;4;2059031.76;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2040 - Efos;2040;Dłużne papiery wartościowe;Santander Bank Polska S.A.;PLBZ00000358;PLN;8;4082711.76;obligacje;nan
-2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2040 - Efos;2040;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;PLO037100016;PLN;4;332337.35;akcje;PKN PW Equity
+2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2040 - Efos;2040;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;PLO037100016;PLN;4;332337.35;obligacje;PKN PW Equity
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2040 - Efos;2040;Dłużne papiery wartościowe;Powszechna Kasa Oszczednosci Bank Polski SA;PLO046700012;PLN;2;1033775.62;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2040 - Efos;2040;Dłużne papiery wartościowe;Powszechna Kasa Oszczednosci Bank Polski SA;PLO046700020;PLN;6;3062460.93;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2040 - Efos;2040;Dłużne papiery wartościowe;Bank Pekao SA;PLPEKAO00289;PLN;40;40916;obligacje;nan
@@ -2685,12 +2685,12 @@
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2040 - Efos;2040;Dłużne papiery wartościowe;Polski Fundusz Rozwoju S.A.;PLPFR0000027;PLN;1;1000825.53;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2040 - Efos;2040;Dłużne papiery wartościowe;Polski Fundusz Rozwoju S.A.;PLPFR0000043;PLN;1;922276.57;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2040 - Efos;2040;Dłużne papiery wartościowe;Polski Fundusz Rozwoju S.A.;PLPFR0000092;PLN;9;8173932.66;obligacje;nan
-2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2040 - Efos;2040;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;PLPKN0000208;PLN;1;100436.1;akcje;PKN PW Equity
+2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2040 - Efos;2040;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;PLPKN0000208;PLN;1;100436.1;obligacje;PKN PW Equity
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2040 - Efos;2040;Dłużne papiery wartościowe;Powszechna Kasa Oszczednosci Bank Polski SA;PLPKO0000099;PLN;10;1036073.7;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2040 - Efos;2040;Dłużne papiery wartościowe;Skarb Państwa USA;US91282CHX20;USD;3000;1248641.47;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2040 - Efos;2040;Dłużne papiery wartościowe;Skarb Państwa;XS2586944659;EUR;550;2524509.68;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2040 - Efos;2040;Dłużne papiery wartościowe;Bank Gospodarstwa Krajowego;XS2625207571;USD;900;3618804.7;obligacje;nan
-2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2040 - Efos;2040;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;XS2647371843;EUR;199;920509.5;akcje;PKN PW Equity
+2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2040 - Efos;2040;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;XS2647371843;EUR;199;920509.5;obligacje;PKN PW Equity
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2040 - Efos;2040;Dłużne papiery wartościowe;Ceska Sporitelna AS;XS2676413235;EUR;3;1409189.69;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2040 - Efos;2040;Dłużne papiery wartościowe;m Bank SA;XS2680046021;EUR;3;1409674.12;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2040 - Efos;2040;Dłużne papiery wartościowe;Raiffeisen Bank International AG;XS2682093526;EUR;3;1394371.69;obligacje;nan
@@ -2826,16 +2826,16 @@
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2045 - Efos;2045;Dłużne papiery wartościowe;Bank Gospodarstwa Krajowego;PL0000500328;PLN;7590;7445223.04;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2045 - Efos;2045;Dłużne papiery wartościowe;m Bank SA;PLBRE0005227;PLN;7;3476141.8;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2045 - Efos;2045;Dłużne papiery wartościowe;Santander Bank Polska S.A.;PLBZ00000341;PLN;3;1544273.82;obligacje;nan
-2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2045 - Efos;2045;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;PLO037100016;PLN;2;166168.68;akcje;PKN PW Equity
+2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2045 - Efos;2045;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;PLO037100016;PLN;2;166168.68;obligacje;PKN PW Equity
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2045 - Efos;2045;Dłużne papiery wartościowe;Powszechna Kasa Oszczednosci Bank Polski SA;PLO046700012;PLN;2;1033775.62;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2045 - Efos;2045;Dłużne papiery wartościowe;Powszechna Kasa Oszczednosci Bank Polski SA;PLO046700020;PLN;6;3062460.93;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2045 - Efos;2045;Dłużne papiery wartościowe;Bank Pekao SA;PLPEKAO00289;PLN;25;25572.5;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2045 - Efos;2045;Dłużne papiery wartościowe;Polski Fundusz Rozwoju S.A.;PLPFR0000027;PLN;1;1000825.53;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2045 - Efos;2045;Dłużne papiery wartościowe;Polski Fundusz Rozwoju S.A.;PLPFR0000092;PLN;7;6357503.18;obligacje;nan
-2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2045 - Efos;2045;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;PLPKN0000208;PLN;1;100436.1;akcje;PKN PW Equity
+2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2045 - Efos;2045;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;PLPKN0000208;PLN;1;100436.1;obligacje;PKN PW Equity
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2045 - Efos;2045;Dłużne papiery wartościowe;Skarb Państwa;XS2586944659;EUR;650;2983511.45;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2045 - Efos;2045;Dłużne papiery wartościowe;Bank Gospodarstwa Krajowego;XS2625207571;USD;1250;5026117.67;obligacje;nan
-2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2045 - Efos;2045;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;XS2647371843;EUR;133;615214.92;akcje;PKN PW Equity
+2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2045 - Efos;2045;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;XS2647371843;EUR;133;615214.92;obligacje;PKN PW Equity
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2045 - Efos;2045;Dłużne papiery wartościowe;Raiffeisen Bank International AG;XS2682093526;EUR;3;1394371.69;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2045 - Efos;2045;Dłużne papiery wartościowe;Ceska Sporitelna AS;XS2746647036;EUR;3;1405393.57;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2045 - Efos;2045;Dłużne papiery wartościowe;Powszechna Kasa Oszczednosci Bank Polski SA;XS2788380306;EUR;742;3336484.76;obligacje;nan
@@ -2963,13 +2963,13 @@
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2050 - Efos;2050;Dłużne papiery wartościowe;Bank Gospodarstwa Krajowego;PL0000500328;PLN;7840;7690454.37;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2050 - Efos;2050;Dłużne papiery wartościowe;m Bank SA;PLBRE0005227;PLN;4;1986366.74;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2050 - Efos;2050;Dłużne papiery wartościowe;Santander Bank Polska S.A.;PLBZ00000341;PLN;3;1544273.82;obligacje;nan
-2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2050 - Efos;2050;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;PLO037100016;PLN;2;166168.68;akcje;PKN PW Equity
+2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2050 - Efos;2050;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;PLO037100016;PLN;2;166168.68;obligacje;PKN PW Equity
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2050 - Efos;2050;Dłużne papiery wartościowe;Powszechna Kasa Oszczednosci Bank Polski SA;PLO046700012;PLN;2;1033775.62;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2050 - Efos;2050;Dłużne papiery wartościowe;Powszechna Kasa Oszczednosci Bank Polski SA;PLO046700020;PLN;4;2041640.62;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2050 - Efos;2050;Dłużne papiery wartościowe;Bank Pekao SA;PLPEKAO00289;PLN;20;20458;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2050 - Efos;2050;Dłużne papiery wartościowe;Polski Fundusz Rozwoju S.A.;PLPFR0000027;PLN;1;1000825.53;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2050 - Efos;2050;Dłużne papiery wartościowe;Polski Fundusz Rozwoju S.A.;PLPFR0000092;PLN;4;3632858.96;obligacje;nan
-2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2050 - Efos;2050;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;PLPKN0000208;PLN;1;100436.1;akcje;PKN PW Equity
+2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2050 - Efos;2050;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;PLPKN0000208;PLN;1;100436.1;obligacje;PKN PW Equity
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2050 - Efos;2050;Dłużne papiery wartościowe;Skarb Państwa;XS2586944659;EUR;390;1790106.86;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2050 - Efos;2050;Dłużne papiery wartościowe;Bank Gospodarstwa Krajowego;XS2625207571;USD;850;3417760;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2050 - Efos;2050;Dłużne papiery wartościowe;Raiffeisen Bank International AG;XS2682093526;EUR;2;929581.16;obligacje;nan
@@ -3096,7 +3096,7 @@
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2055 - Efos;2055;Dłużne papiery wartościowe;Bank Gospodarstwa Krajowego;PL0000500328;PLN;5269;5168495.41;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2055 - Efos;2055;Dłużne papiery wartościowe;m Bank SA;PLBRE0005227;PLN;3;1489775.06;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2055 - Efos;2055;Dłużne papiery wartościowe;Santander Bank Polska S.A.;PLBZ00000341;PLN;2;1029515.88;obligacje;nan
-2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2055 - Efos;2055;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;PLO037100016;PLN;2;166168.68;akcje;PKN PW Equity
+2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2055 - Efos;2055;Dłużne papiery wartościowe;Polski Koncern Naftowy Orlen SA;PLO037100016;PLN;2;166168.68;obligacje;PKN PW Equity
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2055 - Efos;2055;Dłużne papiery wartościowe;Powszechna Kasa Oszczednosci Bank Polski SA;PLO046700012;PLN;2;1033775.62;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2055 - Efos;2055;Dłużne papiery wartościowe;Powszechna Kasa Oszczednosci Bank Polski SA;PLO046700020;PLN;3;1531230.47;obligacje;nan
 2024-12-30;Allianz Polska TFI S.A.;Allianz SFIO Plan Emerytalny 2055 - Efos;2055;Dłużne papiery wartościowe;Bank Pekao SA;PLPEKAO00289;PLN;15;15343.5;obligacje;nan
@@ -3600,7 +3600,7 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego,;iShares Core S&P 500 UCITS ETF;nan;PLN;nan;257875.25;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;Gmina Lesznowola - LESZW J19 1234 - 20.12.2034;nan;PLN;nan;34853.35;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;Miasto Mysłowice - MYSL B14 290123 - 31.12.2028;nan;PLN;nan;11406.45;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do;Bank Polska Kasa Opieki S.A. - PEO1027 - 29.10.2027;PLPEKAO00016;PLN;1531.33;211170.6;akcje;PEO PW Equity
+2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do;Bank Polska Kasa Opieki S.A. - PEO1027 - 29.10.2027;nan;PLN;1531.33;211170.6;obligacje;PEO PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do;Cyfrowy Polsat S.A. - CPS0130 - 11.01.2030;nan;PLN;nan;125110.44;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do;Dekpol S.A. - DEK0628 - 06.06.2028;nan;PLN;nan;101247.3;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2045 DFE;2045;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do;Develia S.A. - DVL0528 - 19.05.2028;nan;PLN;nan;57245.44;obligacje;nan
@@ -3821,7 +3821,7 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;iShares Core S&P 500 UCITS ETF;nan;PLN;nan;54153.8;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;Gmina Lesznowola - LESZW J19 1234 - 20.12.2034;nan;PLN;nan;5974.86;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;Miasto Mysłowice - MYSL B14 290123 - 31.12.2028;nan;PLN;nan;2073.9;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Bank Polska Kasa Opieki S.A. - PEO1027 - 29.10.2027;PLPEKAO00016;PLN;297.35;41004;akcje;PEO PW Equity
+2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Bank Polska Kasa Opieki S.A. - PEO1027 - 29.10.2027;nan;PLN;297.35;41004;obligacje;PEO PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Cyfrowy Polsat S.A. - CPS0130 - 11.01.2030;nan;PLN;nan;24594.36;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Dekpol S.A. - DEK0628 - 06.06.2028;nan;PLN;nan;20454;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2060 DFE;2060;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Develia S.A. - DVL0528 - 19.05.2028;nan;PLN;nan;11244.64;obligacje;nan
@@ -3902,7 +3902,7 @@
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2025;2025;Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania mające siedzibę za granicą;ISHARES CORE S&P 500 UCITS ETF;IE00B5BMR087;EUR;366;939746.55;inne;nan
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2025;2025;Akcje;DINO POLSKA S.A.;PLDINPL00011;PLN;404;157479.2;akcje;DNP PW Equity
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2025;2025;Dłużne papiery wartościowe;POWSZECHNA KASA OSZCZĘDNOŚCI BANK POLSKI S.A.;PLPKO0000099;PLN;1;103607.37;obligacje;nan
-2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2025;2025;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;51;52167.9;akcje;PEO PW Equity
+2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2025;2025;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;51;52167.9;obligacje;PEO PW Equity
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2025;2025;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000110383;PLN;246;245143.92;obligacje;nan
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2025;2025;Akcje;CYBER_FOLKS S.A.;PLR220000018;PLN;173;26036.5;akcje;CBF PW Equity
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2025;2025;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000107611;PLN;52;48971.52;obligacje;nan
@@ -4053,7 +4053,7 @@
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2030;2030;Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania mające siedzibę za granicą;ISHARES CORE S&P 500 UCITS ETF;IE00B5BMR087;EUR;1744;4477918.04;inne;nan
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2030;2030;Akcje;DINO POLSKA S.A.;PLDINPL00011;PLN;1731;674743.8;akcje;DNP PW Equity
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2030;2030;Dłużne papiery wartościowe;POWSZECHNA KASA OSZCZĘDNOŚCI BANK POLSKI S.A.;PLPKO0000099;PLN;1;103607.37;obligacje;nan
-2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2030;2030;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;40;40916;akcje;PEO PW Equity
+2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2030;2030;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;40;40916;obligacje;PEO PW Equity
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2030;2030;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000110383;PLN;199;198307.48;obligacje;nan
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2030;2030;Akcje;MARVIPOL DEVELOPMENT S.A.;PLMRVDV00011;PLN;439;2739.36;akcje;MVP PW Equity
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2030;2030;Akcje;CYBER_FOLKS S.A.;PLR220000018;PLN;809;121754.5;akcje;CBF PW Equity
@@ -4062,7 +4062,7 @@
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2030;2030;Akcje;ML SYSTEM S.A.;PLMLSTM00015;PLN;327;6088.74;akcje;MLS PW Equity
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2030;2030;Dłużne papiery wartościowe;PGE POLSKA GRUPA ENERGETYCZNA S.A.;PLPGER000069;PLN;500;505945;obligacje;nan
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2030;2030;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000111738;PLN;120;121190.4;obligacje;nan
-2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2030;2030;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00313;PLN;1;504667.67;akcje;PEO PW Equity
+2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2030;2030;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00313;PLN;1;504667.67;obligacje;PEO PW Equity
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2030;2030;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000111928;PLN;450;440154;obligacje;nan
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2030;2030;Akcje;SELVITA S.A.;PLSLVCR00029;PLN;1278;63261;akcje;SLV PW Equity
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2030;2030;Akcje;CREEPY JAR S.A.;PLCRPJR00019;PLN;27;6804;akcje;CRJ PW Equity
@@ -4295,7 +4295,7 @@
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2035;2035;Dłużne papiery wartościowe;GMINA OPOCZNO;PLO276600015;PLN;40;40349.6;obligacje;nan
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2035;2035;Dłużne papiery wartościowe;GMINA MILICZ;PLO276400119;PLN;40;39942.4;obligacje;nan
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2035;2035;Akcje;ULTIMATE GAMES SP. A.;PLULTGM00013;PLN;222;1771.56;akcje;ULG PW Equity
-2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2035;2035;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00313;PLN;1;504667.67;akcje;PEO PW Equity
+2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2035;2035;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00313;PLN;1;504667.67;obligacje;PEO PW Equity
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2035;2035;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000111738;PLN;10;10099.2;obligacje;nan
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2035;2035;Dłużne papiery wartościowe;PGE POLSKA GRUPA ENERGETYCZNA S.A.;PLPGER000069;PLN;500;505945;obligacje;nan
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2040;2040;Akcje;AUTO PARTNER S.A.;PLATPRT00018;PLN;11874;235105.2;akcje;APR PW Equity
@@ -4316,7 +4316,7 @@
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2040;2040;Akcje;ML SYSTEM S.A.;PLMLSTM00015;PLN;784;14598.08;akcje;MLS PW Equity
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2040;2040;Akcje;AMREST HOLDINGS SE;ES0105375002;PLN;73;1357.8;akcje;EAT PW Equity
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2040;2040;Dłużne papiery wartościowe;PGE POLSKA GRUPA ENERGETYCZNA S.A.;PLPGER000069;PLN;600;607134;obligacje;nan
-2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2040;2040;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00313;PLN;1;504667.67;akcje;PEO PW Equity
+2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2040;2040;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00313;PLN;1;504667.67;obligacje;PEO PW Equity
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2040;2040;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000111928;PLN;10;9781.2;obligacje;nan
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2040;2040;Akcje;SELVITA S.A.;PLSLVCR00029;PLN;3047;150826.5;akcje;SLV PW Equity
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2040;2040;Akcje;CREEPY JAR S.A.;PLCRPJR00019;PLN;64;16128;akcje;CRJ PW Equity
@@ -5079,7 +5079,7 @@
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2060;2060;Akcje;UNIMOT S.A.;PLUNMOT00013;PLN;107;15365.2;akcje;UNT PW Equity
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2060;2060;Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania mające siedzibę za granicą;ISHARES CORE S&P 500 UCITS ETF;IE00B5BMR087;EUR;643;1650975.54;inne;nan
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2060;2060;Akcje;DINO POLSKA S.A.;PLDINPL00011;PLN;612;238557.6;akcje;DNP PW Equity
-2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2060;2060;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;2;2045.8;akcje;PEO PW Equity
+2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2060;2060;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;2;2045.8;obligacje;PEO PW Equity
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2060;2060;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000110383;PLN;1;996.52;obligacje;nan
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2060;2060;Akcje;MARVIPOL DEVELOPMENT S.A.;PLMRVDV00011;PLN;208;1297.92;akcje;MVP PW Equity
 2024-12-30;BNP Paribas TFI S.A.;BNP_Paribas_PPK_2060;2060;Akcje;CYBER_FOLKS S.A.;PLR220000018;PLN;287;43193.5;akcje;CBF PW Equity
@@ -7586,7 +7586,7 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;iShares Core S&P 500 UCITS ETF;nan;PLN;nan;131516.38;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;Gmina Lesznowola - LESZW J19 1234 - 20.12.2034;nan;PLN;nan;15932.96;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;Miasto Mysłowice - MYSL B14 290123 - 31.12.2028;nan;PLN;nan;6221.7;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Bank Polska Kasa Opieki S.A. - PEO1027 - 29.10.2027;PLPEKAO00016;PLN;564.96;77907.6;akcje;PEO PW Equity
+2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Bank Polska Kasa Opieki S.A. - PEO1027 - 29.10.2027;nan;PLN;564.96;77907.6;obligacje;PEO PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Cyfrowy Polsat S.A. - CPS0130 - 11.01.2030;nan;PLN;nan;47050.08;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Dekpol S.A. - DEK0628 - 06.06.2028;nan;PLN;nan;36817.2;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2055 DFE;2055;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Develia S.A. - DVL0528 - 19.05.2028;nan;PLN;nan;21467.04;obligacje;nan
@@ -7781,9 +7781,9 @@
 2024-12-31;Investors TFI S.A.;Investor PPK 2025;2025;Papiery;BANK GOSPODARSTWA KRAJOWEGO;PL0000500260;PLN;1500;1369260;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2025;2025;Papiery;BANK GOSPODARSTWA KRAJOWEGO;PL0000500328;PLN;4250;4171715;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2025;2025;Papiery;BANK GOSPODARSTWA KRAJOWEGO;PL0000500294;PLN;2100;1590015;inne;nan
-2024-12-31;Investors TFI S.A.;Investor PPK 2025;2025;Papiery;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;200;204620;akcje;PEO PW Equity
+2024-12-31;Investors TFI S.A.;Investor PPK 2025;2025;Papiery;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;200;204620;inne;PEO PW Equity
 2024-12-31;Investors TFI S.A.;Investor PPK 2025;2025;Papiery;ENEA S.A.;PLO129600030;PLN;4;408448.2;inne;nan
-2024-12-31;Investors TFI S.A.;Investor PPK 2025;2025;Papiery;KGHM POLSKA MIEDŹ S.A.;PLKGHM000041;PLN;1250;1287150;akcje;KGH PW Equity
+2024-12-31;Investors TFI S.A.;Investor PPK 2025;2025;Papiery;KGHM POLSKA MIEDŹ S.A.;PLKGHM000041;PLN;1250;1287150;inne;KGH PW Equity
 2024-12-31;Investors TFI S.A.;Investor PPK 2025;2025;Papiery;POWSZECHNA KASA OSZCZĘDNOŚCI BANK POLSKI S.A.;PLO046700012;PLN;21;32479.46;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2025;2025;Papiery;POLSKI FUNDUSZ ROZWOJU;PLPFR0000027;PLN;11;351.37;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2025;2025;Papiery;POLSKI FUNDUSZ ROZWOJU;PLPFR0000035;PLN;1;981453.08;inne;nan
@@ -7977,10 +7977,10 @@
 2024-12-31;Investors TFI S.A.;Investor PPK 2030;2030;Papiery;BANK GOSPODARSTWA KRAJOWEGO;PL0000500260;PLN;1299;1185779.16;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2030;2030;Papiery;BANK GOSPODARSTWA KRAJOWEGO;PL0000500328;PLN;4700;4613426;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2030;2030;Papiery;BANK GOSPODARSTWA KRAJOWEGO;PL0000500294;PLN;3950;2990742.5;inne;nan
-2024-12-31;Investors TFI S.A.;Investor PPK 2030;2030;Papiery;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;300;306930;akcje;PEO PW Equity
+2024-12-31;Investors TFI S.A.;Investor PPK 2030;2030;Papiery;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;300;306930;inne;PEO PW Equity
 2024-12-31;Investors TFI S.A.;Investor PPK 2030;2030;Papiery;ENEA S.A.;PLO129600022;PLN;101;12237;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2030;2030;Papiery;ENEA S.A.;PLO129600030;PLN;5;510560.25;inne;nan
-2024-12-31;Investors TFI S.A.;Investor PPK 2030;2030;Papiery;KGHM POLSKA MIEDŹ S.A.;PLKGHM000041;PLN;1650;1699038;akcje;KGH PW Equity
+2024-12-31;Investors TFI S.A.;Investor PPK 2030;2030;Papiery;KGHM POLSKA MIEDŹ S.A.;PLKGHM000041;PLN;1650;1699038;inne;KGH PW Equity
 2024-12-31;Investors TFI S.A.;Investor PPK 2030;2030;Papiery;POWSZECHNA KASA OSZCZĘDNOŚCI BANK POLSKI S.A.;PLO046700012;PLN;21;32479.46;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2030;2030;Papiery;POLSKI FUNDUSZ ROZWOJU;PLPFR0000027;PLN;22;702.74;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2030;2030;Papiery;POLSKI FUNDUSZ ROZWOJU;PLPFR0000035;PLN;1;981453.08;inne;nan
@@ -8175,10 +8175,10 @@
 2024-12-31;Investors TFI S.A.;Investor PPK 2035;2035;Papiery;BANK GOSPODARSTWA KRAJOWEGO;PL0000500260;PLN;1600;1460544;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2035;2035;Papiery;BANK GOSPODARSTWA KRAJOWEGO;PL0000500328;PLN;1706;1674575.48;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2035;2035;Papiery;BANK GOSPODARSTWA KRAJOWEGO;PL0000500294;PLN;2825;2138948.75;inne;nan
-2024-12-31;Investors TFI S.A.;Investor PPK 2035;2035;Papiery;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;200;204620;akcje;PEO PW Equity
+2024-12-31;Investors TFI S.A.;Investor PPK 2035;2035;Papiery;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;200;204620;inne;PEO PW Equity
 2024-12-31;Investors TFI S.A.;Investor PPK 2035;2035;Papiery;ENEA S.A.;PLO129600022;PLN;101;12237;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2035;2035;Papiery;ENEA S.A.;PLO129600030;PLN;5;510560.25;inne;nan
-2024-12-31;Investors TFI S.A.;Investor PPK 2035;2035;Papiery;KGHM POLSKA MIEDŹ S.A.;PLKGHM000041;PLN;1717;1768222.61;akcje;KGH PW Equity
+2024-12-31;Investors TFI S.A.;Investor PPK 2035;2035;Papiery;KGHM POLSKA MIEDŹ S.A.;PLKGHM000041;PLN;1717;1768222.61;inne;KGH PW Equity
 2024-12-31;Investors TFI S.A.;Investor PPK 2035;2035;Papiery;POWSZECHNA KASA OSZCZĘDNOŚCI BANK POLSKI S.A.;PLO046700012;PLN;21;32479.46;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2035;2035;Papiery;POLSKI FUNDUSZ ROZWOJU;PLPFR0000027;PLN;22;702.74;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2035;2035;Papiery;POWSZECHNY ZAKŁAD UBEZPIECZEŃ S.A.;PLPZU0000037;PLN;2;209914.24;inne;nan
@@ -8371,10 +8371,10 @@
 2024-12-31;Investors TFI S.A.;Investor PPK 2040;2040;Papiery;BANK GOSPODARSTWA KRAJOWEGO;PL0000500260;PLN;700;638988;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2040;2040;Papiery;BANK GOSPODARSTWA KRAJOWEGO;PL0000500328;PLN;1550;1521449;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2040;2040;Papiery;BANK GOSPODARSTWA KRAJOWEGO;PL0000500294;PLN;4240;3210316;inne;nan
-2024-12-31;Investors TFI S.A.;Investor PPK 2040;2040;Papiery;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;150;153465;akcje;PEO PW Equity
+2024-12-31;Investors TFI S.A.;Investor PPK 2040;2040;Papiery;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;150;153465;inne;PEO PW Equity
 2024-12-31;Investors TFI S.A.;Investor PPK 2040;2040;Papiery;ENEA S.A.;PLO129600022;PLN;101;12237;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2040;2040;Papiery;ENEA S.A.;PLO129600030;PLN;4;408448.2;inne;nan
-2024-12-31;Investors TFI S.A.;Investor PPK 2040;2040;Papiery;KGHM POLSKA MIEDŹ S.A.;PLKGHM000041;PLN;1250;1287150;akcje;KGH PW Equity
+2024-12-31;Investors TFI S.A.;Investor PPK 2040;2040;Papiery;KGHM POLSKA MIEDŹ S.A.;PLKGHM000041;PLN;1250;1287150;inne;KGH PW Equity
 2024-12-31;Investors TFI S.A.;Investor PPK 2040;2040;Papiery;POWSZECHNA KASA OSZCZĘDNOŚCI BANK POLSKI S.A.;PLO046700012;PLN;1;516239.73;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2040;2040;Papiery;POLSKI FUNDUSZ ROZWOJU;PLPFR0000027;PLN;11;351.37;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2040;2040;Papiery;POWSZECHNY ZAKŁAD UBEZPIECZEŃ S.A.;PLPZU0000037;PLN;1;104957.12;inne;nan
@@ -8567,9 +8567,9 @@
 2024-12-31;Investors TFI S.A.;Investor PPK 2045;2045;Papiery;BANK GOSPODARSTWA KRAJOWEGO;PL0000500302;PLN;3000;1998330;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2045;2045;Papiery;BANK GOSPODARSTWA KRAJOWEGO;PL0000500328;PLN;300;294474;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2045;2045;Papiery;BANK GOSPODARSTWA KRAJOWEGO;PL0000500294;PLN;3750;2839312.5;inne;nan
-2024-12-31;Investors TFI S.A.;Investor PPK 2045;2045;Papiery;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;157;160626.7;akcje;PEO PW Equity
+2024-12-31;Investors TFI S.A.;Investor PPK 2045;2045;Papiery;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;157;160626.7;inne;PEO PW Equity
 2024-12-31;Investors TFI S.A.;Investor PPK 2045;2045;Papiery;ENEA S.A.;PLO129600030;PLN;4;408448.2;inne;nan
-2024-12-31;Investors TFI S.A.;Investor PPK 2045;2045;Papiery;KGHM POLSKA MIEDŹ S.A.;PLKGHM000041;PLN;625;643575;akcje;KGH PW Equity
+2024-12-31;Investors TFI S.A.;Investor PPK 2045;2045;Papiery;KGHM POLSKA MIEDŹ S.A.;PLKGHM000041;PLN;625;643575;inne;KGH PW Equity
 2024-12-31;Investors TFI S.A.;Investor PPK 2045;2045;Papiery;POWSZECHNA KASA OSZCZĘDNOŚCI BANK POLSKI S.A.;PLO046700012;PLN;1;516239.73;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2045;2045;Papiery;POLSKI FUNDUSZ ROZWOJU;PLPFR0000027;PLN;11;351.37;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2045;2045;Papiery;POWSZECHNY ZAKŁAD UBEZPIECZEŃ S.A.;PLPZU0000037;PLN;1;104957.12;inne;nan
@@ -8758,9 +8758,9 @@
 2024-12-31;Investors TFI S.A.;Investor PPK 2050;2050;Papiery;BANK GOSPODARSTWA KRAJOWEGO;PL0000500302;PLN;2110;1405492.1;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2050;2050;Papiery;BANK GOSPODARSTWA KRAJOWEGO;PL0000500328;PLN;250;245395;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2050;2050;Papiery;BANK GOSPODARSTWA KRAJOWEGO;PL0000500294;PLN;2860;2165449;inne;nan
-2024-12-31;Investors TFI S.A.;Investor PPK 2050;2050;Papiery;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;75;76732.5;akcje;PEO PW Equity
+2024-12-31;Investors TFI S.A.;Investor PPK 2050;2050;Papiery;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;75;76732.5;inne;PEO PW Equity
 2024-12-31;Investors TFI S.A.;Investor PPK 2050;2050;Papiery;ENEA S.A.;PLO129600030;PLN;2;204224.1;inne;nan
-2024-12-31;Investors TFI S.A.;Investor PPK 2050;2050;Papiery;KGHM POLSKA MIEDŹ S.A.;PLKGHM000041;PLN;450;463374;akcje;KGH PW Equity
+2024-12-31;Investors TFI S.A.;Investor PPK 2050;2050;Papiery;KGHM POLSKA MIEDŹ S.A.;PLKGHM000041;PLN;450;463374;inne;KGH PW Equity
 2024-12-31;Investors TFI S.A.;Investor PPK 2050;2050;Papiery;POWSZECHNY ZAKŁAD UBEZPIECZEŃ S.A.;PLPZU0000037;PLN;1;104957.12;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2050;2050;Zagraniczne;FIDELITY MSCI EUROPE INDEX FUND;IE00BYX5MD61;EUR;3500;121495.49;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2050;2050;Zagraniczne;FIDELITY MSCI WORLD INDEX FUND;IE00BYX5NK04;USD;16000;643402.82;inne;nan
@@ -8947,9 +8947,9 @@
 2024-12-31;Investors TFI S.A.;Investor PPK 2055;2055;Papiery;BANK GOSPODARSTWA KRAJOWEGO;PL0000500302;PLN;1800;1198998;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2055;2055;Papiery;BANK GOSPODARSTWA KRAJOWEGO;PL0000500328;PLN;270;265026.6;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2055;2055;Papiery;BANK GOSPODARSTWA KRAJOWEGO;PL0000500294;PLN;1550;1173582.5;inne;nan
-2024-12-31;Investors TFI S.A.;Investor PPK 2055;2055;Papiery;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;150;153465;akcje;PEO PW Equity
+2024-12-31;Investors TFI S.A.;Investor PPK 2055;2055;Papiery;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;150;153465;inne;PEO PW Equity
 2024-12-31;Investors TFI S.A.;Investor PPK 2055;2055;Papiery;ENEA S.A.;PLO129600030;PLN;1;102112.05;inne;nan
-2024-12-31;Investors TFI S.A.;Investor PPK 2055;2055;Papiery;KGHM POLSKA MIEDŹ S.A.;PLKGHM000041;PLN;280;288321.6;akcje;KGH PW Equity
+2024-12-31;Investors TFI S.A.;Investor PPK 2055;2055;Papiery;KGHM POLSKA MIEDŹ S.A.;PLKGHM000041;PLN;280;288321.6;inne;KGH PW Equity
 2024-12-31;Investors TFI S.A.;Investor PPK 2055;2055;Papiery;POWSZECHNY ZAKŁAD UBEZPIECZEŃ S.A.;PLPZU0000037;PLN;1;104957.12;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2055;2055;Zagraniczne;FIDELITY MSCI EUROPE INDEX FUND;IE00BYX5MD61;EUR;2000;69425.99;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2055;2055;Zagraniczne;FIDELITY MSCI WORLD INDEX FUND;IE00BYX5NK04;USD;8000;321701.41;inne;nan
@@ -9133,8 +9133,8 @@
 2024-12-31;Investors TFI S.A.;Investor PPK 2060;2060;Papiery;BANK GOSPODARSTWA KRAJOWEGO;PL0000500260;PLN;100;91284;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2060;2060;Papiery;BANK GOSPODARSTWA KRAJOWEGO;PL0000500328;PLN;150;147237;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2060;2060;Papiery;BANK GOSPODARSTWA KRAJOWEGO;PL0000500294;PLN;515;389932.25;inne;nan
-2024-12-31;Investors TFI S.A.;Investor PPK 2060;2060;Papiery;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;17;17392.7;akcje;PEO PW Equity
-2024-12-31;Investors TFI S.A.;Investor PPK 2060;2060;Papiery;KGHM POLSKA MIEDŹ S.A.;PLKGHM000041;PLN;92;94734.24;akcje;KGH PW Equity
+2024-12-31;Investors TFI S.A.;Investor PPK 2060;2060;Papiery;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;17;17392.7;inne;PEO PW Equity
+2024-12-31;Investors TFI S.A.;Investor PPK 2060;2060;Papiery;KGHM POLSKA MIEDŹ S.A.;PLKGHM000041;PLN;92;94734.24;inne;KGH PW Equity
 2024-12-31;Investors TFI S.A.;Investor PPK 2060;2060;Zagraniczne;FIDELITY MSCI EUROPE INDEX FUND;IE00BYX5MD61;EUR;300;10413.9;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2060;2060;Zagraniczne;FIDELITY MSCI WORLD INDEX FUND;IE00BYX5NK04;USD;1400;56297.75;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2060;2060;Zagraniczne;FIDELITY S&P 500 INDEX FUND;IE00BYX5MS15;USD;1300;62317.41;inne;nan
@@ -9305,8 +9305,8 @@
 2024-12-31;Investors TFI S.A.;Investor PPK 2065;2065;Papiery;BANK GOSPODARSTWA KRAJOWEGO;PL0000500302;PLN;20;13322.2;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2065;2065;Papiery;BANK GOSPODARSTWA KRAJOWEGO;PL0000500328;PLN;31;30428.98;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2065;2065;Papiery;BANK GOSPODARSTWA KRAJOWEGO;PL0000500294;PLN;10;7571.5;inne;nan
-2024-12-31;Investors TFI S.A.;Investor PPK 2065;2065;Papiery;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;8;8184.8;akcje;PEO PW Equity
-2024-12-31;Investors TFI S.A.;Investor PPK 2065;2065;Papiery;KGHM POLSKA MIEDŹ S.A.;PLKGHM000041;PLN;17;17505.24;akcje;KGH PW Equity
+2024-12-31;Investors TFI S.A.;Investor PPK 2065;2065;Papiery;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;8;8184.8;inne;PEO PW Equity
+2024-12-31;Investors TFI S.A.;Investor PPK 2065;2065;Papiery;KGHM POLSKA MIEDŹ S.A.;PLKGHM000041;PLN;17;17505.24;inne;KGH PW Equity
 2024-12-31;Investors TFI S.A.;Investor PPK 2065;2065;Zagraniczne;ISHARES CORE MSCI WORLD UCITS ETF;IE00B4L5Y983;USD;78;34525.91;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2065;2065;Zagraniczne;XTRACKERS S&P 500 EQUAL WEIGHT UCITS ETF;IE00BLNMYC90;USD;83;32569.43;inne;nan
 2024-12-31;Investors TFI S.A.;Investor PPK 2065;2065;Kwity;ALIBABA GROUP HOLDING LIMITED;US01609W1027;USD;17;5911.59;inne;nan
@@ -10231,13 +10231,13 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Dłużne papiery wartościowe;BANK GOSPODARSTWA KRAJOWEGO;PL0000500310;PLN;200;179810;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Dłużne papiery wartościowe;ATAL S.A.;PLATAL000236;PLN;63;63999.18;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Dłużne papiery wartościowe;DOM DEVELOPMENT S.A.;PLDMDVL00103;PLN;18;18479.7;obligacje;nan
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Dłużne papiery wartościowe;KGHM POLSKA MIEDŹ S.A.;PLO023600011;PLN;450;455256;akcje;KGH PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Dłużne papiery wartościowe;KGHM POLSKA MIEDŹ S.A.;PLO023600011;PLN;450;455256;obligacje;KGH PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Dłużne papiery wartościowe;DOM DEVELOPMENT S.A.;PLO106800017;PLN;200;205786;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Dłużne papiery wartościowe;KRUK S.A.;PLO163600029;PLN;41;35902.47;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Dłużne papiery wartościowe;P4 SP. Z O.O.;PLO266100034;PLN;30;29865.3;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Dłużne papiery wartościowe;POZNAŃSKA KORPORACJA BUDOWLANA PEKABEX S.A.;PLPKBEX00106;PLN;60;60282.6;obligacje;nan
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00354;PLN;1;518419.15;akcje;PEO PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00362;PLN;1;508767.07;akcje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00354;PLN;1;518419.15;obligacje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00362;PLN;1;508767.07;obligacje;PEO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Dłużne papiery wartościowe;BANK GOSPODARSTWA KRAJOWEGO;XS2778272471;EUR;107;484519.47;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Tytuły uczestnictwa zagranicznego;nan;MULTI UNITS FRANCE SICAV SUB-FUND LYXOR MSCI EUROPE DR UFR0010261198;EUR;713;559652.32;inne;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Tytuły uczestnictwa zagranicznego;VANGUARD FUNDS PLC SUB-FUND VANGUARD S&P 500 UCITS ETF;IE00B3XXRP09;USD;2586;1190990.15;inne;nan
@@ -10278,7 +10278,7 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000108817;PLN;1050;1082655;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;ASSECO SOUTH EASTERN EUROPE S.A.;PLASSEE00014;PLN;1247;61103;akcje;ASE PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;WIRTUALNA POLSKA HOLDING S.A.;PLWRTPL00027;PLN;970;75951;akcje;WPL PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1US011725AX30;USD;-352000;-13704.13;akcje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1US011725AX30;USD;-352000;-13704.13;inne;PEO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;TORPOL S.A.;PLTORPL00016;PLN;289;9363.6;akcje;TOR PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;CYFROWY POLSAT S.A.;PLCFRPT00013;PLN;1783;25211.62;akcje;CPS PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;TAURON POLSKA ENERGIA S.A.;PLTAURN00011;PLN;10851;40788.91;akcje;TPE PW Equity
@@ -10319,7 +10319,7 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;ING BANK ŚLĄSKI S.A.;PLBSK0000017;PLN;85;20527.5;akcje;ING PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;XTB S.A.;PLXTRDM00011;PLN;2443;171987.2;akcje;XTB PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;ORANGE POLSKA S.A.;PLTLKPL00017;PLN;8195;60364.37;akcje;OPL PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1EU011725AX30;EUR;-250000;81.16;akcje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1EU011725AX30;EUR;-250000;81.16;inne;PEO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;PGE POLSKA GRUPA ENERGETYCZNA S.A.;PLPGER000010;PLN;6005;36450.35;akcje;PGE PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;STALEXPORT AUTOSTRADY S.A.;PLSTLEX00019;PLN;10597;32320.85;akcje;STX PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;WITTCHEN S.A.;PLWTCHN00030;PLN;1894;39395.2;akcje;WTN PW Equity
@@ -10329,16 +10329,16 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000105391;PLN;4300;4507819;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;PEPCO GROUP N.V.;NL0015000AU7;PLN;2902;47650.84;akcje;PCO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;ARCHICOM S.A.;PLARHCM00016;PLN;1463;59983;akcje;ARH PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Instrumenty pochodne;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A.;PL0GF0030072;PLN;15;665400;akcje;GPW PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Instrumenty pochodne;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A.;PL0GF0030072;PLN;15;665400;inne;GPW PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Dłużne papiery wartościowe;DINO POLSKA S.A.;PLO226400011;PLN;56;57036;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000115697;PLN;1600;1581952;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Depozyty;nan;nan;PLN;nan;359689.28;inne;nan
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2US011725AX30;USD;-15000;-57.24;akcje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2US011725AX30;USD;-15000;-57.24;inne;PEO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000111738;PLN;272;274698.24;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;ALIOR BANK S.A.;PLALIOR00045;PLN;2365;203342.7;akcje;ALR PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;SELVITA S.A.;PLSLVCR00029;PLN;786;38907;akcje;SLV PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2025;2025;Akcje;CTP N.V.;NL00150006R6;EUR;814;51765.63;akcje;CTPNV NA Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1EU011725AX31;EUR;-727000;236.02;akcje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1EU011725AX31;EUR;-727000;236.02;inne;PEO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Depozyty;nan;nan;PLN;nan;323.03;inne;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Akcje;WITTCHEN S.A.;PLWTCHN00030;PLN;5972;124217.6;akcje;WTN PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Akcje;WIRTUALNA POLSKA HOLDING S.A.;PLWRTPL00027;PLN;4087;320012.1;akcje;WPL PW Equity
@@ -10387,8 +10387,8 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Depozyty;nan;nan;PLN;nan;1378698.46;inne;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Akcje;XTB S.A.;PLXTRDM00011;PLN;10306;725542.4;akcje;XTB PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Akcje;ZALANDO SE;DE000ZAL1111;EUR;1983;274503.48;akcje;ZAL GR Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2US011725AX31;USD;-55000;-209.88;akcje;PEO PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1US011725AX31;USD;-1304000;-50767.58;akcje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2US011725AX31;USD;-55000;-209.88;inne;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1US011725AX31;USD;-1304000;-50767.58;inne;PEO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Akcje;CCC S.A.;PLCCC0000016;PLN;4320;794016;akcje;MDV PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Akcje;ALIOR BANK S.A.;PLALIOR00045;PLN;9922;853093.56;akcje;ALR PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Akcje;CTP N.V.;NL00150006R6;EUR;2469;157013.94;akcje;CTPNV NA Equity
@@ -10419,9 +10419,9 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Dłużne papiery wartościowe;EUROCASH S.A.;PLEURCH00037;PLN;53;53267.12;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Dłużne papiery wartościowe;ATAL S.A.;PLATAL000210;PLN;36;36460.44;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Dłużne papiery wartościowe;BANK GOSPODARSTWA KRAJOWEGO;PL0000500278;PLN;140;116733.4;obligacje;nan
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00362;PLN;1;508767.07;akcje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00362;PLN;1;508767.07;obligacje;PEO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Dłużne papiery wartościowe;AB S.A.;PLAB00000118;PLN;17;177247.95;obligacje;nan
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00354;PLN;2;1036838.3;akcje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00354;PLN;2;1036838.3;obligacje;PEO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Dłużne papiery wartościowe;CYFROWY POLSAT S.A.;PLCFRPT00070;PLN;25;26669;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Dłużne papiery wartościowe;BANK GOSPODARSTWA KRAJOWEGO;PL0000500310;PLN;200;179810;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Dłużne papiery wartościowe;BANK GOSPODARSTWA KRAJOWEGO;PL0000500286;PLN;800;785728;obligacje;nan
@@ -10438,7 +10438,7 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Depozyty;nan;nan;EUR;nan;0.17;inne;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000113783;PLN;12200;9482328;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Dłużne papiery wartościowe;ALIOR BANK S.A.;PLALIOR00276;PLN;1;504604.7;obligacje;nan
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Dłużne papiery wartościowe;KGHM POLSKA MIEDŹ S.A.;PLO023600011;PLN;670;677825.6;akcje;KGH PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Dłużne papiery wartościowe;KGHM POLSKA MIEDŹ S.A.;PLO023600011;PLN;670;677825.6;obligacje;KGH PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Dłużne papiery wartościowe;DOM DEVELOPMENT S.A.;PLDMDVL00103;PLN;21;21559.65;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000113130;PLN;800;803536;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000112736;PLN;3600;2847456;obligacje;nan
@@ -10455,7 +10455,7 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000105391;PLN;8200;8596306;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000108866;PLN;2413;2345484.26;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000110383;PLN;2900;2889908;obligacje;nan
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Instrumenty pochodne;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A.;PL0GF0030072;PLN;55;2439800;akcje;GPW PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2030;2030;Instrumenty pochodne;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A.;PL0GF0030072;PLN;55;2439800;inne;GPW PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Depozyty;nan;nan;PLN;nan;540183.03;inne;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery wartościowe;ORLEN S.A.;PLPKN0000208;PLN;1;100246.63;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery wartościowe;VOXEL S.A.;PLVOXEL00147;PLN;42;25482.24;obligacje;nan
@@ -10467,10 +10467,10 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Tytuły uczestnictwa zagranicznego;ISHARES EURO STOXX BANKS 30-15 UCITS ETF;DE0006289309;EUR;24648;1498154.35;inne;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Tytuły uczestnictwa zagranicznego;MULTI UNITS FRANCE SICAV SUB-FUND LYXOR MSCI EUROPE DR UFR0010261198;nan;EUR;7923;6218969.55;inne;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery wartościowe;POZNAŃSKA KORPORACJA BUDOWLANA PEKABEX S.A.;PLPKBEX00106;PLN;80;80376.8;obligacje;nan
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00354;PLN;2;1036838.3;akcje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00354;PLN;2;1036838.3;obligacje;PEO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery wartościowe;P4 SP. Z O.O.;PLO266100034;PLN;50;49775.5;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery wartościowe;KRUK S.A.;PLO163600045;PLN;120;133839.6;obligacje;nan
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery wartościowe;KGHM POLSKA MIEDŹ S.A.;PLO023600011;PLN;740;748643.2;akcje;KGH PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery wartościowe;KGHM POLSKA MIEDŹ S.A.;PLO023600011;PLN;740;748643.2;obligacje;KGH PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery wartościowe;KRUK S.A.;PLO163600011;PLN;140;144972.8;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery wartościowe;POWSZECHNA KASA OSZCZĘDNOŚCI BANK POLSKI S.A.;PLO046700012;PLN;2;1033775.62;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery wartościowe;POWSZECHNA KASA OSZCZĘDNOŚCI BANK POLSKI S.A.;PLO046700020;PLN;1;512994.5;obligacje;nan
@@ -10496,14 +10496,14 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery wartościowe;SANTANDER BANK POLSKA S.A.;PLBZ00000341;PLN;1;515160.96;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000111498;PLN;3350;2985084.5;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery wartościowe;DOM DEVELOPMENT S.A.;PLO106800025;PLN;690;693160.2;obligacje;nan
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1US011725AX32;USD;-3397000;-132252.66;akcje;PEO PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2US011725AX32;USD;-138000;-526.61;akcje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1US011725AX32;USD;-3397000;-132252.66;inne;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2US011725AX32;USD;-138000;-526.61;inne;PEO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000108197;PLN;50;50203.5;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000110383;PLN;3600;3587472;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000107611;PLN;5550;5226768;obligacje;nan
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Instrumenty pochodne;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A.;PL0GF0030072;PLN;160;7097600;akcje;GPW PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2EU011725AX32;EUR;-110000;-1094.59;akcje;PEO PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1EU011725AX32;EUR;-1759000;571.07;akcje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Instrumenty pochodne;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A.;PL0GF0030072;PLN;160;7097600;inne;GPW PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2EU011725AX32;EUR;-110000;-1094.59;inne;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1EU011725AX32;EUR;-1759000;571.07;inne;PEO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;XTB S.A.;PLXTRDM00011;PLN;27121;1909318.4;akcje;XTB PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;WITTCHEN S.A.;PLWTCHN00030;PLN;11635;242008;akcje;WTN PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery wartościowe;DINO POLSKA S.A.;PLO226400011;PLN;64;65184;obligacje;nan
@@ -10553,7 +10553,7 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;RAINBOW TOURS S.A.;PLRNBWT00031;PLN;4634;618175.6;akcje;RBW PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;RYVU THERAPEUTICS S.A.;PLSELVT00013;PLN;13851;533263.5;akcje;RVU PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;BUDIMEX S.A.;PLBUDMX00013;PLN;4;1866.4;akcje;BDX PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00362;PLN;2;1017534.14;akcje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00362;PLN;2;1017534.14;obligacje;PEO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;NEUCA S.A.;PLTRFRM00018;PLN;336;293328;akcje;NEU PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;ING BANK ŚLĄSKI S.A.;PLBSK0000017;PLN;943;227734.5;akcje;ING PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2035;2035;Akcje;POWSZECHNA KASA OSZCZĘDNOŚCI BANK POLSKI S.A.;PLPKO0000016;PLN;103660;6194721.6;akcje;PKO PW Equity
@@ -10581,7 +10581,7 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery wartościowe;ORLEN S.A.;PLPKN0000208;PLN;1;100246.63;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery wartościowe;UNIBEP S.A.;PLUNBEP00106;PLN;2400;244320;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery wartościowe;ROBYG S.A.;PLROBYG00271;PLN;90;91190.7;obligacje;nan
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00354;PLN;2;1036838.3;akcje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00354;PLN;2;1036838.3;obligacje;PEO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery wartościowe;P4 SP. Z O.O.;PLO266100034;PLN;50;49775.5;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery wartościowe;KRUK S.A.;PLO163600011;PLN;150;155328;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery wartościowe;KRUK S.A.;PLO163600045;PLN;120;133839.6;obligacje;nan
@@ -10589,7 +10589,7 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery wartościowe;ERBUD S.A.;PLERBUD00079;PLN;90;92031.3;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery wartościowe;POWSZECHNA KASA OSZCZĘDNOŚCI BANK POLSKI S.A.;PLO046700020;PLN;1;512994.5;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery wartościowe;DOM DEVELOPMENT S.A.;PLDMDVL00145;PLN;79;80170.78;obligacje;nan
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery wartościowe;KGHM POLSKA MIEDŹ S.A.;PLO023600011;PLN;500;505840;akcje;KGH PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery wartościowe;KGHM POLSKA MIEDŹ S.A.;PLO023600011;PLN;500;505840;obligacje;KGH PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery wartościowe;EUROCASH S.A.;PLEURCH00037;PLN;72;72362.88;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery wartościowe;CYFROWY POLSAT S.A.;PLCFRPT00070;PLN;35;37336.6;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery wartościowe;ALIOR BANK S.A.;PLALIOR00276;PLN;1;504604.7;obligacje;nan
@@ -10608,11 +10608,11 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000108866;PLN;4712;4580158.24;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000108197;PLN;1500;1506105;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000107611;PLN;5450;5132592;obligacje;nan
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Instrumenty pochodne;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A.;PL0GF0030072;PLN;250;11090000;akcje;GPW PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2EU011725AX33;EUR;-138000;-1373.21;akcje;PEO PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1EU011725AX33;EUR;-2500000;811.63;akcje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Instrumenty pochodne;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A.;PL0GF0030072;PLN;250;11090000;inne;GPW PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2EU011725AX33;EUR;-138000;-1373.21;inne;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1EU011725AX33;EUR;-2500000;811.63;inne;PEO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Depozyty;nan;nan;PLN;nan;3778788.08;inne;nan
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2US011725AX33;USD;-234000;-892.95;akcje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2US011725AX33;USD;-234000;-892.95;inne;PEO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Akcje;XTB S.A.;PLXTRDM00011;PLN;39773;2800019.2;akcje;XTB PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Akcje;WIRTUALNA POLSKA HOLDING S.A.;PLWRTPL00027;PLN;15224;1192039.2;akcje;WPL PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Akcje;NEUCA S.A.;PLTRFRM00018;PLN;534;466182;akcje;NEU PW Equity
@@ -10625,7 +10625,7 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Akcje;TAURON POLSKA ENERGIA S.A.;PLTAURN00011;PLN;170138;639548.74;akcje;TPE PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Akcje;STALEXPORT AUTOSTRADY S.A.;PLSTLEX00019;PLN;83168;253662.4;akcje;STX PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Akcje;ASSECO POLAND S.A.;PLSOFTB00016;PLN;8845;850889;akcje;ACP PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1US011725AX33;USD;-5764000;-224405.17;akcje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1US011725AX33;USD;-5764000;-224405.17;inne;PEO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Akcje;SELVITA S.A.;PLSLVCR00029;PLN;12350;611325;akcje;SLV PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000113783;PLN;13750;10687050;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Akcje;SHOPER S.A.;PLSHPR000021;PLN;5119;203224.3;akcje;SHO PW Equity
@@ -10692,7 +10692,7 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Akcje;ATAL S.A.;PLATAL000046;PLN;9498;488197.2;akcje;1AT PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Akcje;BENEFIT SYSTEMS S.A.;PLBNFTS00018;PLN;1057;3060015;akcje;BFT PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Akcje;ZALANDO SE;DE000ZAL1111;EUR;5468;756926.39;akcje;ZAL GR Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00362;PLN;2;1017534.14;akcje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2040;2040;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00362;PLN;2;1017534.14;obligacje;PEO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Akcje;MO-BRUK S.A.;PLMOBRK00013;PLN;3825;1252687.5;akcje;MBR PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Akcje;POWSZECHNA KASA OSZCZĘDNOŚCI BANK POLSKI S.A.;PLPKO0000016;PLN;149308;8922646.08;akcje;PKO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Akcje;STALEXPORT AUTOSTRADY S.A.;PLSTLEX00019;PLN;87144;265789.2;akcje;STX PW Equity
@@ -10707,8 +10707,8 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Dłużne papiery wartościowe;UNIBEP S.A.;PLUNBEP00106;PLN;1500;152700;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Dłużne papiery wartościowe;ROBYG S.A.;PLROBYG00271;PLN;50;50661.5;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Dłużne papiery wartościowe;ORLEN S.A.;PLPKN0000208;PLN;1;100246.63;obligacje;nan
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00362;PLN;2;1017534.14;akcje;PEO PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00354;PLN;1;518419.15;akcje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00362;PLN;2;1017534.14;obligacje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00354;PLN;1;518419.15;obligacje;PEO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Dłużne papiery wartościowe;VOXEL S.A.;PLVOXEL00147;PLN;30;18201.6;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Tytuły uczestnictwa zagranicznego;MULTI UNITS FRANCE SICAV SUB-FUND LYXOR MSCI EUROPE DR UFR0010261198;nan;EUR;11299;8868880.09;inne;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Dłużne papiery wartościowe;TOYOTA LEASING POLSKA SP. Z O.O.;PLO338400032;PLN;4;403924.6;obligacje;nan
@@ -10745,11 +10745,11 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000108817;PLN;700;721770;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000108197;PLN;200;200814;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000105391;PLN;6550;6866561.5;obligacje;nan
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Instrumenty pochodne;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A.;PL0GF0030072;PLN;150;6654000;akcje;GPW PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2US011725AX34;USD;-252000;-961.64;akcje;PEO PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2EU011725AX34;EUR;-143000;-1422.97;akcje;PEO PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1US011725AX34;USD;-6206000;-241613.2;akcje;PEO PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1EU011725AX34;EUR;-2592000;841.5;akcje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Instrumenty pochodne;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A.;PL0GF0030072;PLN;150;6654000;inne;GPW PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2US011725AX34;USD;-252000;-961.64;inne;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2EU011725AX34;EUR;-143000;-1422.97;inne;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1US011725AX34;USD;-6206000;-241613.2;inne;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1EU011725AX34;EUR;-2592000;841.5;inne;PEO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Depozyty;nan;nan;PLN;nan;305.71;inne;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000109427;PLN;2667;2521968.54;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Depozyty;nan;nan;PLN;nan;4863103.36;inne;nan
@@ -10781,7 +10781,7 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Akcje;GRUPA KĘTY S.A.;PLKETY000011;PLN;831;567157.5;akcje;KTY PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Akcje;INTER CARS S.A.;PLINTCS00010;PLN;721;375641;akcje;CAR PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Akcje;GRUPA PRACUJ S.A.;PLGRPRC00015;PLN;33471;1914541.2;akcje;GPP PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Dłużne papiery wartościowe;KGHM POLSKA MIEDŹ S.A.;PLO023600011;PLN;520;526073.6;akcje;KGH PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Dłużne papiery wartościowe;KGHM POLSKA MIEDŹ S.A.;PLO023600011;PLN;520;526073.6;obligacje;KGH PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Tytuły uczestnictwa zagranicznego;VANGUARD FUNDS PLC SUB-FUND VANGUARD S&P 500 UCITS ETF IE00B3XXRP09;nan;USD;48032;22121283.62;inne;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Dłużne papiery wartościowe;KRUK S.A.;PLO163600011;PLN;100;103552;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2045;2045;Akcje;FERRO S.A.;PLFERRO00016;PLN;25521;916203.9;akcje;FRO PW Equity
@@ -10822,7 +10822,7 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000111498;PLN;1950;1737586.5;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000110383;PLN;2450;2441474;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000107611;PLN;2450;2307312;obligacje;nan
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2EU011725AX35;EUR;-114000;-1134.39;akcje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2EU011725AX35;EUR;-114000;-1134.39;inne;PEO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Akcje;XTB S.A.;PLXTRDM00011;PLN;32446;2284198.4;akcje;XTB PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Akcje;NEUCA S.A.;PLTRFRM00018;PLN;401;350073;akcje;NEU PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Akcje;TORPOL S.A.;PLTORPL00016;PLN;3522;114112.8;akcje;TOR PW Equity
@@ -10876,9 +10876,9 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Akcje;ORANGE POLSKA S.A.;PLTLKPL00017;PLN;82409;607024.69;akcje;OPL PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Akcje;WIRTUALNA POLSKA HOLDING S.A.;PLWRTPL00027;PLN;12848;1005998.4;akcje;WPL PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Akcje;WITTCHEN S.A.;PLWTCHN00030;PLN;11309;235227.2;akcje;WTN PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2US011725AX35;USD;-206000;-786.1;akcje;PEO PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1US011725AX35;USD;-5067000;-197269.43;akcje;PEO PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Instrumenty pochodne;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A.;PL0GF0030072;PLN;150;6654000;akcje;GPW PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2US011725AX35;USD;-206000;-786.1;inne;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1US011725AX35;USD;-5067000;-197269.43;inne;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Instrumenty pochodne;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A.;PL0GF0030072;PLN;150;6654000;inne;GPW PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000105391;PLN;3000;3144990;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000108817;PLN;600;618660;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000108866;PLN;2354;2288135.08;obligacje;nan
@@ -10886,7 +10886,7 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000111738;PLN;65;65644.8;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000112728;PLN;17;16869.44;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000113130;PLN;400;401768;obligacje;nan
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1EU011725AX35;EUR;-2089000;678.2;akcje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1EU011725AX35;EUR;-2089000;678.2;inne;PEO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000113783;PLN;6370;4951018.8;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000113460;PLN;1740;1598277;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000115192;PLN;2400;2637048;obligacje;nan
@@ -10903,7 +10903,7 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery wartościowe;CYFROWY POLSAT S.A.;PLCFRPT00070;PLN;12;12801.12;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery wartościowe;DOM DEVELOPMENT S.A.;PLDMDVL00145;PLN;43;43637.26;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery wartościowe;EUROCASH S.A.;PLEURCH00037;PLN;40;40201.6;obligacje;nan
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery wartościowe;KGHM POLSKA MIEDŹ S.A.;PLO023600011;PLN;320;323737.6;akcje;KGH PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery wartościowe;KGHM POLSKA MIEDŹ S.A.;PLO023600011;PLN;320;323737.6;obligacje;KGH PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery wartościowe;ORLEN S.A.;PLO037100016;PLN;1;81261.05;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery wartościowe;KRUK S.A.;PLO163600029;PLN;31;27145.77;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery wartościowe;DOM DEVELOPMENT S.A.;PLO106800017;PLN;130;133760.9;obligacje;nan
@@ -10918,8 +10918,8 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery wartościowe;UNIBEP S.A.;PLUNBEP00106;PLN;1100;111980;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery wartościowe;ROBYG S.A.;PLROBYG00271;PLN;40;40529.2;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery wartościowe;POZNAŃSKA KORPORACJA BUDOWLANA PEKABEX S.A.;PLPKBEX00106;PLN;40;40188.4;obligacje;nan
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00362;PLN;1;508767.07;akcje;PEO PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00354;PLN;1;518419.15;akcje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00362;PLN;1;508767.07;obligacje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00354;PLN;1;518419.15;obligacje;PEO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery wartościowe;TOYOTA LEASING POLSKA SP. Z O.O.;PLO338400032;PLN;3;302943.45;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery wartościowe;P4 SP. Z O.O.;PLO266100034;PLN;27;26878.77;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2050;2050;Dłużne papiery wartościowe;DINO POLSKA S.A.;PLO226400011;PLN;48;48888;obligacje;nan
@@ -10956,10 +10956,10 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000108817;PLN;420;433062;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Dłużne papiery wartościowe;KRUK S.A.;PLO163600045;PLN;40;44613.2;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000105391;PLN;2000;2096660;obligacje;nan
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2US011725AX36;USD;-136000;-518.98;akcje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2US011725AX36;USD;-136000;-518.98;inne;PEO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Dłużne papiery wartościowe;POZNAŃSKA KORPORACJA BUDOWLANA PEKABEX S.A.;PLPKBEX00106;PLN;20;20094.2;obligacje;nan
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2EU011725AX36;EUR;-75000;-746.31;akcje;PEO PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1US011725AX36;USD;-3358000;-130734.31;akcje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2EU011725AX36;EUR;-75000;-746.31;inne;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1US011725AX36;USD;-3358000;-130734.31;inne;PEO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Depozyty;nan;nan;PLN;nan;5764382.98;inne;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Akcje;XTB S.A.;PLXTRDM00011;PLN;21650;1524160;akcje;XTB PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Akcje;WITTCHEN S.A.;PLWTCHN00030;PLN;7414;154211.2;akcje;WTN PW Equity
@@ -10971,10 +10971,10 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Akcje;ORANGE POLSKA S.A.;PLTLKPL00017;PLN;54177;399067.78;akcje;OPL PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Tytuły uczestnictwa zagranicznego;MULTI UNITS FRANCE SICAV SUB-FUND LYXOR MSCI EUROPE DR UFR0010261198;nan;EUR;6488;5092600.59;inne;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Dłużne papiery wartościowe;BANK GOSPODARSTWA KRAJOWEGO;XS2778272471;EUR;107;484519.47;obligacje;nan
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1EU011725AX36;EUR;-1485000;482.11;akcje;PEO PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Dłużne papiery wartościowe;KGHM POLSKA MIEDŹ S.A.;PLO023600011;PLN;420;424905.6;akcje;KGH PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00362;PLN;1;508767.07;akcje;PEO PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Instrumenty pochodne;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A.;PL0GF0030072;PLN;110;4879600;akcje;GPW PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1EU011725AX36;EUR;-1485000;482.11;inne;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Dłużne papiery wartościowe;KGHM POLSKA MIEDŹ S.A.;PLO023600011;PLN;420;424905.6;obligacje;KGH PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Dłużne papiery wartościowe;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00362;PLN;1;508767.07;obligacje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Instrumenty pochodne;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A.;PL0GF0030072;PLN;110;4879600;inne;GPW PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000107611;PLN;1610;1516233.6;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Dłużne papiery wartościowe;KRUK S.A.;PLO163600029;PLN;20;17513.4;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2055;2055;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000108866;PLN;1703;1655350.06;obligacje;nan
@@ -11046,7 +11046,7 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Dłużne papiery wartościowe;P4 SP. Z O.O.;PLO266100034;PLN;4;3982.04;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Dłużne papiery wartościowe;KRUK S.A.;PLO163600045;PLN;25;27883.25;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Dłużne papiery wartościowe;KRUK S.A.;PLO163600011;PLN;15;15532.8;obligacje;nan
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Dłużne papiery wartościowe;KGHM POLSKA MIEDŹ S.A.;PLO023600011;PLN;190;192219.2;akcje;KGH PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Dłużne papiery wartościowe;KGHM POLSKA MIEDŹ S.A.;PLO023600011;PLN;190;192219.2;obligacje;KGH PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Dłużne papiery wartościowe;EUROCASH S.A.;PLEURCH00037;PLN;5;5025.2;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Dłużne papiery wartościowe;DOM DEVELOPMENT S.A.;PLDMDVL00145;PLN;9;9133.38;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Dłużne papiery wartościowe;DOM DEVELOPMENT S.A.;PLDMDVL00103;PLN;2;2053.3;obligacje;nan
@@ -11068,8 +11068,8 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000109427;PLN;440;416072.8;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000107611;PLN;560;527385.6;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000108197;PLN;147;147598.29;obligacje;nan
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2US011725AX37;USD;-62000;-236.59;akcje;PEO PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2EU011725AX37;EUR;-34000;-338.33;akcje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2US011725AX37;USD;-62000;-236.59;inne;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2EU011725AX37;EUR;-34000;-338.33;inne;PEO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Depozyty;nan;nan;PLN;nan;4058440.59;inne;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;WITTCHEN S.A.;PLWTCHN00030;PLN;3256;67724.8;akcje;WTN PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;WIRTUALNA POLSKA HOLDING S.A.;PLWRTPL00027;PLN;3922;307092.6;akcje;WPL PW Equity
@@ -11092,14 +11092,14 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;CD PROJEKT S.A.;PLOPTTC00011;PLN;3651;698983.95;akcje;CDR PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;XTB S.A.;PLXTRDM00011;PLN;10185;717024;akcje;XTB PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;ONDE S.A.;PLONDE000018;PLN;33;353.1;akcje;OND PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1EU011725AX37;EUR;-627000;203.56;akcje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1EU011725AX37;EUR;-627000;203.56;inne;PEO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;MIRBUD S.A.;PLMRBUD00015;PLN;20891;248185.08;akcje;MRB PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;MO-BRUK S.A.;PLMOBRK00013;PLN;932;305230;akcje;MBR PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;MLP GROUP S.A.;PLMLPGR00017;PLN;162;11016;akcje;MLG PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;LPP S.A.;PLLPP0000011;PLN;112;1741600;akcje;LPP PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;KRUK S.A.;PLKRK0000010;PLN;1026;426610.8;akcje;KRU PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1US011725AX37;USD;-1536000;-59799.85;akcje;PEO PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Instrumenty pochodne;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A.;PL0GF0030072;PLN;85;3770600;akcje;GPW PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1US011725AX37;USD;-1536000;-59799.85;inne;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Instrumenty pochodne;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A.;PL0GF0030072;PLN;85;3770600;inne;GPW PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;KGHM POLSKA MIEDŹ S.A.;PLKGHM000017;PLN;4360;501400;akcje;KGH PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Akcje;GRUPA KĘTY S.A.;PLKETY000011;PLN;178;121485;akcje;KTY PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2060;2060;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000108817;PLN;220;226842;obligacje;nan
@@ -11169,9 +11169,9 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000108866;PLN;38;36936.76;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000109427;PLN;33;31205.46;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000105391;PLN;200;209666;obligacje;nan
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;3US011725AX38;USD;-30000;-183.32;akcje;PEO PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2EU011725AX38;EUR;-4000;-39.8;akcje;PEO PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1US011725AX38;USD;-232000;-9032.27;akcje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;3US011725AX38;USD;-30000;-183.32;inne;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2EU011725AX38;EUR;-4000;-39.8;inne;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1US011725AX38;USD;-232000;-9032.27;inne;PEO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Depozyty;nan;nan;PLN;nan;1165081.38;inne;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;XTB S.A.;PLXTRDM00011;PLN;1629;114681.6;akcje;XTB PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;WIRTUALNA POLSKA HOLDING S.A.;PLWRTPL00027;PLN;642;50268.6;akcje;WPL PW Equity
@@ -11182,14 +11182,14 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;WITTCHEN S.A.;PLWTCHN00030;PLN;394;8195.2;akcje;WTN PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;ORANGE POLSKA S.A.;PLTLKPL00017;PLN;5219;38443.15;akcje;OPL PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;SELVITA S.A.;PLSLVCR00029;PLN;446;22077;akcje;SLV PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1EU011725AX38;EUR;-86000;27.92;akcje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;1EU011725AX38;EUR;-86000;27.92;inne;PEO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;SHOPER S.A.;PLSHPR000021;PLN;515;20445.5;akcje;SHO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;NEUCA S.A.;PLTRFRM00018;PLN;14;12222;akcje;NEU PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2US011725AX38;USD;-4000;-15.26;akcje;PEO PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Instrumenty pochodne;BANK POLSKA KASA OPIEKI S.A.;2US011725AX38;USD;-4000;-15.26;inne;PEO PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;RYVU THERAPEUTICS S.A.;PLSELVT00013;PLN;840;32340;akcje;RVU PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;RAINBOW TOURS S.A.;PLRNBWT00031;PLN;290;38686;akcje;RBW PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;CYBER_FOLKS S.A.;PLR220000018;PLN;252;37926;akcje;CBF PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Instrumenty pochodne;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A.;PL0GF0030072;PLN;13;576680;akcje;GPW PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Instrumenty pochodne;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A.;PL0GF0030072;PLN;13;576680;inne;GPW PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Dłużne papiery wartościowe;SKARB PAŃSTWA RZECZYPOSPOLITEJ POLSKIEJ;PL0000107611;PLN;23;21660.48;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;POWSZECHNY ZAKŁAD UBEZPIECZEŃ S.A.;PLPZU0000011;PLN;7959;364840.56;akcje;PZU PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;POLENERGIA S.A.;PLPLSEP00013;PLN;55;3828;akcje;PEP PW Equity
@@ -11216,7 +11216,7 @@
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Dłużne papiery wartościowe;BANK GOSPODARSTWA KRAJOWEGO;PL0000500286;PLN;5;4910.8;obligacje;nan
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;DINO POLSKA S.A.;PLDINPL00011;PLN;151;58859.8;akcje;DNP PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;CYFROWY POLSAT S.A.;PLCFRPT00013;PLN;356;5033.84;akcje;CPS PW Equity
-2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Dłużne papiery wartościowe;KGHM POLSKA MIEDŹ S.A.;PLO023600011;PLN;20;20233.6;akcje;KGH PW Equity
+2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Dłużne papiery wartościowe;KGHM POLSKA MIEDŹ S.A.;PLO023600011;PLN;20;20233.6;obligacje;KGH PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;CCC S.A.;PLCCC0000016;PLN;681;125167.8;akcje;MDV PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;MBANK S.A.;PLBRE0000012;PLN;82;44870.4;akcje;MBK PW Equity
 2024-12-30;UNIQA TFI S.A.;UNIQA Emerytura 2065;2065;Akcje;BNP PARIBAS BANK POLSKA S.A.;PLBGZ0000010;PLN;138;11757.6;akcje;BNPPPL PW Equity
@@ -11584,7 +11584,7 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego,;iShares Core S&P 500 UCITS ETF;nan;PLN;nan;165040.16;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;Gmina Lesznowola - LESZW J19 1234 - 20.12.2034;nan;PLN;nan;25891.06;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;Miasto Mysłowice - MYSL B14 290123 - 31.12.2028;nan;PLN;nan;9332.55;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do;Bank Polska Kasa Opieki S.A. - PEO1027 - 29.10.2027;PLPEKAO00016;PLN;3984.44;549453.6;akcje;PEO PW Equity
+2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do;Bank Polska Kasa Opieki S.A. - PEO1027 - 29.10.2027;nan;PLN;3984.44;549453.6;obligacje;PEO PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do;Cyfrowy Polsat S.A. - CPS0130 - 11.01.2030;nan;PLN;nan;352875.6;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do;Dekpol S.A. - DEK0628 - 06.06.2028;nan;PLN;nan;262833.9;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2035 DFE;2035;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do;Develia S.A. - DVL0528 - 19.05.2028;nan;PLN;nan;146180.32;obligacje;nan
@@ -11839,7 +11839,7 @@
 2024-12-31;PZU TFI S.A.;PPK inPZU 2025;2025;Dłużne papiery wartościowe;Bank Gospodarstwa Krajowego;PL0000500328;PLN;15330;15048000;obligacje;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2025;2025;Dłużne papiery wartościowe;Bank Gospodarstwa Krajowego;PL0000500294;PLN;647;496000;obligacje;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2025;2025;Dłużne papiery wartościowe;Skarb Państwa Rzeczypospolitej Polskiej;PL0000117024;PLN;8660;8026000;obligacje;nan
-2024-12-31;PZU TFI S.A.;PPK inPZU 2025;2025;Dłużne papiery wartościowe;Bank Polska Kasa Opieki S.A.;XS2724428193;EUR;356;1585000;akcje;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2025;2025;Dłużne papiery wartościowe;Bank Polska Kasa Opieki S.A.;XS2724428193;EUR;356;1585000;obligacje;PEO PW Equity
 2024-12-31;PZU TFI S.A.;PPK inPZU 2025;2025;Dłużne papiery wartościowe;Skarb Państwa Rzeczypospolitej Polskiej;XS1209947271;PLN;1000;4138000;obligacje;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2025;2025;Dłużne papiery wartościowe;Skarb Państwa Rzeczypospolitej Polskiej;PL0000114393;PLN;28320;28074000;obligacje;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2025;2025;Dłużne papiery wartościowe;Skarb Państwa Rzeczypospolitej Polskiej;PL0000115192;PLN;44890;49323000;obligacje;nan
@@ -11865,7 +11865,7 @@
 2024-12-31;PZU TFI S.A.;PPK inPZU 2025;2025;Instrumenty pochodne;BNP PARIBAS;nan;EUR;1;-18000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2025;2025;Instrumenty pochodne;BNP PARIBAS;nan;EUR;1;92000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2025;2025;Instrumenty pochodne;BNP PARIBAS;nan;EUR;1;1000;inne;nan
-2024-12-31;PZU TFI S.A.;PPK inPZU 2025;2025;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;PLPEKAO00016;EUR;1;2000;akcje;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2025;2025;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;nan;EUR;1;2000;inne;PEO PW Equity
 2024-12-31;PZU TFI S.A.;PPK inPZU 2025;2025;Instrumenty pochodne;BNP PARIBAS;nan;USD;1;-150000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2025;2025;Instrumenty pochodne;BNP PARIBAS;nan;USD;1;-90000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2030;2030;Akcje;adidas AG;DE000A1EWWW0;EUR;3700;3744000;akcje;ADS GR Equity
@@ -11974,7 +11974,7 @@
 2024-12-31;PZU TFI S.A.;PPK inPZU 2030;2030;Dłużne papiery wartościowe;Bank Gospodarstwa Krajowego;PL0000500294;PLN;5670;4350000;obligacje;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2030;2030;Dłużne papiery wartościowe;Skarb Państwa Rzeczypospolitej Polskiej;PL0000117024;PLN;21000;19462000;obligacje;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2030;2030;Dłużne papiery wartościowe;mBank S.A.;PLBRE0005227;PLN;3;1499000;obligacje;nan
-2024-12-31;PZU TFI S.A.;PPK inPZU 2030;2030;Dłużne papiery wartościowe;Bank Polska Kasa Opieki S.A.;XS2724428193;EUR;356;1585000;akcje;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2030;2030;Dłużne papiery wartościowe;Bank Polska Kasa Opieki S.A.;XS2724428193;EUR;356;1585000;obligacje;PEO PW Equity
 2024-12-31;PZU TFI S.A.;PPK inPZU 2030;2030;Dłużne papiery wartościowe;Polski Fundusz Rozwoju S.A.;PLPFR0000043;PLN;1;920000;obligacje;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2030;2030;Dłużne papiery wartościowe;PKO BP S.A.;PLO046700020;PLN;12;6157000;obligacje;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2030;2030;Dłużne papiery wartościowe;PKO BP S.A.;PLO046700012;PLN;3;1551000;obligacje;nan
@@ -12005,14 +12005,14 @@
 2024-12-31;PZU TFI S.A.;PPK inPZU 2030;2030;Instrumenty pochodne;Societe Generale S.A.;nan;DKK;1;5000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2030;2030;Instrumenty pochodne;J.P. Morgan AG;nan;EUR;1;190000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2030;2030;Instrumenty pochodne;BNP PARIBAS;nan;EUR;1;-28000;inne;nan
-2024-12-31;PZU TFI S.A.;PPK inPZU 2030;2030;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;PLPEKAO00016;EUR;1;0;akcje;PEO PW Equity
-2024-12-31;PZU TFI S.A.;PPK inPZU 2030;2030;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;PLPEKAO00016;EUR;1;1000;akcje;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2030;2030;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;nan;EUR;1;0;inne;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2030;2030;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;nan;EUR;1;1000;inne;PEO PW Equity
 2024-12-31;PZU TFI S.A.;PPK inPZU 2030;2030;Instrumenty pochodne;BNP PARIBAS;nan;EUR;1;91000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2030;2030;Instrumenty pochodne;BNP PARIBAS;nan;EUR;1;126000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2030;2030;Instrumenty pochodne;BNP PARIBAS;nan;EUR;1;3000;inne;nan
-2024-12-31;PZU TFI S.A.;PPK inPZU 2030;2030;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;PLPEKAO00016;EUR;1;4000;akcje;PEO PW Equity
-2024-12-31;PZU TFI S.A.;PPK inPZU 2030;2030;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;PLPEKAO00016;EUR;1;2000;akcje;PEO PW Equity
-2024-12-31;PZU TFI S.A.;PPK inPZU 2030;2030;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;PLPEKAO00016;EUR;1;-1000;akcje;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2030;2030;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;nan;EUR;1;4000;inne;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2030;2030;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;nan;EUR;1;2000;inne;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2030;2030;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;nan;EUR;1;-1000;inne;PEO PW Equity
 2024-12-31;PZU TFI S.A.;PPK inPZU 2030;2030;Instrumenty pochodne;BNP PARIBAS;nan;USD;1;-603000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2030;2030;Instrumenty pochodne;BNP PARIBAS;nan;USD;1;-210000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2030;2030;Instrumenty pochodne;BNP PARIBAS;nan;USD;1;-485000;inne;nan
@@ -12123,7 +12123,7 @@
 2024-12-31;PZU TFI S.A.;PPK inPZU 2035;2035;Dłużne papiery wartościowe;Bank Gospodarstwa Krajowego;PL0000500294;PLN;7860;6032000;obligacje;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2035;2035;Dłużne papiery wartościowe;Skarb Państwa Rzeczypospolitej Polskiej;PL0000117024;PLN;29000;26881000;obligacje;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2035;2035;Dłużne papiery wartościowe;mBank S.A.;PLBRE0005227;PLN;4;1999000;obligacje;nan
-2024-12-31;PZU TFI S.A.;PPK inPZU 2035;2035;Dłużne papiery wartościowe;Bank Polska Kasa Opieki S.A.;XS2724428193;EUR;356;1585000;akcje;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2035;2035;Dłużne papiery wartościowe;Bank Polska Kasa Opieki S.A.;XS2724428193;EUR;356;1585000;obligacje;PEO PW Equity
 2024-12-31;PZU TFI S.A.;PPK inPZU 2035;2035;Dłużne papiery wartościowe;Polski Fundusz Rozwoju S.A.;PLPFR0000043;PLN;1;920000;obligacje;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2035;2035;Dłużne papiery wartościowe;PKO BP S.A.;PLO046700020;PLN;12;6157000;obligacje;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2035;2035;Dłużne papiery wartościowe;PKO BP S.A.;PLO046700012;PLN;4;2068000;obligacje;nan
@@ -12154,14 +12154,14 @@
 2024-12-31;PZU TFI S.A.;PPK inPZU 2035;2035;Instrumenty pochodne;Societe Generale S.A.;nan;DKK;1;7000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2035;2035;Instrumenty pochodne;J.P. Morgan AG;nan;EUR;1;258000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2035;2035;Instrumenty pochodne;BNP PARIBAS;nan;EUR;1;-38000;inne;nan
-2024-12-31;PZU TFI S.A.;PPK inPZU 2035;2035;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;PLPEKAO00016;EUR;1;0;akcje;PEO PW Equity
-2024-12-31;PZU TFI S.A.;PPK inPZU 2035;2035;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;PLPEKAO00016;EUR;1;1000;akcje;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2035;2035;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;nan;EUR;1;0;inne;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2035;2035;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;nan;EUR;1;1000;inne;PEO PW Equity
 2024-12-31;PZU TFI S.A.;PPK inPZU 2035;2035;Instrumenty pochodne;BNP PARIBAS;nan;EUR;1;124000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2035;2035;Instrumenty pochodne;BNP PARIBAS;nan;EUR;1;172000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2035;2035;Instrumenty pochodne;BNP PARIBAS;nan;EUR;1;4000;inne;nan
-2024-12-31;PZU TFI S.A.;PPK inPZU 2035;2035;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;PLPEKAO00016;EUR;1;6000;akcje;PEO PW Equity
-2024-12-31;PZU TFI S.A.;PPK inPZU 2035;2035;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;PLPEKAO00016;EUR;1;3000;akcje;PEO PW Equity
-2024-12-31;PZU TFI S.A.;PPK inPZU 2035;2035;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;PLPEKAO00016;EUR;1;-1000;akcje;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2035;2035;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;nan;EUR;1;6000;inne;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2035;2035;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;nan;EUR;1;3000;inne;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2035;2035;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;nan;EUR;1;-1000;inne;PEO PW Equity
 2024-12-31;PZU TFI S.A.;PPK inPZU 2035;2035;Instrumenty pochodne;BNP PARIBAS;nan;USD;1;-815000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2035;2035;Instrumenty pochodne;BNP PARIBAS;nan;USD;1;-285000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2035;2035;Instrumenty pochodne;BNP PARIBAS;nan;USD;1;-654000;inne;nan
@@ -12280,7 +12280,7 @@
 2024-12-31;PZU TFI S.A.;PPK inPZU 2040;2040;Dłużne papiery wartościowe;Miasto i Gmina Buk;PLO280400246;PLN;1100;1128000;obligacje;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2040;2040;Dłużne papiery wartościowe;Miasto Siedlce;PLO196200094;PLN;3400;3591000;obligacje;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2040;2040;Dłużne papiery wartościowe;Miasto Siedlce;PLO196200110;PLN;1700;1737000;obligacje;nan
-2024-12-31;PZU TFI S.A.;PPK inPZU 2040;2040;Dłużne papiery wartościowe;Bank Polska Kasa Opieki S.A.;XS2724428193;EUR;356;1585000;akcje;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2040;2040;Dłużne papiery wartościowe;Bank Polska Kasa Opieki S.A.;XS2724428193;EUR;356;1585000;obligacje;PEO PW Equity
 2024-12-31;PZU TFI S.A.;PPK inPZU 2040;2040;Dłużne papiery wartościowe;PKO Bank Polski S.A.;PLO046700020;PLN;11;5643000;obligacje;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2040;2040;Dłużne papiery wartościowe;PKO Bank Polski S.A.;PLO046700012;PLN;2;1034000;obligacje;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2040;2040;Dłużne papiery wartościowe;PKO Bank Polski S.A.;XS2890435865;EUR;183;795000;obligacje;nan
@@ -12312,16 +12312,16 @@
 2024-12-31;PZU TFI S.A.;PPK inPZU 2040;2040;Instrumenty pochodne;Societe Generale S.A.;nan;DKK;1;8000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2040;2040;Instrumenty pochodne;J.P. Morgan AG;nan;EUR;1;266000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2040;2040;Instrumenty pochodne;BNP PARIBAS;nan;EUR;1;-43000;inne;nan
-2024-12-31;PZU TFI S.A.;PPK inPZU 2040;2040;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;PLPEKAO00016;EUR;1;0;akcje;PEO PW Equity
-2024-12-31;PZU TFI S.A.;PPK inPZU 2040;2040;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;PLPEKAO00016;EUR;1;2000;akcje;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2040;2040;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;nan;EUR;1;0;inne;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2040;2040;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;nan;EUR;1;2000;inne;PEO PW Equity
 2024-12-31;PZU TFI S.A.;PPK inPZU 2040;2040;Instrumenty pochodne;BNP PARIBAS;nan;EUR;1;105000;inne;nan
-2024-12-31;PZU TFI S.A.;PPK inPZU 2040;2040;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;PLPEKAO00016;EUR;1;-4000;akcje;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2040;2040;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;nan;EUR;1;-4000;inne;PEO PW Equity
 2024-12-31;PZU TFI S.A.;PPK inPZU 2040;2040;Instrumenty pochodne;BNP PARIBAS;nan;USD;1;-1055000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2040;2040;Instrumenty pochodne;BNP PARIBAS;nan;USD;1;-323000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2040;2040;Instrumenty pochodne;BNP PARIBAS;nan;USD;1;-29000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2040;2040;Instrumenty pochodne;BNP PARIBAS;nan;USD;1;-971000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2040;2040;Instrumenty pochodne;J.P. Morgan AG;nan;USD;1;-187000;inne;nan
-2024-12-31;PZU TFI S.A.;PPK inPZU 2040;2040;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;PLPEKAO00016;USD;1;-4000;akcje;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2040;2040;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;nan;USD;1;-4000;inne;PEO PW Equity
 2024-12-31;PZU TFI S.A.;PPK inPZU 2040;2040;Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania mające siedzibę za granicą;iShares Core S&P 500 UCITS ETF;IE00B5BMR087;USD;2670;6829000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Akcje;adidas AG;DE000A1EWWW0;EUR;6575;6653000;akcje;ADS GR Equity
 2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Akcje;Adobe Systems Inc;US00724F1012;USD;3141;5728000;akcje;ADBE US Equity
@@ -12431,7 +12431,7 @@
 2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Dłużne papiery wartościowe;Miasto i Gmina Buk;PLO280400246;PLN;700;718000;obligacje;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Dłużne papiery wartościowe;Miasto Siedlce;PLO196200094;PLN;1480;1563000;obligacje;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Dłużne papiery wartościowe;Miasto Siedlce;PLO196200110;PLN;900;920000;obligacje;nan
-2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Dłużne papiery wartościowe;Bank Polska Kasa Opieki S.A.;XS2724428193;EUR;160;712000;akcje;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Dłużne papiery wartościowe;Bank Polska Kasa Opieki S.A.;XS2724428193;EUR;160;712000;obligacje;PEO PW Equity
 2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Dłużne papiery wartościowe;PKO Bank Polski S.A.;PLO046700020;PLN;6;3078000;obligacje;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Dłużne papiery wartościowe;PKO Bank Polski S.A.;PLO046700012;PLN;1;517000;obligacje;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Dłużne papiery wartościowe;PKO Bank Polski S.A.;XS2890435865;EUR;100;434000;obligacje;nan
@@ -12463,18 +12463,18 @@
 2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Instrumenty pochodne;Societe Generale S.A.;nan;DKK;1;8000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Instrumenty pochodne;J.P. Morgan AG;nan;EUR;1;228000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Instrumenty pochodne;BNP PARIBAS;nan;EUR;1;-36000;inne;nan
-2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;PLPEKAO00016;EUR;1;0;akcje;PEO PW Equity
-2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;PLPEKAO00016;EUR;1;1000;akcje;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;nan;EUR;1;0;inne;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;nan;EUR;1;1000;inne;PEO PW Equity
 2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Instrumenty pochodne;BNP PARIBAS;nan;EUR;1;54000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Instrumenty pochodne;BNP PARIBAS;nan;EUR;1;5000;inne;nan
-2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;PLPEKAO00016;EUR;1;6000;akcje;PEO PW Equity
-2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;PLPEKAO00016;EUR;1;5000;akcje;PEO PW Equity
-2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;PLPEKAO00016;EUR;1;-1000;akcje;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;nan;EUR;1;6000;inne;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;nan;EUR;1;5000;inne;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;nan;EUR;1;-1000;inne;PEO PW Equity
 2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Instrumenty pochodne;BNP PARIBAS;nan;USD;1;-1055000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Instrumenty pochodne;BNP PARIBAS;nan;USD;1;-366000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Instrumenty pochodne;BNP PARIBAS;nan;USD;1;-971000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Instrumenty pochodne;J.P. Morgan AG;nan;USD;1;-98000;inne;nan
-2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;PLPEKAO00016;USD;1;-7000;akcje;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;nan;USD;1;-7000;inne;PEO PW Equity
 2024-12-31;PZU TFI S.A.;PPK inPZU 2045;2045;Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania mające siedzibę za granicą;iShares Core S&P 500 UCITS ETF;IE00B5BMR087;USD;2705;6919000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2050;2050;Akcje;adidas AG;DE000A1EWWW0;PLN;4235;4285000;akcje;ADS GR Equity
 2024-12-31;PZU TFI S.A.;PPK inPZU 2050;2050;Akcje;Adobe Systems Inc;US00724F1012;PLN;1905;3474000;akcje;ADBE US Equity
@@ -12587,7 +12587,7 @@
 2024-12-31;PZU TFI S.A.;PPK inPZU 2050;2050;Dłużne papiery wartościowe;Miasto i Gmina Buk;PLO280400246;PLN;400;410000;obligacje;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2050;2050;Dłużne papiery wartościowe;Miasto Siedlce;PLO196200094;PLN;1100;1162000;obligacje;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2050;2050;Dłużne papiery wartościowe;Miasto Siedlce;PLO196200110;PLN;550;562000;obligacje;nan
-2024-12-31;PZU TFI S.A.;PPK inPZU 2050;2050;Dłużne papiery wartościowe;Bank Polska Kasa Opieki S.A.;XS2724428193;EUR;110;490000;akcje;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2050;2050;Dłużne papiery wartościowe;Bank Polska Kasa Opieki S.A.;XS2724428193;EUR;110;490000;obligacje;PEO PW Equity
 2024-12-31;PZU TFI S.A.;PPK inPZU 2050;2050;Dłużne papiery wartościowe;POWSZECHNA KASA OSZCZĘDNOŚCI BANK POLSKI SPÓŁKA AKCYJNA;PLO046700020;PLN;4;2052000;obligacje;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2050;2050;Dłużne papiery wartościowe;POWSZECHNA KASA OSZCZĘDNOŚCI BANK POLSKI SPÓŁKA AKCYJNA;PLO046700012;PLN;1;517000;obligacje;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2050;2050;Dłużne papiery wartościowe;POWSZECHNA KASA OSZCZĘDNOŚCI BANK POLSKI SPÓŁKA AKCYJNA;XS2890435865;EUR;100;434000;obligacje;nan
@@ -12619,16 +12619,16 @@
 2024-12-31;PZU TFI S.A.;PPK inPZU 2050;2050;Instrumenty pochodne;Societe Generale S.A.;nan;DKK;1;5000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2050;2050;Instrumenty pochodne;J.P. Morgan AG;nan;EUR;1;152000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2050;2050;Instrumenty pochodne;BNP PARIBAS;nan;EUR;1;-22000;inne;nan
-2024-12-31;PZU TFI S.A.;PPK inPZU 2050;2050;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;PLPEKAO00016;EUR;1;0;akcje;PEO PW Equity
-2024-12-31;PZU TFI S.A.;PPK inPZU 2050;2050;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;PLPEKAO00016;EUR;1;1000;akcje;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2050;2050;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;nan;EUR;1;0;inne;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2050;2050;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;nan;EUR;1;1000;inne;PEO PW Equity
 2024-12-31;PZU TFI S.A.;PPK inPZU 2050;2050;Instrumenty pochodne;BNP PARIBAS;nan;EUR;1;33000;inne;nan
-2024-12-31;PZU TFI S.A.;PPK inPZU 2050;2050;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;PLPEKAO00016;EUR;1;-3000;akcje;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2050;2050;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;nan;EUR;1;-3000;inne;PEO PW Equity
 2024-12-31;PZU TFI S.A.;PPK inPZU 2050;2050;Instrumenty pochodne;BNP PARIBAS;nan;USD;1;-753000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2050;2050;Instrumenty pochodne;BNP PARIBAS;nan;USD;1;-228000;inne;nan
-2024-12-31;PZU TFI S.A.;PPK inPZU 2050;2050;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;PLPEKAO00016;USD;1;-22000;akcje;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2050;2050;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;nan;USD;1;-22000;inne;PEO PW Equity
 2024-12-31;PZU TFI S.A.;PPK inPZU 2050;2050;Instrumenty pochodne;BNP PARIBAS;nan;USD;1;-485000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2050;2050;Instrumenty pochodne;J.P. Morgan AG;nan;USD;1;-62000;inne;nan
-2024-12-31;PZU TFI S.A.;PPK inPZU 2050;2050;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;PLPEKAO00016;USD;1;-3000;akcje;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2050;2050;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;nan;USD;1;-3000;inne;PEO PW Equity
 2024-12-31;PZU TFI S.A.;PPK inPZU 2050;2050;Tytuły uczestnictwa;iShares Core S&P 500 UCITS ETF;IE00B5BMR087;USD;1800;4604000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2055;2055;Akcje;adidas AG;DE000A1EWWW0;PLN;2485;2514000;akcje;ADS GR Equity
 2024-12-31;PZU TFI S.A.;PPK inPZU 2055;2055;Akcje;Adobe Systems Inc;US00724F1012;PLN;1193;2176000;akcje;ADBE US Equity
@@ -12739,7 +12739,7 @@
 2024-12-31;PZU TFI S.A.;PPK inPZU 2055;2055;Dłużne papiery wartościowe;Miasto i Gmina Buk;PLO280400246;PLN;250;256000;obligacje;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2055;2055;Dłużne papiery wartościowe;Miasto Siedlce;PLO196200094;PLN;670;708000;obligacje;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2055;2055;Dłużne papiery wartościowe;Miasto Siedlce;PLO196200110;PLN;350;358000;obligacje;nan
-2024-12-31;PZU TFI S.A.;PPK inPZU 2055;2055;Dłużne papiery wartościowe;Bank Polska Kasa Opieki S.A.;XS2724428193;EUR;107;476000;akcje;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2055;2055;Dłużne papiery wartościowe;Bank Polska Kasa Opieki S.A.;XS2724428193;EUR;107;476000;obligacje;PEO PW Equity
 2024-12-31;PZU TFI S.A.;PPK inPZU 2055;2055;Dłużne papiery wartościowe;POWSZECHNA KASA OSZCZĘDNOŚCI BANK POLSKI SPÓŁKA AKCYJNA;PLO046700020;PLN;2;1026000;obligacje;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2055;2055;Dłużne papiery wartościowe;POWSZECHNA KASA OSZCZĘDNOŚCI BANK POLSKI SPÓŁKA AKCYJNA;PLO046700012;PLN;1;517000;obligacje;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2055;2055;Dłużne papiery wartościowe;POWSZECHNA KASA OSZCZĘDNOŚCI BANK POLSKI SPÓŁKA AKCYJNA;XS2788380306;EUR;100;450000;obligacje;nan
@@ -12770,15 +12770,15 @@
 2024-12-31;PZU TFI S.A.;PPK inPZU 2055;2055;Instrumenty pochodne;Societe Generale S.A.;nan;DKK;1;3000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2055;2055;Instrumenty pochodne;J.P. Morgan AG;nan;EUR;1;95000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2055;2055;Instrumenty pochodne;BNP PARIBAS;nan;EUR;1;-12000;inne;nan
-2024-12-31;PZU TFI S.A.;PPK inPZU 2055;2055;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;PLPEKAO00016;EUR;1;0;akcje;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2055;2055;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;nan;EUR;1;0;inne;PEO PW Equity
 2024-12-31;PZU TFI S.A.;PPK inPZU 2055;2055;Instrumenty pochodne;BNP PARIBAS;nan;EUR;1;20000;inne;nan
-2024-12-31;PZU TFI S.A.;PPK inPZU 2055;2055;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;PLPEKAO00016;EUR;1;0;akcje;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2055;2055;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;nan;EUR;1;0;inne;PEO PW Equity
 2024-12-31;PZU TFI S.A.;PPK inPZU 2055;2055;Instrumenty pochodne;BNP PARIBAS;nan;USD;1;-377000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2055;2055;Instrumenty pochodne;BNP PARIBAS;nan;USD;1;-168000;inne;nan
-2024-12-31;PZU TFI S.A.;PPK inPZU 2055;2055;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;PLPEKAO00016;USD;1;-13000;akcje;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2055;2055;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;nan;USD;1;-13000;inne;PEO PW Equity
 2024-12-31;PZU TFI S.A.;PPK inPZU 2055;2055;Instrumenty pochodne;BNP PARIBAS;nan;USD;1;-243000;inne;nan
 2024-12-31;PZU TFI S.A.;PPK inPZU 2055;2055;Instrumenty pochodne;J.P. Morgan AG;nan;USD;1;-37000;inne;nan
-2024-12-31;PZU TFI S.A.;PPK inPZU 2055;2055;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;PLPEKAO00016;USD;1;-2000;akcje;PEO PW Equity
+2024-12-31;PZU TFI S.A.;PPK inPZU 2055;2055;Instrumenty pochodne;Bank Polska Kasa Opieki S.A.;nan;USD;1;-2000;inne;PEO PW Equity
 2024-12-31;PZU TFI S.A.;PPK inPZU 2055;2055;Tytuły uczestnictwa;iShares Core S&P 500 UCITS ETF;IE00B5BMR087;USD;1100;2814000;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank Polski, a;SKARB PAŃSTWA - DS0432 - 25.04.2032;nan;PLN;nan;2114065.6;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;1. Obligacje, bony i inne papiery wartościowe emitowane przez Skarb Państwa lub Narodowy Bank Polski, a;SKARB PAŃSTWA - DS0725 - 25.07.2025;nan;PLN;nan;192798.72;obligacje;nan
@@ -12849,7 +12849,7 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;Gmina Lesznowola - LESZW J19 1234 - 20.12.2034;nan;PLN;nan;34853.35;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;Miasto Mysłowice - MYSL B14 290123 - 31.12.2028;nan;PLN;nan;11406.45;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;20. Dłużne papiery wartościowe, których emitent może ograniczyć swoją odpowiedzialność za;141 ust. 4 Ustawy:;nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Bank Polska Kasa Opieki S.A. Seria A - PEO1027 - 29.10.2027;PLPEKAO00016;PLN;2720.72;375186.6;akcje;PEO PW Equity
+2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Bank Polska Kasa Opieki S.A. Seria A - PEO1027 - 29.10.2027;nan;PLN;2720.72;375186.6;obligacje;PEO PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Cyfrowy Polsat S.A. Seria D - CPS0130 - 11.01.2030;nan;PLN;nan;232042.44;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Dekpol S.A. Seria M - DEK0628 - 06.06.2028;nan;PLN;nan;178972.5;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2040 DFE;2040;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Develia S.A. Seria DVL0528OZ10 - DVL0528 - 19.05.2028;nan;PLN;nan;102224;obligacje;nan
@@ -13063,7 +13063,7 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;7. Akcje spółek notowane na rynku regulowanym na terytorium Rzeczypospolitej Polskiej oraz;Zabka Group S.A.;LU2910446546;PLN;955.39;18391.34;akcje;ZAB PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;iShares Core MSCI Europe UCITS ETF;nan;PLN;nan;78715.71;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;Invesco S&P 500 UCITS ETF;nan;PLN;nan;196642.94;inne;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Bank Polska Kasa Opieki S.A. - PEO1027 - 29.10.2027;PLPEKAO00016;PLN;22.3;3075.3;akcje;PEO PW Equity
+2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Bank Polska Kasa Opieki S.A. - PEO1027 - 29.10.2027;nan;PLN;22.3;3075.3;obligacje;PEO PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Cyfrowy Polsat S.A. - CPS0130 - 11.01.2030;nan;PLN;nan;1069.32;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Dekpol S.A. - DEK0628 - 06.06.2028;nan;PLN;nan;2045.4;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2065 DFE;2065;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Develia S.A. - DVL0528 - 19.05.2028;nan;PLN;nan;2044.48;obligacje;nan
@@ -13300,8 +13300,8 @@
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2025;2025;Instrumenty Pochodne - FX Forward;JP MORGAN AG;1EU022825NN41;PLN;-50000;-214646.91;inne;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2025;2025;Instrumenty Pochodne - FX Forward;SOCIETE GENERALE PARIS;1HU022825NN41;PLN;-13000000;-134981.37;inne;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2025;2025;Instrumenty Pochodne - FX Forward;BNP PARIBAS BANK POLSKA S.A.;1US022825NN41;PLN;-474000;-1945394.14;inne;nan
-2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2025;2025;Instrumenty Pochodne - Kontrakty Terminowe Indeksy Giełdowe Akcji;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A.;PL0GF0030072;PLN;-4;-177440;akcje;GPW PW Equity
-2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2025;2025;Instrumenty Pochodne - Kontrakty Terminowe Indeksy Giełdowe Akcji;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A.;PL0GF0030676;PLN;-3;-186540;akcje;GPW PW Equity
+2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2025;2025;Instrumenty Pochodne - Kontrakty Terminowe Indeksy Giełdowe Akcji;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A.;PL0GF0030072;PLN;-4;-177440;inne;GPW PW Equity
+2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2025;2025;Instrumenty Pochodne - Kontrakty Terminowe Indeksy Giełdowe Akcji;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A.;PL0GF0030676;PLN;-3;-186540;inne;GPW PW Equity
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2025;2025;Instrumenty Pochodne - SWAP;BNP PARIBAS BANK POLSKA S.A.;1PL020530NN41IRS;PLN;1;1475.95;inne;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2025;2025;Instrumenty Pochodne - SWAP;GOLDMAN SACHS BANK EUROPE SE;1PL021334NN41IRS;PLN;1;-7233.4;inne;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2025;2025;Instrumenty Pochodne - SWAP;JP MORGAN AG;1PL032727NN41IRS;PLN;1;-7227.39;inne;nan
@@ -13321,8 +13321,8 @@
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2025;2025;Obligacje Korporacyjne;BANK GOSPODARSTWA KRAJOWEGO;PL0000500328;PLN;3290;3235024.1;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2025;2025;Obligacje Korporacyjne;BANK GOSPODARSTWA KRAJOWEGO;PL0000500294;PLN;646;503963.98;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2025;2025;Obligacje Korporacyjne;BANK GOSPODARSTWA KRAJOWEGO;XS2486282358;EUR;234;1020989.71;obligacje;nan
-2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2025;2025;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00362;PLN;1;507144.45;akcje;PEO PW Equity
-2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2025;2025;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;XS2906339747;EUR;100;433012.91;akcje;PEO PW Equity
+2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2025;2025;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00362;PLN;1;507144.45;obligacje;PEO PW Equity
+2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2025;2025;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;XS2906339747;EUR;100;433012.91;obligacje;PEO PW Equity
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2025;2025;Obligacje Korporacyjne;BEST S.A.;PLO020700103;PLN;117;120308.76;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2025;2025;Obligacje Korporacyjne;BEST S.A.;PLO020700129;PLN;120;124003.2;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2025;2025;Obligacje Korporacyjne;BNP PARIBAS S.A.;FR001400NV51;EUR;1;454764.46;obligacje;nan
@@ -13476,7 +13476,7 @@
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2030;2030;Instrumenty Pochodne - FX Forward;JP MORGAN AG;1EU022825NN42;PLN;-210000;-901517.03;inne;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2030;2030;Instrumenty Pochodne - FX Forward;SOCIETE GENERALE PARIS;1HU022825NN42;PLN;-55000000;-571075.01;inne;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2030;2030;Instrumenty Pochodne - FX Forward;BNP PARIBAS BANK POLSKA S.A.;1US022825NN42;PLN;-2048000;-8405416.01;inne;nan
-2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2030;2030;Instrumenty Pochodne - Kontrakty Terminowe Indeksy Giełdowe Akcji;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A.;PL0GF0030072;PLN;-2;-88720;akcje;GPW PW Equity
+2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2030;2030;Instrumenty Pochodne - Kontrakty Terminowe Indeksy Giełdowe Akcji;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A.;PL0GF0030072;PLN;-2;-88720;inne;GPW PW Equity
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2030;2030;Instrumenty Pochodne - SWAP;BNP PARIBAS BANK POLSKA S.A.;1PL020530NN42IRS;PLN;1;2582.95;inne;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2030;2030;Instrumenty Pochodne - SWAP;GOLDMAN SACHS BANK EUROPE SE;1PL021334NN42IRS;PLN;1;-7233.4;inne;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2030;2030;Instrumenty Pochodne - SWAP;JP MORGAN AG;1PL032727NN42IRS;PLN;1;-9829.25;inne;nan
@@ -13496,8 +13496,8 @@
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2030;2030;Obligacje Korporacyjne;BANK GOSPODARSTWA KRAJOWEGO;PL0000500328;PLN;4786;4706025.94;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2030;2030;Obligacje Korporacyjne;BANK GOSPODARSTWA KRAJOWEGO;PL0000500294;PLN;1279;997786.27;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2030;2030;Obligacje Korporacyjne;BANK GOSPODARSTWA KRAJOWEGO;XS2486282358;EUR;416;1815092.78;obligacje;nan
-2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2030;2030;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00362;PLN;1;507144.45;akcje;PEO PW Equity
-2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2030;2030;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;XS2906339747;EUR;120;519615.52;akcje;PEO PW Equity
+2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2030;2030;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00362;PLN;1;507144.45;obligacje;PEO PW Equity
+2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2030;2030;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;XS2906339747;EUR;120;519615.52;obligacje;PEO PW Equity
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2030;2030;Obligacje Korporacyjne;BEST S.A.;PLO020700103;PLN;195;200514.6;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2030;2030;Obligacje Korporacyjne;BEST S.A.;PLO020700129;PLN;210;217005.6;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2030;2030;Obligacje Korporacyjne;BNP PARIBAS S.A.;FR001400NV51;EUR;1;454764.46;obligacje;nan
@@ -13675,9 +13675,9 @@
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2035;2035;Obligacje Korporacyjne;BANK GOSPODARSTWA KRAJOWEGO;PL0000500328;PLN;6089;5987252.81;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2035;2035;Obligacje Korporacyjne;BANK GOSPODARSTWA KRAJOWEGO;PL0000500294;PLN;2872;2240533.36;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2035;2035;Obligacje Korporacyjne;BANK GOSPODARSTWA KRAJOWEGO;XS2486282358;EUR;556;2425941.33;obligacje;nan
-2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2035;2035;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;XS2724428193;EUR;100;445357.87;akcje;PEO PW Equity
-2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2035;2035;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00362;PLN;2;1014288.9;akcje;PEO PW Equity
-2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2035;2035;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;XS2906339747;EUR;160;692820.67;akcje;PEO PW Equity
+2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2035;2035;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;XS2724428193;EUR;100;445357.87;obligacje;PEO PW Equity
+2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2035;2035;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00362;PLN;2;1014288.9;obligacje;PEO PW Equity
+2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2035;2035;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;XS2906339747;EUR;160;692820.67;obligacje;PEO PW Equity
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2035;2035;Obligacje Korporacyjne;BEST S.A.;PLO020700103;PLN;259;266324.52;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2035;2035;Obligacje Korporacyjne;BEST S.A.;PLO020700129;PLN;280;289340.8;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2035;2035;Obligacje Korporacyjne;BNP PARIBAS S.A.;FR001400NV51;EUR;2;909528.87;obligacje;nan
@@ -13858,9 +13858,9 @@
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2040;2040;Obligacje Korporacyjne;BANK GOSPODARSTWA KRAJOWEGO;PL0000500328;PLN;8661;8516274.69;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2040;2040;Obligacje Korporacyjne;BANK GOSPODARSTWA KRAJOWEGO;PL0000500294;PLN;4822;3761786.86;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2040;2040;Obligacje Korporacyjne;BANK GOSPODARSTWA KRAJOWEGO;XS2486282358;EUR;660;2879714.52;obligacje;nan
-2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2040;2040;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;XS2724428193;EUR;100;445357.87;akcje;PEO PW Equity
-2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2040;2040;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00362;PLN;2;1014288.9;akcje;PEO PW Equity
-2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2040;2040;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;XS2906339747;EUR;100;433012.91;akcje;PEO PW Equity
+2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2040;2040;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;XS2724428193;EUR;100;445357.87;obligacje;PEO PW Equity
+2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2040;2040;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00362;PLN;2;1014288.9;obligacje;PEO PW Equity
+2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2040;2040;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;XS2906339747;EUR;100;433012.91;obligacje;PEO PW Equity
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2040;2040;Obligacje Korporacyjne;BEST S.A.;PLO020700103;PLN;303;311568.84;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2040;2040;Obligacje Korporacyjne;BEST S.A.;PLO020700129;PLN;330;341008.8;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2040;2040;Obligacje Korporacyjne;BNP PARIBAS S.A.;FR001400NV51;EUR;3;1364293.33;obligacje;nan
@@ -14040,9 +14040,9 @@
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2045;2045;Obligacje Korporacyjne;BANK GOSPODARSTWA KRAJOWEGO;PL0000500328;PLN;7530;7404173.7;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2045;2045;Obligacje Korporacyjne;BANK GOSPODARSTWA KRAJOWEGO;PL0000500294;PLN;2978;2323227.14;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2045;2045;Obligacje Korporacyjne;BANK GOSPODARSTWA KRAJOWEGO;XS2486282358;EUR;543;2369219.66;obligacje;nan
-2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2045;2045;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;XS2724428193;EUR;100;445357.87;akcje;PEO PW Equity
-2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2045;2045;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00362;PLN;1;507144.45;akcje;PEO PW Equity
-2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2045;2045;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;XS2906339747;EUR;160;692820.67;akcje;PEO PW Equity
+2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2045;2045;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;XS2724428193;EUR;100;445357.87;obligacje;PEO PW Equity
+2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2045;2045;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00362;PLN;1;507144.45;obligacje;PEO PW Equity
+2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2045;2045;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;XS2906339747;EUR;160;692820.67;obligacje;PEO PW Equity
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2045;2045;Obligacje Korporacyjne;BEST S.A.;PLO020700103;PLN;244;250900.32;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2045;2045;Obligacje Korporacyjne;BEST S.A.;PLO020700129;PLN;270;279007.2;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2045;2045;Obligacje Korporacyjne;BNP PARIBAS S.A.;FR001400NV51;EUR;2;909528.87;obligacje;nan
@@ -14221,8 +14221,8 @@
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2050;2050;Obligacje Korporacyjne;BANK GOSPODARSTWA KRAJOWEGO;PL0000500328;PLN;4359;4286161.11;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2050;2050;Obligacje Korporacyjne;BANK GOSPODARSTWA KRAJOWEGO;PL0000500294;PLN;2002;1561820.26;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2050;2050;Obligacje Korporacyjne;BANK GOSPODARSTWA KRAJOWEGO;XS2486282358;EUR;304;1326413.96;obligacje;nan
-2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2050;2050;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00362;PLN;1;507144.45;akcje;PEO PW Equity
-2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2050;2050;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;XS2906339747;EUR;100;433012.91;akcje;PEO PW Equity
+2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2050;2050;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00362;PLN;1;507144.45;obligacje;PEO PW Equity
+2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2050;2050;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;XS2906339747;EUR;100;433012.91;obligacje;PEO PW Equity
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2050;2050;Obligacje Korporacyjne;BEST S.A.;PLO020700103;PLN;138;141902.64;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2050;2050;Obligacje Korporacyjne;BEST S.A.;PLO020700129;PLN;150;155004;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2050;2050;Obligacje Korporacyjne;BNP PARIBAS S.A.;FR001400NV51;EUR;1;454764.46;obligacje;nan
@@ -14377,7 +14377,7 @@
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2055;2055;Instrumenty Pochodne - FX Forward;JP MORGAN AG;1EU022825NN47;PLN;-600000;-2575762.96;inne;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2055;2055;Instrumenty Pochodne - FX Forward;SOCIETE GENERALE PARIS;1HU022825NN47;PLN;-150000000;-1557477.31;inne;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2055;2055;Instrumenty Pochodne - FX Forward;BNP PARIBAS BANK POLSKA S.A.;1US022825NN47;PLN;-6079000;-24949474.58;inne;nan
-2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2055;2055;Instrumenty Pochodne - Kontrakty Terminowe Indeksy Giełdowe Akcji;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A.;PL0GF0030072;PLN;22;975920;akcje;GPW PW Equity
+2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2055;2055;Instrumenty Pochodne - Kontrakty Terminowe Indeksy Giełdowe Akcji;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A.;PL0GF0030072;PLN;22;975920;inne;GPW PW Equity
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2055;2055;Instrumenty Pochodne - SWAP;BNP PARIBAS BANK POLSKA S.A.;1PL020530NN47IRS;PLN;1;1071.01;inne;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2055;2055;Instrumenty Pochodne - SWAP;GOLDMAN SACHS BANK EUROPE SE;1PL021334NN47IRS;PLN;1;-7233.4;inne;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2055;2055;Instrumenty Pochodne - SWAP;JP MORGAN AG;1PL032727NN47IRS;PLN;1;-7227.39;inne;nan
@@ -14396,7 +14396,7 @@
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2055;2055;Obligacje Korporacyjne;BANK GOSPODARSTWA KRAJOWEGO;PL0000500328;PLN;2619;2575236.51;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2055;2055;Obligacje Korporacyjne;BANK GOSPODARSTWA KRAJOWEGO;PL0000500294;PLN;2112;1647634.56;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2055;2055;Obligacje Korporacyjne;BANK GOSPODARSTWA KRAJOWEGO;XS2486282358;EUR;187;815919.11;obligacje;nan
-2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2055;2055;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00362;PLN;1;507144.45;akcje;PEO PW Equity
+2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2055;2055;Obligacje Korporacyjne;BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00362;PLN;1;507144.45;obligacje;PEO PW Equity
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2055;2055;Obligacje Korporacyjne;BEST S.A.;PLO020700103;PLN;87;89460.36;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2055;2055;Obligacje Korporacyjne;BEST S.A.;PLO020700129;PLN;90;93002.4;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2055;2055;Obligacje Korporacyjne;BNP PARIBAS S.A.;FR001400NV51;EUR;1;454764.46;obligacje;nan
@@ -14550,7 +14550,7 @@
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2060;2060;Instrumenty Pochodne - FX Forward;BNP PARIBAS BANK POLSKA S.A.;2EU022825NN48;PLN;-2500;-10732.15;inne;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2060;2060;Instrumenty Pochodne - FX Forward;BNP PARIBAS BANK POLSKA S.A.;2HU022825NN48;PLN;-750000;-7786.24;inne;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2060;2060;Instrumenty Pochodne - FX Forward;BNP PARIBAS BANK POLSKA S.A.;2US022825NN48;PLN;-31000;-127236.12;inne;nan
-2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2060;2060;Instrumenty Pochodne - Kontrakty Terminowe Indeksy Giełdowe Akcji;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A.;PL0GF0030072;PLN;10;443600;akcje;GPW PW Equity
+2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2060;2060;Instrumenty Pochodne - Kontrakty Terminowe Indeksy Giełdowe Akcji;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A.;PL0GF0030072;PLN;10;443600;inne;GPW PW Equity
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2060;2060;Instrumenty Pochodne - SWAP;BNP PARIBAS BANK POLSKA S.A.;1PL053029NN48IRS;PLN;1;1691.32;inne;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2060;2060;Obligacje emitowane przez Jednostki Samorządu Terytorialnego;GMINA LUBLIN;PLO299500077;PLN;75;78801;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2060;2060;Obligacje emitowane przez Jednostki Samorządu Terytorialnego;GMINA MIASTO TARNÓW;PLO266300139;PLN;76;77069.32;obligacje;nan
@@ -14707,7 +14707,7 @@
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2065;2065;Instrumenty Pochodne - FX Forward;BNP PARIBAS BANK POLSKA S.A.;1US022825NN49;PLN;-209000;-857779.27;inne;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2065;2065;Instrumenty Pochodne - FX Forward;BNP PARIBAS BANK POLSKA S.A.;2HU022825NN49;PLN;-92000;-955.11;inne;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2065;2065;Instrumenty Pochodne - FX Forward;BNP PARIBAS BANK POLSKA S.A.;2US022825NN49;PLN;-4000;-16417.56;inne;nan
-2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2065;2065;Instrumenty Pochodne - Kontrakty Terminowe Indeksy Giełdowe Akcji;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A.;PL0GF0030072;PLN;2;88720;akcje;GPW PW Equity
+2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2065;2065;Instrumenty Pochodne - Kontrakty Terminowe Indeksy Giełdowe Akcji;GIEŁDA PAPIERÓW WARTOŚCIOWYCH W WARSZAWIE S.A.;PL0GF0030072;PLN;2;88720;inne;GPW PW Equity
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2065;2065;Obligacje emitowane przez Jednostki Samorządu Terytorialnego;GMINA LUBLIN;PLO299500077;PLN;6;6304.08;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2065;2065;Obligacje emitowane przez Jednostki Samorządu Terytorialnego;GMINA MIASTO TARNÓW;PLO266300139;PLN;6;6084.42;obligacje;nan
 2024-12-30;Goldman Sachs TFI S.A.;Goldman Sachs Emerytura 2065;2065;Obligacje emitowane przez Jednostki Samorządu Terytorialnego;GMINA STALOWA WOLA;PLO304700050;PLN;10;10172.7;obligacje;nan
@@ -14827,7 +14827,7 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;14. Tytuły uczestnictwa emitowane przez instytucje wspólnego inwestowania typu otwartego, mające;iShares Core S&P 500 UCITS ETF;nan;PLN;nan;180512.68;inne;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;Gmina Lesznowola - LESZW J19 1234 - 20.12.2034;nan;PLN;nan;20912.01;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;Miasto Mysłowice - MYSL B14 290123 - 31.12.2028;nan;PLN;nan;8295.6;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do;Bank Polska Kasa Opieki S.A. - PEO1027 - 29.10.2027;PLPEKAO00016;PLN;787.97;108660.6;akcje;PEO PW Equity
+2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do;Bank Polska Kasa Opieki S.A. - PEO1027 - 29.10.2027;nan;PLN;787.97;108660.6;obligacje;PEO PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do;Cyfrowy Polsat S.A. - CPS0130 - 11.01.2030;nan;PLN;nan;66297.84;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do;Dekpol S.A. - DEK0628 - 06.06.2028;nan;PLN;nan;52157.7;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2050 DFE;2050;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do;Develia S.A. - DVL0528 - 19.05.2028;nan;PLN;nan;28622.72;obligacje;nan
@@ -14894,7 +14894,7 @@
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2025;2025;Akcja;Jeronimo Martins SA;PTJMT0AE0001;EUR;175;13627.01;akcje;JMT PL Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2025;2025;Akcja;Johnson & Johnson;US4781601046;USD;46;27007.55;akcje;JNJ US Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2025;2025;Akcja;KGHM Polska Miedź SA;PLKGHM000017;PLN;653;75095;akcje;KGH PW Equity
-2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2025;2025;Papier komercyjny;KGHM Polska Miedź SA;PLO023600011;PLN;90;91051.2;akcje;KGH PW Equity
+2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2025;2025;Papier komercyjny;KGHM Polska Miedź SA;PLO023600011;PLN;90;91051.2;obligacje;KGH PW Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2025;2025;Akcja;Kraft Heinz Co/The;US5007541064;USD;45;5595.96;akcje;KHC US Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2025;2025;Akcja;KRUK SA;PLKRK0000010;PLN;184;76507.2;akcje;KRU PW Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2025;2025;Akcja;LPP SA;PLLPP0000011;PLN;10;155500;akcje;LPP PW Equity
@@ -15018,7 +15018,7 @@
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2030;2030;Akcja;Jeronimo Martins SA;PTJMT0AE0001;EUR;738;57467.05;akcje;JMT PL Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2030;2030;Akcja;Johnson & Johnson;US4781601046;USD;183;107443.08;akcje;JNJ US Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2030;2030;Akcja;KGHM Polska Miedź SA;PLKGHM000017;PLN;2629;302335;akcje;KGH PW Equity
-2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2030;2030;Papier komercyjny;KGHM Polska Miedź SA;PLO023600011;PLN;125;126460;akcje;KGH PW Equity
+2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2030;2030;Papier komercyjny;KGHM Polska Miedź SA;PLO023600011;PLN;125;126460;obligacje;KGH PW Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2030;2030;Akcja;Kraft Heinz Co/The;US5007541064;USD;198;24622.2;akcje;KHC US Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2030;2030;Akcja;KRUK SA;PLKRK0000010;PLN;750;311850;akcje;KRU PW Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2030;2030;Akcja;LPP SA;PLLPP0000011;PLN;44;684200;akcje;LPP PW Equity
@@ -15142,7 +15142,7 @@
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2035;2035;Akcja;Jeronimo Martins SA;PTJMT0AE0001;EUR;1563;121708.68;akcje;JMT PL Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2035;2035;Akcja;Johnson & Johnson;US4781601046;USD;401;235435.38;akcje;JNJ US Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2035;2035;Akcja;KGHM Polska Miedź SA;PLKGHM000017;PLN;6053;696095;akcje;KGH PW Equity
-2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2035;2035;Papier komercyjny;KGHM Polska Miedź SA;PLO023600011;PLN;179;181090.72;akcje;KGH PW Equity
+2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2035;2035;Papier komercyjny;KGHM Polska Miedź SA;PLO023600011;PLN;179;181090.72;obligacje;KGH PW Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2035;2035;Akcja;Kraft Heinz Co/The;US5007541064;USD;441;54840.36;akcje;KHC US Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2035;2035;Akcja;KRUK SA;PLKRK0000010;PLN;2022;840747.6;akcje;KRU PW Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2035;2035;Akcja;LPP SA;PLLPP0000011;PLN;119;1850450;akcje;LPP PW Equity
@@ -15266,7 +15266,7 @@
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2040;2040;Akcja;Jeronimo Martins SA;PTJMT0AE0001;EUR;2458;191401.11;akcje;JMT PL Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2040;2040;Akcja;Johnson & Johnson;US4781601046;USD;656;385151.14;akcje;JNJ US Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2040;2040;Akcja;KGHM Polska Miedź SA;PLKGHM000017;PLN;9273;1066395;akcje;KGH PW Equity
-2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2040;2040;Papier komercyjny;KGHM Polska Miedź SA;PLO023600011;PLN;192;194242.56;akcje;KGH PW Equity
+2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2040;2040;Papier komercyjny;KGHM Polska Miedź SA;PLO023600011;PLN;192;194242.56;obligacje;KGH PW Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2040;2040;Akcja;Kraft Heinz Co/The;US5007541064;USD;705;87669.96;akcje;KHC US Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2040;2040;Akcja;KRUK SA;PLKRK0000010;PLN;3403;1414967.4;akcje;KRU PW Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2040;2040;Akcja;LPP SA;PLLPP0000011;PLN;203;3156650;akcje;LPP PW Equity
@@ -15390,7 +15390,7 @@
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2045;2045;Akcja;Jeronimo Martins SA;PTJMT0AE0001;EUR;3145;244896.86;akcje;JMT PL Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2045;2045;Akcja;Johnson & Johnson;US4781601046;USD;884;519014.65;akcje;JNJ US Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2045;2045;Akcja;KGHM Polska Miedź SA;PLKGHM000017;PLN;12443;1430945;akcje;KGH PW Equity
-2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2045;2045;Papier komercyjny;KGHM Polska Miedź SA;PLO023600011;PLN;155;156810.4;akcje;KGH PW Equity
+2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2045;2045;Papier komercyjny;KGHM Polska Miedź SA;PLO023600011;PLN;155;156810.4;obligacje;KGH PW Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2045;2045;Akcja;Kraft Heinz Co/The;US5007541064;USD;947;117763.77;akcje;KHC US Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2045;2045;Akcja;KRUK SA;PLKRK0000010;PLN;4496;1869436.8;akcje;KRU PW Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2045;2045;Akcja;LPP SA;PLLPP0000011;PLN;265;4120750;akcje;LPP PW Equity
@@ -15514,7 +15514,7 @@
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2050;2050;Akcja;Jeronimo Martins SA;PTJMT0AE0001;EUR;2558;199187.97;akcje;JMT PL Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2050;2050;Akcja;Johnson & Johnson;US4781601046;USD;744;436817.76;akcje;JNJ US Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2050;2050;Akcja;KGHM Polska Miedź SA;PLKGHM000017;PLN;16180;1860700;akcje;KGH PW Equity
-2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2050;2050;Papier komercyjny;KGHM Polska Miedź SA;PLO023600011;PLN;132;133541.76;akcje;KGH PW Equity
+2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2050;2050;Papier komercyjny;KGHM Polska Miedź SA;PLO023600011;PLN;132;133541.76;obligacje;KGH PW Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2050;2050;Akcja;Kraft Heinz Co/The;US5007541064;USD;789;98115.75;akcje;KHC US Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2050;2050;Akcja;KRUK SA;PLKRK0000010;PLN;3873;1610393.4;akcje;KRU PW Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2050;2050;Akcja;LPP SA;PLLPP0000011;PLN;230;3576500;akcje;LPP PW Equity
@@ -15637,7 +15637,7 @@
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2055;2055;Akcja;Jeronimo Martins SA;PTJMT0AE0001;EUR;1594;124122.61;akcje;JMT PL Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2055;2055;Akcja;Johnson & Johnson;US4781601046;USD;522;306476.97;akcje;JNJ US Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2055;2055;Akcja;KGHM Polska Miedź SA;PLKGHM000017;PLN;11640;1338600;akcje;KGH PW Equity
-2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2055;2055;Papier komercyjny;KGHM Polska Miedź SA;PLO023600011;PLN;96;97121.28;akcje;KGH PW Equity
+2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2055;2055;Papier komercyjny;KGHM Polska Miedź SA;PLO023600011;PLN;96;97121.28;obligacje;KGH PW Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2055;2055;Akcja;Kraft Heinz Co/The;US5007541064;USD;536;66654.04;akcje;KHC US Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2055;2055;Akcja;KRUK SA;PLKRK0000010;PLN;2744;1140955.2;akcje;KRU PW Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2055;2055;Akcja;LPP SA;PLLPP0000011;PLN;160;2488000;akcje;LPP PW Equity
@@ -15761,7 +15761,7 @@
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2060;2060;Akcja;Jeronimo Martins SA;PTJMT0AE0001;EUR;406;31614.67;akcje;JMT PL Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2060;2060;Akcja;Johnson & Johnson;US4781601046;USD;158;92765.06;akcje;JNJ US Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2060;2060;Akcja;KGHM Polska Miedź SA;PLKGHM000017;PLN;3962;455630;akcje;KGH PW Equity
-2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2060;2060;Papier komercyjny;KGHM Polska Miedź SA;PLO023600011;PLN;29;29338.72;akcje;KGH PW Equity
+2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2060;2060;Papier komercyjny;KGHM Polska Miedź SA;PLO023600011;PLN;29;29338.72;obligacje;KGH PW Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2060;2060;Akcja;Kraft Heinz Co/The;US5007541064;USD;152;18901.89;akcje;KHC US Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2060;2060;Akcja;KRUK SA;PLKRK0000010;PLN;886;368398.8;akcje;KRU PW Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2060;2060;Akcja;LPP SA;PLLPP0000011;PLN;54;839700;akcje;LPP PW Equity
@@ -15877,7 +15877,7 @@
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2065;2065;Akcja;Jeronimo Martins SA;PTJMT0AE0001;EUR;29;2258.19;akcje;JMT PL Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2065;2065;Akcja;Johnson & Johnson;US4781601046;USD;26;15265.14;akcje;JNJ US Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2065;2065;Akcja;KGHM Polska Miedź SA;PLKGHM000017;PLN;382;43930;akcje;KGH PW Equity
-2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2065;2065;Papier komercyjny;KGHM Polska Miedź SA;PLO023600011;PLN;2;2023.36;akcje;KGH PW Equity
+2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2065;2065;Papier komercyjny;KGHM Polska Miedź SA;PLO023600011;PLN;2;2023.36;obligacje;KGH PW Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2065;2065;Akcja;Kraft Heinz Co/The;US5007541064;USD;9;1119.19;akcje;KHC US Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2065;2065;Akcja;KRUK SA;PLKRK0000010;PLN;74;30769.2;akcje;KRU PW Equity
 2024-12-30;Generali Investments TFI S.A.;Generali Horyzont 2065;2065;Akcja;LPP SA;PLLPP0000011;PLN;6;93300;akcje;LPP PW Equity
@@ -16014,7 +16014,7 @@
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;Gmina Lesznowola - LESZW J19 1234 - 20.12.2034;nan;PLN;nan;19916.2;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;17. Obligacje i inne dłużne papiery wartościowe inne niż będące przedmiotem oferty publicznej ,;Miasto Mysłowice - MYSL B14 290123 - 31.12.2028;nan;PLN;nan;8295.6;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;20. Dłużne papiery wartościowe, których emitent może ograniczyć swoją odpowiedzialność za;141 ust. 4 Ustawy:;nan;PLN;nan;0;obligacje;nan
-2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Bank Polska Kasa Opieki S.A. - PEO1027 - 29.10.2027;PLPEKAO00016;PLN;4995.41;688867.2;akcje;PEO PW Equity
+2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Bank Polska Kasa Opieki S.A. - PEO1027 - 29.10.2027;nan;PLN;4995.41;688867.2;obligacje;PEO PW Equity
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Cyfrowy Polsat S.A. - CPS0130 - 11.01.2030;nan;PLN;nan;438421.2;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Dekpol S.A. - DEK0628 - 06.06.2028;nan;PLN;nan;328286.7;obligacje;nan
 2024-12-31;Pocztylion;PPK Pocztylion 2030 DFE;2030;25. Obligacje i inne dłużne papiery wartościowe, dla których podmiotami zobowiązanymi do spełnienia;Develia S.A. - DVL0528 - 19.05.2028;nan;PLN;nan;184003.2;obligacje;nan
@@ -16102,7 +16102,7 @@
 2024-12-30;PFR TFI S.A.;PFR PPK 2025- PORTFEL;2025;Obligacje;BANK GOSPODARSTWA KRAJOWEGO;PL0000500294;PLN;24;18170.16;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2025- PORTFEL;2025;Obligacje;KRUK S.A.;PLKRK0000648;PLN;393;37779.09;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2025- PORTFEL;2025;Obligacje;SKARB PAŃSTWA RZECZPOSPOLITEJ POLSKIEJ;PL0000115283;PLN;580;556916;obligacje;nan
-2024-12-30;PFR TFI S.A.;PFR PPK 2025- PORTFEL;2025;Obligacje;PEKAO BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;131;133999.9;akcje;PEO PW Equity
+2024-12-30;PFR TFI S.A.;PFR PPK 2025- PORTFEL;2025;Obligacje;PEKAO BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;131;133999.9;obligacje;PEO PW Equity
 2024-12-30;PFR TFI S.A.;PFR PPK 2025- PORTFEL;2025;Obligacje;PGE POLSKA GRUPA ENERGETYCZNA S.A.;PLPGER000069;PLN;90;92096.1;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2025- PORTFEL;2025;Obligacje;PGE POLSKA GRUPA ENERGETYCZNA S.A.;PLPGER000077;PLN;15;15363;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2025- PORTFEL;2025;Obligacje;POLSKI HOLDING NIERUCHOMOŚCI S.A.;PLO198500038;PLN;59;63483.41;obligacje;nan
@@ -16197,7 +16197,7 @@
 2024-12-30;PFR TFI S.A.;PFR PPK 2030- PORTFEL;2030;Obligacje;BANK GOSPODARSTWA KRAJOWEGO;PL0000500294;PLN;26;19684.34;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2030- PORTFEL;2030;Obligacje;KRUK S.A.;PLKRK0000648;PLN;432;41528.16;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2030- PORTFEL;2030;Obligacje;SKARB PAŃSTWA RZECZPOSPOLITEJ POLSKIEJ;PL0000115283;PLN;641;615488.2;obligacje;nan
-2024-12-30;PFR TFI S.A.;PFR PPK 2030- PORTFEL;2030;Obligacje;PEKAO BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;177;181053.3;akcje;PEO PW Equity
+2024-12-30;PFR TFI S.A.;PFR PPK 2030- PORTFEL;2030;Obligacje;PEKAO BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;177;181053.3;obligacje;PEO PW Equity
 2024-12-30;PFR TFI S.A.;PFR PPK 2030- PORTFEL;2030;Obligacje;PGE POLSKA GRUPA ENERGETYCZNA S.A.;PLPGER000069;PLN;160;163726.4;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2030- PORTFEL;2030;Obligacje;PGE POLSKA GRUPA ENERGETYCZNA S.A.;PLPGER000077;PLN;20;20484;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2030- PORTFEL;2030;Obligacje;POLSKI HOLDING NIERUCHOMOŚCI S.A.;PLO198500038;PLN;71;76395.29;obligacje;nan
@@ -16292,7 +16292,7 @@
 2024-12-30;PFR TFI S.A.;PFR PPK 2035- PORTFEL;2035;Obligacje;BANK GOSPODARSTWA KRAJOWEGO;PL0000500294;PLN;27;20441.43;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2035- PORTFEL;2035;Obligacje;KRUK S.A.;PLKRK0000648;PLN;396;38067.48;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2035- PORTFEL;2035;Obligacje;SKARB PAŃSTWA RZECZPOSPOLITEJ POLSKIEJ;PL0000115283;PLN;482;462816.4;obligacje;nan
-2024-12-30;PFR TFI S.A.;PFR PPK 2035- PORTFEL;2035;Obligacje;PEKAO BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;165;168778.5;akcje;PEO PW Equity
+2024-12-30;PFR TFI S.A.;PFR PPK 2035- PORTFEL;2035;Obligacje;PEKAO BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;165;168778.5;obligacje;PEO PW Equity
 2024-12-30;PFR TFI S.A.;PFR PPK 2035- PORTFEL;2035;Obligacje;PGE POLSKA GRUPA ENERGETYCZNA S.A.;PLPGER000069;PLN;140;143260.6;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2035- PORTFEL;2035;Obligacje;PGE POLSKA GRUPA ENERGETYCZNA S.A.;PLPGER000077;PLN;25;25605;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2035- PORTFEL;2035;Obligacje;POLSKI HOLDING NIERUCHOMOŚCI S.A.;PLO198500038;PLN;64;68863.36;obligacje;nan
@@ -16385,7 +16385,7 @@
 2024-12-30;PFR TFI S.A.;PFR PPK 2040- PORTFEL;2040;Obligacje;BANK GOSPODARSTWA KRAJOWEGO;PL0000500294;PLN;25;18927.25;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2040- PORTFEL;2040;Obligacje;KRUK S.A.;PLKRK0000648;PLN;322;30953.86;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2040- PORTFEL;2040;Obligacje;SKARB PAŃSTWA RZECZPOSPOLITEJ POLSKIEJ;PL0000115283;PLN;230;220846;obligacje;nan
-2024-12-30;PFR TFI S.A.;PFR PPK 2040- PORTFEL;2040;Obligacje;PEKAO BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;132;135022.8;akcje;PEO PW Equity
+2024-12-30;PFR TFI S.A.;PFR PPK 2040- PORTFEL;2040;Obligacje;PEKAO BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;132;135022.8;obligacje;PEO PW Equity
 2024-12-30;PFR TFI S.A.;PFR PPK 2040- PORTFEL;2040;Obligacje;PGE POLSKA GRUPA ENERGETYCZNA S.A.;PLPGER000069;PLN;135;138144.15;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2040- PORTFEL;2040;Obligacje;PGE POLSKA GRUPA ENERGETYCZNA S.A.;PLPGER000077;PLN;20;20484;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2040- PORTFEL;2040;Obligacje;POLSKI HOLDING NIERUCHOMOŚCI S.A.;PLO198500038;PLN;51;54875.49;obligacje;nan
@@ -16479,7 +16479,7 @@
 2024-12-30;PFR TFI S.A.;PFR PPK 2045- PORTFEL;2045;Obligacje;BANK GOSPODARSTWA KRAJOWEGO;PL0000500294;PLN;19;14384.71;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2045- PORTFEL;2045;Obligacje;KRUK S.A.;PLKRK0000648;PLN;205;19706.65;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2045- PORTFEL;2045;Obligacje;SKARB PAŃSTWA RZECZPOSPOLITEJ POLSKIEJ;PL0000115283;PLN;130;124826;obligacje;nan
-2024-12-30;PFR TFI S.A.;PFR PPK 2045- PORTFEL;2045;Obligacje;PEKAO BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;85;86946.5;akcje;PEO PW Equity
+2024-12-30;PFR TFI S.A.;PFR PPK 2045- PORTFEL;2045;Obligacje;PEKAO BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;85;86946.5;obligacje;PEO PW Equity
 2024-12-30;PFR TFI S.A.;PFR PPK 2045- PORTFEL;2045;Obligacje;PGE POLSKA GRUPA ENERGETYCZNA S.A.;PLPGER000069;PLN;80;81863.2;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2045- PORTFEL;2045;Obligacje;PGE POLSKA GRUPA ENERGETYCZNA S.A.;PLPGER000077;PLN;12;12290.4;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2045- PORTFEL;2045;Obligacje;POLSKI HOLDING NIERUCHOMOŚCI S.A.;PLO198500038;PLN;31;33355.69;obligacje;nan
@@ -16573,7 +16573,7 @@
 2024-12-30;PFR TFI S.A.;PFR PPK 2050- PORTFEL;2050;Obligacje;BANK GOSPODARSTWA KRAJOWEGO;PL0000500294;PLN;12;9085.08;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2050- PORTFEL;2050;Obligacje;KRUK S.A.;PLKRK0000648;PLN;115;11054.95;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2050- PORTFEL;2050;Obligacje;SKARB PAŃSTWA RZECZPOSPOLITEJ POLSKIEJ;PL0000115283;PLN;56;53771.2;obligacje;nan
-2024-12-30;PFR TFI S.A.;PFR PPK 2050- PORTFEL;2050;Obligacje;PEKAO BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;46;47053.4;akcje;PEO PW Equity
+2024-12-30;PFR TFI S.A.;PFR PPK 2050- PORTFEL;2050;Obligacje;PEKAO BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;46;47053.4;obligacje;PEO PW Equity
 2024-12-30;PFR TFI S.A.;PFR PPK 2050- PORTFEL;2050;Obligacje;PGE POLSKA GRUPA ENERGETYCZNA S.A.;PLPGER000069;PLN;40;40931.6;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2050- PORTFEL;2050;Obligacje;PGE POLSKA GRUPA ENERGETYCZNA S.A.;PLPGER000077;PLN;10;10242;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2050- PORTFEL;2050;Obligacje;POLSKI HOLDING NIERUCHOMOŚCI S.A.;PLO198500038;PLN;16;17215.84;obligacje;nan
@@ -16666,7 +16666,7 @@
 2024-12-30;PFR TFI S.A.;PFR PPK 2055- PORTFEL;2055;Obligacje;BANK GOSPODARSTWA KRAJOWEGO;PL0000500294;PLN;5;3785.45;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2055- PORTFEL;2055;Obligacje;KRUK S.A.;PLKRK0000648;PLN;52;4998.76;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2055- PORTFEL;2055;Obligacje;SKARB PAŃSTWA RZECZPOSPOLITEJ POLSKIEJ;PL0000115283;PLN;41;39368.2;obligacje;nan
-2024-12-30;PFR TFI S.A.;PFR PPK 2055- PORTFEL;2055;Obligacje;PEKAO BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;22;22503.8;akcje;PEO PW Equity
+2024-12-30;PFR TFI S.A.;PFR PPK 2055- PORTFEL;2055;Obligacje;PEKAO BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;22;22503.8;obligacje;PEO PW Equity
 2024-12-30;PFR TFI S.A.;PFR PPK 2055- PORTFEL;2055;Obligacje;PGE POLSKA GRUPA ENERGETYCZNA S.A.;PLPGER000069;PLN;20;20465.8;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2055- PORTFEL;2055;Obligacje;PGE POLSKA GRUPA ENERGETYCZNA S.A.;PLPGER000077;PLN;4;4096.8;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2055- PORTFEL;2055;Obligacje;POLSKI HOLDING NIERUCHOMOŚCI S.A.;PLO198500038;PLN;8;8607.92;obligacje;nan
@@ -16758,7 +16758,7 @@
 2024-12-30;PFR TFI S.A.;PFR PPK 2060- PORTFEL;2060;Obligacje;BANK GOSPODARSTWA KRAJOWEGO;PL0000500294;PLN;1;757.09;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2060- PORTFEL;2060;Obligacje;KRUK S.A.;PLKRK0000648;PLN;13;1249.69;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2060- PORTFEL;2060;Obligacje;SKARB PAŃSTWA RZECZPOSPOLITEJ POLSKIEJ;PL0000115283;PLN;23;22084.6;obligacje;nan
-2024-12-30;PFR TFI S.A.;PFR PPK 2060- PORTFEL;2060;Obligacje;PEKAO BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;5;5114.5;akcje;PEO PW Equity
+2024-12-30;PFR TFI S.A.;PFR PPK 2060- PORTFEL;2060;Obligacje;PEKAO BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;5;5114.5;obligacje;PEO PW Equity
 2024-12-30;PFR TFI S.A.;PFR PPK 2060- PORTFEL;2060;Obligacje;PGE POLSKA GRUPA ENERGETYCZNA S.A.;PLPGER000069;PLN;5;5116.45;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2060- PORTFEL;2060;Obligacje;POLSKI HOLDING NIERUCHOMOŚCI S.A.;PLO198500038;PLN;2;2151.98;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2060- PORTFEL;2060;Obligacje;POLSKI HOLDING NIERUCHOMOŚCI S.A.;PLO198500046;PLN;2;2018.9;obligacje;nan
@@ -16841,7 +16841,7 @@
 2024-12-30;PFR TFI S.A.;PFR PPK 2065- PORTFEL;2065;Obligacje;BANK GOSPODARSTWA KRAJOWEGO;PL0000500286;PLN;13;12768.08;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2065- PORTFEL;2065;Obligacje;KRUK S.A.;PLKRK0000648;PLN;4;384.52;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2065- PORTFEL;2065;Obligacje;SKARB PAŃSTWA RZECZPOSPOLITEJ POLSKIEJ;PL0000115283;PLN;16;15363.2;obligacje;nan
-2024-12-30;PFR TFI S.A.;PFR PPK 2065- PORTFEL;2065;Obligacje;PEKAO BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;3;3068.7;akcje;PEO PW Equity
+2024-12-30;PFR TFI S.A.;PFR PPK 2065- PORTFEL;2065;Obligacje;PEKAO BANK POLSKA KASA OPIEKI S.A.;PLPEKAO00289;PLN;3;3068.7;obligacje;PEO PW Equity
 2024-12-30;PFR TFI S.A.;PFR PPK 2065- PORTFEL;2065;Obligacje;PGE POLSKA GRUPA ENERGETYCZNA S.A.;PLPGER000069;PLN;2;2046.58;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2065- PORTFEL;2065;Obligacje;POLSKI HOLDING NIERUCHOMOŚCI S.A.;PLO198500038;PLN;1;1075.99;obligacje;nan
 2024-12-30;PFR TFI S.A.;PFR PPK 2065- PORTFEL;2065;Obligacje;POLSKI HOLDING NIERUCHOMOŚCI S.A.;PLO198500046;PLN;1;1009.45;obligacje;nan

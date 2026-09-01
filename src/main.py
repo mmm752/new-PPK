@@ -9,7 +9,7 @@ import tempfile
 import subprocess
 from datetime import datetime
 from decimal import Decimal, ROUND_HALF_UP
-from typing import Any, Callable, Dict, List, Optional
+from typing import Any, Callable, Dict, List, Optional, Tuple
 
 import pandas as pd
 import pdfplumber
@@ -26,6 +26,15 @@ try:
     from pdf2image import convert_from_path
 except Exception:  # pragma: no cover
     convert_from_path = None
+
+from quarters import (
+    parse_quarter_token,
+    quarter_sort_key,
+    prev_quarter_token,
+    quarter_token_from_folder,
+    quarter_end_date_from_folder,
+    quarter_token_from_date,
+)
 
 OUTPUT_COLUMNS = [
     "data",
@@ -230,7 +239,7 @@ def normalize_pzu_fundusz(value: str) -> str:
     if not match:
         return text
     year = match.group(1)
-    if re.search(r"^\s*PPK\s*inPZU\b", text, re.IGNORECASE):
+    if re.search(r"^\s*(?:PPK\s*inPZU|inPZU\s*PPK)\b", text, re.IGNORECASE):
         return f"PPK inPZU {year}"
     if re.search(r"^\s*inPZU\s*Puls\s*(Życia|Zycia)\b", text, re.IGNORECASE):
         return f"inPZU Puls Życia {year}"
@@ -244,7 +253,7 @@ def is_pzu_ppk_fund(value: str) -> bool:
         return False
     return bool(
         re.search(
-            r"^\s*(PPK\s*inPZU|inPZU\s*Puls\s*Życia|inPZU\s*Puls\s*Zycia)\b.*(20\d{2})",
+            r"^\s*(?:PPK\s*inPZU|inPZU\s*PPK|inPZU\s*Puls\s*Życia|inPZU\s*Puls\s*Zycia)\b.*(20\d{2})",
             text,
             re.IGNORECASE,
         )
@@ -1107,21 +1116,7 @@ def build_change_table(prev_df: pd.DataFrame, curr_df: pd.DataFrame) -> pd.DataF
     return result
 
 
-def parse_quarter_token(token: str) -> Optional[tuple[int, int]]:
-    match = re.match(r"^(\d)Q(\d{2})$", token.strip().upper())
-    if not match:
-        return None
-    quarter = int(match.group(1))
-    year = 2000 + int(match.group(2))
-    return quarter, year
 
-
-def quarter_sort_key(token: str) -> tuple[int, int]:
-    parsed = parse_quarter_token(token)
-    if not parsed:
-        return (9999, 99)
-    quarter, year = parsed
-    return (year, quarter)
 
 
 def build_fund_position_changes(
@@ -1132,11 +1127,7 @@ def build_fund_position_changes(
 
     frames: List[pd.DataFrame] = []
     for quarter_token in sorted(fund_positions_by_quarter.keys(), key=quarter_sort_key):
-        parsed = parse_quarter_token(quarter_token)
-        if not parsed:
-            continue
-        quarter, year = parsed
-        prev_token = f"{quarter}Q{(year - 1) % 100:02d}"
+        prev_token = prev_quarter_token(quarter_token)
         if prev_token not in fund_positions_by_quarter:
             continue
 
@@ -1202,6 +1193,35 @@ def build_fund_position_changes(
     return pd.concat(frames, ignore_index=True) if frames else pd.DataFrame()
 
 
+def _normalize_master_match_values(
+    quarter_token: str,
+    instytucja: str,
+    fundusz: str,
+) -> Tuple[str, str]:
+    inst = str(instytucja or "").strip()
+    fund = str(fundusz or "").strip()
+    if quarter_token not in {"2Q25", "2Q26"}:
+        return inst, fund
+
+    em_match = re.match(
+        r"^(?:Goldman Sachs|ING)\s+Emerytura\s+(\d{4})$",
+        fund,
+        re.IGNORECASE,
+    )
+    if em_match:
+        return "EMERYTURA_ING_GOLDMAN", f"Emerytura {em_match.group(1)}"
+
+    ppk_match = re.match(
+        r"^(?:Santander|Erste)\s+PPK\s+(\d{4})$",
+        fund,
+        re.IGNORECASE,
+    )
+    if ppk_match:
+        return "PPK_SANTANDER_ERSTE", f"PPK {ppk_match.group(1)}"
+
+    return inst, fund
+
+
 def build_master_dataset(
     source_rows_by_quarter: Dict[str, pd.DataFrame],
 ) -> pd.DataFrame:
@@ -1249,7 +1269,8 @@ def build_master_dataset(
             axis=1,
         )
 
-        work.insert(0, "quarter", quarter_token)
+        work["quarter"] = quarter_token
+        work.insert(0, "quarter", work.pop("quarter"))
         inst = work["instytucja"].astype(str).str.strip()
         fundusz = work["fundusz"].astype(str).str.strip()
         data_fund = work["DATA_fundusz"].astype(str).str.strip()
@@ -1258,9 +1279,33 @@ def build_master_dataset(
         waluta = work["waluta"].astype(str).str.strip()
         typ_std = work["TYP_aktywo_std"].astype(str).str.strip()
 
+        normalized = [
+            _normalize_master_match_values(q, i, f)
+            for q, i, f in zip(
+                [quarter_token] * len(work),
+                inst.tolist(),
+                fundusz.tolist(),
+            )
+        ]
+        normalized_inst, normalized_fund = zip(*normalized)
+        normalized_inst = pd.Series(normalized_inst, index=work.index)
+        normalized_fund = pd.Series(normalized_fund, index=work.index)
+
         isin_mask = isin.str.lower().ne("nan") & isin.ne("")
-        key_isin = inst + "|" + fundusz + "|" + data_fund + "|" + isin
-        key_other = inst + "|" + fundusz + "|" + data_fund + "|" + emitent + "|" + waluta + "|" + typ_std
+        key_isin = normalized_inst + "|" + normalized_fund + "|" + data_fund + "|" + isin
+        key_other = (
+            normalized_inst
+            + "|"
+            + normalized_fund
+            + "|"
+            + data_fund
+            + "|"
+            + emitent
+            + "|"
+            + waluta
+            + "|"
+            + typ_std
+        )
 
         work["match_key"] = key_other
         work.loc[isin_mask, "match_key"] = key_isin
@@ -1279,11 +1324,7 @@ def build_master_dataset(
     master["wartosc_pln_chg_pct_num"] = pd.NA
 
     for quarter_token in sorted(normalized_by_quarter.keys(), key=quarter_sort_key):
-        parsed = parse_quarter_token(quarter_token)
-        if not parsed:
-            continue
-        quarter, year = parsed
-        prev_token = f"{quarter}Q{(year - 1) % 100:02d}"
+        prev_token = prev_quarter_token(quarter_token)
         if prev_token not in normalized_by_quarter:
             continue
 
@@ -1365,10 +1406,21 @@ def build_master_dataset(
     master["liczba_sztuk_chg"] = master["liczba_sztuk_chg"].replace("nan", "")
     master["wartosc_pln_chg"] = master["wartosc_pln_chg"].replace("nan", "")
 
+    master["Institutions_actual"] = master["instytucja"].astype(str).str.strip()
+    master.loc[
+        master["instytucja"].astype(str).str.strip().eq("Santander TFI S.A."),
+        "Institutions_actual",
+    ] = "Erste"
+    master.loc[
+        master["instytucja"].astype(str).str.strip().eq("Goldman Sachs TFI S.A."),
+        "Institutions_actual",
+    ] = "ING"
+
     ordered_cols = [
         "quarter",
         "data",
         "instytucja",
+        "Institutions_actual",
         "fundusz",
         "DATA_fundusz",
         "typ_aktywa",
@@ -1450,6 +1502,37 @@ def detect_allianz_header_row(df_raw: pd.DataFrame, max_rows: int = 50) -> int:
         if re.search(r"kod isin", joined, re.IGNORECASE):
             return idx
     return 0
+
+
+def select_pzu_excel_sheet(file_path: str, expected_keywords: Optional[List[str]] = None) -> Optional[str]:
+    try:
+        xls = pd.ExcelFile(file_path, engine="openpyxl")
+    except Exception:
+        return None
+
+    sheet_names = xls.sheet_names or []
+    if not sheet_names:
+        return None
+
+    if expected_keywords:
+        best_sheet: Optional[str] = None
+        best_score = -1
+        for sheet_name in sheet_names:
+            try:
+                df_raw = pd.read_excel(file_path, sheet_name=sheet_name, engine="openpyxl", header=None, nrows=20)
+            except Exception:
+                continue
+
+            text = " ".join([str(value) for value in df_raw.stack().tolist() if pd.notna(value)]).lower()
+            score = sum(1 for keyword in expected_keywords if keyword.lower() in text)
+            if score > best_score:
+                best_sheet = sheet_name
+                best_score = score
+
+        if best_sheet is not None and best_score > 0:
+            return best_sheet
+
+    return sheet_names[0]
 
 
 def extract_date_from_excel(df_raw: pd.DataFrame) -> str:
@@ -1693,28 +1776,7 @@ def parse_date_from_text(text: str) -> Optional[str]:
     return None
 
 
-def quarter_end_date_from_folder(folder_name: str) -> Optional[str]:
-    match = re.search(r"raw_(\d)q(\d{2})", folder_name, re.IGNORECASE)
-    if not match:
-        return None
-    quarter = int(match.group(1))
-    year = 2000 + int(match.group(2))
-    if quarter == 1:
-        return f"{year}-03-31"
-    if quarter == 2:
-        return f"{year}-06-30"
-    if quarter == 3:
-        return f"{year}-09-30"
-    if quarter == 4:
-        return f"{year}-12-31"
-    return None
 
-
-def quarter_token_from_folder(folder_name: str) -> Optional[str]:
-    match = re.search(r"raw_([0-9]q\d{2})", folder_name, re.IGNORECASE)
-    if not match:
-        return None
-    return match.group(1).upper()
 
 
 # -------------------------
@@ -1944,11 +2006,15 @@ def parse_ing_excel(file_path: str) -> pd.DataFrame:
     if missing_year_mask.any() and file_date:
         df.loc[missing_year_mask, "DATA_fundusz"] = file_date[:4]
 
-    keep_mask = df["fundusz"].astype(str).str.strip().str.match(r"^ing emerytura 20\d{2}$", case=False, na=False)
+    keep_mask = df["fundusz"].astype(str).str.strip().str.match(
+        r"^(?:ing|goldman sachs) emerytura 20\d{2}$",
+        case=False,
+        na=False,
+    )
     dropped = int((~keep_mask).sum())
     if dropped:
         print(
-            f"ING parser: odrzucono {dropped} wierszy, ponieważ nie należą do funduszy ING Emerytura 20xx"
+            f"ING parser: odrzucono {dropped} wierszy, ponieważ nie należą do funduszy ING Emerytura 20xx lub Goldman Sachs Emerytura 20xx"
         )
     df = df.loc[keep_mask].copy()
 
@@ -2199,8 +2265,12 @@ def parse_pzu_excel(file_path: str) -> pd.DataFrame:
     Parse TFI PZU Excel files.
     Reads the file, extracts metadata (date), detects header row, and maps columns.
     """
+    sheet_name = select_pzu_excel_sheet(
+        file_path,
+        expected_keywords=["nazwa subfunduszu", "typ instrumentu", "emitent", "kod isin instrumentu"],
+    )
     try:
-        df_raw = pd.read_excel(file_path, engine="openpyxl", header=None)
+        df_raw = pd.read_excel(file_path, sheet_name=sheet_name, engine="openpyxl", header=None)
     except Exception:
         return ensure_output_schema(pd.DataFrame())
 
@@ -2233,7 +2303,7 @@ def parse_pzu_excel(file_path: str) -> pd.DataFrame:
 
     # Re-read with detected header
     try:
-        df = pd.read_excel(file_path, engine="openpyxl", header=header_row)
+        df = pd.read_excel(file_path, sheet_name=sheet_name, engine="openpyxl", header=header_row)
     except Exception:
         return ensure_output_schema(pd.DataFrame())
 
@@ -2274,8 +2344,10 @@ def parse_pzu_excel(file_path: str) -> pd.DataFrame:
         s = str(val).strip().lower()
         return s != "" and s != "nan" and s != "none"
 
-    df = df[df["fundusz"].apply(is_not_empty) | df["isin"].apply(is_not_empty)]
-    
+    fundusz_nonempty = df["fundusz"].apply(is_not_empty).fillna(False).astype(bool)
+    isin_nonempty = df["isin"].apply(is_not_empty).fillna(False).astype(bool)
+    df = df[fundusz_nonempty | isin_nonempty]
+
     # Filter to keep only PPK/inPZU funds (both naming variants)
     fundusz_col = df.get("fundusz", "").astype(str)
     ppk_mask = fundusz_col.apply(is_pzu_ppk_fund)
@@ -2298,8 +2370,12 @@ def parse_pzu1_excel(file_path: str) -> pd.DataFrame:
     Parse PZU1 Excel files for 4Q23/4Q24.
     Date is sourced only from filename: PZU1_YYYY-MM-DD.xlsx
     """
+    sheet_name = select_pzu_excel_sheet(
+        file_path,
+        expected_keywords=["fundusz", "typ aktywa", "emitent", "isin", "wartość"],
+    )
     try:
-        df = pd.read_excel(file_path, engine="openpyxl", header=0)
+        df = pd.read_excel(file_path, sheet_name=sheet_name, engine="openpyxl", header=0)
     except Exception:
         return ensure_output_schema(pd.DataFrame())
 
@@ -2515,8 +2591,12 @@ def parse_pzu2_excel(file_path: str) -> pd.DataFrame:
     - wartosc_pln: source value in thousands of PLN, multiplied by 1000
     - isin: extract only value inside parentheses; if no parentheses -> empty
     """
+    sheet_name = select_pzu_excel_sheet(
+        file_path,
+        expected_keywords=["fundusz", "typ aktywa", "emitent", "isin", "wartość"],
+    )
     try:
-        df = pd.read_excel(file_path, engine="openpyxl", header=0)
+        df = pd.read_excel(file_path, sheet_name=sheet_name, engine="openpyxl", header=0)
     except Exception:
         return ensure_output_schema(pd.DataFrame())
 
@@ -2997,6 +3077,49 @@ def parse_esaliens_text(file_path: str) -> pd.DataFrame:
     df_text = ensure_output_schema(df_text)
     df_text = df_text.drop_duplicates(subset=OUTPUT_COLUMNS)
     return df_text
+
+
+def parse_pekao_excel(file_path: str) -> pd.DataFrame:
+    """Parse Pekao TFI S.A. Excel files for PPK holdings."""
+    file_name = os.path.basename(file_path)
+    date_match = re.search(r"(\d{4})-(\d{2})-(\d{2})", file_name)
+    data = f"{date_match.group(1)}-{date_match.group(2)}-{date_match.group(3)}" if date_match else ""
+    instytucja = "Pekao TFI S.A."
+
+    try:
+        df = pd.read_excel(file_path, engine="openpyxl", header=1)
+    except Exception:
+        return ensure_output_schema(pd.DataFrame())
+
+    df.columns = [normalize_header(c) for c in df.columns]
+
+    mapping = {
+        "nazwa funduszu lub subfunduszu": "fundusz",
+        "typ instrumentu": "typ_aktywa",
+        "nazwa emitenta instrumentu": "emitent",
+        "kod isin składnika portfela funduszu lub subfunduszu": "isin",
+        "waluta instrumentu składnika lokat funduszu lub subfunduszu": "waluta",
+        "ilość składnika lokat funduszu lub subfunduszu": "liczba_sztuk",
+        "wartość składnika lokat w walucie wyceny funduszu lub subfunduszu": "wartosc_pln",
+    }
+
+    for src, dst in mapping.items():
+        col = find_column(df, src)
+        df[dst] = df[col] if col else ""
+
+    df["instytucja"] = instytucja
+    df["data"] = data
+
+    df["fundusz"] = df["fundusz"].astype(str).str.strip()
+    df = df[df["fundusz"].str.contains(r"PPK", case=False, na=False)].copy()
+    if df.empty:
+        return ensure_output_schema(pd.DataFrame())
+
+    # Normalize columns to source-like strings, preserving Excel numeric formatting
+    df["liczba_sztuk"] = df["liczba_sztuk"].apply(lambda v: str(v).replace(" ", "").replace(",", ".") if pd.notna(v) else "")
+    df["wartosc_pln"] = df["wartosc_pln"].apply(lambda v: str(v).replace(" ", "").replace(",", ".") if pd.notna(v) else "")
+
+    return ensure_output_schema(df)
 
 
 def parse_pekao_pdf(file_path: str) -> pd.DataFrame:
@@ -4649,6 +4772,10 @@ def detect_parser(file_path: str) -> Optional[str]:
         if "esalian" in name or "esalien" in name:
             return "esaliens_txt"
 
+    if name.endswith(('.xlsx', '.xls')):
+        if "pekao" in name:
+            return "pekao_excel"
+
     if name.endswith(".pdf"):
         if "investors" in name or "investor" in name:
             return "investors"
@@ -4704,6 +4831,7 @@ def process_folder(folder_path: str) -> pd.DataFrame:
         "nn": parse_nn_pdf,
         "investors": parse_investors_pdf,
         "pekao": parse_pekao_pdf,
+        "pekao_excel": parse_pekao_excel,
         # TU DODAĆ KOLEJNE
     }
 
@@ -4913,22 +5041,20 @@ def main() -> None:
             encoding="utf-8-sig",
         )
 
-    for prev_q, curr_q, out_name in (
-        ("4Q23", "4Q24", "PPK_23-24_chg.csv"),
-        ("4Q24", "4Q25", "PPK_24-25_chg.csv"),
-    ):
-        prev_df = holdings_by_quarter.get(prev_q, pd.DataFrame())
-        curr_df = holdings_by_quarter.get(curr_q, pd.DataFrame())
+    # Generate YoY change files for all quarters where previous-year quarter exists
+    for quarter_token in sorted(holdings_by_quarter.keys(), key=quarter_sort_key):
+        prev_token = prev_quarter_token(quarter_token)
+        if not prev_token:
+            continue
+        prev_df = holdings_by_quarter.get(prev_token, pd.DataFrame())
+        curr_df = holdings_by_quarter.get(quarter_token, pd.DataFrame())
         if prev_df.empty and curr_df.empty:
             continue
         change_df = build_change_table(prev_df, curr_df)
+        # name like PPK_23-24_chg.csv (use two-digit years)
+        out_name = f"PPK_{prev_token[-2:]}-{quarter_token[-2:]}_chg.csv"
         change_path = os.path.join(output_dir, out_name)
-        change_df.to_csv(
-            change_path,
-            index=False,
-            sep=";",
-            encoding="utf-8-sig",
-        )
+        change_df.to_csv(change_path, index=False, sep=";", encoding="utf-8-sig")
 
     master_df = build_master_dataset(source_rows_by_quarter)
     if not master_df.empty:
